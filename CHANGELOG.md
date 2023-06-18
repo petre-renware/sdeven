@@ -1,0 +1,90 @@
+<small>(c) 2021, 2022 RENware Software Systems</small>
+
+**SDEVEN**
+
+* Last released content version: 0.6
+* Last update: 230617
+
+***
+
+[TOC]
+
+# CHANGELOG
+
+<small>
+
+* For version code structure meaning see SDEVEN methodology document (*sic !*) :).
+* with (F) are marked those changes that are features in order to be copied in a RELNOTE file
+</small>
+
+## 0.7
+
+
+
+-#TODO - [current work before gen 0.7 in](mkdocs_site_builder/README_CHECKLIST.md)
+
+### 0.7.4-??? (wip)
+
+* tbd... check & clean each doc for unaccepted changes for string as `<<< HEAD...` or `>>> ...`
+* tbd... check if can drop mkdocs_site_builder/ directory
+-----------------------
+
+* wip...
+* 230617piu_g prepare `mkdocs.yaml` **nav** section - list of "left-out" documents [here](mkdocs_site_builder/README_CHECKLIST.md#2-prepare-mkdocs-environment)
+* 230617piu_f created a doc `/xxx` with frequent / useful git commands (especially when working with large data such as books, documentation, etc)
+* 230617piu_e started a clean work with mkdoc
+
+
+
+
+### 0.7.4-alpha (230617 10:00)
+
+* 230617d release 0.7.4-alpha as **SDEVEN draft 0.7 built with mkdocs**
+* 230617c update project README file ref all changes by moving to `mkdocs` site generation
+* 230617b cleaning & archiving history directories by moving historical generated sites to `.../880.90_SCA_Source_Code_Archives/generated_sites/` directory
+* 230617a cleaning & archiving history directories by moving historical content to `.../880.90_SCA_Source_Code_Archives/content_history` directory + drop all temp `xxx*/` directories
+* 230616e clean `content_history/` directory for older than v0.6 generated portals (files `dtatic_site_build_...`) and archive SDEVEN content of v0.6 and market `content_0.6/` dire tory for deletion
+* 230616d prepare first mkdocs environment to generate a draft portal - DONE. generated a first site more than draft ! FACTS:
+    * ---> made last released version and current working is in directory: **`SDEVEN_content_docs/`**
+    * ---> generated static portal directory: **`static_portal/`**
+* 230616c add more things to do in `mkdocs_site_builder/` README_CHECKLIST file (docs with more that 1 Heading1 & ideas for FULL PDF doc)
+* 230616b dropped `docusaurus/` (previous solution to static portal generator) and make a temp copy out of `830-DEV/` directory
+* 230617a preparations to switch to `mkdocs` static site generator (directory `mkdocs_site_builder/`)
+* 230109c add `mkdocs` material admonition blocks
+* 230109b add PDF exporter for `mkdocs`
+
+
+###  0.7.2-alpha (230109 06:00)
+
+* 230109a introduced a new site builder with *MkDocs* in directory `mkdocs_site_builder`
+
+
+### 0.7.1-alpha (220819 19:35)
+
+* 220819c updated `SDEVEN.40_RENBRAN` ref branches usage recommended techniques
+* 220819b updated `Appendix_B_DSGN_Content_Index.md` ref a text from **sagaRT** project, inserted in doc a text to remember...
+* 220819a updated `SDEVEN.90_RENBLU`
+* 220803a updated `Appendix_B_DSGN_Content_Index.md` ref a text from git merge missed in (@BOOK.007-15.d) and 830-DEV added as no doc section but frequently asked why is missing from numbering schema :)
+
+
+
+
+
+
+
+
+> *see version history directory  for previous releases track*
+
+## History of changes log
+
+* [SDEVEN 0.6](versions_history/CHANGELOG_0.6.md)
+* [SDEVEN 0.5](versions_history/CHANGELOG_0.5.md)
+* [SDEVEN 0.4](versions_history/CHANGELOG_0.4.md)
+* [SDEVEN 0.3](versions_history/CHANGELOG_0.3.md)
+
+
+
+
+
+
+--- ooo ---

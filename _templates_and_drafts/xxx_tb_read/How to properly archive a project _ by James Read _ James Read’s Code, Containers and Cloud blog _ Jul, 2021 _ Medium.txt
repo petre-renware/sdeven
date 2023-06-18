@@ -1,0 +1,26 @@
+https://medium.com/james-reads-public-cloud-technology-blog/how-to-properly-archive-a-project-48ddbd0208f8
+
+
+How many times have you seen projects abandoned on GitHub, or internal Wikis, with no explanation, no “next steps”, no follow-up or notes? How many hundreds of hours were lost to that project, and what was learned?
+This article proposes a model (“TURTLES”), or more simply, a checklist, of how to properly archive a project.
+Is now the right time to archive this project?
+T — Technologists: Do enough people contribute to maintaining this project? Developers, Architects, Security, Operations?
+U — Users: Does this project have enough active users?
+R — Requirements: Is this project still doing what we set out for it to do?
+T — Technology: Are there any unsustainable technologies behind this project?
+L — Learning: Is anything being learned by maintaining this project? (See my article about Odyssey projects — sometimes “just coding to learn” is enough of a reason to keep a project going).
+E — Ecosystem: Is there an alternative to writing this project?
+S — Salvage: Can anything useful be salvaged from this project?
+Models are easier to remember when there is an acronym — hence, “TURTLES”. :-)
+The suggestions below assume that you document the answers to these questions — in the project README, on your wiki, or somewhere else where it’s easily seen by all.
+Archive checklist —Technologists & Users
+NB: I deliberately chose the word “technologist” because I wanted to include developers, architects, security, operations, and many other roles.
+Why did this project fail to keep developers interest? How would that be changed for next time? Did big parts of the code rely on just one developer who understood them?
+Why did this project fail to keep its users, and grow users?
+What was the cost of maintaining this project? Could 5 full-time developers not keep up with it? Was it costing huge amounts of money to keep all the test servers running?
+Who were the users of this project? Anyone significant (any references?), and how did this project attract users?
+How could have the project grown, what stopped it? Did it need more marketing, or more budget, did it need to be shown more frequently at conferences?
+Archive checklist — Requirements
+Which of the original requirements were met? Make a list. Of those which were unmet, why is that?
+Did any scope creep happen? If so, why? Bad expectation / issue management? Bad initial scoping? Too little focus on the MVP?
+What future requirements were planned, that could not be met with this project? Did the project have to work on Azure, or AWS, and it was only compatible with VMware environments?
