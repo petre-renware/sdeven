@@ -15,14 +15,8 @@
 
 
 
-
-#TODO(s):
-
-- any shortcuts references ? (AS BUTTOS...)
-- or maybe no, being cover page ... year and edition ? cu small...
-
-- [About button](About_SDEVEN.md)
-
+[Start book here](x)
+[About SDEVEN](About_SDEVEN.md)
 
 
 
