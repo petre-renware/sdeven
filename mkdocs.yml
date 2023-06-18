@@ -25,6 +25,7 @@ nav:
         - Appendix Status Report Template: 'Appendix_C_Status_Report.md'
         - Appendix FAQ. Frequently Asked Questions: 'Appendix_Q_faq.md'
     - About SDEVEN: 'About_SDEVEN.md'
+    - License: 'LICENSE.md' #FIXME - remain ? or drop from here (is in documenation...)
     - RENware Software Systems: 'http://renware.eu'
 
 
