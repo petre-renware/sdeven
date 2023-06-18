@@ -1,10 +1,17 @@
 
-![sdeven_logo](pictures/SDEVEN_logo.svg)
 
 <h1>
     <b>SDEVEN</b><br>
     <b><small><small>Software Development & Engineering Methodology</small></small></b>
 </h1>
+
+
+
+
+![sdeven_logo](pictures/SDEVEN_logo.svg)
+
+
+
 
 
 
