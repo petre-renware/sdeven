@@ -1,5 +1,4 @@
 
-![sdeven_logo](pictures/SDEVEN_logo.svg)
 
 <h1>
     <b>SDEVEN</b><br>
@@ -9,13 +8,16 @@
 
 
 
-#TODO(s):
+![sdeven_logo](pictures/SDEVEN_logo.svg)
 
-- any shortcuts references ? (AS BUTTOS...)
-- or maybe no, being cover page ... year and edition ? cu small...
 
-- [About button](About_SDEVEN.md)
 
+
+
+
+[About SDEVEN](About_SDEVEN.md)
+
+[Start book here](SDEVEN.00_INDEX.md)
 
 
 

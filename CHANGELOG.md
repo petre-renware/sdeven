@@ -32,10 +32,11 @@
     - [ ] Appendix_C_Status_Report.md
 * #TODO_@IMP... see docs changed in `wk_crt_proposals/` directory - THE SCOPE of v07 version
 * tbd... rethink to put code back to nav section - !!! resulted PDF header CONTAINS EXACTLY THE nav text
-* #TODO_@URG... remake `index` put SDEVEN logo
+
 =============[ #TODO-section ]=========================
 
 
+* 230618piu_f closed `index.md` as cover with 2 links: About SDEVEN & Start book here
 * 230618piu_e adjust picture background to make @ picture dimensions
 * 230618piu_d update SDEVEN logo (generate a SVG, change directory in `SDEVEN_content_docs/pictures/`)
 * 230618piu_c created a remote repository and sync all SDEVEN repository
