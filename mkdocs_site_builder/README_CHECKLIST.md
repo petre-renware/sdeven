@@ -10,7 +10,7 @@
 ## 2. prepare `mkdocs` environment
 
 - [x] prepare `mkdocs.yaml` **nav** section
-- [x] move `.wenv` & `requirements.txt` in root
+- [x] move `.wenv/` & `requirements.txt` in root
 - [x] check in environment can be activated & `mkdocs` & `mkdocs build` run
 
 
@@ -19,16 +19,16 @@
 
 - [x] decide how will be called - maybe **`static_portal/`** ?
 - [x] OPTIONAL: protect it in `.gitignore`
-- [ ] archive `content_0.6/` directory with manual generated PDFs (in `content_history/`) - #NOTEsee if keep FULL PDF DIRECTORY !
-- [ ] check for left issues & drop myself (this directory)
+- [x] archive `content_0.6/` directory with manual generated PDFs (in `content_history/`) - #NOTEsee if keep FULL PDF DIRECTORY !
+- [x] check for left issues & drop myself (this directory)
 
 ## 4. Documents that have more than 1 `#` entry
 
 This documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
 
-- [ ] Appendix_B_DSGN_Content_Index.md
-- [ ] Appendix_C_Status_Report.md
-
+- [x] Appendix_B_DSGN_Content_Index.md
+- [x] Appendix_C_Status_Report.md
+>RESOLUTION: both moved as TODOs on changelog
 
 
 ## 5. Other issues
