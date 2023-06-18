@@ -15,8 +15,9 @@
 
 
 
+
+[About SDEVEN](About_SDEVEN.md) | 
 [Start book here](SDEVEN.00_INDEX.md)
-[About SDEVEN](About_SDEVEN.md)
 
 
 
