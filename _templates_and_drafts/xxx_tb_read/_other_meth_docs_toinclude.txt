@@ -1,0 +1,7 @@
+mai sunt niste doc interesante in:
+D:\_T8_PROJECTS\8000-1300-CPOL RENware Procedures and Policies\8990-1000.COPP Common Operational Procedures and Policies
+
+astfel:
+- 02.TPQA - Testing and Product Quality Assurance (EMPTY !!! but name is good)
+- 01.ANRE - Analysis and Requirements Engineering (EMPTY !!! but name is good)
+- 04.RAMX - Resource Allocation Matrix (EMPTY !!! but name is good)
