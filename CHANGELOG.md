@@ -36,7 +36,7 @@
 =============[ #TODO-section ]=========================
 
 
-* tbd... adjust picture background to make @ picture dimensions
+* 230618piu_e adjust picture background to make @ picture dimensions
 * 230618piu_d update SDEVEN logo (generate a SVG, change directory in `SDEVEN_content_docs/pictures/`)
 * 230618piu_c created a remote repository and sync all SDEVEN repository
 * 230618piu_b:
