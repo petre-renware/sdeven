@@ -1,8 +1,8 @@
-*RENware Software Systems*    
+*RENware Software Systems*<br>
 **Software Development Methodology** 
 
-Version: 0.4.10    
-Last update: 220415
+Version: 0.7.4<br>
+Last update: 230619
 
 ***
 
@@ -16,7 +16,7 @@ Last update: 220415
 
 This section describes the organization environment and framework of software development structure.
 
-## Roles and basic Responsibilities
+## Staffing roles and responsibilities
 
 ### Testing 
 
