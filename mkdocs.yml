@@ -8,7 +8,7 @@ nav:
         - Practices (20.RENPRA): 'SDEVEN.20_RENPRA.md'
         - Versioning (30.RENVER): SDEVEN.30_RENVER.md
         - Branches (40.RENBRAN): 'SDEVEN.40_RENBRAN.md'
-        - Change Management: 'SDEVEN.50_RENCHGM.md'
+        - Change Management (50.CHGM): 'SDEVEN.50_RENCHGM.md'
         - Development logging: 'SDEVEN.55_RENTRACE.md'
         - Release management: 'SDEVEN.60_RENRELM.md'
         - Project structure: 'SDEVEN.62_RENSTR.md'
