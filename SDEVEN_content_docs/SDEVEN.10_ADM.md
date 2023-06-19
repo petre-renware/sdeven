@@ -72,13 +72,13 @@ For a detailed description of project management policies refer the applicable *
 
 
 
-## Working environments
+## Working technical environments
 
 Working environments can be classified as:
 
-* *development* - usually on your on computer, but could be situations where is one or more development machines (aka servers) especially for remote work, operating system issues, processing power, testing on more "real" machines, etc
-* *test* or QA-envs - for testing issues, regardless by which members are (to be) done
-* *production* systems - also for testing issues; these are as much as possible very appropriate to a real machine that can be found in most cases to customers / beneficiaries of system (not the best such as maachines, but lets say as average to min performances ref CPU, memory, disks, network interfaces, etc)
+* *development* - usually on personal computer, but could be situations where one or more development servers are needed especially for remote work, operating system issues, processing power, testing on more "real" machines, etc
+* *test* (aka QA-envs) - for testing issues, regardless by which members are (to be) done
+* *production* systems - also for testing issues but in final stages, just before committing work to client users. These environments should be as much as possible very appropriate to a real machine that exists in current use at client
 
 
 
