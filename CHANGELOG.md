@@ -36,7 +36,7 @@
 =============[ #TODO-section ]=========================
 
 
-* wip... 230619piu_g "gross" review & update of `50.CHGM` + `mkdocs.yaml` entry
+* 230619piu_g "gross" review & update of `50.CHGM` + `mkdocs.yaml` entry
 * 230619piu_f "gross" review & update of `40.BRAN` + `mkdocs.yaml` entry
 * 230619piu_e "gross" review & update of `30.VER` + `mkdocs.yaml` entry
 * 230619piu_d "gross" review & update of `20.PRA` + `mkdocs.yaml` entry
