@@ -36,6 +36,7 @@
 =============[ #TODO-section ]=========================
 
 
+* 230619piu_a minor updates in 10.ADM ref section names to have a more administrative and staffing impact
 * 230618piu_f closed `index.md` as cover with 2 links: About SDEVEN & Start book here
 * 230618piu_e adjust picture background to make @ picture dimensions
 * 230618piu_d update SDEVEN logo (generate a SVG, change directory in `SDEVEN_content_docs/pictures/`)
