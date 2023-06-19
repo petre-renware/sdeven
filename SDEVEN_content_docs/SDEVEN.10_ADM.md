@@ -1,5 +1,5 @@
 *RENware Software Systems*<br>
-**Software Development Methodology** 
+**Software Development Methodology**
 
 Version: 0.7.4<br>
 Last update: 230619
