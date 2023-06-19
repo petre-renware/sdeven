@@ -4,8 +4,8 @@ nav:
     - Home: 'index.md'
     - Methodology index: 'SDEVEN.00_INDEX.md'
     - Methodology chapters:
-        - Administrative: 'SDEVEN.10_ADM.md'
-        - Practices and technical issues: 'SDEVEN.20_RENPRA.md'
+        - Administrative (10.ADM): 'SDEVEN.10_ADM.md'
+        - Practices and technical issues (20.PRA): 'SDEVEN.20_RENPRA.md'
         - Versioning: SDEVEN.30_RENVER.md
         - Branches: 'SDEVEN.40_RENBRAN.md'
         - Change Management: 'SDEVEN.50_RENCHGM.md'

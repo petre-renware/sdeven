@@ -30,12 +30,13 @@
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
     - [ ] Appendix_B_DSGN_Content_Index.md
     - [ ] Appendix_C_Status_Report.md
-* @IMP_tbd... see docs changed in `wk_crt_proposals/` directory - THE SCOPE of v07 version
+* @IMP_tbd... see docs changed in `wk_crt_proposals/` directory - THE OBJECTIVE of v07 version !
+* tbd... "gross" review & update of `20.PRA` + `mkdocs.yaml` entry
 
 =============[ #TODO-section ]=========================
 
-
 * wip...
+* 230619piu_d "gross" review & update of `20.PRA` + `mkdocs.yaml` entry
 * 230619piu_c clean directories, update version on all changed documents and updated shorts actions plan
 * 230619piu_b finish and closed 10.ADM
 
