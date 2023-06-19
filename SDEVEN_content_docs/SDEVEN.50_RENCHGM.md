@@ -1,8 +1,7 @@
-*RENware Software Systems*    
-**Software Development Methodology** 
+<small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 0.4.10    
-Release date: 220415
+Version: 0.7.5<br>
+Release date: 230619
 
 ***
 
