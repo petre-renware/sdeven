@@ -23,17 +23,20 @@
 ### 0.7.5-??? (wip)
 
 =============[ #TODO-section ]=========================
-* tbd... #TODO - [current work before gen 0.7 in](mkdocs_site_builder/README_CHECKLIST.md)
+
+* tbd... rethink to put code back to nav section - !!! resulted PDF header CONTAINS EXACTLY THE nav text
 * tbd... where describe branches (RENBRAN...) use Git mermaid diagrams !!!
 * tbd... see some open issues and check if can drop mkdocs_site_builder/ directory
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
     - [ ] Appendix_B_DSGN_Content_Index.md
     - [ ] Appendix_C_Status_Report.md
-* #TODO_@IMP... see docs changed in `wk_crt_proposals/` directory - THE SCOPE of v07 version
-* tbd... rethink to put code back to nav section - !!! resulted PDF header CONTAINS EXACTLY THE nav text
+* @IMP_tbd... see docs changed in `wk_crt_proposals/` directory - THE SCOPE of v07 version
 
 =============[ #TODO-section ]=========================
 
+
+* wip...
+* 230619piu_c clean directories, update version on all changed documents and updated shorts actions plan
 * 230619piu_b finish and closed 10.ADM
 
 
@@ -66,7 +69,7 @@
 * 230617piu_e started a clean work with mkdoc
 
 
-### 0.7.4-alpha (230617 10:00)
+### 0.7.3-alpha (230617 10:00)
 
 * 230617d release 0.7.4-alpha as **SDEVEN draft 0.7 built with mkdocs**
 * 230617c update project README file ref all changes by moving to `mkdocs` site generation
