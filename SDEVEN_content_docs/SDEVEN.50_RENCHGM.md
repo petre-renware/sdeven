@@ -13,8 +13,12 @@ Release date: 230619
 
 ## Preamble
 
-This is about changes in software development process. The classic procedure of change management from ***Project Management discipline must be followed***.
+This is about changes in software development process.
 
-There is no dedicated detailed procedure. Those things, very specific to software development can be found in the other sections especially in ***Practices & technical issues*** but not only.
+There is no specific or special procedure in software development. The procedure of change management from ***Project Management discipline must be followed*** of course taking into account that changes in software development are almost technical ones.
 
---- ooo ---
+In that way, things regarding technical changes in software development are covered in other sections mostly in ***Practices & technical issues*** but not only.
+
+
+
+
