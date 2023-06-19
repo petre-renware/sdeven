@@ -31,7 +31,7 @@
     - [ ] Appendix_B_DSGN_Content_Index.md
     - [ ] Appendix_C_Status_Report.md
 * @IMP_tbd... see docs changed in `wk_crt_proposals/` directory - THE OBJECTIVE of v07 version !
-* tbd... "gross" review & update of `20.PRA` + `mkdocs.yaml` entry
+* tbd... "gross" review & update of `xxx` + `mkdocs.yaml` entry
 
 =============[ #TODO-section ]=========================
 
