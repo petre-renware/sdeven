@@ -5,8 +5,8 @@ nav:
     - Methodology index: 'SDEVEN.00_INDEX.md'
     - Methodology chapters:
         - Administrative (10.ADM): 'SDEVEN.10_ADM.md'
-        - Practices and technical issues (20.PRA): 'SDEVEN.20_RENPRA.md'
-        - Versioning: SDEVEN.30_RENVER.md
+        - Practices (20.RENPRA): 'SDEVEN.20_RENPRA.md'
+        - Versioning (30.RENVER): SDEVEN.30_RENVER.md
         - Branches: 'SDEVEN.40_RENBRAN.md'
         - Change Management: 'SDEVEN.50_RENCHGM.md'
         - Development logging: 'SDEVEN.55_RENTRACE.md'
@@ -38,9 +38,15 @@ markdown_extensions:
     - pymdownx.superfences:
         custom_fences:
             - name: mermaid
-              class: mermaid
-              format: !!python/name:pymdownx.superfences.fence_code_format
+            - class: mermaid
+            - format: !!python/name:pymdownx.superfences.fence_code_format
     - footnotes
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+    
 
 
 
