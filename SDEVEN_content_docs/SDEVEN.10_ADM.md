@@ -68,7 +68,7 @@ Teams are dynamically allocated per projects as needed. (**DYNAMIC ALLOCATION**)
 
 ### Applicable procedures
 
-For a detailed description of project management policies, please refer the *Project Management Methodology*.
+For a detailed description of project management policies refer the applicable *Project Management Methodology*.
 
 
 
