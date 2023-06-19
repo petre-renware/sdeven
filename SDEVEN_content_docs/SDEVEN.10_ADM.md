@@ -39,7 +39,7 @@ This section describes the organization environment and framework of software de
 ### Development & Research 
 
 * **dev** *developers* - assure code, programs, scripts etc writing 
-* **sen** *software engineers* - assure technical organization, design, architectures, toolstacks, practices, dev patterns
+* **sen** *software engineers* - assure technical organization, design, architectures, toolstacks, practices, patterns
 * **ban** *analysts* - assure understanding of targeted information domains, elaborate functional testing strategy plans 
 * **rad** *researchers* - assure discovery and usage strategies for technical market (best) practices and patterns; elaborate methods for different technologies usage, elaborate integration strategies 
 * **twr** *technical writer* - write and check technical documentation 
