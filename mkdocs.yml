@@ -1,30 +1,32 @@
-site_name: REN-SDEVEN Software Development & Engineering Methodology
+site_name: SDEVEN Software Development & Engineering Methodology
 
 nav:
-    - Home: SDEVEN.00_INDEX.md
-    - About: About_SDEVEN.md
+    - Home: 'index.md'
+    - Methodology index: 'SDEVEN.00_INDEX.md'
     - Methodology chapters:
-        - Administrative (SDEVEN.10 ADM): SDEVEN.10_ADM.md
-        - Practices and technical issues (SDEVEN.20 RENPRA): SDEVEN.20_RENPRA.md
-        - Versioning (SDEVEN.30 RENVER): SDEVEN.30_RENVER.md
-        - Branches (SDEVEN.40 RENBRAN): SDEVEN.40_RENBRAN.md
-        - Change Management (SDEVEN.50 RENCHGM): SDEVEN.50_RENCHGM.md
-        - Development logging (SDEVEN.55 RENTRACE): SDEVEN.55_RENTRACE.md
-        - Release management (SDEVEN.60 RENRELM): SDEVEN.60_RENRELM.md
-        - Project structure (SDEVEN.62 RENSTR): SDEVEN.62_RENSTR.md
-        - Design approaches and review (SDEVEN.65 RENDEREV): SDEVEN.65_RENDEREV.md
-        - Code review (SDEVEN.68 RENCOREV): SDEVEN.68_RENCOREV.md
-        - Licenses & products / models (SDEVEN.70 RENLIP): SDEVEN.70_RENLIP.md
-        - Code of Conduct. Ethics, Professional and Legal Issues (SDEVEN.75 RENCC): SDEVEN.75_RENCC.md
-        - Conventions & principles (SDEVEN.80 RENCOPRI): SDEVEN.80_RENCOPRI.md
-        - Phases, Processes and Deliverables (SDEVEN.90 RENBLU): SDEVEN.90_RENBLU.md
-        - Confidentiality & Classification (SDEVEN.95 RENCOCL): SDEVEN.95_RENCOCL.md
+        - Administrative: 'SDEVEN.10_ADM.md'
+        - Practices and technical issues: 'SDEVEN.20_RENPRA.md'
+        - Versioning: SDEVEN.30_RENVER.md
+        - Branches: 'SDEVEN.40_RENBRAN.md'
+        - Change Management: 'SDEVEN.50_RENCHGM.md'
+        - Development logging: 'SDEVEN.55_RENTRACE.md'
+        - Release management: 'SDEVEN.60_RENRELM.md'
+        - Project structure: 'SDEVEN.62_RENSTR.md'
+        - Design approaches and review: 'SDEVEN.65_RENDEREV.md'
+        - Code review: 'SDEVEN.68_RENCOREV.md'
+        - Licenses & products / models: 'SDEVEN.70_RENLIP.md'
+        - Code of Conduct. Ethics, Professional and Legal Issues: 'SDEVEN.75_RENCC.md'
+        - Conventions & principles: 'SDEVEN.80_RENCOPRI.md'
+        - Phases, Processes and Deliverables: 'SDEVEN.90_RENBLU.md'
+        - Confidentiality & Classification: 'SDEVEN.95_RENCOCL.md'
     - Methodology appendices:
-        - Appendix Sematic Versioning: Appendix_A_Semantic_versioning.md
-        - Appendix System Design Document Template: Appendix_B_DSGN_Content_Index.md
-        - Appendix Status Report Template: Appendix_C_Status_Report.md
-        - Appendix FAQ. Frequently Asked Questions: Appendix_Q_faq.md
-
+        - Appendix Sematic Versioning: 'Appendix_A_Semantic_versioning.md'
+        - Appendix System Design Document Template: 'Appendix_B_DSGN_Content_Index.md'
+        - Appendix Status Report Template: 'Appendix_C_Status_Report.md'
+        - Appendix FAQ. Frequently Asked Questions: 'Appendix_Q_faq.md'
+    - About SDEVEN: 'About_SDEVEN.md'
+    - License: 'LICENSE.md' #FIXME - remain ? or drop from here (is in documenation...)
+    - RENware Software Systems: 'http://renware.eu'
 
 
 

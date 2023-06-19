@@ -1,7 +1,6 @@
 *RENware Software Systems*    
 **Software Development Methodology**
 
-<<<<<<<< HEAD:content_0.4/Appendix_B_DSGN_Content_Index.md
 Version: 0.4.10    
 Release date: 220415
 
