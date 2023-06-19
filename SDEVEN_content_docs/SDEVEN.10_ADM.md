@@ -78,7 +78,7 @@ Working environments can be classified as:
 
 * *development* - usually on personal computer, but could be situations where one or more development servers are needed especially for remote work, operating system issues, processing power, testing on more "real" machines, etc
 * *test* (aka QA-envs) - for testing issues, regardless by which members are (to be) done
-* *production* systems - also for testing issues but in final stages, just before committing work to client users. These environments should be as much as possible very appropriate to a real machine that exists in current use at client
+* *production* systems - also for testing issues but used in final stages, just before committing work to client users. These environments should be as much as possible very appropriate to a real machine that exists in current use at client
 
 
 
