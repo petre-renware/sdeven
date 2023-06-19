@@ -82,9 +82,9 @@ Working environments can be classified as:
 
 
 
-## Escalation general procedures and practices
+## Escalation procedures and practices
 
-A software project is, first atv all, like any other project. So, there is anything special than normal procedures described in the *Project Management Methodology*.
+From this perspective a software project should be seen like any other project. Therefore is anything special than normal procedures used in *Project Management Methodology*.
 
 
 
