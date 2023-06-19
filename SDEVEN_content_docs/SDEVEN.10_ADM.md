@@ -25,7 +25,7 @@ This section describes the organization environment and framework of software de
 * **isat** *internal standards tester / auditor* - check if the system is compliant with company applicable and relevant standards
 * **sect** *security tester* - check for system security according to usual practices, known / usual attacks and vulnerabilities
 
-### Administration 
+### DevOps and systems administration
 
 * **radm** *repository admin* - assures the project / software repository(es) are up to date, clean and can be accessed by team
 * **dadm** *dev infra admin* - assure the drvelopment infrastructure / environment for a project, meaning at least: development, testing, production like, live demo machines, their installation, cloning, backup, making iso images, availability (from different locations according to needs), security issues, and so on
