@@ -17,10 +17,10 @@
 * with (F) are marked those changes that are features in order to be copied in a RELNOTE file
 </small>
 
-## 0.7
+## 7.0
 
 
-### 0.7.7-??? (wip... #FIXME set qualier)
+### 7.0.7-??? (wip... #FIXME set qualier)
 
 =============[ START of #TODO-section ]=========================
 
@@ -40,7 +40,10 @@
 
 =============[ END of #TODO-section ]=========================
 
-* wip...  last entry was 230715piu_b
+
+
+* tbd...@urg... regen portal and publish for new version updated in procedures...
+* 230715piu_c to change version in all docs to 7.0.7 (search for `0.7.` and change to `7.0.`)
 
 
 
@@ -54,7 +57,7 @@
 
 
 
-### 0.7.6-alpha (230626 12:00)
+### 7.0.6-alpha (230626 12:00)
 
 * 230715piu_b made a template for `ROADMAP_template` document and ref it in `55-TRACE` procedure
 * 230715piu_a "gross" review & update of `80.RENCOPRI` + `mkdocs.yaml` entry + refactor code from `RENCOPRI` to `COPRI` (including document filename)
@@ -72,7 +75,7 @@
 
 
 
-### 0.7.5-alpha (230626 12:00)
+### 7.0.5-alpha (230626 12:00)
 
 * 230626piu_b "gross" review & update of `65.RENDEREV` + `mkdocs.yaml` entry + refactor code from `RENDEREV` to `DEREV` (including document filename)
 * 230626piu_a update of `62.PSTR` with a very short reference to project root directory for a README.md & project.toml files
@@ -91,7 +94,7 @@
 
 
 
-### 0.7.4-alpha (230619 06:30)
+### 7.0.4-alpha (230619 06:30)
 
 * 230619piu_a minor updates in 10.ADM ref section names to have a more administrative and staffing impact
 * 230618piu_f closed `index.md` as cover with 2 links: About SDEVEN & Start book here
@@ -118,9 +121,9 @@
 
 
 
-### 0.7.3-alpha (230617 10:00)
+### 7.0.3-alpha (230617 10:00)
 
-* 230617d release 0.7.4-alpha as **SDEVEN draft 0.7 built with mkdocs**
+* 230617d release 7.0.4-alpha as **SDEVEN draft 0.7 built with mkdocs**
 * 230617c update project README file ref all changes by moving to `mkdocs` site generation
 * 230617b cleaning & archiving history directories by moving historical generated sites to `.../880.90_SCA_Source_Code_Archives/generated_sites/` directory
 * 230617a cleaning & archiving history directories by moving historical content to `.../880.90_SCA_Source_Code_Archives/content_history` directory + drop all temp `xxx*/` directories
@@ -137,14 +140,14 @@
 
 
 
-###  0.7.2-alpha (230109 06:00)
+###  7.0.2-alpha (230109 06:00)
 
 * 230109a introduced a new site builder with *MkDocs* in directory `mkdocs_site_builder`
 
 
 
 
-### 0.7.1-alpha (220819 19:35)
+### 7.0.1-alpha (220819 19:35)
 
 * 220819c updated `SDEVEN.40_BRAN` ref branches usage recommended techniques
 * 220819b updated `Appendix_B_DSGN_Content_Index.md` ref a text from **sagaRT** project, inserted in doc a text to remember...

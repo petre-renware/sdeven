@@ -1,7 +1,7 @@
 *RENware Software Systems*<br>
 **Software Development Methodology**
 
-Version: 0.7.4<br>
+Version: 7.0.4<br>
 Release date: 230617
 
 ***
