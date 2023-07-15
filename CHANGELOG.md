@@ -2,8 +2,8 @@
 
 **SDEVEN**
 
-* Last released content version: 0.6
-* Last update: 230619
+* Last released version: 0.6
+* Last update date: 230715
 
 ***
 
@@ -20,23 +20,73 @@
 ## 0.7
 
 
-### 0.7.5-??? (wip)
+### 0.7.7-??? (wip... #FIXME set qualier)
 
-=============[ #TODO-section ]=========================
-* tbd... #TODO - [current work before gen 0.7 in](mkdocs_site_builder/README_CHECKLIST.md)
-* tbd... where describe branches (RENBRAN...) use Git mermaid diagrams !!!
-* tbd... see some open issues and check if can drop mkdocs_site_builder/ directory
+=============[ START of #TODO-section ]=========================
+
+* -#NOTE_#NOTE_#NOTE_#NOTE_#NOTE_ publishing is made from `publishing` branch, so wheen publish checkout it or upload from git #NOTE_#NOTE_#NOTE_#NOTE_#NOTE_
+
+* tbd... ref full PDF feature - CUT table of contents
+* tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
+* tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
     - [ ] Appendix_B_DSGN_Content_Index.md
     - [ ] Appendix_C_Status_Report.md
-* #TODO_@IMP... see docs changed in `wk_crt_proposals/` directory - THE SCOPE of v07 version
-* tbd... rethink to put code back to nav section - !!! resulted PDF header CONTAINS EXACTLY THE nav text
+* @IMP_tbd... see docs changed in `wk_crt_proposals/` directory (`Appendix_B_DSGN_Content_Index.md`, `SDEVEN.90_RENBLU.md`) and align to SDEVEN 7 version
+* ...tbd_use_me_as_template... "gross" review all APPENDIX files #NOTE except `Appendix_D_ROADMAP_template.md` (which is new entry in SDEEVN 7 format)
+* ...tbd_use_me_as_template... "gross" review & update of `#FIXME` + `mkdocs.yaml` entry + refactor code from `#FIXME` to `#FIXME` (including document filename)
 
-=============[ #TODO-section ]=========================
+* -#TODO...next_one "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry + refactor code from `RENBLU` to `BLUP` (including document filename)
+
+=============[ END of #TODO-section ]=========================
+
+* wip...  last entry was 230715piu_b
 
 
 
 
+
+
+
+
+
+
+
+
+
+### 0.7.6-alpha (230626 12:00)
+
+* 230715piu_b made a template for `ROADMAP_template` document and ref it in `55-TRACE` procedure
+* 230715piu_a "gross" review & update of `80.RENCOPRI` + `mkdocs.yaml` entry + refactor code from `RENCOPRI` to `COPRI` (including document filename)
+* 230712piu_b "gross" review & update of `75.RENCC` + `mkdocs.yaml` entry + refactor code from `RENCC` to `CCEP` (including document filename)
+* 230712piu_a installed "Full PDF" generation and printing option & activated in site navigation
+* 230711piu_b dropped the doc `Appendix_D_Fundamentals_of_Test_Management.pdf` as being too "book" and, anyway, a TESTING procedure should be described...
+* 230711piu_a updated SDEVEN logo with majpr version number (to be able to visualize to version "at first sight" of manual cover)
+* 230702piu_c updated README with GitHub URL for public SDEVEN static site
+* 230703piu_b renamed `published_site` to `/docs` & updated README (rule imposed by GitHub platform)
+* 230702piu_a created `published_site` as **publishing directory** and copied current content in (partial publishing)
+* 230628piu_a put in portal RENware logo & updateded (just prepared) SDEVEN logo with a small one for docs inside
+* 230626piu_d "gross" review & update of `70.RENLIP` + `mkdocs.yaml` entry + refactor code from `RENLIP` to `LIP` (including document filename)
+* 230626piu_c "gross" review & update of `68.RENCOREV` + `mkdocs.yaml` entry + refactor code from RENCOREV` to `COREV` (including document filename)
+
+
+
+
+### 0.7.5-alpha (230626 12:00)
+
+* 230626piu_b "gross" review & update of `65.RENDEREV` + `mkdocs.yaml` entry + refactor code from `RENDEREV` to `DEREV` (including document filename)
+* 230626piu_a update of `62.PSTR` with a very short reference to project root directory for a README.md & project.toml files
+* 230622piu_a "gross" review & update of `62.PSTR` + `mkdocs.yaml` entry + refactor code from `RENSTR` to `PSTR` (including document filename)
+* 230621piu_a "gross" review & update of `60.RELM` + `mkdocs.yaml` entry + refactor code from `RENRELM` to `RELM` (including document filename)
+* 230620piu_c "gross" review & update of `55.TRACE` + `mkdocs.yaml` entry + refactor code from `RENTRACE` to `TRACE` (including document filename)
+* 230620piu_b update `40.BRAN` with a Git diagram ref basic flow of master, development, xxx-dev and allowed tags (tagging policy)
+* 230620piu_a update `40.BRAN` with proposals made in January 2023 + clean doc and change code from RENBRAN to `BRAN`
+* 230619piu_g "gross" review & update of `50.CHGM` + `mkdocs.yaml` entry
+* 230619piu_f "gross" review & update of `40.BRAN` + `mkdocs.yaml` entry
+* 230619piu_e "gross" review & update of `30.VER` + `mkdocs.yaml` entry
+* 230619piu_d "gross" review & update of `20.PRA` + `mkdocs.yaml` entry
+* 230619piu_c clean directories, update version on all changed documents and updated shorts actions plan
+* 230619piu_b finish and closed 10.ADM
 
 
 
@@ -66,7 +116,9 @@
 * 230617piu_e started a clean work with mkdoc
 
 
-### 0.7.4-alpha (230617 10:00)
+
+
+### 0.7.3-alpha (230617 10:00)
 
 * 230617d release 0.7.4-alpha as **SDEVEN draft 0.7 built with mkdocs**
 * 230617c update project README file ref all changes by moving to `mkdocs` site generation
@@ -83,14 +135,18 @@
 * 230109b add PDF exporter for `mkdocs`
 
 
+
+
 ###  0.7.2-alpha (230109 06:00)
 
 * 230109a introduced a new site builder with *MkDocs* in directory `mkdocs_site_builder`
 
 
+
+
 ### 0.7.1-alpha (220819 19:35)
 
-* 220819c updated `SDEVEN.40_RENBRAN` ref branches usage recommended techniques
+* 220819c updated `SDEVEN.40_BRAN` ref branches usage recommended techniques
 * 220819b updated `Appendix_B_DSGN_Content_Index.md` ref a text from **sagaRT** project, inserted in doc a text to remember...
 * 220819a updated `SDEVEN.90_RENBLU`
 * 220803a updated `Appendix_B_DSGN_Content_Index.md` ref a text from git merge missed in (@BOOK.007-15.d) and 830-DEV added as no doc section but frequently asked why is missing from numbering schema :)

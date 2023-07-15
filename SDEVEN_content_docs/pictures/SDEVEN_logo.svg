@@ -30,8 +30,15 @@
    <glyph unicode=" " horiz-adv-x="466"/>
   </font>
  </defs>
+ <defs>
+  <font id="EmbeddedFont_2" horiz-adv-x="2048">
+   <font-face font-family="Franklin Gothic Heavy embedded" units-per-em="2048" font-weight="normal" font-style="normal" ascent="1884" descent="445"/>
+   <missing-glyph horiz-adv-x="2048" d="M 0,0 L 2047,0 2047,2047 0,2047 0,0 Z"/>
+   <glyph unicode="7" horiz-adv-x="1017" d="M 1102,1365 L 1102,1109 C 1003,992 917,837 846,643 775,449 739,263 739,86 739,69 740,40 743,0 L 292,0 C 292,161 331,336 410,526 488,716 593,882 725,1023 L 92,1023 121,1365 1102,1365 Z"/>
+  </font>
+ </defs>
  <defs class="TextShapeIndex">
-  <g ooo:slide="id1" ooo:id-list="id3"/>
+  <g ooo:slide="id1" ooo:id-list="id3 id4"/>
  </defs>
  <defs class="EmbeddedBulletChars">
   <g id="bullet-char-template-57356" transform="scale(0.00048828125,-0.00048828125)">
@@ -86,6 +93,13 @@
        <g id="id3">
         <rect class="BoundingBox" stroke="none" fill="none" x="1878" y="1465" width="7594" height="1271"/>
         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Arial Narrow, sans-serif" font-size="370px" font-weight="700"><tspan class="TextPosition" x="2128" y="2234"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">RENware Software Systems</tspan></tspan></tspan></text>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id4">
+        <rect class="BoundingBox" stroke="none" fill="none" x="17326" y="568" width="2158" height="2053"/>
+        <path fill="rgb(255,255,255)" fill-opacity="0.6" stroke="rgb(255,255,255)" stroke-opacity="0.6" d="M 18405,2620 L 17326,2620 17326,568 19483,568 19483,2620 18405,2620 Z"/>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Franklin Gothic Heavy, sans-serif" font-size="2117px" font-weight="400"><tspan class="TextPosition" x="17785" y="2333"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">7</tspan></tspan></tspan></text>
        </g>
       </g>
      </g>

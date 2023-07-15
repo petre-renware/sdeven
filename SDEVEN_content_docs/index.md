@@ -1,6 +1,6 @@
 
 
-<h1>
+<h1 class="print-site-plugin-ignore">
     <b>SDEVEN</b><br>
     <b><small><small>Software Development & Engineering Methodology</small></small></b>
 </h1>
