@@ -18,9 +18,9 @@
 # ROADMAP
 
 
-## RMAP.001 - SDEVEN 7.1 release
+## RMAP.001 - SDEVEN 7.1 release #TODO_check_release_number
 
--#TODO intentions for SDEVEN 7.1 version
+-#TODO more exact intentions for SDEVEN 7.1 version
 
 
 
