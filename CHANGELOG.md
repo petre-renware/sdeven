@@ -3,7 +3,7 @@
 **SDEVEN**
 
 * Last released version: 0.6
-* Last update date: 230715
+* Last update date: 230716
 
 ***
 
@@ -17,7 +17,7 @@
 * with (F) are marked those changes that are features in order to be copied in a RELNOTE file
 </small>
 
-## 7.0
+## 7.0 SDEVEN 7.0
 
 
 ### 7.0.7-??? (wip... #FIXME set qualier)
@@ -42,7 +42,10 @@
 
 
 
-* tbd...@urg... regen portal and publish for new version updated in procedures...
+* 230716piu_d rebuild portal and publish for new version updated in procedures
+* 230716piu_c refactored `50-RENCHGM` to `50-CHGMNG`
+* 230716piu_b add a ROADMAP file to log future improvements and intentions
+* 230716piu_a updated SDEVEN logo with minor version number resulting "7.0"
 * 230715piu_c to change version in all docs to 7.0.7 (search for `0.7.` and change to `7.0.`)
 
 

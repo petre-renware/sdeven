@@ -3,12 +3,12 @@ site_name: SDEVEN Software Development & Engineering Methodology
 nav:
     - Home: 'index.md'
     - Methodology index: 'SDEVEN.00_INDEX.md'
-    - Methodology chapters:
+    - Methodology procedures:
         - Administrative (10-ADM): 'SDEVEN.10_ADM.md'
         - Practices (20-RENPRA): 'SDEVEN.20_RENPRA.md'
         - Versioning (30-RENVER): SDEVEN.30_RENVER.md
         - Branches (40-BRAN): 'SDEVEN.40_BRAN.md'
-        - Change Management (50-RENCHGM): 'SDEVEN.50_RENCHGM.md'
+        - Change Management (50-CHGMNG): 'SDEVEN.50_CHGMNG.md'
         - Development and changes logging (55-TRACE): 'SDEVEN.55_TRACE.md'
         - Release management (60-RELM): 'SDEVEN.60_RELM.md'
         - Project structure (62-PSTR): 'SDEVEN.62_PSTR.md'
@@ -27,7 +27,7 @@ nav:
         - Appendix (Q) FAQ. Frequently Asked Questions (FAQ): 'Appendix_Q_faq.md'
     - About SDEVEN: 'About_SDEVEN.md'
     - License: 'LICENSE.md' #NOTE - remain ? or drop from here (is in documenation...)
-    - RENware Software Systems: 'http://renware.eu'
+    - Copyright (C) RENware Software Systems: 'http://renware.eu'
 
 
 

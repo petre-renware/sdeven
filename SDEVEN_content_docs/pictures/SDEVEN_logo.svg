@@ -35,6 +35,8 @@
    <font-face font-family="Franklin Gothic Heavy embedded" units-per-em="2048" font-weight="normal" font-style="normal" ascent="1884" descent="445"/>
    <missing-glyph horiz-adv-x="2048" d="M 0,0 L 2047,0 2047,2047 0,2047 0,0 Z"/>
    <glyph unicode="7" horiz-adv-x="1017" d="M 1102,1365 L 1102,1109 C 1003,992 917,837 846,643 775,449 739,263 739,86 739,69 740,40 743,0 L 292,0 C 292,161 331,336 410,526 488,716 593,882 725,1023 L 92,1023 121,1365 1102,1365 Z"/>
+   <glyph unicode="0" horiz-adv-x="1080" d="M 597,-21 C 432,-21 302,44 206,174 110,303 62,474 62,685 62,902 111,1073 210,1198 308,1323 439,1386 604,1386 777,1386 909,1319 1001,1186 1093,1052 1139,881 1139,673 1139,461 1090,292 991,167 892,42 760,-21 597,-21 Z M 601,269 C 658,269 697,306 716,379 735,452 745,551 745,678 745,852 732,966 707,1019 681,1072 646,1099 602,1099 549,1099 512,1064 492,994 471,923 461,826 461,703 461,536 471,422 492,361 512,300 548,269 601,269 Z"/>
+   <glyph unicode="." horiz-adv-x="382" d="M 471,365 L 471,0 91,0 91,365 471,365 Z"/>
   </font>
  </defs>
  <defs class="TextShapeIndex">
@@ -97,9 +99,9 @@
       </g>
       <g class="com.sun.star.drawing.CustomShape">
        <g id="id4">
-        <rect class="BoundingBox" stroke="none" fill="none" x="17326" y="568" width="2158" height="2053"/>
-        <path fill="rgb(255,255,255)" fill-opacity="0.6" stroke="rgb(255,255,255)" stroke-opacity="0.6" d="M 18405,2620 L 17326,2620 17326,568 19483,568 19483,2620 18405,2620 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Franklin Gothic Heavy, sans-serif" font-size="2117px" font-weight="400"><tspan class="TextPosition" x="17785" y="2333"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">7</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="16056" y="568" width="3444" height="2053"/>
+        <path fill="rgb(255,255,255)" fill-opacity="0.6" stroke="rgb(255,255,255)" stroke-opacity="0.6" d="M 17778,2620 L 16056,2620 16056,568 19499,568 19499,2620 17778,2620 Z"/>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Franklin Gothic Heavy, sans-serif" font-size="2117px" font-weight="400"><tspan class="TextPosition" x="16315" y="2333"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">7.0</tspan></tspan></tspan></text>
        </g>
       </g>
      </g>

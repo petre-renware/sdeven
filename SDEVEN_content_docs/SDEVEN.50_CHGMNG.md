@@ -1,11 +1,11 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.5<br>
-Release date: 230619
+Version: 7.0.7<br>
+Release date: 230716
 
 ***
 
-# Change Management (SDEVEN.50-RENCHGM)
+# Change Management (SDEVEN.50-CHGMNG)
 
 **Table of Content**
 

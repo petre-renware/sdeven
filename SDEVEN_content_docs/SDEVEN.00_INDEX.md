@@ -37,7 +37,7 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 * **Branches** section [SDEVEN.40-BRAN](SDEVEN.40_BRAN.md)<br>
     This section treat the *git* repository for software in particular how to use branches in order to avoid misunderstandings and to have your work as clean as possible in order to be shared and used by the other team members and colleagues.
 
-* **Change Management** section [SDEVEN.50-RENCHGM](SDEVEN.50_RENCHGM.md)<br>
+* **Change Management** section [SDEVEN.50-CHGMNG](SDEVEN.50_CHGMNG.md)<br>
     This section is about how changes should be handled and treated.
 
 * **System dev logging changes / updates** section [SDEVEN.55-TRACE](SDEVEN.55_TRACE.md)<br>

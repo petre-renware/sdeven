@@ -7,7 +7,6 @@
 
 
 
-
 ![sdeven_logo](pictures/SDEVEN_logo.svg)
 
 
@@ -19,7 +18,7 @@
 
 [Start book here](SDEVEN.00_INDEX.md)
 
-
+Previous versions: *n/a*
 
 
 
