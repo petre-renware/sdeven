@@ -26,7 +26,7 @@
 
 * -#NOTE_#NOTE_#NOTE_#NOTE_#NOTE_ publishing is made from `publishing` branch, so wheen publish checkout it or upload from git #NOTE_#NOTE_#NOTE_#NOTE_#NOTE_
 
-* tbd... ref full PDF feature - CUT table of contents
+* tbd... RMAP.001 - OPME
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
@@ -41,7 +41,7 @@
 =============[ END of #TODO-section ]=========================
 
 
-
+* 230716piu_f add `RMAP.001 OPME` and prepared "all places" where will be placed (SDEVEN 00 index & mkdocs.yml for navogation entry)
 * 230716piu_e implemented PDF BUTTON FOR FULL DOC in `mkdocs.yml`, `print-site` plugin, option `path_to_pdf` - TEST FAILED, reverted file to previous version
 * 230716piu_d rebuild portal and publish for new version updated in procedures
 * 230716piu_c refactored `50-RENCHGM` to `50-CHGMNG`

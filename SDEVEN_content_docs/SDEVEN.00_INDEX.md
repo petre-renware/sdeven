@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.6<br>
-Last update: 230715
+Version: 7.0.7<br>
+Last update: 230716
 
 ***
 
@@ -37,6 +37,9 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 * **Branches** section [SDEVEN.40-BRAN](SDEVEN.40_BRAN.md)<br>
     This section treat the *git* repository for software in particular how to use branches in order to avoid misunderstandings and to have your work as clean as possible in order to be shared and used by the other team members and colleagues.
 
+* **Operational Meetings** section [SDEVEN.45-OPME](wip_page.md)<br>
+    Incoming section that will treat software development production and planning meetings... Planned on roadmap as *RMAP.001 - OPME*
+
 * **Change Management** section [SDEVEN.50-CHGMNG](SDEVEN.50_CHGMNG.md)<br>
     This section is about how changes should be handled and treated.
 
@@ -49,7 +52,7 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 * **Project structure** section [SDEVEN.62-PSTR](SDEVEN.62_PSTR.md)<br>
     This procedure contains usual project structure.
 
-* **Design approaches and review** section [SDEVEN.65-DEREV](SDEVEN.65_DEREV.md)<br>
+* **Design approaches and their review and change** section [SDEVEN.65-DEREV](SDEVEN.65_DEREV.md)<br>
     This procedure is about design review before being "published" as initial design or after some major | important | high impact changes.
 
 * **Code review** section [SDEVEN.68-COREV](SDEVEN.68_COREV.md)<br>

@@ -18,10 +18,21 @@
 # ROADMAP
 
 
-## RMAP.001 - SDEVEN 7.1 release #TODO_check_release_number
+## RMAP.001 - OPME
 
--#TODO more exact intentions for SDEVEN 7.1 version
-
+* **Objective:** new procedure for Operational Meetings (45-OPME)
+* **Recorded at:** 230717
+* **Recorded by:** Petre Iordanescu (piu)
+* **Detailed  description:**
+    * this procedure will treat software development production and planning meetings
+    * procedure should follow Agile SCRUM methodology for Daily SCRUM and other meeting types
+* **Recommendations:**
+    * this is a new procedure and will have code `45.OPME` already allocated on SDEVEN 00 INDEX doc
+    * procedure will follow all templates that are in use at its implementation
+* **Known dependencies:** none
+* **Assigned to:** ...not yet established
+* **References & notes:**
+    * Agile SCRUM methodology for Daily SCRUM and other meeting types
 
 
 
