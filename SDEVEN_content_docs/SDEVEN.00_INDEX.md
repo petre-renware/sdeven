@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.6<br>
-Last update: 230715
+Version: 7.0.7<br>
+Last update: 230716
 
 ***
 
@@ -49,7 +49,7 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 * **Project structure** section [SDEVEN.62-PSTR](SDEVEN.62_PSTR.md)<br>
     This procedure contains usual project structure.
 
-* **Design approaches and review** section [SDEVEN.65-DEREV](SDEVEN.65_DEREV.md)<br>
+* **Design approaches and their review and change** section [SDEVEN.65-DEREV](SDEVEN.65_DEREV.md)<br>
     This procedure is about design review before being "published" as initial design or after some major | important | high impact changes.
 
 * **Code review** section [SDEVEN.68-COREV](SDEVEN.68_COREV.md)<br>
