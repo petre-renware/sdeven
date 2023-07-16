@@ -12,7 +12,7 @@ nav:
         - Development and changes logging (55-TRACE): 'SDEVEN.55_TRACE.md'
         - Release management (60-RELM): 'SDEVEN.60_RELM.md'
         - Project structure (62-PSTR): 'SDEVEN.62_PSTR.md'
-        - Design approaches and review (65-DEREV): 'SDEVEN.65_DEREV.md'
+        - Design approaches and their review and change (65-DEREV): 'SDEVEN.65_DEREV.md'
         - Code review (68-COREV): 'SDEVEN.68_COREV.md'
         - Licenses & products / models (70-LIP): 'SDEVEN.70_LIP.md'
         - Code of Conduct. Ethics, Professional and Legal Issues (75-CCEP): 'SDEVEN.75_CCEP.md'
