@@ -37,6 +37,9 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 * **Branches** section [SDEVEN.40-BRAN](SDEVEN.40_BRAN.md)<br>
     This section treat the *git* repository for software in particular how to use branches in order to avoid misunderstandings and to have your work as clean as possible in order to be shared and used by the other team members and colleagues.
 
+* **Operational Meetings** section [45-OPME](wip_page.md)
+    Incoming section that will treat software development production and planning meetings... Planned on roadmap as *RMAP.001 - OPME*
+
 * **Change Management** section [SDEVEN.50-CHGMNG](SDEVEN.50_CHGMNG.md)<br>
     This section is about how changes should be handled and treated.
 
