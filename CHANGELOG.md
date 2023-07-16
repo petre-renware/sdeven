@@ -42,6 +42,8 @@
 
 
 
+* 230716piu_e #TODO test PDF BUTTON FOR FULL DOC -test me and keep or drop
+
 * 230716piu_d rebuild portal and publish for new version updated in procedures
 * 230716piu_c refactored `50-RENCHGM` to `50-CHGMNG`
 * 230716piu_b add a ROADMAP file to log future improvements and intentions
