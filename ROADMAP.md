@@ -25,13 +25,14 @@
 * **Recorded by:** Petre Iordanescu (piu)
 * **Detailed  description:**
     * this procedure will treat software development production and planning meetings
+    * procedure should follow Agile SCRUM methodology for Daily SCRUM and other meeting types
 * **Recommendations:**
     * this is a new procedure and will have code `45.OPME` already allocated on SDEVEN 00 INDEX doc
     * procedure will follow all templates that are in use at its implementation
-* **Known dependencies:** -#NOTE...if there are knwon dependencies of INTERNAL system components or other open / wip issues...
-* **Assigned to:** -#NOTE...the person nominated to respond for this roadmap item...
+* **Known dependencies:** none
+* **Assigned to:** Petre Iordanescu
 * **References & notes:**
-    * -#NOTE...more notes... (if use footnote like `[^xxx]: ...`, please do not mark as list entry because will appear at foonotes)
+    * Agile SCRUM methodology for Daily SCRUM and other meeting types
 
 
 
