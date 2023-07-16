@@ -30,7 +30,7 @@
     * this is a new procedure and will have code `45.OPME` already allocated on SDEVEN 00 INDEX doc
     * procedure will follow all templates that are in use at its implementation
 * **Known dependencies:** none
-* **Assigned to:** Petre Iordanescu
+* **Assigned to:** ...not yet established
 * **References & notes:**
     * Agile SCRUM methodology for Daily SCRUM and other meeting types
 
