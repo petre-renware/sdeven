@@ -41,6 +41,8 @@
 =============[ END of #TODO-section ]=========================
 
 
+* tbd... in order to have `/print_page/` directory created, change  `use_directory_urls` in mkdocs.yaml as stated at `https://timvink.github.io/mkdocs-print-site-plugin/how-to/export-PDF.html `
+
 * 230716piu_f add `RMAP.001 OPME` and prepared "all places" where will be placed (SDEVEN 00 index & mkdocs.yml for navogation entry)
 * 230716piu_e implemented PDF BUTTON FOR FULL DOC in `mkdocs.yml`, `print-site` plugin, option `path_to_pdf` - TEST FAILED, reverted file to previous version
 * 230716piu_d rebuild portal and publish for new version updated in procedures
