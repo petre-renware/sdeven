@@ -67,9 +67,10 @@ plugins:
         enable: true
     - print-site: #NOTE: Make sure to put print-site to the bottom of the plugin list because other plugins might alter your site (like the navigation)
         add_to_navigation: true
-        print_page_title: 'SDEVEN full PDF'
+        print_page_title: 'SDEVEN full document'
         add_full_urls: true
         add_table_of_contents: true
+        path_to_pdf: 'SDEVEN full document as PDF' #FIXME 230716piu_e test PDF BUTTON FOR FULL DOC -test me and keep or drop
 
 
 
