@@ -5,7 +5,7 @@ Release date: 230626
 
 ***
 
-# Design approaches and review (SDEVEN.65-DEREV)
+# Design approaches and their review and change (SDEVEN.65-DEREV)
 
 **Table of Content**
 
