@@ -1,14 +1,10 @@
 
 
-<h1 class="print-site-plugin-ignore">
-    <b>SDEVEN</b><br>
-    <b><small><small>Software Development & Engineering Methodology</small></small></b>
-</h1>
-
 
 # SDEVEN
 ## Software Development & Engineering Methodology
 
+<br><br><br><br><br><br><br>
 
 
 ![sdeven_logo](pictures/SDEVEN_logo.svg)
