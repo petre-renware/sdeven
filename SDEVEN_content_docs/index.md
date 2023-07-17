@@ -6,8 +6,8 @@
 </h1>
 
 
-# SDEVEN<br>
-Software Development & Engineering Methodology
+# SDEVEN
+## Software Development & Engineering Methodology
 
 
 
