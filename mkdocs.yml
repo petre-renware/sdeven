@@ -64,13 +64,13 @@ plugins:
     - search
     - include-markdown
     # - pdf-export # this version does not render mermaid in PDF docs
-    - pdf-with-js:
-        enable: true
-    - print-site: #NOTE: Make sure to put print-site to the bottom of the plugin list because other plugins might alter your site (like the navigation)
+    - print-site: #NOTE: put print-site to the bottom of the plugins that may might alter your site navigation (affect order of sections in generated HTML)
         add_to_navigation: true
-        print_page_title: 'SDEVEN full document'
+        print_page_title: 'Full SDEVEN Manual'
         add_full_urls: true
         add_table_of_contents: true
+    - pdf-with-js:
+        enable: true
 
 
 
@@ -117,6 +117,6 @@ site_dir: './static_portal'
 
 
 #NOTE other useful configurations
-use_directory_urls: false # allow link between pages to work properly as static site an "callable" as `file:///...`
+use_directory_urls: false # allow link between pages to work properly when used as OFFLINE deployment (ie, static site an "callable" as `file:///...`)
 
 

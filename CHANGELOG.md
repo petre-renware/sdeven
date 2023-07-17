@@ -3,7 +3,6 @@
 **SDEVEN**
 
 * Last released version: 0.6
-* Last update date: 230716
 
 ***
 
@@ -15,6 +14,7 @@
 
 * For version code structure meaning see SDEVEN methodology document (*sic !*) :).
 * with (F) are marked those changes that are features in order to be copied in a RELNOTE file
+* -#NOTE ____ PUBLISHING IS MADE FROM `PUBLISHING` BRANCH, so wheen publish checkout it or upload from git
 </small>
 
 ## 7.0 SDEVEN 7.0
@@ -22,9 +22,8 @@
 
 ### 7.0.7-??? (wip... #FIXME set qualier)
 
-=============[ START of #TODO-section ]=========================
 
-* -#NOTE_#NOTE_#NOTE_#NOTE_#NOTE_ publishing is made from `publishing` branch, so wheen publish checkout it or upload from git #NOTE_#NOTE_#NOTE_#NOTE_#NOTE_
+=============[ START of #TODO-section ]=========================
 
 * tbd... RMAP.001 - OPME
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
@@ -41,7 +40,11 @@
 =============[ END of #TODO-section ]=========================
 
 
-* tbd... in order to have `/print_page/` directory created, change  `use_directory_urls` in mkdocs.yaml as stated at `https://timvink.github.io/mkdocs-print-site-plugin/how-to/export-PDF.html `
+* tbd ASAP... #FIXME important 23mmdd... the FULL SITE html document make "Download PDF" link as now the PDF exists on normal path for all PDF docs (`_site_dir_/pdfs/...`) #FIXME regen & publish site
+
+* 230717piu_c in order to have `/print_page/` directory created, move `pdf-with-js` plugin AFTER `print-site` plugin
+* 230717piu_b included a `print_page.md` as empty doc that serve as reference for final generation of `print_page.html` (generation is delayed and is based on final result of site navigation structure)
+* 230717piu_a fixed `About_SDEVEN.md` link entry at text "A complete SDEVEN manua..."
 
 * 230716piu_f add `RMAP.001 OPME` and prepared "all places" where will be placed (SDEVEN 00 index & mkdocs.yml for navogation entry)
 * 230716piu_e implemented PDF BUTTON FOR FULL DOC in `mkdocs.yml`, `print-site` plugin, option `path_to_pdf` - TEST FAILED, reverted file to previous version
