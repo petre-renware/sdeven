@@ -40,7 +40,7 @@
 =============[ END of #TODO-section ]=========================
 
 
-* tbd ASAP... #FIXME important 23mmdd... the FULL SITE html document make "Download PDF" link as now the PDF exists on normal path for all PDF docs (`_site_dir_/pdfs/...`) #FIXME regen & publish site
+* wip... 230717piu_d the FULL SITE html document make "Download PDF" link in `index.md` as now the PDF exists on normal path for all PDF docs (`_site_dir_/pdfs/...`) #FIXME test, regen & publish site
 
 * 230717piu_c in order to have `/print_page/` directory created, move `pdf-with-js` plugin AFTER `print-site` plugin
 * 230717piu_b included a `print_page.md` as empty doc that serve as reference for final generation of `print_page.html` (generation is delayed and is based on final result of site navigation structure)
