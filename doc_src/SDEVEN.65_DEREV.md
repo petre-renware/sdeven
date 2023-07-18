@@ -1,11 +1,11 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 0.7.5<br>
+Version: 7.0.5<br>
 Release date: 230626
 
 ***
 
-# Design approaches and review (SDEVEN.65-DEREV)
+# Design approaches and their review and change (SDEVEN.65-DEREV)
 
 **Table of Content**
 

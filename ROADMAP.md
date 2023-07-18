@@ -1,14 +1,12 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 0.7.5<br>
-Release date: 2306715
 
 ***
 
 ***Document control***
 
-* updated at: ..last updated date...<br>
-* updated by: ...person who made last update...
+* updated at: 230717<br>
+* updated by: Petre Iordanescu
 
 
 
@@ -20,12 +18,37 @@ Release date: 2306715
 # ROADMAP
 
 
-!!! warning "#TODO CHANGE ME. THIS IS A TEMPLATE DOCUMENT"
-    ___This is a template document !!! Please make a copy and use it. Instructions are provided as #NOTE at each item.___
+## RMAP.001 - OPME
+
+* **Objective:** new procedure for Operational Meetings (45-OPME)
+* **Recorded at:** 230716
+* **Recorded by:** Petre Iordanescu (piu)
+* **Detailed  description:**
+    * this procedure will treat software development production and planning meetings
+    * procedure should follow Agile SCRUM methodology for Daily SCRUM and other meeting types
+* **Recommendations:**
+    * procedure has code `45.OPME` is located in `SDEVEN.45_OPME.md` and __document must be updated__
+    * procedure will follow all templates that are in use at its implementation
+    * `SDEVEN.45_OPME.md` has some useful comments ref SCRUM Events as subjects to cover in procedure
+* **Known dependencies:** none
+* **Assigned to:** ...not yet established
+* **References & notes:**
+    * Agile SCRUM methodology for Daily SCRUM and other meeting types
 
 
 
-## RMAP.item_code - ...give a hort description name of item
+
+
+
+
+
+
+
+
+
+``` #NOTE: TEMPLATE section use for future
+
+## RMAP.item_code - #NOTE...give a hort description name of item
 
 * **Objective:** -#NOTE...the item objective...
 * **Recorded at:** -#NOTE...date of recording this item...
@@ -41,7 +64,7 @@ Release date: 2306715
 * **References & notes:**
     * -#NOTE...more notes... (if use footnote like `[^xxx]: ...`, please do not mark as list entry because will appear at foonotes)
 
-
+```
 
 
 

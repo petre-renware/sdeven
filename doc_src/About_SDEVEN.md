@@ -1,8 +1,8 @@
 *RENware Software Systems*<br>
 **Software Development Methodology**
 
-Version: 0.7.4<br>
-Release date: 230617
+Version: 7.0.7<br>
+Release date: 230717
 
 ***
 
@@ -27,7 +27,7 @@ SDEVEN methodology use in its content some third party elements. These are:
 
 ## SDEVEN manual
 
-A complete SDEVEN manual can be found [here](full_pdf/SDEVEN_full.pdf).
+A complete SDEVEN manual can be found [here](print_page.html).
 
 !!! warning "SDEVEN full PDF manual"
     Please check if manual is available as online full PDF. For some SDEVEN versions it is available only as printed book.

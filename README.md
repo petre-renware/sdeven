@@ -20,7 +20,7 @@ This methodology is copyright (C) of RENware Software Systems (REN CONSULTING SO
 
 # Content files
 
-The methodology **content (last published version)** is available in **`SDEVEN_content_docs/`** directory. Content is available as raw source in *markdown* format following mainly [Material for MkDocs rules and formatters](https://squidfunk.github.io/mkdocs-material/reference/).
+The methodology **content (last published version)** is available in **`doc_src/`** directory. Content is available as raw source in *markdown* format following mainly [Material for MkDocs rules and formatters](https://squidfunk.github.io/mkdocs-material/reference/).
 
 Also documentation is available as `PDF` documents in generated portal. *MkDocs* assure conversion and downloading of PDF documents for each page made available.
 

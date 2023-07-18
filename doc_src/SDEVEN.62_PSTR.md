@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 0.7.5<br>
-Release date: 230626
+Version: 7.0.7<br>
+Release date: 230718
 
 ***
 
@@ -30,7 +30,8 @@ First level of project backbone consists of:
 All product system code is kept under `830-DEV` directory. The objective of its structuring is to assure as much as possible code reusability and its "after-release" maintainability. This directory contains:
 
 * 830-DEV**/**project root directory [go to section](#project-root-directory)
-* 830-DEV/**doc** [go to section](#doc-directory)
+* 830-DEV/**doc_src** [go to section](#doc_src-directory)
+* 830-DEV/**docs** [go to section](#docs-directory)
 * 830-DEV/**pjm** [go to section](#pjm-directory)
 * 830-DEV/**setup** [go to section](#setup-directory)
 * 830-DEV/**static_portal** [go to section](#static_portal-directory)
@@ -50,7 +51,7 @@ For a clear "picture" please refer the ["Example of project full directory struc
 
 
 
-## **doc** directory
+## **doc_src** directory
 
 * the technical documentation:
     * 110-SRE System Requirements
@@ -63,6 +64,17 @@ For a clear "picture" please refer the ["Example of project full directory struc
 
 !!! info "system manuals"
     system manuals (adma & euma) will be assembled as deliverables in release packages [for details see 60-RELM procedure](SDEVEN.60_RELM.md#release-directory-content-and-structure)
+
+
+
+
+## **docs** directory
+
+This directory will accommodate the **FINAL** (**RELEASED**) documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "*ENTERPRISE SYSTEMS*".
+
+!!! warning "remarks"
+    * this directory content is obtained from `static_portal` directory after tests passed and as preparation for a release ([here go to static_portal directory section](#static_portal-directory))
+    * this directory is subject to git repository as is part of a release
 
 
 
@@ -114,7 +126,8 @@ The aim of this directory is to keep code to install the system by this understa
 This directory will accommodate the documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "*ENTERPRISE SYSTEMS*".
 
 !!! info "how to create documentation static portal"
-    The company practice is to use [mkdocs](https://www.mkdocs.org/) to build this portal
+    * the company practice is to use [mkdocs](https://www.mkdocs.org/) to build this portal
+    * this directory is used for testing and validation resulted portal - released portal is kept in [`docs/` directory](#docs-directory)
 
 
 
@@ -184,11 +197,12 @@ Here is shown an example of project directory structure starting from a `PROJECT
 ```
 ........\PROJECT-ROOT-DIRECTORY
         ├───830-DEV/
-        │   ├───doc/
+        │   ├───doc_src/
         │   │   ├───110-SRE/
         │   │   ├───120-CPTS/
         │   │   ├───130-SKIT/
         │   │   └───810-DSGN/
+        │   ├───docs/
         │   ├───pjm/
         │   │   └─── ... specific project management and contractual docs ...
         │   ├───setup/

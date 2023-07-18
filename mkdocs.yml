@@ -1,18 +1,22 @@
 site_name: SDEVEN Software Development & Engineering Methodology
+site_author: 'Petre Iordanescu, RENware Software Systems'
+copyright: 'Copyright () RENware Software Systems'
+
 
 nav:
     - Home: 'index.md'
     - Methodology index: 'SDEVEN.00_INDEX.md'
-    - Methodology chapters:
+    - Methodology procedures:
         - Administrative (10-ADM): 'SDEVEN.10_ADM.md'
         - Practices (20-RENPRA): 'SDEVEN.20_RENPRA.md'
         - Versioning (30-RENVER): SDEVEN.30_RENVER.md
         - Branches (40-BRAN): 'SDEVEN.40_BRAN.md'
-        - Change Management (50-RENCHGM): 'SDEVEN.50_RENCHGM.md'
+        - Operational Meetings(45-OPME) ...incoming...: 'SDEVEN.45_OPME.md' #FIXME update "incoming..." text `RMAP.001 - OPME` implementation
+        - Change Management (50-CHGMNG): 'SDEVEN.50_CHGMNG.md'
         - Development and changes logging (55-TRACE): 'SDEVEN.55_TRACE.md'
         - Release management (60-RELM): 'SDEVEN.60_RELM.md'
         - Project structure (62-PSTR): 'SDEVEN.62_PSTR.md'
-        - Design approaches and review (65-DEREV): 'SDEVEN.65_DEREV.md'
+        - Design approaches and their review and change (65-DEREV): 'SDEVEN.65_DEREV.md'
         - Code review (68-COREV): 'SDEVEN.68_COREV.md'
         - Licenses & products / models (70-LIP): 'SDEVEN.70_LIP.md'
         - Code of Conduct. Ethics, Professional and Legal Issues (75-CCEP): 'SDEVEN.75_CCEP.md'
@@ -26,8 +30,9 @@ nav:
         - Appendix (D) ROADMAP Template (RMAP): 'Appendix_D_ROADMAP_template.md'
         - Appendix (Q) FAQ. Frequently Asked Questions (FAQ): 'Appendix_Q_faq.md'
     - About SDEVEN: 'About_SDEVEN.md'
-    - License: 'LICENSE.md' #NOTE - remain ? or drop from here (is in documenation...)
-    - RENware Software Systems: 'http://renware.eu'
+    - License: 'LICENSE.md'
+    - RENware Software Systems company: 'http://renware.eu'
+    - Full SDEVEN Manual (PDF): 'pdfs/print_page.html/print_page.pdf'
 
 
 
@@ -63,13 +68,13 @@ plugins:
     - search
     - include-markdown
     # - pdf-export # this version does not render mermaid in PDF docs
-    - pdf-with-js:
-        enable: true
-    - print-site: #NOTE: Make sure to put print-site to the bottom of the plugin list because other plugins might alter your site (like the navigation)
+    - print-site: #NOTE: put print-site to the bottom of the plugins that may might alter your site navigation (affect order of sections in generated HTML)
         add_to_navigation: true
-        print_page_title: 'SDEVEN full PDF'
+        print_page_title: 'Full SDEVEN Manual'
         add_full_urls: true
         add_table_of_contents: true
+    - pdf-with-js:
+        enable: true
 
 
 
@@ -107,7 +112,7 @@ theme:
 
 
 #NOTE directory where start to search or markdown sources
-docs_dir: './SDEVEN_content_docs'
+docs_dir: './doc_src'
 
 
 #NOTE root directory where to be generated portal (should be `./static_portal`)
@@ -116,6 +121,6 @@ site_dir: './static_portal'
 
 
 #NOTE other useful configurations
-use_directory_urls: false # allow link between pages to work properly as static site an "callable" as `file:///...`
+use_directory_urls: false # allow link between pages to work properly when used as OFFLINE deployment (ie, static site an "callable" as `file:///...`)
 
 
