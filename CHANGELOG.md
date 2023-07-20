@@ -44,7 +44,7 @@
 =============[ END of #TODO-section ]=========================
 
 
-* wip... 230718piu_c is last used
+230720piu_a fixed copyright text in `mkdocs.yml` 
 
 
 
