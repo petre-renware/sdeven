@@ -44,11 +44,12 @@
 =============[ END of #TODO-section ]=========================
 
 
-230720piu_a fixed copyright text in `mkdocs.yml` 
+* 230721piu_a upload `Scrum-Guide-2020-US.pdf` in directory `wk_crt_proposals/`
+* 230720piu_a fixed copyright text in `mkdocs.yml` 
 
 
 
-
+ 
 
 
 
