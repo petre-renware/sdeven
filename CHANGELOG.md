@@ -39,7 +39,7 @@
 
 * -#TODO...next_one "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry + refactor code from `RENBLU` to `BLUP` (including document filename)
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 0.7.8
-* tbd... use this in `mkdocs.yml` to integrate right nav bar TOC in left nav bar:
+* tbd... use this in `mkdocs.yml` to integrate right nav bar TOC in left nav bar (#NITE pls check if visibility is affected when all menu is in left nav (NOT lvl 1 on top - on `www.renware.eu` is ok):
 ```
 theme:
   features:
