@@ -39,7 +39,12 @@
 
 * -#TODO...next_one "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry + refactor code from `RENBLU` to `BLUP` (including document filename)
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 0.7.8
-
+* tbd... use this in `mkdocs.yml` to integrate right nav bar TOC in left nav bar:
+```
+theme:
+  features:
+    - toc.integrate 
+```
 
 =============[ END of #TODO-section ]=========================
 
