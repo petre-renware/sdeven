@@ -51,6 +51,7 @@ theme:
 =============[ END of #TODO-section ]=========================
 
 
+* 230723piu_b changed theme color to `teal` as new color for RENware internal resources
 * 230723piu_a changed top navbar **logo** to a SDEVEN logon instead of RENware logo
 * 230721piu_a upload `Scrum-Guide-2020-US.pdf` in directory `wk_crt_proposals/`
 * 230720piu_a fixed copyright text in `mkdocs.yml`

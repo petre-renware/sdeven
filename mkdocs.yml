@@ -88,7 +88,7 @@ theme:
         - navigation.tabs.sticky
         - navigation.path
     palette:
-        primary: light blue # see https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/ for other color options
+        primary: teal # see https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/ for other color options
     icon:
         admonition:
             note: fontawesome/solid/note-sticky
