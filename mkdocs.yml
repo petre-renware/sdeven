@@ -80,7 +80,7 @@ plugins:
 
 #NOTE provide material theme
 theme:
-    logo: pictures/REN_stamp_logo_transparent.png
+    logo: pictures/SDEVEN_logo.png #NOTE_REN_picture pictures/REN_stamp_logo_transparent.png
     name: material
     features:
         # - navigation.tabs # left navigation side bar, all level 1 will be shown as top navigation bar

@@ -25,6 +25,13 @@
 
 =============[ START of #TODO-section ]=========================
 
+* tbd... use this in `mkdocs.yml` to integrate right nav bar TOC in left nav bar (#NOTE_THINK_TWICE_#NOTE pls check if visibility is affected when all menu is in left nav (NOT lvl 1 on top - on `www.renware.eu` is ok):
+```
+theme:
+  features:
+    - toc.integrate
+```
+
 * tbd... RMAP.001 - OPME
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
@@ -39,22 +46,18 @@
 
 * -#TODO...next_one "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry + refactor code from `RENBLU` to `BLUP` (including document filename)
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 0.7.8
-* tbd... use this in `mkdocs.yml` to integrate right nav bar TOC in left nav bar (#NITE pls check if visibility is affected when all menu is in left nav (NOT lvl 1 on top - on `www.renware.eu` is ok):
-```
-theme:
-  features:
-    - toc.integrate 
-```
+
 
 =============[ END of #TODO-section ]=========================
 
 
+* 230723piu_a changed top navbar **logo** to a SDEVEN logon instead of RENware logo
 * 230721piu_a upload `Scrum-Guide-2020-US.pdf` in directory `wk_crt_proposals/`
-* 230720piu_a fixed copyright text in `mkdocs.yml` 
+* 230720piu_a fixed copyright text in `mkdocs.yml`
 
 
 
- 
+
 
 
 
