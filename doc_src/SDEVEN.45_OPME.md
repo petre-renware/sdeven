@@ -20,7 +20,7 @@ This procedure will treat software development production and planning meetings.
 
 ... planned on roadmap for soon upcoming ...
 
-![wip_under_construction](pictures/under_maintenance.png)
+![wip_under_construction](pictures/under_maintenance.png){ width="500" }
 
 
 -#TODO: Subiectele OPME de acoperit (din evenimente SCRUM - ref doc `wk_crt_proposals/Scrum-Guide-2020-US.pdf` )
