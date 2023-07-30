@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.7<br>
-Release date: 230717
+Version: 7.0.9<br>
+Release date: 230731
 
 ***
 
@@ -20,10 +20,10 @@ This procedure will treat software development production and planning meetings.
 
 ... planned on roadmap for soon upcoming ...
 
-![wip_under_construction](pictures/under_maintenance.png)
+![wip_under_construction](pictures/under_maintenance.png){ width="500" }
 
 
--#TODO: Subiectele OPME de acoperit (din evenimente SCRUM - vezi doc `_TEMP_SCRATCH_area/Scrum-Guide-2020-US.pdf` din )
+-#TODO: Subiectele OPME de acoperit (din evenimente SCRUM - ref doc `wk_crt_proposals/Scrum-Guide-2020-US.pdf` )
 
 * Scrum Events
 	* The sprint
