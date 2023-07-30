@@ -44,7 +44,8 @@ theme:
 
 * ...tbd_use_me_as_template... "gross" review & update of `#FIXME` + `mkdocs.yaml` entry + refactor code from `#FIXME` to `#FIXME` (including document filename)
 
-* -#TODO...next_one "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry + refactor code from `RENBLU` to `BLUP` (including document filename)
+* tbd...nxt... "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry + refactor code from `RENBLU` to `BLUP` (including document filename)
+* tbd... procedure `SDEVEN.10-ADM` item `Last update: ...` must be called `Released date: ...`
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 0.7.8
 
 
