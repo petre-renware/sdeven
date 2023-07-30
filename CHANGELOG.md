@@ -33,13 +33,14 @@
 * @IMP_tbd... see docs changed in `wk_crt_proposals/` directory (`Appendix_B_DSGN_Content_Index.md`, `SDEVEN.90_RENBLU.md`) and align to SDEVEN 7 version
 
 * ...tbd_use_me_as_template... "gross" review & update of `#FIXME` + `mkdocs.yaml` entry + refactor code from `#FIXME` to `#FIXME` (including document filename)
-* ...tbd_use_me_as_template... "gross" review & update of `#FIXME 95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
+* ...tbd_use_me_as_template... 
 
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.9
 
 =============[ END of #TODO-section ]=========================
 
 * wip...
+* 230730piu_e "gross" review & update of `95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
 
 
 

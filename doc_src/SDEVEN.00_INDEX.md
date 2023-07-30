@@ -79,7 +79,7 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 
         A comprehensive template as suggested structure and content can be [found here](Appendix_B_DSGN_Content_Index.md).
 
-* **Confidentiality & Classification** section [SDEVEN.95-RENCOCL](SDEVEN.95_RENCOCL.md)<br>
+* **Confidentiality & Classification** section [SDEVEN.95-COCL](SDEVEN.95_COCL.md)<br>
     This section is about projects confidentiality with particular aspects to software development.
 
 

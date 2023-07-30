@@ -22,7 +22,7 @@ nav:
         - Code of Conduct. Ethics, Professional and Legal Issues (75-CCEP): 'SDEVEN.75_CCEP.md'
         - Conventions & principles (80-COPRI): 'SDEVEN.80_COPRI.md'
         - Phases, Processes and Deliverables (90-RENBLU): 'SDEVEN.90_RENBLU.md'
-        - Confidentiality & Classification (#FIXME-code-here): 'SDEVEN.95_RENCOCL.md'
+        - Confidentiality & Classification (95-COCL): 'SDEVEN.95_COCL.md'
     - Methodology appendices:
         - Appendix (A) Sematic Versioning (SEMVER): 'Appendix_A_Semantic_versioning.md'
         - Appendix (B) System Design Document Template (810 DSGN): 'Appendix_B_DSGN_Content_Index.md'
