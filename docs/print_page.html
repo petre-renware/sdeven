@@ -516,8 +516,8 @@
   
   
     <li class="md-nav__item">
-      <a href="SDEVEN.95_RENCOCL.html" class="md-nav__link">
-        Confidentiality & Classification (#FIXME-code-here)
+      <a href="SDEVEN.95_COCL.html" class="md-nav__link">
+        Confidentiality & Classification (95-COCL)
       </a>
     </li>
   
@@ -858,8 +858,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sdeven.95_rencocl" class="md-nav__link">
-    18. Confidentiality & Classification (#FIXME-code-here)
+  <a href="#sdeven.95_cocl" class="md-nav__link">
+    18. Confidentiality & Classification (95-COCL)
   </a>
   
 </li>
@@ -1091,8 +1091,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sdeven.95_rencocl" class="md-nav__link">
-    18. Confidentiality & Classification (#FIXME-code-here)
+  <a href="#sdeven.95_cocl" class="md-nav__link">
+    18. Confidentiality & Classification (95-COCL)
   </a>
   
 </li>
@@ -1289,7 +1289,7 @@ Last update: 230717</p>
 </div>
 </li>
 <li>
-<p><strong>Confidentiality &amp; Classification</strong> section <a href="#sdeven.95_rencocl">SDEVEN.95-RENCOCL</a><br>
+<p><strong>Confidentiality &amp; Classification</strong> section <a href="#sdeven.95_cocl">SDEVEN.95-COCL</a><br>
     This section is about projects confidentiality with particular aspects to software development.</p>
 </li>
 </ul>
@@ -2770,46 +2770,44 @@ Release date: 230730</p>
 </ul>
 </div>
 <h2 id="sdeven.90_renblu-references">References</h2>
-<p>A comprehensive template as suggested structure and content can be <a href="#appendix_b_dsgn_content_index">found here - format md</a>.</p></section><section class="print-page" id="sdeven.95_rencocl"><p><em>RENware Software Systems</em>  <br />
-<strong>Software Development Methodology</strong> </p>
-<p>Version: 0.4.10  <br />
-Release date: 220415</p>
+<p>A comprehensive template as suggested structure and content can be <a href="#appendix_b_dsgn_content_index">found here - format md</a>.</p></section><section class="print-page" id="sdeven.95_cocl"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
+<p>Version: 7.0.9<br>
+Release date: 230730</p>
 <hr />
-<h1 id="sdeven.95_rencocl-confidentiality-and-classification-sdeven95-rencocl">Confidentiality and Classification (SDEVEN.95-RENCOCL)</h1>
+<h1 id="sdeven.95_cocl-confidentiality-and-classification-sdeven95-cocl">Confidentiality and Classification (SDEVEN.95-COCL)</h1>
 <p><strong>Table of Content</strong></p>
 <div class="toc">
 <ul>
-<li><a href="#sdeven.95_rencocl-confidentiality-and-classification-sdeven95-rencocl">Confidentiality and Classification (SDEVEN.95-RENCOCL)</a><ul>
-<li><a href="#sdeven.95_rencocl-preamble">Preamble</a></li>
-<li><a href="#sdeven.95_rencocl-overview-of-classification-in-renware-company">Overview of classification in RENware company</a></li>
-<li><a href="#sdeven.95_rencocl-software-development-perspective">Software development perspective</a></li>
+<li><a href="#sdeven.95_cocl-confidentiality-and-classification-sdeven95-cocl">Confidentiality and Classification (SDEVEN.95-COCL)</a><ul>
+<li><a href="#sdeven.95_cocl-preamble">Preamble</a></li>
+<li><a href="#sdeven.95_cocl-overview-of-classification-in-renware-company">Overview of classification in RENware company</a></li>
+<li><a href="#sdeven.95_cocl-software-development-perspective">Software development perspective</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<h2 id="sdeven.95_rencocl-preamble">Preamble</h2>
+<h2 id="sdeven.95_cocl-preamble">Preamble</h2>
 <p>This section is about projects confidentiality with particular aspects to software development.</p>
-<h2 id="sdeven.95_rencocl-overview-of-classification-in-renware-company">Overview of classification in RENware company</h2>
+<h2 id="sdeven.95_cocl-overview-of-classification-in-renware-company">Overview of classification in RENware company</h2>
 <p>In <strong>RENware</strong> company, classification follows the "standard" practices, just applied in almost all of cases to projects level (there could be exceptions but these are announced specially). So, the are the following levels:</p>
 <ul>
 <li><strong><em>UNCLASSIFIED</em></strong> projects - these are public projects; they are not marked</li>
-<li><strong><em>STANDARD</em></strong> projects - these are the most projects and classification applies IN PROJECT SCOPE; they are marked as <strong>RESTRICTED. ONLY FOR PROJECT INTERNAL USE</strong></li>
-<li><strong><em>CONFIDENTIAL</em></strong> projects (aka TOP projects) - these are usually company internal projects, such as research projects; they are marked as <strong>CONFIDENTIAL. ONLY FOR PROJECT INTERNAL USE</strong></li>
-<li><strong><em>STRICT CONFIDENTIAL</em></strong> projects - these are projects "<em>reserved</em>" for RENware top management stuff</li>
+<li><strong><em>STANDARD</em></strong> projects - these are the most projects and classification applies IN PROJECT SCOPE; they are marked as <strong><code>RESTRICTED. ONLY FOR PROJECT INTERNAL USE</code></strong></li>
+<li><strong><em>CONFIDENTIAL</em></strong> projects (aka TOP projects) - these are usually company internal projects, such as research projects; they are marked as <strong><code>CONFIDENTIAL. ONLY FOR PROJECT INTERNAL USE</code></strong></li>
+<li><strong><em>STRICT CONFIDENTIAL</em></strong> projects - these are projects <strong><code>reserved</code></strong> or <strong><code>ONLY RENware top management</code></strong></li>
 </ul>
-<h2 id="sdeven.95_rencocl-software-development-perspective">Software development perspective</h2>
-<p>Ref to this point of view, <em>ALL PROJECTS THAT BELONGS IN A WAY TO SOFTWARE DEVELOPMENT</em> (ie, specific as software development or just  have parts which involves software development) are as <strong>DEFAULT at STANDARD</strong> level of classification. This means that for these projects, even if they are not marked, the rules of "<strong>RESTRICTED. ONLY FOR PROJECT INTERNAL USE.</strong>" must be <strong>AUTOMATICALLY APPLIED</strong>.</p>
+<h2 id="sdeven.95_cocl-software-development-perspective">Software development perspective</h2>
+<p>Ref to this point of view, <em>ALL PROJECTS THAT BELONGS IN A WAY TO SOFTWARE DEVELOPMENT</em> (ie, specific as software development or just  have parts which involves software development) are as <em>default</em> at <strong>STANDARD</strong> level of classification. This means that for these projects, even if they are not marked, the rules of <strong><code>RESTRICTED. ONLY FOR PROJECT INTERNAL USE</code></strong> must be <em>AUTOMATICALLY APPLIED</em>.</p>
 <p>No person (does not matter if is employee or freelancer or other third party) is (will be) allowed to work with this kind of projects IF NOT has signed an agreement regarding to:</p>
 <ul>
 <li>information "manipulation" inside and outside of project</li>
 <li>code of conduct, part ref to legal issues</li>
 </ul>
-<p>All project documents are to <strong>RESTRICTED</strong> level, and the responsibility to approve exceptions belongs to:</p>
+<p>All project documents are by <em>default</em> to <strong>RESTRICTED</strong> level. The responsibility to approve exceptions belongs to:</p>
 <ul>
-<li>for all 100^[1], 800 and 900 documents to <em>Project Manager</em></li>
+<li>for all 100, 800 and 900 documents to <em>Project Manager</em></li>
 <li>by exception, for <em>130-SKIT</em> documents, to <em>Product Manager</em></li>
-</ul>
-<p>--- ooo ---</p></section><h1 class='nav-section-title-end'>Ended: Methodology procedures</h1>
+</ul></section><h1 class='nav-section-title-end'>Ended: Methodology procedures</h1>
                         <h1 class='nav-section-title' id='section-methodology-appendices'>
                             Methodology appendices <a class='headerlink' href='#section-methodology-appendices' title='Permanent link'>↵</a>
                         </h1>
