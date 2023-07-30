@@ -47,6 +47,7 @@
 
 * wip...
 
+* 230730piu_c set a CNAME file in `doc_src/` directory with domain name as `sdeven.renware.eu`
 * 230730piu_b install and include plugin `git-revision-date-localized` (`https://henrywhitaker3.github.io/mkdocs-material-dark-theme/plugins/revision-date/`)
 * 230730piu_a procedure `SDEVEN.10-ADM` item `Last update: ...` must be called `Released date: ...`
 * 260726piu_a fixed RENware portal access
