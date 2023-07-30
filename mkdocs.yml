@@ -1,6 +1,8 @@
 site_name: SDEVEN Software Development & Engineering Methodology
-site_author: 'Petre Iordanescu, RENware Software Systems'
+site_author: 'Petre Iordanescu, RENware Software Systems, petre.iordanescu@gmail.com''
 copyright: 'Copyright (c) RENware Software Systems'
+
+
 
 
 nav:
@@ -36,6 +38,8 @@ nav:
 
 
 
+
+
 markdown_extensions:
     - admonition
     - tables
@@ -52,8 +56,12 @@ markdown_extensions:
     - pymdownx.mark
     - pymdownx.tilde
     - def_list
+    - attr_list
+    - md_in_html
     - pymdownx.tasklist:
         custom_checkbox: true
+
+
 
 
 #NOTE required to render `mermaid` diagrams
