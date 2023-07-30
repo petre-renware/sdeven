@@ -28,12 +28,8 @@
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
-    - [ ] Appendix_B_DSGN_Content_Index.md
+    - [ ] Appendix_B_DSGN_Content_Index.md (see doc changed in `wk_crt_proposals/Appendix_B_DSGN_Content_Index.md`)
     - [ ] Appendix_C_Status_Report.md
-* @IMP_tbd... see docs changed in `wk_crt_proposals/` directory (`Appendix_B_DSGN_Content_Index.md`, `SDEVEN.90_RENBLU.md`) and align to SDEVEN 7 version
-
-* ...tbd_use_me_as_template... "gross" review & update of `#FIXME` + `mkdocs.yaml` entry + refactor code from `#FIXME` to `#FIXME` (including document filename)
-* ...tbd_use_me_as_template... 
 
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.9
 
@@ -41,12 +37,6 @@
 
 * wip...
 * 230730piu_e "gross" review & update of `95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
-
-
-
-
-
-
 
 
 
