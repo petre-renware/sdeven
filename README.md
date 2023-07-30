@@ -1,7 +1,7 @@
-***(c) 2021, 2022 RENware Software Systems***
+***(c) 2021 - 2023 RENware Software Systems***
 
 <small>*Document control:*<br>
-* last  update: 230712
+* last  update: 230723
 * last update by: piu (Petre Iordanescu)</small>
 
 ***
@@ -18,6 +18,9 @@
 This methodology is copyright (C) of RENware Software Systems (REN CONSULTING SOFT ACTIVITY SRL).
 
 
+
+
+
 # Content files
 
 The methodology **content (last published version)** is available in **`doc_src/`** directory. Content is available as raw source in *markdown* format following mainly [Material for MkDocs rules and formatters](https://squidfunk.github.io/mkdocs-material/reference/).
@@ -28,12 +31,19 @@ Content history its a place where previous content versions can be found. [For m
 
 
 
+
+
 # Versions and roadmap
 
 * Published version: -n/a-
-* Next scheduled version: 0.7 (wip)
-* Publishing directory: `/doc'
-* Publishing URL: **`https://petre-renware.github.io/sdeven/`**
+* Next scheduled version: 7.0 (wip)
+* Publishing directory:
+    * RELEASED version: branch `publishing`, directory `/docs'
+    * LAST work version: other branches, directory `static_portal`
+* Publishing URL: **`http://sdeven.renware.eu`** (through GitHub repository, branch `publishing`)
+
+
+
 
 
 # Some rules
@@ -50,16 +60,11 @@ Content history its a place where previous content versions can be found. [For m
 
 # SDEVEN portal
 
-SDEVEN has its own site in two versions:
+SDEVEN has its own site as *static site*. The site is built using *mkdocs*.
 
-* **static**, which means only classic static routes (equivalent of directories) which can be published as is using web servers like Apache or Nginx
-* **dynamic** (_THIS IS FUTURE INTENDED_), which is able to have forms and other kind of modern sites features; this need a WSGI web server to be published, like gunicorn or Apache
+Development and current / in progress work is located in `doc_src/` directory (command prompt to start: `npm start`).
 
-*Static site* is built using *Docusaurus*. 
-Development is located in `docusaurus.../` directory (command prompt to start: `npm start`).
 
-*Dynamic site* is built using *Flask* python framework. 
-Development is located in `sdeven_site/` directory (command prompt to start: `runserver.sh`).
 
 
 
@@ -72,25 +77,6 @@ Here are the basic rules:
 * directory `docs/` has content ONLY on branch `publishing`
 * it is used by `GitHub` to publish the site (from branch `publishing` directory `docs/`) and is upload when a public release is decideded
 
-
-
-## Organization
-
-Root of development of static site resides under `docusausurus_portal` as being *Docusaurus* installed directory.
-
-Built static site image (as deployable under a HTTP server) resides in an archive file: `static_site[_version].zip` located in repository root. 
-Name may contain ***content version*** to easly identify what content version resides inside.
-
-Also, in (together with) `content_xx`, usually will stay as archived the whole development directory for an easy restore as it was at deployment. 
-*Please treat this carefully as it possible for missing or unusable as being too old software version no longer runnable on current operating systems.*
-
-## Development organization
-
-The following directories and files are of interest and relevant for proposed usage & objectives:
-
-* **portal root** -  `docusaurus.config.js` portal / site visual configuration: titles, links, etc
-* **src** - `src/pages/index.js` is the main (landing) page; format `HTML` with `REACT` controls
-* **docs/SDEVEN_content** - the methodology content (copy or why not link !)
 
 
 

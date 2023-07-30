@@ -20,8 +20,7 @@
 ## 7.0 SDEVEN 7.0
 
 
-### 7.0.8-??? (wip... #FIXME set qualier)
-
+### 7.0.9-beta (#FIXME_set_date_when_closed_WIP...)
 
 =============[ START of #TODO-section ]=========================
 
@@ -33,19 +32,14 @@
     - [ ] Appendix_C_Status_Report.md
 * @IMP_tbd... see docs changed in `wk_crt_proposals/` directory (`Appendix_B_DSGN_Content_Index.md`, `SDEVEN.90_RENBLU.md`) and align to SDEVEN 7 version
 
-* ...tbd_use_me_as_template... "gross" review all APPENDIX files #NOTE except `Appendix_D_ROADMAP_template.md` (which is new entry in SDEEVN 7 format)
-
 * ...tbd_use_me_as_template... "gross" review & update of `#FIXME` + `mkdocs.yaml` entry + refactor code from `#FIXME` to `#FIXME` (including document filename)
+* ...tbd_use_me_as_template... "gross" review & update of `#FIXME 95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
 
-* -#TODO...next_one "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry + refactor code from `RENBLU` to `BLUP` (including document filename)
-* -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 0.7.8
-
+* -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.9
 
 =============[ END of #TODO-section ]=========================
 
-
-* wip... 230718piu_c is last used
-
+* wip...
 
 
 
@@ -55,6 +49,18 @@
 
 
 
+
+### 7.0.8-beta (230730 09:00)
+
+* 230730piu_d "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry
+* 230730piu_c set a CNAME file in `doc_src/` directory with domain name as `sdeven.renware.eu`
+* 230730piu_b install and include plugin `git-revision-date-localized` (`https://henrywhitaker3.github.io/mkdocs-material-dark-theme/plugins/revision-date/`)
+* 230730piu_a procedure `SDEVEN.10-ADM` item `Last update: ...` must be called `Released date: ...`
+* 260726piu_a fixed RENware portal access
+* 230723piu_b changed theme color to `teal` as new color for RENware internal resources
+* 230723piu_a changed top navbar **logo** to a SDEVEN logon instead of RENware logo
+* 230721piu_a upload `Scrum-Guide-2020-US.pdf` in directory `wk_crt_proposals/`
+* 230720piu_a fixed copyright text in `mkdocs.yml`
 
 
 
@@ -80,6 +86,8 @@
 * 230716piu_b add a ROADMAP file to log future improvements and intentions
 * 230716piu_a updated SDEVEN logo with minor version number resulting "7.0"
 * 230715piu_c to change version in all docs to 7.0.7 (search for `0.7.` and change to `7.0.`)
+
+
 
 
 ### 7.0.6-alpha (230626 12:00)
@@ -200,4 +208,3 @@
 
 
 
---- ooo ---

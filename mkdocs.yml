@@ -1,6 +1,6 @@
 site_name: SDEVEN Software Development & Engineering Methodology
 site_author: 'Petre Iordanescu, RENware Software Systems'
-copyright: 'Copyright () RENware Software Systems'
+copyright: 'Copyright (c) RENware Software Systems'
 
 
 nav:
@@ -21,7 +21,7 @@ nav:
         - Licenses & products / models (70-LIP): 'SDEVEN.70_LIP.md'
         - Code of Conduct. Ethics, Professional and Legal Issues (75-CCEP): 'SDEVEN.75_CCEP.md'
         - Conventions & principles (80-COPRI): 'SDEVEN.80_COPRI.md'
-        - Phases, Processes and Deliverables (#FIXME-code-here): 'SDEVEN.90_RENBLU.md'
+        - Phases, Processes and Deliverables (90-RENBLU): 'SDEVEN.90_RENBLU.md'
         - Confidentiality & Classification (#FIXME-code-here): 'SDEVEN.95_RENCOCL.md'
     - Methodology appendices:
         - Appendix (A) Sematic Versioning (SEMVER): 'Appendix_A_Semantic_versioning.md'
@@ -31,8 +31,8 @@ nav:
         - Appendix (Q) FAQ. Frequently Asked Questions (FAQ): 'Appendix_Q_faq.md'
     - About SDEVEN: 'About_SDEVEN.md'
     - License: 'LICENSE.md'
-    - RENware Software Systems company: 'http://renware.eu'
-    - Full SDEVEN Manual (PDF): 'pdfs/print_page.html/print_page.pdf'
+    - RENware Software Systems company: 'http://www.renware.eu'
+    - Complete SDEVEN Manual (PDF): 'pdfs/print_page.html/print_page.pdf'
 
 
 
@@ -67,10 +67,11 @@ extra_javascript:
 plugins:
     - search
     - include-markdown
-    # - pdf-export # this version does not render mermaid in PDF docs
-    - print-site: #NOTE: put print-site to the bottom of the plugins that may might alter your site navigation (affect order of sections in generated HTML)
+    - git-revision-date-localized
+    # - pdf-export #NOTE DO NOT USE this as does not render mermaid in PDF docs
+    - print-site: #NOTE put print-site to the bottom of the plugins that may might alter your site navigation (affect order of sections in generated HTML)
         add_to_navigation: true
-        print_page_title: 'Full SDEVEN Manual'
+        print_page_title: 'Complete SDEVEN Manual'
         add_full_urls: true
         add_table_of_contents: true
     - pdf-with-js:
@@ -80,7 +81,7 @@ plugins:
 
 #NOTE provide material theme
 theme:
-    logo: pictures/REN_stamp_logo_transparent.png
+    logo: pictures/SDEVEN_logo.png #NOTE_REN_picture pictures/REN_stamp_logo_transparent.png
     name: material
     features:
         # - navigation.tabs # left navigation side bar, all level 1 will be shown as top navigation bar
@@ -88,7 +89,7 @@ theme:
         - navigation.tabs.sticky
         - navigation.path
     palette:
-        primary: light blue # see https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/ for other color options
+        primary: teal # see https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/ for other color options
     icon:
         admonition:
             note: fontawesome/solid/note-sticky
