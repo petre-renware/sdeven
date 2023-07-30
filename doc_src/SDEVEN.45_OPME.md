@@ -23,7 +23,7 @@ This procedure will treat software development production and planning meetings.
 ![wip_under_construction](pictures/under_maintenance.png)
 
 
--#TODO: Subiectele OPME de acoperit (din evenimente SCRUM - vezi doc `_TEMP_SCRATCH_area/Scrum-Guide-2020-US.pdf` din )
+-#TODO: Subiectele OPME de acoperit (din evenimente SCRUM - ref doc `wk_crt_proposals/Scrum-Guide-2020-US.pdf` )
 
 * Scrum Events
 	* The sprint
