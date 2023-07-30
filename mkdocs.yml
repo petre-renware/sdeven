@@ -32,7 +32,7 @@ nav:
     - About SDEVEN: 'About_SDEVEN.md'
     - License: 'LICENSE.md'
     - RENware Software Systems company: 'http://www.renware.eu'
-    - Full SDEVEN Manual (PDF): 'pdfs/print_page.html/print_page.pdf'
+    - Complete SDEVEN Manual (PDF): 'pdfs/print_page.html/print_page.pdf'
 
 
 
@@ -67,10 +67,11 @@ extra_javascript:
 plugins:
     - search
     - include-markdown
-    # - pdf-export # this version does not render mermaid in PDF docs
-    - print-site: #NOTE: put print-site to the bottom of the plugins that may might alter your site navigation (affect order of sections in generated HTML)
+    - git-revision-date-localized
+    # - pdf-export #NOTE DO NOT USE this as does not render mermaid in PDF docs
+    - print-site: #NOTE put print-site to the bottom of the plugins that may might alter your site navigation (affect order of sections in generated HTML)
         add_to_navigation: true
-        print_page_title: 'Full SDEVEN Manual'
+        print_page_title: 'Complete SDEVEN Manual'
         add_full_urls: true
         add_table_of_contents: true
     - pdf-with-js:

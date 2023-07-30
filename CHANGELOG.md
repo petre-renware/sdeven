@@ -25,13 +25,6 @@
 
 =============[ START of #TODO-section ]=========================
 
-* tbd... use this in `mkdocs.yml` to integrate right nav bar TOC in left nav bar (#NOTE_THINK_TWICE_#NOTE pls check if visibility is affected when all menu is in left nav (NOT lvl 1 on top - on `www.renware.eu` is ok):
-```
-theme:
-  features:
-    - toc.integrate
-```
-
 * tbd... RMAP.001 - OPME
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
@@ -46,9 +39,6 @@ theme:
 
 * tbd...nxt... "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry + refactor code from `RENBLU` to `BLUP` (including document filename)
 
-* tbd... install and include plugin `git-revision-date-localized` (`https://henrywhitaker3.github.io/mkdocs-material-dark-theme/plugins/revision-date/`)
-* tbd... 
-
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 0.7.8
 
 
@@ -57,6 +47,7 @@ theme:
 
 * wip...
 
+* 230730piu_b install and include plugin `git-revision-date-localized` (`https://henrywhitaker3.github.io/mkdocs-material-dark-theme/plugins/revision-date/`)
 * 230730piu_a procedure `SDEVEN.10-ADM` item `Last update: ...` must be called `Released date: ...`
 * 260726piu_a fixed RENware portal access
 * 230723piu_b changed theme color to `teal` as new color for RENware internal resources
