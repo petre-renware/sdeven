@@ -20,7 +20,7 @@
 ## 7.0 SDEVEN 7.0
 
 
-### 7.0.8-??? (wip... #FIXME set qualier)
+### 7.0.8-beta (#FIXME_set_date_when_closed_WIP...)
 
 
 =============[ START of #TODO-section ]=========================
@@ -47,7 +47,7 @@ theme:
 * tbd...nxt... "gross" review & update of `90.RENBLU` + `mkdocs.yaml` entry + refactor code from `RENBLU` to `BLUP` (including document filename)
 
 * tbd... install and include plugin `git-revision-date-localized` (`https://henrywhitaker3.github.io/mkdocs-material-dark-theme/plugins/revision-date/`)
-* tbd... procedure `SDEVEN.10-ADM` item `Last update: ...` must be called `Released date: ...`
+* tbd... 
 
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 0.7.8
 
@@ -57,6 +57,7 @@ theme:
 
 * wip...
 
+* 230730piu_a procedure `SDEVEN.10-ADM` item `Last update: ...` must be called `Released date: ...`
 * 260726piu_a fixed RENware portal access
 * 230723piu_b changed theme color to `teal` as new color for RENware internal resources
 * 230723piu_a changed top navbar **logo** to a SDEVEN logon instead of RENware logo
