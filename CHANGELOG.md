@@ -36,6 +36,7 @@
 =============[ END of #TODO-section ]=========================
 
 * wip...
+* 230730piu_f updated procedure `SDEVEN.45_OPME.md` ref release version, date and where to serach for information
 * 230730piu_e "gross" review & update of `95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
 
 
