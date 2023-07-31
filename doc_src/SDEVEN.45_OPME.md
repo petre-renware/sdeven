@@ -46,7 +46,6 @@ These properties determine the nature of *software development approach* which, 
 
 
 
-
 ## Type of meetings
 
 The **OPME** meetings can be first classified using 2 perspectives:
