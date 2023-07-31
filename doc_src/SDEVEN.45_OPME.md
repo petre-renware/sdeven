@@ -76,7 +76,7 @@ This meeting has goal to plan the start and execution of a `sprint` which will c
 !!! warning "`sprintPLN` CONSTRAINTS"
     A `sprintPLN` must take into account the following *constraint assumptions* during its execution:
     
-    * no changes will be made, changes that would endanger the `sprintOBJ`
+    * no changes will be made, especially changes that would endanger the `sprintOBJ`
     * established quality (factors) will not decrease
     * the `sprint` corresponding *CHANGELOG* is refined as needed
     * scope may be clarified and renegotiated with the Product Owner / Product Manager as more is useful *but having in mind first assumption*
