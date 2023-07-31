@@ -44,16 +44,17 @@ The **OPME** meetings can be basically classified from 2 perspectives:
 
 The **OPME** meetings are highly thought out to fit into the previous classifications WITHOUT CREATING mixes within each class or at least MINIMIZING the mixes.
 
-In this way, types of meetings can be held: 
 
-
-* tbd... (Agile equivalent event: The sprint)
-* tbd... (Agile equivalent event: Sprint Planning)
-* tbd... (Agile equivalent event: Daily Scrum)
-* tbd... (Agile equivalent event: Scrum Review(
-* tbd... (Agile equivalent event: Scrum Retrospective)
-* ...
-
+!!! note "OPME Meetings"
+    The following types of meetings can be held: 
+    
+    * tbd... (Agile equivalent event: The sprint)
+    * tbd... (Agile equivalent event: Sprint Planning)
+    * tbd... (Agile equivalent event: Daily Scrum)
+    * tbd... (Agile equivalent event: Scrum Review(
+    * tbd... (Agile equivalent event: Scrum Retrospective)
+    * ...
+    
 
 
 
