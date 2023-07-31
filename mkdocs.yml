@@ -13,7 +13,7 @@ nav:
         - Practices (20-RENPRA): 'SDEVEN.20_RENPRA.md'
         - Versioning (30-RENVER): SDEVEN.30_RENVER.md
         - Branches (40-BRAN): 'SDEVEN.40_BRAN.md'
-        - Operational Meetings(45-OPME) ...incoming...: 'SDEVEN.45_OPME.md' #FIXME update "incoming..." text `RMAP.001 - OPME` implementation
+        - Operational Meetings(45-OPME): 'SDEVEN.45_OPME.md'
         - Change Management (50-CHGMNG): 'SDEVEN.50_CHGMNG.md'
         - Development and changes logging (55-TRACE): 'SDEVEN.55_TRACE.md'
         - Release management (60-RELM): 'SDEVEN.60_RELM.md'
