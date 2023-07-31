@@ -13,13 +13,12 @@ Release date: 230731
 
 ## Preamble
 
-This procedure will treat software development production and planning meetings.
+This procedure treat production and planning meetings that take place in software development process.
 
 !!! info "Agile SCRUM compliance"
     Procedure follow Agile SCRUM methodology recommendations for meeting types.
 
-... planned on roadmap for soon upcoming ...
-
+<!-- #FIXME drop when finished -->
 ![wip_under_construction](pictures/under_maintenance.png){ width="500" }
 
 
