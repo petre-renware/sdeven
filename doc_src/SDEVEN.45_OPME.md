@@ -11,27 +11,74 @@ Release date: 230731
 
 [TOC]
 
+
+<!-- #FIXME drop when finished -->
+![wip_under_construction](pictures/under_maintenance.png){ width="500" }
+
+
 ## Preamble
 
-This procedure will treat software development production and planning meetings.
+This procedure treat production and planning meetings that take place in software development process.
 
 !!! info "Agile SCRUM compliance"
     Procedure follow Agile SCRUM methodology recommendations for meeting types.
 
-... planned on roadmap for soon upcoming ...
+From this perspective the meetings has two important sessions (aka discussion pannels, sections).
 
-![wip_under_construction](pictures/under_maintenance.png){ width="500" }
+These sessions should be clearly marked on meeting agenda, meaning should be clear from agenda level what is the *principal session objective*:
 
+* **planning** for next with **`PLAN`** _code-name_
+* **review** of what was done with **`REVW`** _code-name_
 
--#TODO: Subiectele OPME de acoperit (din evenimente SCRUM - ref doc `wk_crt_proposals/Scrum-Guide-2020-US.pdf` )
-
-* Scrum Events
-	* The sprint
-	* Sprint Planning
-	* Daily Scrum
-	* Scrum Review
-	* Scrum Retrospective
+Of course, in each session inherently can happen things of both types, but *the principal session objective* should be just one of them.
 
 
+
+
+## Type of meetings
+
+The **OPME** meetings can be basically classified from 2 perspectives:
+
+* *objective* (**`OBJ`** code-name) that was shortly discussed in previously section and can be a mix but with clear sections (discussion pannels)
+* *frequency* (**`FRQ`** code-name) of repetition and *duration* (**`DUR`** code-name) of each one
+
+The **OPME** meetings are highly thought out to fit into the previous classifications WITHOUT CREATING mixes within each class or at least MINIMIZING the mixes.
+
+
+!!! note "OPME Meetings"
+    The following types of meetings can be held:
+    * tbd... (Agile equivalent event: The sprint)
+    * tbd... (Agile equivalent event: Sprint Planning)
+    * tbd... (Agile equivalent event: Daily Scrum)
+    * tbd... (Agile equivalent event: Scrum Review(
+    * tbd... (Agile equivalent event: Scrum Retrospective)
+    * ...
+    
+
+
+
+## -TODO ...meeting type 1...
+
+tbd...
+
+## -TODO ...sections for rest of types 2..5...
+
+tbd...
+
+
+
+
+
+
+
+
+
+## Notes and abbreviations used in procedure
+
+* `PLAN` ...#TODO explain...
+* `REVW` ...#TODO explain...
+* `OBJ` ...#TODO explain...
+* `FRQ` ...#TODO explain...
+* `DUR` ...#TODO explain...
 
 

@@ -17,14 +17,11 @@
 * -#NOTE ____ PUBLISHING IS MADE FROM `PUBLISHING` BRANCH, so wheen publish checkout it or upload from git
 </small>
 
+
 ## 7.0 SDEVEN 7.0
 
+### #TODO PLAN section =========================
 
-### 7.0.9-beta (#FIXME_set_date_when_closed_WIP...)
-
-=============[ START of #TODO-section ]=========================
-
-* tbd... RMAP.001 - OPME
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
@@ -35,7 +32,11 @@
 
 =============[ END of #TODO-section ]=========================
 
+
+### 7.0.9-beta RMAP.001 - OPME (#FIXME_set_date_when_closed_WIP...)
+
 * wip...
+* 230731piu_h made a dradt skeleton with TOC and todos, notes, ideans for each section of `SDEVEN.45_OPME.md` - needs refinement of each meeting types
 * 230730piu_g updated `mkdocs.yml` to accomodate Markdown in HTML and to set `HTML attributes`
 * 230730piu_f updated procedure `SDEVEN.45_OPME.md` ref release version, date and where to serach for information
 * 230730piu_e "gross" review & update of `95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
