@@ -25,7 +25,7 @@ This procedure treat production and planning meetings that take place in softwar
 
 From this perspective the meetings has two important sessions (aka discussion pannels, sections).
 
-These sessions should clearly marked on meeting agenda, meaning should be clear from agenda level what is the *principal session objective*:
+These sessions should be clearly marked on meeting agenda, meaning should be clear from agenda level what is the *principal session objective*:
 
 * **planning** for next with **`PLAN`** _code-name_ typically used
 * **review** of what was done with **`REVW`** _code-name_ typically used
