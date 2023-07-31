@@ -40,9 +40,12 @@
 ### 7.0.9-beta RMAP.001 - OPME (#FIXME_set_date_when_closed_WIP...)
 
 * wip...
+* tbd... `SDEVEN.45_OPME.md` described OPME `devOPER` meeting
+* tbd... `SDEVEN.45_OPME.md` described OPME `devREVW` meeting
+* tbd... `SDEVEN.45_OPME.md` described OPME `prodREVW` meeting
 
-* wip... 230731piu_j
 
+* 230731piu_j `SDEVEN.45_OPME.md` described OPME `devPLAN` meeting
 * 230731piu_i `SDEVEN.45_OPME.md` described `sprint` process / event and classified meetings + prepared place fo detailed description + updated `mkdocs.yml` for OPM name (dropped incoming acronym)
 * 230731piu_h made a dradt skeleton with TOC and todos, notes, ideans for each section of `SDEVEN.45_OPME.md` - needs refinement of each meeting types
 * 230730piu_g updated `mkdocs.yml` to accomodate Markdown in HTML and to set `HTML attributes`

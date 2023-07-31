@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.9<br>
-Release date: 230731
+Release date: 230801
 
 ***
 
@@ -70,7 +70,20 @@ The **OPME** meetings are highly thought out to fit into the previous classifica
 
 ## `devPLAN` development planning
 
--#TODO_tbd...
+This meeting has goal to plan the start and execution of a `sprint` which will call **`sprintPLN`** in next. Also should note that a (any) `sprint` has a specific / principal objective (keep ONE to make sure the sprint is sprint !!!) which will be called **`sprintOBJ`** in next.
+
+
+!!! warning "`sprintPLN` CONSTRAINTS"
+    A `sprintPLAN` must take into account the following *constraint assumptions* during its execution:
+    
+    * no changes will be made, especially changes that would endanger the `sprintOBJ`
+    * established quality (factors) will not decrease
+    * the `sprint` corresponding *CHANGELOG* is refined as needed
+    * scope may be clarified and renegotiated with the Product Owner / Product Manager as more is useful *but having in mind first assumption*
+
+Otherwise, a `sprintPLAN` is absolutely similar to any other software development plan regarding an issue that has *a clear and completely defined finality*.
+
+All the good practices and  technical rules in software engineering, for example regarding maintainability, *must be considered* as in any software development plan made with maximum responsibility and care in observing the rules of software engineering.
 
 
 
