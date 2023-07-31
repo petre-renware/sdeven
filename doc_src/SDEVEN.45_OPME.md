@@ -74,7 +74,7 @@ This meeting has goal to plan the start and execution of a `sprint` which will c
 
 
 !!! warning "`sprintPLN` CONSTRAINTS"
-    A `sprintPLN` must take into account tge following *constraints*:
+    A `sprintPLN` must take into account the following *constraint assumptions* during its execution:
     
     * No changes are made that would endanger the `sprintOBJ`
     * Quality does not decrease
