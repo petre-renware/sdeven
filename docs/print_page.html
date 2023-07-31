@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <meta name="author" content="Petre Iordanescu, RENware Software Systems">
+        <meta name="author" content="Petre Iordanescu, RENware Software Systems, petre.iordanescu@gmail.com">
       
       
       
@@ -363,7 +363,7 @@
   
     <li class="md-nav__item">
       <a href="SDEVEN.45_OPME.html" class="md-nav__link">
-        Operational Meetings(45-OPME) ...incoming...
+        Operational Meetings(45-OPME)
       </a>
     </li>
   
@@ -782,7 +782,7 @@
         
           <li class="md-nav__item">
   <a href="#sdeven.45_opme" class="md-nav__link">
-    7. Operational Meetings(45-OPME) ...incoming...
+    7. Operational Meetings(45-OPME)
   </a>
   
 </li>
@@ -1015,7 +1015,7 @@
         
           <li class="md-nav__item">
   <a href="#sdeven.45_opme" class="md-nav__link">
-    7. Operational Meetings(45-OPME) ...incoming...
+    7. Operational Meetings(45-OPME)
   </a>
   
 </li>
@@ -1747,38 +1747,123 @@ gitGraph
 </li>
 </ol>
 </div></section><section class="print-page" id="sdeven.45_opme"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
-<p>Version: 7.0.7<br>
-Release date: 230717</p>
+<p>Version: 7.0.9<br>
+Release date: 230801</p>
 <hr />
+<!-- #FIXME drop when finished -->
+<p><img alt="wip_under_construction" src="pictures/under_maintenance.png" width="500" /></p>
 <h1 id="sdeven.45_opme-operational-meetings-sdeven45-opme">Operational Meetings (SDEVEN.45-OPME)</h1>
 <p><strong>Table of Content</strong></p>
 <div class="toc">
 <ul>
 <li><a href="#sdeven.45_opme-operational-meetings-sdeven45-opme">Operational Meetings (SDEVEN.45-OPME)</a><ul>
-<li><a href="#sdeven.45_opme-preamble">Preamble</a></li>
+<li><a href="#sdeven.45_opme-preamble">Preamble</a><ul>
+<li><a href="#sdeven.45_opme-the-sprint-event-and-process">The sprint event and process</a></li>
+</ul>
+</li>
+<li><a href="#sdeven.45_opme-type-of-meetings">Type of meetings</a></li>
+<li><a href="#sdeven.45_opme-devplan-development-planning">devPLAN development planning</a></li>
+<li><a href="#sdeven.45_opme-devoper-operational-schedule">devOPER operational schedule</a></li>
+<li><a href="#sdeven.45_opme-devrevw-operational-review">devREVW operational review</a></li>
+<li><a href="#sdeven.45_opme-prodrevw-product-goals-review">prodREVW product goals review</a></li>
+<li><a href="#sdeven.45_opme-notes-and-abbreviations-used-in-procedure">Notes and abbreviations used in procedure</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <h2 id="sdeven.45_opme-preamble">Preamble</h2>
-<p>This procedure will treat software development production and planning meetings.</p>
+<p>This procedure treat production and planning meetings that take place in software development process.</p>
 <div class="admonition info">
 <p class="admonition-title">Agile SCRUM compliance</p>
 <p>Procedure follow Agile SCRUM methodology recommendations for meeting types.</p>
 </div>
-<p>... planned on roadmap for soon upcoming ...</p>
-<p><img alt="wip_under_construction" src="pictures/under_maintenance.png" /></p>
-<p>-#TODO: Subiectele OPME de acoperit (din evenimente SCRUM - vezi doc <code>_TEMP_SCRATCH_area/Scrum-Guide-2020-US.pdf</code> din )</p>
+<p>From this perspective the meetings has two important sessions (aka discussion panels, sections). These sessions should be clearly marked on meeting agenda, meaning should be clear from agenda level what is the <em>principal session objective</em>:</p>
 <ul>
-<li>Scrum Events<ul>
-<li>The sprint</li>
-<li>Sprint Planning</li>
-<li>Daily Scrum</li>
-<li>Scrum Review</li>
-<li>Scrum Retrospective</li>
+<li><strong>planning</strong> for next with <strong><code>PLAN</code></strong> <em>code-name</em><sup id="fnref:PLAN"><a class="footnote-ref" href="#sdeven.45_opme-fn:PLAN">1</a></sup></li>
+<li><strong>review</strong> of what was done with <strong><code>REVW</code></strong> <em>code-name</em><sup id="fnref:REVW"><a class="footnote-ref" href="#sdeven.45_opme-fn:REVW">2</a></sup></li>
 </ul>
+<p>Of course, in each session inherently can happen things of both types, but <em>the principal session objective</em> should be just one of them.</p>
+<h3 id="sdeven.45_opme-the-sprint-event-and-process">The <code>sprint</code> event and process</h3>
+<p>Before discussing <em>OPME meetings</em> a brief description of <em><code>sprint</code></em> concept could be necessary.</p>
+<p>The <strong><code>sprint</code></strong> term describe the process (named event in "<em>Scrum Guide...</em>") where ideas, things are put in practice. It is a normal <code>software development</code> process like any other one and has the following properties.</p>
+<div class="admonition tip">
+<p class="admonition-title">sprint properties</p>
+<p>It is a fixed length event of one month or less to create consistency. A new <code>sprint</code> starts immediately after the conclusion of the previous <code>sprint</code>. All the work necessary to achieve the goals / objectives including its <em>planning</em>, <em>review</em>, <em>execution</em>, etc happen within <code>sprints</code>.</p>
+</div>
+<p>These properties determine the nature of <em>software development approach</em> which, by using <code>sprints</code> becomes an <em>iterative</em> and <em>evolutionary (spiral model)</em> one.</p>
+<h2 id="sdeven.45_opme-type-of-meetings">Type of meetings</h2>
+<p>The <strong>OPME</strong> meetings can be first classified using 2 perspectives:</p>
+<ul>
+<li><em>objective</em> (<strong><code>OBJ</code></strong> <em>code-name</em><sup id="fnref:OBJ"><a class="footnote-ref" href="#sdeven.45_opme-fn:OBJ">3</a></sup>) that was shortly discussed in previously section and can be a mix but with clear sections (discussion pannels)</li>
+<li><em>frequency</em> (<strong><code>FRQ</code></strong> <em>code-name</em><sup id="fnref:FRQ"><a class="footnote-ref" href="#sdeven.45_opme-fn:FRQ">4</a></sup>) of repetition and <em>duration</em> (<strong><code>DUR</code></strong> <em>code-name</em><sup id="fnref:DUR"><a class="footnote-ref" href="#sdeven.45_opme-fn:DUR">5</a></sup>) of each one</li>
+</ul>
+<p>The <strong>OPME</strong> meetings are highly thought out to fit into the previous classifications WITHOUT CREATING mixes within each class or at least MINIMIZING the mixes.</p>
+<div class="admonition note">
+<p class="admonition-title">OPME Meetings</p>
+<p>The following types of meetings can be held:</p>
+<ul>
+<li><strong>development planning</strong> (<strong><code>devPLAN</code></strong> <em>code-name</em>) meeting (Agile SCRUM equivalent event: Sprint Planning)</li>
+<li><strong>operational schedule</strong> (<strong><code>devOPER</code></strong> <em>code-name</em>) meeting (Agile SCRUM equivalent event: Daily Scrum)</li>
+<li><strong>operational review</strong> (<strong><code>devREVW</code></strong> <em>code-name</em>) meeting (Agile SCRUM equivalent event: Scrum Review)</li>
+<li><strong>product goals review</strong> (<strong><code>prodREVW</code></strong> <em>code-name</em>) meeting (Agile SCRUM equivalent event: Scrum Retrospective)</li>
+</ul>
+</div>
+<h2 id="sdeven.45_opme-devplan-development-planning"><code>devPLAN</code> development planning</h2>
+<p>This meeting has goal to plan the start and execution of a <code>sprint</code> which will call <strong><code>sprintPLN</code></strong> in next. Also should note that a (any) <code>sprint</code> has a specific / principal objective (keep ONE to make sure the sprint is sprint !!!) which will be called <strong><code>sprintOBJ</code></strong> in next.</p>
+<div class="admonition warning">
+<p class="admonition-title"><code>sprintPLN</code> CONSTRAINTS</p>
+<p>A <code>sprintPLAN</code> must take into account the following <em>constraint assumptions</em> during its execution:</p>
+<ul>
+<li>no changes will be made, especially changes that would endanger the <code>sprintOBJ</code></li>
+<li>established quality (factors) will not decrease</li>
+<li>the <code>sprint</code> corresponding <em>CHANGELOG</em> is refined as needed</li>
+<li>scope may be clarified and renegotiated with the Product Owner / Product Manager as more is useful <em>but having in mind first assumption</em></li>
+</ul>
+</div>
+<p>Otherwise, a <code>sprintPLAN</code> is absolutely similar to any other software development plan regarding an issue that has <em>a clear and completely defined finality</em>.</p>
+<p>All the good practices and  technical rules in software engineering, for example regarding maintainability, <em>must be considered</em> as in any software development plan made with maximum responsibility and care in observing the rules of software engineering.</p>
+<h2 id="sdeven.45_opme-devoper-operational-schedule"><code>devOPER</code> operational schedule</h2>
+<p>-#TODO_tbd... #NOTE review this section -------------- from HERE</p>
+<p>The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.</p>
+<p>The Daily Scrum is a 15-minute event for the Developers of the Scrum Team. To reduce complexity, it is held at the same time and place every working day of the Sprint. If the Product Owner or Scrum Master are actively working on items in the Sprint Backlog, they participate as Developers.</p>
+<p>The Developers can select whatever structure and techniques they want, as long as their Daily Scrum focuses on progress toward the Sprint Goal and produces an actionable plan for the next day of work. This creates focus and improves self-management.</p>
+<p>Daily Scrums improve communications, identify impediments, promote quick decision-making, and consequently eliminate the need for other meetings.</p>
+<p>The Daily Scrum is not the only time Developers are allowed to adjust their plan. They often meet throughout the day for more detailed discussions about adapting or re-planning the rest of the Sprint’s work.</p>
+<p>-#NOTE ------------------------------------------------ up HERE</p>
+<h2 id="sdeven.45_opme-devrevw-operational-review"><code>devREVW</code> operational review</h2>
+<p>-#TODO_tbd... #NOTE review this section -------------- from HERE</p>
+<p>The purpose of the Sprint Review is to inspect the outcome of the Sprint and determine future adaptations. The Scrum Team presents the results of their work to key stakeholders and progress toward the Product Goal is discussed.</p>
+<p>During the event, the Scrum Team and stakeholders review what was accomplished in the Sprint and what has changed in their environment. Based on this information, attendees collaborate on what to do next. The Product Backlog may also be adjusted to meet new opportunities. The Sprint Review is a working session and the Scrum Team should avoid limiting it to a presentation.</p>
+<p>The Sprint Review is the second to last event of the Sprint and is timeboxed to a maximum of four hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.</p>
+<p>-#NOTE ------------------------------------------------ up HERE</p>
+<h2 id="sdeven.45_opme-prodrevw-product-goals-review"><code>prodREVW</code> product goals review</h2>
+<p>-#TODO_tbd... #NOTE review this section -------------- from HERE</p>
+<p>The purpose of the Sprint Retrospective is to plan ways to increase quality and effectiveness.</p>
+<p>The Scrum Team inspects how the last Sprint went with regards to individuals, interactions, processes, tools, and their Definition of Done. Inspected elements often vary with the domain of work. Assumptions that led them astray are identified and their origins explored. The Scrum Team discusses what went well during the Sprint, what problems it encountered, and how those problems were (or were not) solved.</p>
+<p>The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint.</p>
+<p>The Sprint Retrospective concludes the Sprint. It is timeboxed to a maximum of three hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.</p>
+<p>-#NOTE ------------------------------------------------ up HERE</p>
+<h2 id="sdeven.45_opme-notes-and-abbreviations-used-in-procedure">Notes and abbreviations used in procedure</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="sdeven.45_opme-fn:PLAN">
+<p><code>PLAN</code> describe a type of OPME meeting where <em>planning is the principal objective</em>&#160;<a class="footnote-backref" href="#sdeven.45_opme-fnref:PLAN" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
-</ul></section><section class="print-page" id="sdeven.50_chgmng"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
+<li id="sdeven.45_opme-fn:REVW">
+<p><code>REVW</code> describe a type of OPME meeting where <em>review and actual situation analysis are the principal objectives</em>&#160;<a class="footnote-backref" href="#sdeven.45_opme-fnref:REVW" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="sdeven.45_opme-fn:OBJ">
+<p><code>OBJ</code> acronym used to show the <em>principal objective</em> of a OPME meeting - can be <code>REVW</code> or <code>PLAN</code>&#160;<a class="footnote-backref" href="#sdeven.45_opme-fnref:OBJ" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="sdeven.45_opme-fn:FRQ">
+<p><code>FRQ</code> acronym used to show the <em>frequency</em> of an OPME meeting&#160;<a class="footnote-backref" href="#sdeven.45_opme-fnref:FRQ" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="sdeven.45_opme-fn:DUR">
+<p><code>DUR</code> acronym used to show the <em>duration</em> of an OPME meeting&#160;<a class="footnote-backref" href="#sdeven.45_opme-fnref:DUR" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></section><section class="print-page" id="sdeven.50_chgmng"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
 <p>Version: 7.0.7<br>
 Release date: 230716</p>
 <hr />
