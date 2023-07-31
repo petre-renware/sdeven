@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.9<br>
-Release date: 230731
+Release date: 230801
 
 ***
 
@@ -69,6 +69,16 @@ The **OPME** meetings are highly thought out to fit into the previous classifica
 
 
 ## `devPLAN` development planning
+
+This meeting has goal to plan the start and execution of a `sprint` which will call **`sprintPLN`** in next.
+
+
+!!! warning "`sprintPLN` CONSTRAINTS"
+    A `sprintPLN` must take into account tge following *constraints*:
+    
+    * 
+
+
 
 -#TODO_tbd...
 
