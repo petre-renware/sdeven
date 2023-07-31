@@ -44,9 +44,9 @@
 * wip... 230731piu_j
 
 * 230731piu_i `SDEVEN.45_OPME.md` described `sprint` process / event and classified meetings + prepared place fo detailed description + updated `mkdocs.yml` for OPM name (dropped incoming acronym)
-* 230731piu_h made a dradt skeleton with TOC and todos, notes, ideans for each section of `SDEVEN.45_OPME.md` - needs refinement of each meeting types
-* 230730piu_g updated `mkdocs.yml` to accomodate Markdown in HTML and to set `HTML attributes`
-* 230730piu_f updated procedure `SDEVEN.45_OPME.md` ref release version, date and where to serach for information
+* 230731piu_h made a draft skeleton with TOC and todo-s, notes, ideas for each section of `SDEVEN.45_OPME.md` - needs refinement of each meeting types
+* 230730piu_g updated `mkdocs.yml` to accommodate Markdown in HTML and to set `HTML attributes`
+* 230730piu_f updated procedure `SDEVEN.45_OPME.md` ref release version, date and where to search for information
 * 230730piu_e "gross" review & update of `95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
 
 
