@@ -35,7 +35,6 @@ Of course, in each session inherently can happen things of both types, but *the 
 
 
 
-
 ## Type of meetings
 
 The **OPME** meetings can be basically classified from 2 perspectives:
@@ -43,23 +42,21 @@ The **OPME** meetings can be basically classified from 2 perspectives:
 * *objective* that was shortly discussed in previously section and can be a mix but with clear sections (discussion pannels)
 * *frequency* of repetition and *duration* of each one
 
-
 The **OPME** meetings are highly thought out to fit into the previous classifications WITHOUT CREATING mixes within each class or at least MINIMIZING the mixes.
 
+In this way, types of meetings can be held: 
+
+
+* tbd... (Agile equivalent event: The sprint)
+* tbd... (Agile equivalent event: Sprint Planning)
+* tbd... (Agile equivalent event: Daily Scrum)
+* tbd... (Agile equivalent event: Scrum Review(
+* tbd... (Agile equivalent event: Scrum Retrospective)
+* ...
 
 
 
 
-
-
--#TODO: Subiectele OPME de acoperit (din evenimente SCRUM - ref doc `wk_crt_proposals/Scrum-Guide-2020-US.pdf` )
-
-* Scrum Events
-	* The sprint
-	* Sprint Planning
-	* Daily Scrum
-	* Scrum Review
-	* Scrum Retrospective
 
 
 
