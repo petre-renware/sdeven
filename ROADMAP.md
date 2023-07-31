@@ -29,8 +29,8 @@
     * [x] procedure should follow Agile SCRUM methodology for Daily SCRUM and other meeting types
 * **Recommendations:**
     * [x] procedure has code `45.OPME` is located in `SDEVEN.45_OPME.md` and __document must be updated__
-    * procedure will follow all templates that are in use at its implementation
-    * `SDEVEN.45_OPME.md` has some useful comments ref SCRUM Events as subjects to cover in procedure
+    * [x] procedure will follow all templates that are in use at its implementation
+    * [ ] `SDEVEN.45_OPME.md` has some useful comments ref SCRUM Events as subjects to cover in procedure
 * **Known dependencies:** none
 * **Assigned to:** Petre Iordanescu (piu)
 * **References & notes:**
