@@ -36,7 +36,7 @@
 ### 7.0.9-beta RMAP.001 - OPME (#FIXME_set_date_when_closed_WIP...)
 
 * wip...
-* 230731piu_h made a skeleton with TOC and todos, notes, ideans for each section 
+* 230731piu_h made a skeleton with TOC and todos, notes, ideans for each section of `SDEVEN.45_OPME.md`
 * 230730piu_g updated `mkdocs.yml` to accomodate Markdown in HTML and to set `HTML attributes`
 * 230730piu_f updated procedure `SDEVEN.45_OPME.md` ref release version, date and where to serach for information
 * 230730piu_e "gross" review & update of `95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
