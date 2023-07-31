@@ -70,7 +70,7 @@ The **OPME** meetings are highly thought out to fit into the previous classifica
 
 ## `devPLAN` development planning
 
-This meeting has goal to plan the start and execution of a `sprint` which will call **`sprintPLN`** in next. Also should note that a (any) `sprint` has a specific / principal objective (keep ONE to make sure the sprint is sprint !!!) which will be called `sprintOBJ` in next.
+This meeting has goal to plan the start and execution of a `sprint` which will call **`sprintPLN`** in next. Also should note that a (any) `sprint` has a specific / principal objective (keep ONE to make sure the sprint is sprint !!!) which will be called **`sprintOBJ`** in next.
 
 
 !!! warning "`sprintPLN` CONSTRAINTS"
