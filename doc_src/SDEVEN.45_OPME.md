@@ -36,6 +36,19 @@ Of course, in each session inherently can happen things of both types, but *the 
 
 
 
+## Type of meetings
+
+The **OPME** meetings can be basically classified from 2 perspectives:
+
+* *objective* that was shortly discussed in previously section and can be a mix but with clear sections (discussion pannels)
+* *frequency* of repetition and *duration* of each one
+
+
+The **OPME** meetings are highly thought out to fit into the previous classifications WITHOUT CREATING mixes within each class or at least MINIMIZING the mixes.
+
+
+
+
 
 
 
