@@ -22,7 +22,7 @@
 
 * **Objective:** new procedure for Operational Meetings (45-OPME)
 * **Recorded at:** 230716
-* **Updated**: wip@230731
+* **Updated at**: wip@230731
 * **Recorded by:** Petre Iordanescu (piu)
 * **Detailed  description:**
     * [x] this procedure will treat software development production and planning meetings
