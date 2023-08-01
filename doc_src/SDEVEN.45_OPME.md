@@ -94,19 +94,9 @@ All the good practices and  technical rules in software engineering, for example
 
 ## `devOPER` operational schedule
 
--#TODO_tbd... #NOTE review this section -------------- from HERE
+The purpose of the **`devOPER`** is to inspect progress toward the **`sprintOBJ`** and adapt the specifications (initial ROADMAP information) as necessary, adjusting the upcoming planned work.
 
-The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.
-
-The Daily Scrum is a 15-minute event for the Developers of the Scrum Team. To reduce complexity, it is held at the same time and place every working day of the Sprint. If the Product Owner or Scrum Master are actively working on items in the Sprint Backlog, they participate as Developers.
-
-The Developers can select whatever structure and techniques they want, as long as their Daily Scrum focuses on progress toward the Sprint Goal and produces an actionable plan for the next day of work. This creates focus and improves self-management.
-
-Daily Scrums improve communications, identify impediments, promote quick decision-making, and consequently eliminate the need for other meetings.
-
-The Daily Scrum is not the only time Developers are allowed to adjust their plan. They often meet throughout the day for more detailed discussions about adapting or re-planning the rest of the Sprint’s work.
-
--#NOTE ------------------------------------------------ up HERE
+The **`devOPER`** is a _15-minute to 20-minute_ event for the developers of the `sprint` execution team. To reduce complexity, it is held at the same time and place every working day of the `sprint`. All participants ***should act as developers*** regardless their actual position in project.
 
 
 
