@@ -23,6 +23,7 @@
 ### #TODO PLAN section =========================
 
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
+* tbd... you made accnt on `ReadTheDocs` but need to include a `yaml` file in root to work
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
     - [ ] Appendix_B_DSGN_Content_Index.md (see doc changed in `wk_crt_proposals/Appendix_B_DSGN_Content_Index.md`)
