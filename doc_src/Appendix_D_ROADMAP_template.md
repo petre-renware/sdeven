@@ -37,6 +37,7 @@ Release date: 2306715
 
 * **Objective:** -#NOTE `<the item objective>`
 * **Recorded at:** -#NOTE `<date of recording this item>`
+* **Updated at:** -#NOTE `<after Implementation start record here the status and last updated date>`
 * **Recorded by:** -#NOTE `<who registered this item - this should identify that person as mail and phone, otherwise these should be written here>`
 * **Detailed  description:**
     * -#NOTE `<here different items of description>`
