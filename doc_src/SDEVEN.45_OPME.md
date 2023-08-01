@@ -81,7 +81,8 @@ This meeting has goal to plan the start and execution of a `sprint` which will c
     * scope may be clarified and renegotiated with the Product Owner / Product Manager as more is useful *but having in mind first assumption*
     * the `sprintPLAN` is the subject of ROADMAP file update
 
-But *where comes from* the `sprint`? Well it comes from an issue list, usually found on ROADMAP file or a shorter list, but ROADMAP is the preferred way, place and this is "the way" SDEVEN recommend ([see also the SDEVEN.55_TRACE procedure](SDEVEN.55_TRACE.md)).
+
+But *where comes from* the `sprint`? Well, it comes from a *list with issues*, usually found on ROADMAP file or a shorter list, but ROADMAP is the preferred place and this is "the way" SDEVEN recommend ([see also the SDEVEN.55_TRACE procedure](SDEVEN.55_TRACE.md)).
 
 Otherwise, a `sprintPLAN` is absolutely similar to any other software development plan regarding an issue that has *a clear and completely defined finality*.
 
