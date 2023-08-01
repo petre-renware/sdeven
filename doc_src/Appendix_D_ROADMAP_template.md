@@ -42,12 +42,12 @@ Release date: 2306715
     * -#NOTE `<here different items of description>`
     * -#NOTE `<here different items of description>`
 * **Recommendations:**
-    * -#NOTE `<here different items of hints / recommendations>`
-    * -#NOTE...here different items of hints / recommendations...
-* **Known dependencies:** -#NOTE...if there are knwon dependencies of INTERNAL system components or other open / wip issues...
-* **Assigned to:** -#NOTE...the person nominated to respond for this roadmap item...
+    * -#NOTE `<here different hints / recommendations>`
+    * -#NOTE `<here different hints / recommendations>`
+* **Known dependencies:** -#NOTE `<if there are knwon dependencies of INTERNAL system components or other open / wip issues>`
+* **Assigned to:** -#NOTE `<the person nominated to respond for this roadmap item>`
 * **References & notes:**
-    * -#NOTE...more notes... (if use footnote like `[^xxx]: ...`, please do not mark as list entry because will appear at foonotes)
+    * -#NOTE `<more notes... (if use footnote like [^xxx]: ..., please do not mark as list entry because will appear at foonotes)>`
 
 
 
