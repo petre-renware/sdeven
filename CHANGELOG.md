@@ -47,6 +47,7 @@
 * tbd... `SDEVEN.45_OPME.md` described OPME `prodREVW` meeting
 
 
+* 230801piu_d updated `SDEVEN.55_TRACE.md` ref where the `sprint` comes from
 * 230801piu_c updated `Appendix_D_ROADMAP_template.md`
 * 230801piu_b update `About_SDEVEN.md` ref contributors
 * 230801piu_a update navigation menu for entry names (SDEVEN instead of Methodology)
