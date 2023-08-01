@@ -45,9 +45,9 @@
 * tbd... `SDEVEN.45_OPME.md` described OPME `devREVW` meeting
 * tbd... `SDEVEN.45_OPME.md` described OPME `prodREVW` meeting
 
-
-* 230801piu_a update nevigation menu for entry names (SDEVEN instead of Methodology)
-* 230731piu_k `SDEVEN.45_OPME.md` prepared renaining meeting sections with RAW text that must be reviewed and make clean and relevant to SDEVEN
+* 230801piu_b update `About_SDEVEN.md` ref contributors
+* 230801piu_a update navigation menu for entry names (SDEVEN instead of Methodology)
+* 230731piu_k `SDEVEN.45_OPME.md` prepared renaming meeting sections with RAW text that must be reviewed and make clean and relevant to SDEVEN
 * 230731piu_j `SDEVEN.45_OPME.md` described OPME `devPLAN` meeting
 * 230731piu_i `SDEVEN.45_OPME.md` described `sprint` process / event and classified meetings + prepared place fo detailed description + updated `mkdocs.yml` for OPM name (dropped incoming acronym)
 * 230731piu_h made a draft skeleton with TOC and todo-s, notes, ideas for each section of `SDEVEN.45_OPME.md` - needs refinement of each meeting types
