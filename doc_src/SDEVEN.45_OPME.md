@@ -80,6 +80,8 @@ This meeting has goal to plan the start and execution of a `sprint` which will c
     * the `sprint` corresponding *CHANGELOG* is refined as needed
     * scope may be clarified and renegotiated with the Product Owner / Product Manager as more is useful *but having in mind first assumption*
 
+But *where comes from* the `sprint`? Well it comes from an issue list, usually found on ROADMAP file or a shorter list, but ROADMAP is the preferred way, place and this is "the way" SDEVEN recommend.
+
 Otherwise, a `sprintPLAN` is absolutely similar to any other software development plan regarding an issue that has *a clear and completely defined finality*.
 
 All the good practices and  technical rules in software engineering, for example regarding maintainability, *must be considered* as in any software development plan made with maximum responsibility and care in observing the rules of software engineering.
