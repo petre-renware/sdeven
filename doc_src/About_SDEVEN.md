@@ -25,6 +25,7 @@ This methodology is [licensed CC0 1.0 Universal](LICENSE.md).
 * Semver versioning [original version](https://semver.org/)
 * Methodology procedures materials was written using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 * the site was built using [MkDocs](https://www.mkdocs.org/)
+* Agile [SCRUM guide](https://www.scrum.org/resources/scrum-guide)
 
 
 
