@@ -1,29 +1,35 @@
-*RENware Software Systems*<br>
-**Software Development Methodology**
+<small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.7<br>
-Release date: 230717
+Version: 7.0.9<br>
+Release date: 230802
 
 ***
 
+
+
 # About SDEVEN
 
-**Table of Content**
 
-[TOC]
 
 ## Copyright
 
-This methodology is a Copyright (C) of **RENware Software Systems**. All rights are reserved by REN CONSULTING SOFT ACTIVITY SRL.
+This methodology is a Copyright (c) of **RENware Software Systems**. All rights are reserved by REN CONSULTING SOFT ACTIVITY SRL.
 
 This methodology is [licensed CC0 1.0 Universal](LICENSE.md).
 
+
+
+
 ## Contributors and 3rd party content
 
-SDEVEN methodology use in its content some third party elements. These are:
+* Semver versioning [original version](https://semver.org/)
+* Agile, the [twelve principles of agile](https://agilemanifesto.org/principles.html)
+* Methodology procedures materials was written using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+* the site was built using [MkDocs](https://www.mkdocs.org/)
+* [SCRUM guide](https://www.scrum.org/resources/scrum-guide)
 
-* in versioning section (code 30.RENVER), **Semver** versioning; [original version](https://semver.org/)
-* in blueprint section (code 90.RENBLU) ref test management & plans **"The Fundamentals of Test Management"**, published by [TestRail](https://www.gurock.com/testrail/)
+
+
 
 ## SDEVEN manual
 

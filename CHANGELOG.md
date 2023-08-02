@@ -17,35 +17,45 @@
 * -#NOTE ____ PUBLISHING IS MADE FROM `PUBLISHING` BRANCH, so wheen publish checkout it or upload from git
 </small>
 
+
 ## 7.0 SDEVEN 7.0
 
+### #TODO PLAN section =========================
 
-### 7.0.9-beta (#FIXME_set_date_when_closed_WIP...)
-
-=============[ START of #TODO-section ]=========================
-
-* tbd... RMAP.001 - OPME
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
+* tbd... you made accnt on `ReadTheDocs` but need to include a `yaml` file in root to work
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
-    - [ ] Appendix_B_DSGN_Content_Index.md
+    - [ ] Appendix_B_DSGN_Content_Index.md (see doc changed in `wk_crt_proposals/Appendix_B_DSGN_Content_Index.md`)
     - [ ] Appendix_C_Status_Report.md
-* @IMP_tbd... see docs changed in `wk_crt_proposals/` directory (`Appendix_B_DSGN_Content_Index.md`, `SDEVEN.90_RENBLU.md`) and align to SDEVEN 7 version
-
-* ...tbd_use_me_as_template... "gross" review & update of `#FIXME` + `mkdocs.yaml` entry + refactor code from `#FIXME` to `#FIXME` (including document filename)
-* ...tbd_use_me_as_template... "gross" review & update of `#FIXME 95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
 
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.9
 
 =============[ END of #TODO-section ]=========================
 
-* wip...
 
 
 
 
 
+### 7.0.9-beta RMAP.001 - OPME (230802 15:30)
 
+* 230802piu_d `SDEVEN.45_OPME.md` described OPME _`prodREVW`_ meeting
+* 230802piu_c `SDEVEN.45_OPME.md` updated meetings type with property ref TYPE (plan, review) and recommended FREQUENCY
+* 230802piu_b `SDEVEN.45_OPME.md` described OPME _`devREVW`_ meeting
+* 230802piu_a updated `About_SDEVEN.md` ref contributors
+* 230801piu_e `SDEVEN.45_OPME.md` described OPME _`devOPER`_ meeting
+* 230801piu_d updated `SDEVEN.55_TRACE.md` ref where the `sprint` comes from
+* 230801piu_c updated `Appendix_D_ROADMAP_template.md`
+* 230801piu_b updated `About_SDEVEN.md` ref contributors
+* 230801piu_a update navigation menu for entry names (SDEVEN instead of Methodology)
+* 230731piu_k `SDEVEN.45_OPME.md` prepared renaming meeting sections with RAW text that must be reviewed and make clean and relevant to SDEVEN
+* 230731piu_j `SDEVEN.45_OPME.md` described OPME _`devPLAN`_ meeting
+* 230731piu_i `SDEVEN.45_OPME.md` described `sprint` process / event and classified meetings + prepared place fo detailed description + updated `mkdocs.yml` for OPM name (dropped incoming acronym)
+* 230731piu_h made a draft skeleton with TOC and todo-s, notes, ideas for each section of `SDEVEN.45_OPME.md` - needs refinement of each meeting types
+* 230730piu_g updated `mkdocs.yml` to accommodate Markdown in HTML and to set `HTML attributes`
+* 230730piu_f updated procedure `SDEVEN.45_OPME.md` ref release version, date and where to search for information
+* 230730piu_e "gross" review & update of `95-RENCOCL.md` + `mkdocs.yaml` entry + refactor code from `RENCOCL` to `COCL` (including document filename)
 
 
 
