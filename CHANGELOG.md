@@ -43,9 +43,9 @@
 * wip...
 
 * tbd... `SDEVEN.45_OPME.md` described OPME `prodREVW` meeting
-* tbd... `SDEVEN.45_OPME.md` described OPME `devREVW` meeting
 
 
+* 230802piu_b `SDEVEN.45_OPME.md` described OPME `devREVW` meeting
 * 230802piu_a updated `About_SDEVEN.md` ref contributors
 * 230801piu_e `SDEVEN.45_OPME.md` described OPME `devOPER` meeting
 * 230801piu_d updated `SDEVEN.55_TRACE.md` ref where the `sprint` comes from
