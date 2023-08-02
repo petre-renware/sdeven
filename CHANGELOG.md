@@ -46,10 +46,11 @@
 * tbd... `SDEVEN.45_OPME.md` described OPME `devREVW` meeting
 
 
+* 230802piu_a updated `About_SDEVEN.md` ref contributors (Agile references)
 * 230801piu_e `SDEVEN.45_OPME.md` described OPME `prodREVW` meeting
 * 230801piu_d updated `SDEVEN.55_TRACE.md` ref where the `sprint` comes from
 * 230801piu_c updated `Appendix_D_ROADMAP_template.md`
-* 230801piu_b update `About_SDEVEN.md` ref contributors
+* 230801piu_b updated `About_SDEVEN.md` ref contributors (mkdocs & material references)
 * 230801piu_a update navigation menu for entry names (SDEVEN instead of Methodology)
 * 230731piu_k `SDEVEN.45_OPME.md` prepared renaming meeting sections with RAW text that must be reviewed and make clean and relevant to SDEVEN
 * 230731piu_j `SDEVEN.45_OPME.md` described OPME `devPLAN` meeting
