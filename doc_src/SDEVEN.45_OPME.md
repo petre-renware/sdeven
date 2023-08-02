@@ -106,7 +106,7 @@ The **`devOPER`** is a _15-minute to 20-minute_ event for the developers of the 
 
 -#TODO_tbd... #NOTE review this section -------------- from HERE
 
-The purpose of the Sprint Review is to inspect the outcome of the Sprint and determine future adaptations. The Scrum Team presents the results of their work to key stakeholders and progress toward the Product Goal is discussed.
+The purpose of the `devREVW` is to inspect the outcome of the `sprint` and determine future adaptations. The Scrum Team presents the results of their work to key stakeholders and progress toward the Product Goal is discussed.
 
 During the event, the Scrum Team and stakeholders review what was accomplished in the Sprint and what has changed in their environment. Based on this information, attendees collaborate on what to do next. The Product Backlog may also be adjusted to meet new opportunities. The Sprint Review is a working session and the Scrum Team should avoid limiting it to a presentation.
 
