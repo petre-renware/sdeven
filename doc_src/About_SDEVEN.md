@@ -23,8 +23,10 @@ This methodology is [licensed CC0 1.0 Universal](LICENSE.md).
 ## Contributors and 3rd party content
 
 * Semver versioning [original version](https://semver.org/)
+* Agile, the [twelve principles of agile](https://agilemanifesto.org/principles.html)
 * Methodology procedures materials was written using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 * the site was built using [MkDocs](https://www.mkdocs.org/)
+* [SCRUM guide](https://www.scrum.org/resources/scrum-guide)
 
 
 
