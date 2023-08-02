@@ -110,13 +110,6 @@ During the meeting, the whole participating team review what was accomplished an
 
 The *ROADMAP*, *CHANGELOG* and *RELNOTE* documents may also be adjusted to meet new opportunities. The `devREVW` is a working session and the team ***should avoid limiting it to a simple presentation*** of facts.
 
--#TODO_tbd... #NOTE review this section -------------- from HERE
-
-The Sprint Review is the second to last event of the Sprint and is timeboxed to a maximum of four hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.
-
--#NOTE ------------------------------------------------ up HERE
-
-
 
 
 
