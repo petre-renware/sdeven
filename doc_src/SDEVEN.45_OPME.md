@@ -108,7 +108,7 @@ The purpose of the `devREVW` is to inspect the outcome of a **finalized** `sprin
 
 During the meeting, the whole participating team review what was accomplished and what has changed in their environment. Based on this information, attendees collaborate on what to do next.
 
-The *ROADMAP*, *CHANGELOG* and *RELNOTE* documents may also be adjusted to meet new opportunities. The `devREVW` is a working session and the team ***should avoid limiting it just to to a presentation*** of facts.
+The *ROADMAP*, *CHANGELOG* and *RELNOTE* documents may also be adjusted to meet new opportunities. The `devREVW` is a working session and the team ***should avoid limiting it to a simple presentation*** of facts.
 
 -#TODO_tbd... #NOTE review this section -------------- from HERE
 
