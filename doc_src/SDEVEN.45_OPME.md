@@ -104,11 +104,13 @@ The **`devOPER`** is a _15-minute to 20-minute_ event for the developers of the 
 
 ## `devREVW` operational review
 
--#TODO_tbd... #NOTE review this section -------------- from HERE
-
 The purpose of the `devREVW` is to inspect the outcome of a **finalized** `sprint` and determine future adaptations. The team involved (including project manager) presents the results of their work to *Product Manager* (and other key stakeholders if they are participating) and **progress toward the `sprintOBJ`** is discussed.
 
-During the event, the Scrum Team and stakeholders review what was accomplished in the Sprint and what has changed in their environment. Based on this information, attendees collaborate on what to do next. The Product Backlog may also be adjusted to meet new opportunities. The Sprint Review is a working session and the Scrum Team should avoid limiting it to a presentation.
+During the meeting, the whole participating team review what was accomplished and what has changed in their environment. Based on this information, attendees collaborate on what to do next.
+
+-#TODO_tbd... #NOTE review this section -------------- from HERE
+
+The Product Backlog may also be adjusted to meet new opportunities. The Sprint Review is a working session and the Scrum Team should avoid limiting it to a presentation.
 
 The Sprint Review is the second to last event of the Sprint and is timeboxed to a maximum of four hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.
 
