@@ -47,7 +47,7 @@
 
 
 * 230802piu_a updated `About_SDEVEN.md` ref contributors
-* `SDEVEN.45_OPME.md` described OPME `devOPER` meeting
+* 230801piu_e `SDEVEN.45_OPME.md` described OPME `devOPER` meeting
 * 230801piu_d updated `SDEVEN.55_TRACE.md` ref where the `sprint` comes from
 * 230801piu_c updated `Appendix_D_ROADMAP_template.md`
 * 230801piu_b updated `About_SDEVEN.md` ref contributors
