@@ -214,6 +214,7 @@ Here is shown an example of project directory structure starting from a `PROJECT
         │   ├───README.md
         │   └───requirements.txt
         └───880-RLSE
+            └─── ... specific organization ...
 ```
 
 
