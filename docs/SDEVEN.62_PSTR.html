@@ -250,7 +250,8 @@ div.download-btn {
 <a class="md-nav__link" href="#project-basic-backbone-structure">
     Project basic backbone structure
   </a>
-</li>
+<nav aria-label="Project basic backbone structure" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#doc_src-directory">
     doc_src directory
@@ -283,7 +284,7 @@ div.download-btn {
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#system_module_x-directory">
-    system_module_X directory
+    \&lt;system_module_X&gt; directory
   </a>
 </li>
 <li class="md-nav__item">
@@ -291,9 +292,12 @@ div.download-btn {
     Commons component
   </a>
 </li>
+</ul>
+</nav>
+</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#project-root-directory">
-    /project root directory
+<a class="md-nav__link" href="#project_root-directory">
+    /project_root directory
   </a>
 </li>
 <li class="md-nav__item">
@@ -430,7 +434,8 @@ div.download-btn {
 <a class="md-nav__link" href="#project-basic-backbone-structure">
     Project basic backbone structure
   </a>
-</li>
+<nav aria-label="Project basic backbone structure" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#doc_src-directory">
     doc_src directory
@@ -463,7 +468,7 @@ div.download-btn {
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#system_module_x-directory">
-    system_module_X directory
+    \&lt;system_module_X&gt; directory
   </a>
 </li>
 <li class="md-nav__item">
@@ -471,9 +476,12 @@ div.download-btn {
     Commons component
   </a>
 </li>
+</ul>
+</nav>
+</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#project-root-directory">
-    /project root directory
+<a class="md-nav__link" href="#project_root-directory">
+    /project_root directory
   </a>
 </li>
 <li class="md-nav__item">
@@ -489,8 +497,8 @@ div.download-btn {
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset"><div class="download-btn"><a href="pdfs\SDEVEN.62_PSTR.html\SDEVEN.62_PSTR.pdf">Download PDF</a></div>
 <p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
-<p>Version: 7.0.7<br/>
-Release date: 230718</p>
+<p>Version: 7.0.9<br/>
+Release date: 230803</p>
 <hr/>
 <h1 id="project-structure-sdeven62-pstr">Project structure (SDEVEN.62-PSTR)</h1>
 <p><strong>Table of Content</strong></p>
@@ -498,16 +506,18 @@ Release date: 230718</p>
 <ul>
 <li><a href="#project-structure-sdeven62-pstr">Project structure (SDEVEN.62-PSTR)</a><ul>
 <li><a href="#preamble-and-goals">Preamble and goals</a></li>
-<li><a href="#project-basic-backbone-structure">Project basic backbone structure</a></li>
+<li><a href="#project-basic-backbone-structure">Project basic backbone structure</a><ul>
 <li><a href="#doc_src-directory">doc_src directory</a></li>
 <li><a href="#docs-directory">docs directory</a></li>
 <li><a href="#pjm-directory">pjm directory</a></li>
 <li><a href="#setup-directory">setup directory</a></li>
 <li><a href="#static_portal-directory">static_portal directory</a></li>
 <li><a href="#sysinit-directory">sysInit directory</a></li>
-<li><a href="#system_module_x-directory">system_module_X directory</a></li>
+<li><a href="#system_module_x-directory">\&lt;system_module_X&gt; directory</a></li>
 <li><a href="#commons-component">Commons component</a></li>
-<li><a href="#project-root-directory">/project root directory</a></li>
+</ul>
+</li>
+<li><a href="#project_root-directory">/project_root directory</a></li>
 <li><a href="#example-of-project-full-directory-structure">Example of project full directory structure</a></li>
 </ul>
 </li>
@@ -523,16 +533,16 @@ Release date: 230718</p>
 </ul>
 <p>All product system code is kept under <code>830-DEV</code> directory. The objective of its structuring is to assure as much as possible code reusability and its "after-release" maintainability. This directory contains:</p>
 <ul>
-<li>830-DEV<strong>/</strong>project root directory <a href="#project-root-directory">go to section</a></li>
+<li>830-DEV/<strong>&lt;project root&gt;</strong> directory <a href="#project_root-directory">go to section</a></li>
 <li>830-DEV/<strong>doc_src</strong> <a href="#doc_src-directory">go to section</a></li>
 <li>830-DEV/<strong>docs</strong> <a href="#docs-directory">go to section</a></li>
 <li>830-DEV/<strong>pjm</strong> <a href="#pjm-directory">go to section</a></li>
 <li>830-DEV/<strong>setup</strong> <a href="#setup-directory">go to section</a></li>
 <li>830-DEV/<strong>static_portal</strong> <a href="#static_portal-directory">go to section</a></li>
 <li>830-DEV/<strong>sysInit</strong> <a href="#sysinit-directory">go to section</a></li>
-<li>830-DEV/<strong>system_module_A</strong> - directory dedicated for system module "A"  <a href="#system_module_x-directory">go to section</a></li>
-<li>830-DEV/<strong>system_module_B</strong> - directory dedicated for system module "B"</li>
-<li>... 830-DEV/another system module ...</li>
+<li>830-DEV/<strong>&lt;system_module_A&gt;</strong> - directory dedicated for \&lt;system module "A"&gt; <a href="#system_module_x-directory">go to section</a></li>
+<li>830-DEV/<strong>&lt;system_module_B&gt;</strong> - directory dedicated for \&lt;system module "B"&gt; <a href="#system_module_x-directory">go to section</a></li>
+<li>... 830-DEV/&lt;another system module&gt; ... <a href="#system_module_x-directory">go to section</a></li>
 <li>830-DEV/<strong>Commons</strong> <a href="#commons-component">go to section</a></li>
 </ul>
 <p>Each of these directories will be explained in next sections.</p>
@@ -541,7 +551,7 @@ Release date: 230718</p>
 <p>To avoid conflicts and misinterpretations at programming language level it is recommended that in FILES and DIRECTORY NAMES to avoid characters space (<code></code>) and (<code>-</code>) and to replace them with underscores (<code>_</code>).</p>
 </div>
 <p>For a clear "picture" please refer the <a href="#example-of-project-full-directory-structure">"Example of project full directory structure" section</a>.</p>
-<h2 id="doc_src-directory"><strong>doc_src</strong> directory</h2>
+<h3 id="doc_src-directory"><strong>doc_src</strong> directory</h3>
 <ul>
 <li>the technical documentation:<ul>
 <li>110-SRE System Requirements</li>
@@ -560,7 +570,7 @@ Release date: 230718</p>
 <p class="admonition-title">system manuals</p>
 <p>system manuals (adma &amp; euma) will be assembled as deliverables in release packages <a href="SDEVEN.60_RELM.html#release-directory-content-and-structure">for details see 60-RELM procedure</a></p>
 </div>
-<h2 id="docs-directory"><strong>docs</strong> directory</h2>
+<h3 id="docs-directory"><strong>docs</strong> directory</h3>
 <p>This directory will accommodate the <strong>FINAL</strong> (<strong>RELEASED</strong>) documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "<em>ENTERPRISE SYSTEMS</em>".</p>
 <div class="admonition warning">
 <p class="admonition-title">remarks</p>
@@ -569,7 +579,7 @@ Release date: 230718</p>
 <li>this directory is subject to git repository as is part of a release</li>
 </ul>
 </div>
-<h2 id="pjm-directory"><strong>pjm</strong> directory</h2>
+<h3 id="pjm-directory"><strong>pjm</strong> directory</h3>
 <p>Here are kept project management items that could be necessary in software development <sup id="fnref:pjm_docs"><a class="footnote-ref" href="#fn:pjm_docs">1</a></sup>, things like that:</p>
 <ul>
 <li>project contract</li>
@@ -581,7 +591,7 @@ Release date: 230718</p>
 <p class="admonition-title">project management documents</p>
 <p>the project management documents make subject of Project Management discipline and will not be explained here or in other SDEVEN section</p>
 </div>
-<h2 id="setup-directory"><strong>setup</strong> directory</h2>
+<h3 id="setup-directory"><strong>setup</strong> directory</h3>
 <p>The aim of this directory is to keep code to install the system by this understanding the code that:</p>
 <ul>
 <li>
@@ -609,7 +619,7 @@ Release date: 230718</p>
 <li>one of the "perfect" candidates is <em>Python 3</em></li>
 </ul>
 </div>
-<h2 id="static_portal-directory"><strong>static_portal</strong> directory</h2>
+<h3 id="static_portal-directory"><strong>static_portal</strong> directory</h3>
 <p>This directory will accommodate the documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "<em>ENTERPRISE SYSTEMS</em>".</p>
 <div class="admonition info">
 <p class="admonition-title">how to create documentation static portal</p>
@@ -618,14 +628,14 @@ Release date: 230718</p>
 <li>this directory is used for testing and validation resulted portal - released portal is kept in <a href="#docs-directory"><code>docs/</code> directory</a></li>
 </ul>
 </div>
-<h2 id="sysinit-directory"><strong>sysInit</strong> directory</h2>
+<h3 id="sysinit-directory"><strong>sysInit</strong> directory</h3>
 <p>The <code>sysInit</code> directory accommodates code that initialize all system modules. This system initialization routine <strong>SHOULD BE THE CENTRALIZED ONE</strong> meaning:</p>
 <ul>
 <li>each system module / component must have its initialization code (<a href="#system_module_x-directory">as described in "system module X"</a>)</li>
 <li>the <code>sysInit</code> code centralize all modules initialization in <strong>correct order</strong></li>
 </ul>
 <p>The code of <code>sysInit</code> module should be called repeatedly without generate side effects except that determine system initialization and loosing all sessions in work data. But repeating calls should all system data is correctly flushed and persisted and no <strong>UNEXPECTED</strong> <strong><em>missing</em></strong> (of course others that "unsaved data") or other files, configurations <strong><em>damage</em></strong> is happening.</p>
-<h2 id="system_module_x-directory"><strong>system_module_X</strong> directory</h2>
+<h3 id="system_module_x-directory"><strong>\&lt;system_module_X&gt;</strong> directory</h3>
 <p>The system must be designed following the next principles:</p>
 <ul>
 <li>must be structured in "independent <strong>modules</strong>" (see the next explanation)</li>
@@ -643,14 +653,14 @@ Release date: 230718</p>
 <p class="admonition-title">What means an independent module?</p>
 <p>A software module can be considered independent enough when it can be "transformed" into a distinct library with an <em>acceptable work around</em> effort meaning without change or alter its functional code but only the required code to make it separated "package or library" (ie, the code that define its library definition)</p>
 </div>
-<h2 id="commons-component"><strong>Commons</strong> component</h2>
+<h3 id="commons-component"><strong>Commons</strong> component</h3>
 <p>This component is a specialized module used to replace direct usage of <strong><em>global variables</em></strong>. It usually is implemented as a <code>class</code> object and take care of global variables by meaning:</p>
 <ul>
 <li>assure their consistency such as they are critical regions</li>
 <li>prevent circular references when using them (everybody import only <code>Commons</code> module)</li>
 </ul>
 <p><code>Commons</code> component (if is present) should have data initialized by each module that post any global data and in <code>sysInit</code> module should be among the first created, if not the very first.</p>
-<h2 id="project-root-directory"><strong>/</strong>project root directory</h2>
+<h2 id="project_root-directory"><strong>/project_root</strong> directory</h2>
 <p>In the project root directory will be at least these files:</p>
 <ul>
 <li><code>README.md</code> which contains a kind of product data sheet with project information</li>
@@ -666,7 +676,7 @@ Release date: 230718</p>
 </ul>
 <h2 id="example-of-project-full-directory-structure">Example of project full directory structure</h2>
 <p>Here is shown an example of project directory structure starting from a <code>PROJECT-ROOT-DIRECTORY</code>.</p>
-<div class="highlight"><pre><span></span><code>........\PROJECT-ROOT-DIRECTORY
+<div class="highlight"><pre><span></span><code>........\&lt;PROJECT-ROOT-DIRECTORY&gt;
         ├───830-DEV/
         │   ├───doc_src/
         │   │   ├───110-SRE/
@@ -678,12 +688,16 @@ Release date: 230718</p>
         │   │   └─── ... specific project management and contractual docs ...
         │   ├───setup/
         │   ├───static_portal/
+        │   ├───&lt;sys_module_A...dir&gt;/
+        │   ├───&lt;sys_module_B...dir&gt;/
+        │   ├───&lt;sys_module_X...dir&gt;/
         │   ├───Commons/
         │   ├───SysInit/
         │   ├───project.toml
         │   ├───README.md
         │   └───requirements.txt
         └───880-RLSE
+            └─── ... specific organization ...
 </code></pre></div>
 <div class="footnote">
 <hr/>
@@ -698,7 +712,7 @@ Release date: 230718</p>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 18, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 3, 2023</span>
 </small>
 </div>
 </article>
