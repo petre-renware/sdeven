@@ -36,9 +36,9 @@ All product system code is kept under `830-DEV` directory. The objective of its 
 * 830-DEV/**setup** [go to section](#setup-directory)
 * 830-DEV/**static_portal** [go to section](#static_portal-directory)
 * 830-DEV/**sysInit** [go to section](#sysinit-directory)
-* 830-DEV/**\<system_module_A\>** - directory dedicated for system module "A"  [go to section](#system_module_x-directory)
-* 830-DEV/**\<system_module_B\>** - directory dedicated for system module "B"
-* ... 830-DEV/another system module ...
+* 830-DEV/**\<system_module_A\>** - directory dedicated for \<system module "A"\>  [go to section](#system_module_x-directory)
+* 830-DEV/**\<system_module_B\>** - directory dedicated for \<system module "B"\>
+* ... 830-DEV/\<another system module\> ...
 * 830-DEV/**Commons** [go to section](#commons-component)
 
 Each of these directories will be explained in next sections.
