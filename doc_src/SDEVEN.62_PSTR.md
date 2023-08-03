@@ -175,7 +175,7 @@ This component is a specialized module used to replace direct usage of ***global
 
 
 
-## **/**project root directory
+## **/**\<project root\> directory
 
 In the project root directory will be at least these files:
 
