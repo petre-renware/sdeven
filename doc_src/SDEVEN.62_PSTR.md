@@ -195,7 +195,7 @@ In the project root directory will be at least these files:
 Here is shown an example of project directory structure starting from a `PROJECT-ROOT-DIRECTORY`.
 
 ```
-........\PROJECT-ROOT-DIRECTORY
+........\<PROJECT-ROOT-DIRECTORY>
         ├───830-DEV/
         │   ├───doc_src/
         │   │   ├───110-SRE/
