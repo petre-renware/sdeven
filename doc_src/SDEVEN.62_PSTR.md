@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.7<br>
-Release date: 230718
+Version: 7.0.9<br>
+Release date: 230803
 
 ***
 
@@ -207,6 +207,7 @@ Here is shown an example of project directory structure starting from a `PROJECT
         │   │   └─── ... specific project management and contractual docs ...
         │   ├───setup/
         │   ├───static_portal/
+        │   ├───<sys_module...dir>/
         │   ├───Commons/
         │   ├───SysInit/
         │   ├───project.toml
