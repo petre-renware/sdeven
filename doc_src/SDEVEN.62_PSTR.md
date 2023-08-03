@@ -51,7 +51,7 @@ For a clear "picture" please refer the ["Example of project full directory struc
 
 
 
-## **doc_src** directory
+### **doc_src** directory
 
 * the technical documentation:
     * 110-SRE System Requirements
@@ -68,7 +68,7 @@ For a clear "picture" please refer the ["Example of project full directory struc
 
 
 
-## **docs** directory
+### **docs** directory
 
 This directory will accommodate the **FINAL** (**RELEASED**) documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "*ENTERPRISE SYSTEMS*".
 
@@ -79,7 +79,7 @@ This directory will accommodate the **FINAL** (**RELEASED**) documentation stati
 
 
 
-## **pjm** directory
+### **pjm** directory
 
 Here are kept project management items that could be necessary in software development [^pjm_docs], things like that:
 
@@ -96,7 +96,7 @@ Here are kept project management items that could be necessary in software devel
 
 
 
-## **setup** directory
+### **setup** directory
 
 The aim of this directory is to keep code to install the system by this understanding the code that:
 
@@ -121,7 +121,7 @@ The aim of this directory is to keep code to install the system by this understa
 
 
 
-## **static_portal** directory
+### **static_portal** directory
 
 This directory will accommodate the documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "*ENTERPRISE SYSTEMS*".
 
@@ -132,7 +132,7 @@ This directory will accommodate the documentation static portal that accompanies
 
 
 
-## **sysInit** directory
+### **sysInit** directory
 
 The `sysInit` directory accommodates code that initialize all system modules. This system initialization routine **SHOULD BE THE CENTRALIZED ONE** meaning:
 
@@ -144,7 +144,7 @@ The code of `sysInit` module should be called repeatedly without generate side e
 
 
 
-## **system_module_X** directory
+### **system_module_X** directory
 
 The system must be designed following the next principles:
 
@@ -163,7 +163,7 @@ The system must be designed following the next principles:
 
 
 
-## **Commons** component
+### **Commons** component
 
 This component is a specialized module used to replace direct usage of ***global variables***. It usually is implemented as a `class` object and take care of global variables by meaning:
 
