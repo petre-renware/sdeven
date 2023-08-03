@@ -34,10 +34,11 @@
 =============[ END of #TODO-section ]=========================
 
 
-### 7.0.10-beta qa review 
+### 7.0.10-beta qa review
 
 * wip...
 
+* 230803piu_b reviewed and closed `RMAP.001` in ROADMAP file
 * 230803piu_a `SDEVEN.62_PSTR.md` facelifts - improved organization and readability
 
 

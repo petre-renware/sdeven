@@ -29,16 +29,16 @@ First level of project backbone consists of:
 
 All product system code is kept under `830-DEV` directory. The objective of its structuring is to assure as much as possible code reusability and its "after-release" maintainability. This directory contains:
 
-* 830-DEV/**\<project root\>** directory [go to section](#project-root-directory)
+* 830-DEV/**<project root\>** directory [go to section](#project_root-directory)
 * 830-DEV/**doc_src** [go to section](#doc_src-directory)
 * 830-DEV/**docs** [go to section](#docs-directory)
 * 830-DEV/**pjm** [go to section](#pjm-directory)
 * 830-DEV/**setup** [go to section](#setup-directory)
 * 830-DEV/**static_portal** [go to section](#static_portal-directory)
 * 830-DEV/**sysInit** [go to section](#sysinit-directory)
-* 830-DEV/**\<system_module_A\>** - directory dedicated for \<system module "A"\>  [go to section](#system_module_x-directory)
-* 830-DEV/**\<system_module_B\>** - directory dedicated for \<system module "B"\>
-* ... 830-DEV/\<another system module\> ...
+* 830-DEV/**<system_module_A\>** - directory dedicated for \<system module "A"\> [go to section](#system_module_x-directory)
+* 830-DEV/**<system_module_B\>** - directory dedicated for \<system module "B"\> [go to section](#system_module_x-directory)
+* ... 830-DEV/<another system module\> ... [go to section](#system_module_x-directory)
 * 830-DEV/**Commons** [go to section](#commons-component)
 
 Each of these directories will be explained in next sections.
@@ -175,7 +175,7 @@ This component is a specialized module used to replace direct usage of ***global
 
 
 
-## **/**\<project root\> directory
+## **/project_root** directory
 
 In the project root directory will be at least these files:
 
@@ -207,7 +207,9 @@ Here is shown an example of project directory structure starting from a `PROJECT
         │   │   └─── ... specific project management and contractual docs ...
         │   ├───setup/
         │   ├───static_portal/
-        │   ├───<sys_module...dir>/
+        │   ├───<sys_module_A...dir>/
+        │   ├───<sys_module_B...dir>/
+        │   ├───<sys_module_X...dir>/
         │   ├───Commons/
         │   ├───SysInit/
         │   ├───project.toml
