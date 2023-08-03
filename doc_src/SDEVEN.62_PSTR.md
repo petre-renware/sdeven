@@ -144,7 +144,7 @@ The code of `sysInit` module should be called repeatedly without generate side e
 
 
 
-### **system_module_X** directory
+### **\<system_module_X\>** directory
 
 The system must be designed following the next principles:
 
