@@ -284,7 +284,7 @@ div.download-btn {
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#system_module_x-directory">
-    \&lt;system_module_X&gt; directory
+    &lt;system_module_X&gt; directory
   </a>
 </li>
 <li class="md-nav__item">
@@ -296,8 +296,8 @@ div.download-btn {
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#project_root-directory">
-    /project_root directory
+<a class="md-nav__link" href="#project_root830-dev-directory">
+    &lt;project_root&gt;/830-DEV/ directory
   </a>
 </li>
 <li class="md-nav__item">
@@ -468,7 +468,7 @@ div.download-btn {
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#system_module_x-directory">
-    \&lt;system_module_X&gt; directory
+    &lt;system_module_X&gt; directory
   </a>
 </li>
 <li class="md-nav__item">
@@ -480,8 +480,8 @@ div.download-btn {
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#project_root-directory">
-    /project_root directory
+<a class="md-nav__link" href="#project_root830-dev-directory">
+    &lt;project_root&gt;/830-DEV/ directory
   </a>
 </li>
 <li class="md-nav__item">
@@ -513,11 +513,11 @@ Release date: 230803</p>
 <li><a href="#setup-directory">setup directory</a></li>
 <li><a href="#static_portal-directory">static_portal directory</a></li>
 <li><a href="#sysinit-directory">sysInit directory</a></li>
-<li><a href="#system_module_x-directory">\&lt;system_module_X&gt; directory</a></li>
+<li><a href="#system_module_x-directory">&lt;system_module_X&gt; directory</a></li>
 <li><a href="#commons-component">Commons component</a></li>
 </ul>
 </li>
-<li><a href="#project_root-directory">/project_root directory</a></li>
+<li><a href="#project_root830-dev-directory">&lt;project_root&gt;/830-DEV/ directory</a></li>
 <li><a href="#example-of-project-full-directory-structure">Example of project full directory structure</a></li>
 </ul>
 </li>
@@ -533,17 +533,19 @@ Release date: 230803</p>
 </ul>
 <p>All product system code is kept under <code>830-DEV</code> directory. The objective of its structuring is to assure as much as possible code reusability and its "after-release" maintainability. This directory contains:</p>
 <ul>
-<li>830-DEV/<strong>&lt;project root&gt;</strong> directory <a href="#project_root-directory">go to section</a></li>
-<li>830-DEV/<strong>doc_src</strong> <a href="#doc_src-directory">go to section</a></li>
-<li>830-DEV/<strong>docs</strong> <a href="#docs-directory">go to section</a></li>
-<li>830-DEV/<strong>pjm</strong> <a href="#pjm-directory">go to section</a></li>
-<li>830-DEV/<strong>setup</strong> <a href="#setup-directory">go to section</a></li>
-<li>830-DEV/<strong>static_portal</strong> <a href="#static_portal-directory">go to section</a></li>
-<li>830-DEV/<strong>sysInit</strong> <a href="#sysinit-directory">go to section</a></li>
-<li>830-DEV/<strong>&lt;system_module_A&gt;</strong> - directory dedicated for \&lt;system module "A"&gt; <a href="#system_module_x-directory">go to section</a></li>
-<li>830-DEV/<strong>&lt;system_module_B&gt;</strong> - directory dedicated for \&lt;system module "B"&gt; <a href="#system_module_x-directory">go to section</a></li>
-<li>... 830-DEV/&lt;another system module&gt; ... <a href="#system_module_x-directory">go to section</a></li>
-<li>830-DEV/<strong>Commons</strong> <a href="#commons-component">go to section</a></li>
+<li><strong>&lt;project root&gt;/830-DEV/</strong> directory <a href="#project_root830-dev-directory">go to section</a> with <em>following structure</em>:<ul>
+<li><strong>doc_src/</strong> <a href="#doc_src-directory">go to section</a></li>
+<li><strong>docs/</strong> <a href="#docs-directory">go to section</a></li>
+<li><strong>pjm/</strong> <a href="#pjm-directory">go to section</a></li>
+<li><strong>setup/</strong> <a href="#setup-directory">go to section</a></li>
+<li><strong>static_portal/</strong> <a href="#static_portal-directory">go to section</a></li>
+<li><strong>sysInit/</strong> <a href="#sysinit-directory">go to section</a></li>
+<li><strong>&lt;system_module_A&gt;/</strong> - directory dedicated for &lt;system module "A"&gt; <a href="#system_module_x-directory">go to section</a></li>
+<li><strong>&lt;system_module_B&gt;/</strong> - directory dedicated for &lt;system module "B"&gt; <a href="#system_module_x-directory">go to section</a></li>
+<li>... &lt;another system module&gt;/ ... <a href="#system_module_x-directory">go to section</a></li>
+<li><strong>Commons</strong>/ <a href="#commons-component">go to section</a></li>
+</ul>
+</li>
 </ul>
 <p>Each of these directories will be explained in next sections.</p>
 <div class="admonition warning">
@@ -635,7 +637,7 @@ Release date: 230803</p>
 <li>the <code>sysInit</code> code centralize all modules initialization in <strong>correct order</strong></li>
 </ul>
 <p>The code of <code>sysInit</code> module should be called repeatedly without generate side effects except that determine system initialization and loosing all sessions in work data. But repeating calls should all system data is correctly flushed and persisted and no <strong>UNEXPECTED</strong> <strong><em>missing</em></strong> (of course others that "unsaved data") or other files, configurations <strong><em>damage</em></strong> is happening.</p>
-<h3 id="system_module_x-directory"><strong>\&lt;system_module_X&gt;</strong> directory</h3>
+<h3 id="system_module_x-directory"><strong>&lt;system_module_X&gt;</strong> directory</h3>
 <p>The system must be designed following the next principles:</p>
 <ul>
 <li>must be structured in "independent <strong>modules</strong>" (see the next explanation)</li>
@@ -660,7 +662,11 @@ Release date: 230803</p>
 <li>prevent circular references when using them (everybody import only <code>Commons</code> module)</li>
 </ul>
 <p><code>Commons</code> component (if is present) should have data initialized by each module that post any global data and in <code>sysInit</code> module should be among the first created, if not the very first.</p>
-<h2 id="project_root-directory"><strong>/project_root</strong> directory</h2>
+<div class="admonition warning">
+<p class="admonition-title">Commons component code-name</p>
+<p>The <code>Commons</code> component has the name starting with <em>uppercase</em> especially to avoid confusions with <code>commons</code> name which can be used in more other contexts being an usual and general term. So, the idea is <strong>to use in clear <code>Commons</code></strong> instead of <code>commons</code> and to potentially get some warnings at least in stating / initializing phases...</p>
+</div>
+<h2 id="project_root830-dev-directory"><strong>&lt;project_root&gt;/830-DEV/</strong> directory</h2>
 <p>In the project root directory will be at least these files:</p>
 <ul>
 <li><code>README.md</code> which contains a kind of product data sheet with project information</li>
@@ -676,7 +682,7 @@ Release date: 230803</p>
 </ul>
 <h2 id="example-of-project-full-directory-structure">Example of project full directory structure</h2>
 <p>Here is shown an example of project directory structure starting from a <code>PROJECT-ROOT-DIRECTORY</code>.</p>
-<div class="highlight"><pre><span></span><code>........\&lt;PROJECT-ROOT-DIRECTORY&gt;
+<div class="highlight"><pre><span></span><code>.../&lt;PROJECT-ROOT-DIRECTORY&gt;/
         ├───830-DEV/
         │   ├───doc_src/
         │   │   ├───110-SRE/
@@ -697,7 +703,7 @@ Release date: 230803</p>
         │   ├───README.md
         │   └───requirements.txt
         └───880-RLSE
-            └─── ... specific organization ...
+            └─── ... specific organization (see procedure 60-RELM) ...
 </code></pre></div>
 <div class="footnote">
 <hr/>
