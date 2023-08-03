@@ -9,8 +9,6 @@ Release date: 230802
 
 # About SDEVEN
 
-
-
 ## Copyright
 
 This methodology is a Copyright (c) of **RENware Software Systems**. All rights are reserved by REN CONSULTING SOFT ACTIVITY SRL.

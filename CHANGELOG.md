@@ -34,6 +34,16 @@
 =============[ END of #TODO-section ]=========================
 
 
+### 7.0.10-beta qa review 
+
+* wip...
+
+* 230803piu_a `SDEVEN.62_PSTR.md` facelifts - improved organization and readability
+
+
+
+
+
 
 
 
