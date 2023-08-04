@@ -37,10 +37,8 @@ Outside of these files, projects can have some files dedicated to project manage
 
 ## Taxonomy
 
-Speaking about current type of `situations` that must be traced, basically are:
-[](
+Speaking about situations, items or events that that must be traced, these could be of category:
 
-)
 * **to be done category** representing those things that should be made in a short term - these will be marked with `#TODO` text to be recognized by editing platforms (most of IDEs platform have extensions for that) and visually highlight them
 
 * **bugs or "problems" category** representing those things that create any kind of problems and should be fixed - these will be marked with `#FIXME` text to be recognized by editing platforms (most of IDEs platform have extensions for that) and visually highlight them
