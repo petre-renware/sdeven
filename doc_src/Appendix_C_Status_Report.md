@@ -42,25 +42,14 @@ Reference info:
 * -#NOTE briefly list here remaining open issues / work to be done up closing. Different docs can be referred (for example an OPEN ISUUES LIST) and must be attached to this report and listed in "Attached documents" section.
 
 
-### System status
+### Current system status
 
-* **wip** version: *the current version as in progress / not yet released...*
-* last **released** version: *last released version*
-* last **deployed** version: *n/a or if applicable, last deployed version* on *`server_address`*
-* development server: *IP or name or whatever ID*
-* inLAN opened ports:
-    * *nnnnn* -* what should happen on this port...*
-    * *nnnnn* -* what should happen on this port...*
-* public exposed data: *the complete server address up to port `protocol://server`*
-    * *nnnnn* -* what should happen on this port...*
-    * *nnnnn* -* what should happen on this port...*
-
-
-
-
-### Other remarks
-
-* n/a or something...
+* -#NOTE describe the current software system status as:
+    * alpha,
+    * beta - waiting for qa testing,
+    * beta - qa testing started
+    * stable & released
+* -#NOTE if necessary give relevant additional *requirements* in order to "close" current status (ie, additional means others than normally planned)
 
 
 
