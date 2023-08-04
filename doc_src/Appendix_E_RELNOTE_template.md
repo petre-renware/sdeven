@@ -62,3 +62,17 @@ Release date: 230804
 
 
 
+
+## Future directions
+
+!!! warning "DISCLAIMER"
+    Future directions listed here are just with title as intentions. The exact Implementation dates are not guaranteed. For a more clear picture of ROADMAP intentions, pleaae contact the support call center.
+
+
+
+* -#NOTE list here the road map intended for next releases
+* ...
+
+
+
+
