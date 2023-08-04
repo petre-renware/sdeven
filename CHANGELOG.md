@@ -22,7 +22,7 @@
 
 ## 7.0 SDEVEN 7.0
 
-### #TODO_PLAN section =========================
+#### #TODO_PLAN section =========================
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
@@ -32,7 +32,9 @@
 
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.10
 
-=============[ end of #TODO_PLAN section ]=========================
+#### [ end of #TODO_PLAN section ]=========================
+
+
 
 
 ### 7.0.10-beta SDEVEN appendicitis updated
