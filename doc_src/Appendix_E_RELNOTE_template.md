@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.9<br>
-Release date: 230801
+Version: 7.0.11<br>
+Release date: 230804
 
 
 
@@ -25,13 +25,14 @@ Release date: 230801
 [TOC]
 
 
-# ROADMAP
+# RELNOTE
 
 
 !!! warning "#TODO CHANGE ME. THIS IS A TEMPLATE DOCUMENT"
     ___This is a template document !!! Please make a copy, drop this note and use it. Instructions are provided as #NOTE at each item.___
 
 
+<!-- -#TODO update from here......... -->
 
 ## RMAP.item_code - -#NOTE `<give a hort human name of item>`
 
