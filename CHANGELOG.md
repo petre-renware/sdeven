@@ -38,9 +38,11 @@
 ### 7.0.11-beta SDEVEN RELNOTE (#NOTE wip)
 
 
-* tbd... make a template for `RELNOTE_version`, code it and ref it in `00-INDEX`, `55-TRACE` and `60-RELM`? procedures
+* tbd... make a template for `RELNOTE_version`, code it...
+* ...tbd.continue... and ref it in `00-INDEX`, `55-TRACE` and `60-RELM`? procedures
 
 * wip...
+* wip... 230804piu_ make a template for `RELNOTE_version`
 * 230804piu_e fixed bug in `SDEVEN.55-TRACE`, section `Taxonomy`, first paragraph, there is wrong link (has no name and no link address like text `[]...`)
 
 
