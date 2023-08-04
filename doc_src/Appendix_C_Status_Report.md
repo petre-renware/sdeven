@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.9<br>
-Release date: 230801
+Version: 7.0.10<br>
+Release date: 230804
 
 
 
