@@ -49,21 +49,22 @@ Reference info:
     * beta - waiting for qa testing,
     * beta - qa testing started
     * stable & released
-* -#NOTE if necessary give relevant additional *requirements* in order to "close" current status (ie, additional means others than normally planned)
 
 
 
 
 ## Actions and next steps
 
-* n/a or something...
+* -#NOTE if necessary list relevant requirements and actions in order to close issues or to achieve a stable status
+
 
 
 
 
 ## Roadmap proposals
 
-* n/a or something...
+* -#NOTE list here the proposals for next features, improvements, fix bugs, ... Use the customer support & feedback channels.
+
 
 
 
