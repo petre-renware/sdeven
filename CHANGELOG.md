@@ -22,11 +22,12 @@
 
 ### #TODO PLAN section =========================
 
+* tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
     - [ ] Appendix_B_DSGN_Content_Index.md (see doc changed in `wk_crt_proposals/Appendix_B_DSGN_Content_Index.md`)
-    - [ ] Appendix_C_Status_Report.md
+    - [ ] 
 
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.9
 
@@ -37,7 +38,8 @@
 
 * wip...
 
-* 230804piu_a created `.readthedocs.yaml` for integration with and publish on *Read the docs*
+* wip... 230804piu_b `Appendix_C_Status_Report.md` update content and set a new name according to **45.OPME - `prodREVW`** meeting type
+* 230804piu_a created `.readthedocs.yaml` for integration with and publish on *Read the docs* - experimental, need more work
 * 230803piu_c fixed bugs ref `SDEVEN.62_PSTR.md` directories representation
 * 230803piu_b reviewed and closed `RMAP.001` in ROADMAP file
 * 230803piu_a `SDEVEN.62_PSTR.md` facelifts - improved organization and readability
