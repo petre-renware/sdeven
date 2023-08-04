@@ -34,12 +34,12 @@ Reference info:
 
 ### Work done
 
-* -#NOTE list here all work done. Normally should refer the CHANGELOG (default expected). Other referred docs should be attached to this report and listed in "Attached documents" section.
+* -#NOTE list here work done. Normally should refer the CHANGELOG (default expected). Other referred docs should be attached to this report and listed in "Attached documents" section.
 
 
 ### Work still in progress
 
-* -#NOTE briefly list here all remaining open issues / work to be done up closing. Different docs can be referred (for example an OPEN ISUUES LIST) and must be attached to this report and listed in "Attached documents" section.
+* -#NOTE briefly list here remaining open issues / work to be done up closing. Different docs can be referred (for example an OPEN ISUUES LIST) and must be attached to this report and listed in "Attached documents" section.
 
 
 ### System status
