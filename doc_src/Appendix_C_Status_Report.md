@@ -17,7 +17,7 @@ Release date: 230805
 # Project Status Report
 
 * *project code*: `<project code>`
-* *target for meeting type*: `<one of devREVW or `prodREVW` meeting types>` -#NOTE this establish the expected level pf details in this report
+* *target for meeting type*: `<one of devREVW or prodREVW meeting types>` -#NOTE this establish the expected level pf details in this report
 * *report issued date*: `<yymmdd>`
 * *report issued by*: `<issuer name>`
 
