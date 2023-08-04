@@ -23,7 +23,6 @@
 ### #TODO PLAN section =========================
 
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
-* tbd... you made accnt on `ReadTheDocs` but need to include a `yaml` file in root to work
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
     - [ ] Appendix_B_DSGN_Content_Index.md (see doc changed in `wk_crt_proposals/Appendix_B_DSGN_Content_Index.md`)
@@ -38,6 +37,7 @@
 
 * wip...
 
+* 230804piu_a created `.readthedocs.yaml` for integration with and publish on *Read the docs*
 * 230803piu_c fixed bugs ref `SDEVEN.62_PSTR.md` directories representation
 * 230803piu_b reviewed and closed `RMAP.001` in ROADMAP file
 * 230803piu_a `SDEVEN.62_PSTR.md` facelifts - improved organization and readability
