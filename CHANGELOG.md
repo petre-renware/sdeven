@@ -37,10 +37,9 @@
 
 ### 7.0.10-beta SDEVEN appendicitis updated
 
-* tbd.. 
 * wip...
 
-* 230805piu_a fixed 230804piu_b doc: **updated date & version as 7.0.10** 
+* 230805piu_a fixed 230804piu_b resulted  doc as: *updated date & version as 7.0.10* 
 * 230804piu_b `Appendix_C_Status_Report.md` update content and set a target reason according to **45.OPME** (usually for one of `devREVW` & `prodREVW` meeting types)
 * 230804piu_a created `.readthedocs.yaml` for integration with and publish on *Read the docs* - experimental, need more work
 * 230803piu_c fixed bugs ref `SDEVEN.62_PSTR.md` directories representation
