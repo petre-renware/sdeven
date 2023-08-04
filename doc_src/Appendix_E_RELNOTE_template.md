@@ -52,3 +52,13 @@ Release date: 230804
 * -#NOTE list here the bugs fixed in that version
 * ...
 
+
+
+
+## Known issues
+
+* -#NOTE list here all known bugs still open (reported) and not closed (fixed) in this version
+* ...
+
+
+
