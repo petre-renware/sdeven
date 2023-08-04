@@ -35,6 +35,7 @@
 
 ### 7.0.10-beta SDEVEN appendicitis updated
 
+* tbd.. upd at 230804piu_b doc: **updated date & version as 7.0.10**
 * wip...
 
 * 230804piu_b `Appendix_C_Status_Report.md` update content and set a target reason according to **45.OPME** (usually for one of `devREVW` & `prodREVW` meeting types)
