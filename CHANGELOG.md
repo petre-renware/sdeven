@@ -28,11 +28,8 @@
 
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
 
-* tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC): `Appendix_B_DSGN_Content_Index.md` (doc wip in `wk_crt_proposals/` directory)
+* tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile for `Appendix_B_DSGN_Content_Index.md` (doc wip in `wk_crt_proposals/` directory)
 
-* -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.10
-
-* -#NOTE:Cristina pe 14 injectie, 28 sa revina ptr re-internare
 
 #### [ end of #TODO_PLAN section ]=========================
 
