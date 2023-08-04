@@ -1903,8 +1903,8 @@ Release date: 230716</p>
 <p>This is about changes in software development process.</p>
 <p>There is no specific or special procedure in software development. The process of change management from <strong><em>Project Management discipline must be followed</em></strong> of course taking into account that changes in software development are almost technical ones.</p>
 <p>In that way, things regarding technical changes in software development are covered in other sections mostly in <strong><em>Practices &amp; technical issues</em></strong> but not only.</p></section><section class="print-page" id="sdeven.55_trace"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
-<p>Version: 7.0.6<br>
-Release date: 230715</p>
+<p>Version: 7.0.10<br>
+Release date: 230804</p>
 <hr />
 <h1 id="sdeven.55_trace-system-development-and-changes-logging-sdeven55-trace">System development and changes logging (SDEVEN.55-TRACE)</h1>
 <p><strong>Table of Content</strong></p>
@@ -1933,10 +1933,10 @@ Release date: 230715</p>
 <p><strong>RELNOTE...version...</strong> file(s) - this keep the record of things already done in any public released version, RELNOTE name is an acronym for "REALEASE NOTES" (see <em>NOTE 1: Files with commercial impact</em>)</p>
 </li>
 </ul>
-<p>Outside of these files, projects can have some files dedicated to project management domain, the most usual files "seen by developers" being <strong>Status_report...</strong> (see <em>NOTE 1: Files with commercial impact</em>).</p>
+<p>Outside of these files, projects can have some files dedicated to project management domain, the most usual files "seen by developers" being <strong><a href="#appendix_c_status_report">Status_report - TEMPLATE IN <code>Appendix_C_Status_Report.md</code></a></strong> (see <em>NOTE 1: Files with commercial impact</em>).</p>
 <div class="admonition note">
 <p class="admonition-title">NOTE 1: Files with commercial impact</p>
-<p><code>ROADMAP</code>, <code>RELNOTE...</code>, <code>Status_report...</code> files have commercial impact and could be used by other persons from commercial departments so they should follow just a minimum strictness regarding used language</p>
+<p><a href="#appendix_d_roadmap_template">ROADMAP</a>, <code>RELNOTE...</code> (template upcoming...), <a href="#appendix_c_status_report">Status_report</a> files have commercial impact and could be used by other persons from commercial departments so they should follow just a minimum strictness regarding used language</p>
 </div>
 <h2 id="sdeven.55_trace-taxonomy">Taxonomy</h2>
 <p>Speaking about current type of <code>situations</code> that must be traced, basically are:
@@ -3567,71 +3567,67 @@ of system specific terms, objects, information domains, paradigms, environment (
 <li>a duration for each deliverable</li>
 <li>any other relevant things resulted from a discussion with the project manager or technical project manager, such as: discussion minutes, various action plans, resource contacts, etc</li>
 </ul>
-<p>--- ooo ---</p></section><section class="print-page" id="appendix_c_status_report"><p><small><strong><em>RENware Software Systems</em></strong></small></p>
-<p><strong>Project Status Report</strong></p>
-<p>Reference info:</p>
+<p>--- ooo ---</p></section><section class="print-page" id="appendix_c_status_report"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
+<p>Version: 7.0.10<br>
+Release date: 230805</p>
+<p>-#NOTE the template starts here. README this before using this template<br>
+-#NOTE all fields that should be filled are marked as <strong><em>-#NOTE</em></strong> and enclosed in <strong><em><code>&lt;...&gt;</code></em></strong> as <code>code section like me</code></p>
+<p><strong>-#NOTE <code>&lt;your project name here&gt;</code></strong></p>
+<hr />
+<h1 id="appendix_c_status_report-project-status-report">Project Status Report</h1>
 <ul>
-<li><em>project</em>: code / name</li>
-<li><em>issued date</em>: yymmddhHHMM</li>
-<li><em>issued by</em>: <code>issuer_name</code></li>
+<li><em>project code</em>: <code>&lt;project code&gt;</code></li>
+<li><em>target for meeting type</em>: <code>&lt;one of devREVW or prodREVW meeting types&gt;</code> -#NOTE this establish the expected level pf details in this report</li>
+<li><em>report issued date</em>: <code>&lt;yymmdd&gt;</code></li>
+<li><em>report issued by</em>: <code>&lt;issuer name&gt;</code></li>
 </ul>
 <div class="toc">
 <ul>
+<li><a href="#appendix_c_status_report-project-status-report">Project Status Report</a><ul>
 <li><a href="#appendix_c_status_report-actual-overview">Actual overview</a><ul>
-<li><a href="#appendix_c_status_report-brief-summary-ref">Brief summary ref ...</a></li>
-<li><a href="#appendix_c_status_report-system-status">System status</a></li>
-<li><a href="#appendix_c_status_report-other-remarks">Other remarks</a></li>
+<li><a href="#appendix_c_status_report-work-done">Work done</a></li>
+<li><a href="#appendix_c_status_report-work-still-in-progress">Work still in progress</a></li>
+<li><a href="#appendix_c_status_report-current-system-status">Current system status</a></li>
 </ul>
 </li>
 <li><a href="#appendix_c_status_report-actions-and-next-steps">Actions and next steps</a></li>
 <li><a href="#appendix_c_status_report-roadmap-proposals">Roadmap proposals</a></li>
+<li><a href="#appendix_c_status_report-attached-documents">Attached documents</a></li>
+</ul>
+</li>
 </ul>
 </div>
-<h1 id="appendix_c_status_report-actual-overview">Actual overview</h1>
-<h2 id="appendix_c_status_report-brief-summary-ref">Brief summary ref ...</h2>
-<p><strong>Working / done:</strong></p>
+<h2 id="appendix_c_status_report-actual-overview">Actual overview</h2>
+<h3 id="appendix_c_status_report-work-done">Work done</h3>
 <ul>
-<li>Something with details...:<ul>
-<li>detail 1...</li>
-<li>detail 2...</li>
+<li>-#NOTE list here work done. Normally should refer the CHANGELOG (default expected). Other referred docs should be attached to this report and listed in "Attached documents" section.</li>
 </ul>
-</li>
-<li>Something without details...</li>
-</ul>
-<p><strong>NOT working / in progress:</strong></p>
+<h3 id="appendix_c_status_report-work-still-in-progress">Work still in progress</h3>
 <ul>
-<li>n/a or something...</li>
+<li>-#NOTE briefly list here remaining open issues / work to be done up closing. Different docs can be referred (for example an OPEN ISUUES LIST) and must be attached to this report and listed in "Attached documents" section.</li>
 </ul>
-<h2 id="appendix_c_status_report-system-status">System status</h2>
+<h3 id="appendix_c_status_report-current-system-status">Current system status</h3>
 <ul>
-<li><strong>wip</strong> version: <em>the current version as in progress / not yet released...</em></li>
-<li>last <strong>released</strong> version: <em>last released version</em></li>
-<li>last <strong>deployed</strong> version: <em>n/a or if applicable, last deployed version</em> on <em><code>server_address</code></em></li>
-<li>development server: <em>IP or name or whatever ID</em></li>
-<li>inLAN opened ports:<ul>
-<li><em>nnnnn</em> -<em> what should happen on this port...</em></li>
-<li><em>nnnnn</em> -<em> what should happen on this port...</em></li>
-</ul>
-</li>
-<li>public exposed data: <em>the complete server address up to port <code>protocol://server</code></em><ul>
-<li><em>nnnnn</em> -<em> what should happen on this port...</em></li>
-<li><em>nnnnn</em> -<em> what should happen on this port...</em></li>
+<li>-#NOTE describe the current software system status as:<ul>
+<li>alpha,</li>
+<li>beta - waiting for qa testing,</li>
+<li>beta - qa testing started</li>
+<li>stable &amp; released</li>
 </ul>
 </li>
 </ul>
-<h2 id="appendix_c_status_report-other-remarks">Other remarks</h2>
+<h2 id="appendix_c_status_report-actions-and-next-steps">Actions and next steps</h2>
 <ul>
-<li>n/a or something...</li>
+<li>-#NOTE if necessary list relevant requirements and actions in order to close issues or to achieve a stable status</li>
 </ul>
-<h1 id="appendix_c_status_report-actions-and-next-steps">Actions and next steps</h1>
+<h2 id="appendix_c_status_report-roadmap-proposals">Roadmap proposals</h2>
 <ul>
-<li>n/a or something...</li>
+<li>-#NOTE list here the proposals for next features, improvements, fix bugs, ... Use the customer support &amp; feedback channels.</li>
 </ul>
-<h1 id="appendix_c_status_report-roadmap-proposals">Roadmap proposals</h1>
+<h2 id="appendix_c_status_report-attached-documents">Attached documents</h2>
 <ul>
-<li>n/a or something...</li>
-</ul>
-<p>--- ooo ---</p></section><section class="print-page" id="appendix_d_roadmap_template"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
+<li>...</li>
+</ul></section><section class="print-page" id="appendix_d_roadmap_template"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
 <p>Version: 7.0.9<br>
 Release date: 230801</p>
 <p>-#NOTE the template starts here. README this before using this templat <br>
