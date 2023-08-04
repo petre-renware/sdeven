@@ -5,7 +5,7 @@ Release date: 230805
 
 
 
--#NOTE the template starts here. README this before using this templat <br>
+-#NOTE the template starts here. README this before using this template<br>
 -#NOTE all fields that should be filled are marked as ***-#NOTE*** and enclosed in ***`<...>`*** as `code section like me`
 
 
