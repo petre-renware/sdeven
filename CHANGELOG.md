@@ -37,7 +37,7 @@
 
 * wip...
 
-* wip... 230804piu_b `Appendix_C_Status_Report.md` update content and set a new name according to **45.OPME - `prodREVW`** meeting type
+* wip... 230804piu_b `Appendix_C_Status_Report.md` update content and set a target reason according to **45.OPME** (usually for one of `devREVW` & `prodREVW` meeting types)
 * 230804piu_a created `.readthedocs.yaml` for integration with and publish on *Read the docs* - experimental, need more work
 * 230803piu_c fixed bugs ref `SDEVEN.62_PSTR.md` directories representation
 * 230803piu_b reviewed and closed `RMAP.001` in ROADMAP file
