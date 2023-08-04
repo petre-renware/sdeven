@@ -25,7 +25,7 @@ Release date: 230804
 [TOC]
 
 
-# RELNOTE
+# RELNOTE of version `<version number represented by this release note>`
 
 
 !!! warning "#TODO CHANGE ME. THIS IS A TEMPLATE DOCUMENT"
