@@ -30,6 +30,7 @@
 
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile for `Appendix_B_DSGN_Content_Index.md` (doc wip in `wk_crt_proposals/` directory)
 
+* tbd... install `markdown-exec` and use `tree` feature to update `SDEVEN.62_PSTR.md`, section "Example of project full directory structure"
 
 #### [ end of #TODO_PLAN section ]=========================
 
