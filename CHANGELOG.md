@@ -35,6 +35,8 @@
 #### [ end of #TODO_PLAN section ]=========================
 
 
+
+
 ### 7.0.11-beta SDEVEN RELNOTE (#NOTE wip)
 
 
@@ -42,8 +44,9 @@
 * ...tbd.continue... and ref it in `00-INDEX`, `55-TRACE` and `60-RELM`? procedures
 
 * wip...
-* wip... 230804piu_ make a template for `RELNOTE_version`
-* 230804piu_e fixed bug in `SDEVEN.55-TRACE`, section `Taxonomy`, first paragraph, there is wrong link (has no name and no link address like text `[]...`)
+
+* wip... 230804piu_f make a template for `RELNOTE_version`
+* (B) 230804piu_e fixed bug in `SDEVEN.55-TRACE`, section `Taxonomy`, first paragraph, there is wrong link (has no name and no link address like text `[]...`)
 
 
 
