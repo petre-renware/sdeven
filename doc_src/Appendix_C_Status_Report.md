@@ -20,6 +20,7 @@ Release date: 230801
 Reference info:
 
 * *project code*: `<project code>`
+* *target for meeting type*: `<one of devREVW or `prodREVW` meeting types>` -#NOTE this establish the expected level pf details in this report
 * *report issued date*: `<yymmdd>`
 * *report issued by*: `<issuer name>`
 
@@ -31,16 +32,13 @@ Reference info:
 ## Actual overview
 
 
-### Brief summary ref ...
+### Summary
 
-**Working / done:**
+**Work done:**
 
-* Something with details...:
-    * detail 1...
-    * detail 2...
-* Something without details...
+* -#NOTE list here all work done. Normally should refer the CHANGELOG (default expected). Other referred docs should be attached to this report and listed in "Attached documents" section.
 
-**NOT working / in progress:**
+**Work still in progress:**
 
 * n/a or something...
 
@@ -82,3 +80,7 @@ Reference info:
 
 
 
+
+## Attached documents
+
+* ...
