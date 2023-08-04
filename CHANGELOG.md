@@ -39,13 +39,11 @@
 
 ### 7.0.11-beta RELNOTE template (#NOTE wip)
 
-
-* tbd... make a template for `RELNOTE_version`, code it...
-* ...tbd.continue... and ref it in `00-INDEX`, `55-TRACE` and `60-RELM`? procedures
+* tbd... update `00-INDEX`, `55-TRACE` and `60-RELM`? procedures ref `Appendix_E_RELNOTE_template.md` document (resulted from 230804piu_f)
 
 * wip...
 
-* wip... 230804piu_f make a template for "RELNOTE_version..." as `Appendix_E_RELNOTE_template.md`
+* 230804piu_f make a new doc for `Appendix_E_RELNOTE_template.md`
 * (B) 230804piu_e fixed bug in `SDEVEN.55-TRACE`, section `Taxonomy`, first paragraph, there is wrong link (has no name and no link address like text `[]...`)
 
 
