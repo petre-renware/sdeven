@@ -15,28 +15,23 @@ Release date: 230801
 ***
 
 
-
-
--#NOTE from here ia the old version 
-
-
-
-
-<small>***RENware Software Systems***</small>
-
-**Project Status Report**
+# Project Status Report
 
 Reference info:
 
-* *project*: code / name
-* *issued date*: yymmddhHHMM
-* *issued by*: `issuer_name`
+* *project code*: `<project code>`
+* *report issued date*: `<yymmdd>`
+* *report issued by*: `<issuer name>`
 
 [TOC]
 
-# Actual overview
 
-## Brief summary ref ...
+
+
+## Actual overview
+
+
+### Brief summary ref ...
 
 **Working / done:**
 
@@ -49,7 +44,8 @@ Reference info:
 
 * n/a or something...
 
-## System status
+
+### System status
 
 * **wip** version: *the current version as in progress / not yet released...*
 * last **released** version: *last released version*
@@ -62,16 +58,27 @@ Reference info:
     * *nnnnn* -* what should happen on this port...*
     * *nnnnn* -* what should happen on this port...*
 
-## Other remarks
+
+
+
+### Other remarks
 
 * n/a or something...
 
-# Actions and next steps
+
+
+
+## Actions and next steps
 
 * n/a or something...
 
-# Roadmap proposals
+
+
+
+## Roadmap proposals
 
 * n/a or something...
 
---- ooo ---
+
+
+
