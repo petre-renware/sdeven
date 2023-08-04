@@ -2,7 +2,7 @@
 
 **SDEVEN**
 
-* Last released version: 0.6
+* Last published version: 7.0 beta
 
 ***
 
@@ -37,7 +37,7 @@
 
 
 
-### 7.0.11-beta SDEVEN RELNOTE (#NOTE wip)
+### 7.0.11-beta RELNOTE template (#NOTE wip)
 
 
 * tbd... make a template for `RELNOTE_version`, code it...
