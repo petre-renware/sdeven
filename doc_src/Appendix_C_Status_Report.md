@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.10<br>
-Release date: 230804
+Release date: 230805
 
 
 
@@ -15,9 +15,6 @@ Release date: 230804
 
 
 # Project Status Report
-
-
-Reference info:
 
 * *project code*: `<project code>`
 * *target for meeting type*: `<one of devREVW or `prodREVW` meeting types>` -#NOTE this establish the expected level pf details in this report
