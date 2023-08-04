@@ -26,7 +26,7 @@ A RELEASE is a consequence of a successful development process and the **RELEASE
 Any public release should follow these minimum requirements:
 
 * the **version number** format must be strictly in accordance with [*Versioning* scheme of SDEVEN](SDEVEN.30_RENVER.md)
-* must have a **Release note** document (`RELNOTE_version`)
+* must have a **Release note** document (`RELNOTE`) - [a template can be found here](Appendix_E_RELNOTE_template.md)
 * the product package must be available in a standard **format**: `zip`, `tar`, `bz2`
 * the product must have been **passed all requited tests**: unit tests, integration tests, documentation QA, installation tests, code review tests
 * the **product documentation** has been made available or a note with reference to a public place where is available (in release package)

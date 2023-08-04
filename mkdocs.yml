@@ -30,6 +30,7 @@ nav:
         - Appendix (B) System Design Document Template (810 DSGN): 'Appendix_B_DSGN_Content_Index.md'
         - Appendix (C) Status Report Template (STATUSR): 'Appendix_C_Status_Report.md'
         - Appendix (D) ROADMAP Template (RMAP): 'Appendix_D_ROADMAP_template.md'
+        - Appendix (E) Release note template (RELNOTE): 'Appendix_E_RELNOTE_template.md'
         - Appendix (Q) FAQ. Frequently Asked Questions (FAQ): 'Appendix_Q_faq.md'
     - About SDEVEN: 'About_SDEVEN.md'
     - License: 'LICENSE.md'
@@ -98,6 +99,7 @@ theme:
         - navigation.path
     palette:
         primary: teal # see https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/ for other color options
+        accent: blue
     icon:
         admonition:
             note: fontawesome/solid/note-sticky

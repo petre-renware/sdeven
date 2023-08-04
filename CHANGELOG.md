@@ -2,7 +2,7 @@
 
 **SDEVEN**
 
-* Last released version: 0.6
+* Last published version: 7.0 beta
 
 ***
 
@@ -25,25 +25,39 @@
 #### [ start of #TODO_PLAN section ]=========================
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
+
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
-* tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
-* tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
-    - [ ] Appendix_B_DSGN_Content_Index.md (see doc changed in `wk_crt_proposals/` directory)
 
-* -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.10
+* tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile for `Appendix_B_DSGN_Content_Index.md` (doc wip in `wk_crt_proposals/` directory)
 
-* -#NOTE:Cristina pe 14 injectie, 28 sa revina ptr re-internare
+* tbd... install `markdown-exec` and use `tree` feature to update `SDEVEN.62_PSTR.md`, section "Example of project full directory structure"
 
 #### [ end of #TODO_PLAN section ]=========================
 
 
-### 7.0.11-beta (#NOTE wip)
+### 7.0.12-beta TESTing procedure (#NOTE wip)
 
-* wip...
-
-
+* wip... (last code used 230804piu_h)
 
 
+
+
+
+
+
+
+
+
+
+
+### 7.0.11-beta RELNOTE template (230804 19:45)
+
+* 230804piu_h update `00-INDEX`, `55-TRACE` and `60-RELM` procedures ref `Appendix_E_RELNOTE_template.md` document (resulted from 230804piu_f)
+* (B) 230804piu_g
+    * updated `mkdocs.yml` ref `Appendix_E_RELNOTE_template.md` document (resulted from 230804piu_f)
+    * updated `Appendix_C_Status_Report.md` set code-name as `STATUSR`
+* 230804piu_f make a new doc for `Appendix_E_RELNOTE_template.md`
+* (B) 230804piu_e fixed bug in `SDEVEN.55-TRACE`, section `Taxonomy`, first paragraph, there is wrong link (has no name and no link address like text `[]...`)
 
 
 

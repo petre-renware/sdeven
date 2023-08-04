@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.7<br>
-Last update: 230717
+Version: 7.0.11<br>
+Last update: 230804
 
 ***
 
@@ -12,6 +12,8 @@ Last update: 230717
 [TOC]
 
 
+
+
 ## Overview
 
 The RENware Software Development Methodology (**SDEVEN**) is the basic set of rules applicable in software development process and other related processes.
@@ -19,6 +21,8 @@ The RENware Software Development Methodology (**SDEVEN**) is the basic set of ru
 **Methodology itself is mandatory** in the mean that is ***always applicable ref to software production in company***, regardless to project, software type, team members or composition, project or system classification, location, etc.
 
 The methodology is "flexible enough" to allow changes and liberty for innovation and creativity but "rigid" to practices that may be at law limits or out of law, team members cooperation and collaboration, equity, respect for anyone work and contribution, respect for intellectual property and integrity, etc. Anyone can manifest its own creativity and innovation as long as this is made known and accepted and not induce negative effects on projects and its members*.
+
+
 
 
 ## Methodology sections
@@ -85,11 +89,25 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 
 
 
+## Forms, templates, cheat sheets and other helpers
+
+* [Appendix (A) Sematic Versioning (SEMVER)](Appendix_A_Semantic_versioning.md)
+* [Appendix (B) System Design Document Template (810 DSGN)](Appendix_B_DSGN_Content_Index.md)
+* [Appendix (C) Status Report Template (STATUSR)](Appendix_C_Status_Report.md)
+* [Appendix (D) ROADMAP Template (RMAP)](Appendix_D_ROADMAP_template.md)
+* [Appendix (Q) Frequently Asked Questions (FAQ)](Appendix_Q_faq.md)
+* [Appendix (E) Release note template (RELNOTE)](Appendix_E_RELNOTE_template.md)
+* [810 DSGN document template and guide](Appendix_B_DSGN_Content_Index.md)
+* [original "Semantic Versioning" material](https://semver.org/)
+
+
+
 
 ## Books and other reference materials
 
 * Books * [Creative Commons](https://creativecommons.org/publicdomain/)
 * SW * [AGPLv3 GNU Affero](https://www.gnu.org/licenses/agpl-3.0.html)
+
 
 
 
@@ -99,13 +117,5 @@ A list with most common frequent asked questions can be found [here](Appendix_Q_
 
 
 
-## Forms, templates, cheat sheets and other helpers
 
-* [Appendix (A) Sematic Versioning (SEMVER)](Appendix_A_Semantic_versioning.md)
-* [Appendix (B) System Design Document Template (810 DSGN)](Appendix_B_DSGN_Content_Index.md)
-* [Appendix (C) Status Report Template (STATUSR)](Appendix_C_Status_Report.md)
-* [Appendix (D) ROADMAP Template (RMAP)](Appendix_D_ROADMAP_template.md)
-* [Appendix (Q) Frequently Asked Questions (FAQ)](Appendix_Q_faq.md)
-* [810 DSGN document template and guide](Appendix_B_DSGN_Content_Index.md)
-* [original "Semantic Versioning" material](https://semver.org/)
 
