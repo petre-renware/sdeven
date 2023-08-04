@@ -12,8 +12,10 @@
 
 <small>
 
-* For version code structure meaning see SDEVEN methodology document (*sic !*) :).
-* with (F) are marked those changes that are features in order to be copied in a RELNOTE file
+* For version code structure meaning see SDEVEN methodology document (*sic !*) :)
+* items targeted on RELNOTE docs:
+    * with (F) are marked those changes that are features in order to be copied in a RELNOTE file
+    * with (B) are marked bugfixes relevant (fixed in a released version different that where happened)
 * -#NOTE ____ PUBLISHING IS MADE FROM `PUBLISHING` BRANCH, so wheen publish checkout it or upload from git
 </small>
 
@@ -35,9 +37,10 @@
 
 ### 7.0.10-beta SDEVEN appendicitis updated
 
-* tbd.. upd at 230804piu_b doc: **updated date & version as 7.0.10**
+* tbd.. 
 * wip...
 
+* 230805piu_a fixed 230804piu_b doc: **updated date & version as 7.0.10** 
 * 230804piu_b `Appendix_C_Status_Report.md` update content and set a target reason according to **45.OPME** (usually for one of `devREVW` & `prodREVW` meeting types)
 * 230804piu_a created `.readthedocs.yaml` for integration with and publish on *Read the docs* - experimental, need more work
 * 230803piu_c fixed bugs ref `SDEVEN.62_PSTR.md` directories representation
