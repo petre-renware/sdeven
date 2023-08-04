@@ -29,7 +29,7 @@
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
     - [ ] Appendix_B_DSGN_Content_Index.md (see doc changed in `wk_crt_proposals/` directory)
-* tbd... bug in `SDEVEN.55-TRACE`, section `Taxonomy`, firs paragraph, there is link wronk rendered (has no name and no link address like text `[]...`
+
 * -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.10
 
 * -#NOTE:Cristina pe 14 injectie, 28 sa revina ptr re-internare
@@ -40,7 +40,7 @@
 ### 7.0.11-beta (#NOTE wip)
 
 * wip...
-
+* 230804piu_e fixed bug in `SDEVEN.55-TRACE`, section `Taxonomy`, first paragraph, there is wrong link (has no name and no link address like text `[]...`)
 
 
 
