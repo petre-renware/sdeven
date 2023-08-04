@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.7<br>
-Release date: 230718
+Version: 7.0.9<br>
+Release date: 230803
 
 ***
 
@@ -29,17 +29,17 @@ First level of project backbone consists of:
 
 All product system code is kept under `830-DEV` directory. The objective of its structuring is to assure as much as possible code reusability and its "after-release" maintainability. This directory contains:
 
-* 830-DEV**/**project root directory [go to section](#project-root-directory)
-* 830-DEV/**doc_src** [go to section](#doc_src-directory)
-* 830-DEV/**docs** [go to section](#docs-directory)
-* 830-DEV/**pjm** [go to section](#pjm-directory)
-* 830-DEV/**setup** [go to section](#setup-directory)
-* 830-DEV/**static_portal** [go to section](#static_portal-directory)
-* 830-DEV/**sysInit** [go to section](#sysinit-directory)
-* 830-DEV/**system_module_A** - directory dedicated for system module "A"  [go to section](#system_module_x-directory)
-* 830-DEV/**system_module_B** - directory dedicated for system module "B"
-* ... 830-DEV/another system module ...
-* 830-DEV/**Commons** [go to section](#commons-component)
+* **<project root\>/830-DEV/** directory [go to section](#project_root830-dev-directory) with _following structure_:
+    * **doc_src/** [go to section](#doc_src-directory)
+    * **docs/** [go to section](#docs-directory)
+    * **pjm/** [go to section](#pjm-directory)
+    * **setup/** [go to section](#setup-directory)
+    * **static_portal/** [go to section](#static_portal-directory)
+    * **sysInit/** [go to section](#sysinit-directory)
+    * **<system_module_A\>/** - directory dedicated for <system module "A"\> [go to section](#system_module_x-directory)
+    * **<system_module_B\>/** - directory dedicated for <system module "B"\> [go to section](#system_module_x-directory)
+    * ... <another system module\>/ ... [go to section](#system_module_x-directory)
+    * **Commons**/ [go to section](#commons-component)
 
 Each of these directories will be explained in next sections.
 
@@ -51,7 +51,7 @@ For a clear "picture" please refer the ["Example of project full directory struc
 
 
 
-## **doc_src** directory
+### **doc_src** directory
 
 * the technical documentation:
     * 110-SRE System Requirements
@@ -68,7 +68,7 @@ For a clear "picture" please refer the ["Example of project full directory struc
 
 
 
-## **docs** directory
+### **docs** directory
 
 This directory will accommodate the **FINAL** (**RELEASED**) documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "*ENTERPRISE SYSTEMS*".
 
@@ -79,7 +79,7 @@ This directory will accommodate the **FINAL** (**RELEASED**) documentation stati
 
 
 
-## **pjm** directory
+### **pjm** directory
 
 Here are kept project management items that could be necessary in software development [^pjm_docs], things like that:
 
@@ -96,7 +96,7 @@ Here are kept project management items that could be necessary in software devel
 
 
 
-## **setup** directory
+### **setup** directory
 
 The aim of this directory is to keep code to install the system by this understanding the code that:
 
@@ -121,7 +121,7 @@ The aim of this directory is to keep code to install the system by this understa
 
 
 
-## **static_portal** directory
+### **static_portal** directory
 
 This directory will accommodate the documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "*ENTERPRISE SYSTEMS*".
 
@@ -132,7 +132,7 @@ This directory will accommodate the documentation static portal that accompanies
 
 
 
-## **sysInit** directory
+### **sysInit** directory
 
 The `sysInit` directory accommodates code that initialize all system modules. This system initialization routine **SHOULD BE THE CENTRALIZED ONE** meaning:
 
@@ -144,7 +144,7 @@ The code of `sysInit` module should be called repeatedly without generate side e
 
 
 
-## **system_module_X** directory
+### **<system_module_X\>** directory
 
 The system must be designed following the next principles:
 
@@ -163,7 +163,7 @@ The system must be designed following the next principles:
 
 
 
-## **Commons** component
+### **Commons** component
 
 This component is a specialized module used to replace direct usage of ***global variables***. It usually is implemented as a `class` object and take care of global variables by meaning:
 
@@ -172,10 +172,13 @@ This component is a specialized module used to replace direct usage of ***global
 
 `Commons` component (if is present) should have data initialized by each module that post any global data and in `sysInit` module should be among the first created, if not the very first.
 
+!!! warning "Commons component code-name"
+    The `Commons` component has the name starting with _uppercase_ especially to avoid confusions with `commons` name which can be used in more other contexts being an usual and general term. So, the idea is **to use in clear `Commons`** instead of `commons` and to potentially get some warnings at least in stating / initializing phases...
 
 
 
-## **/**project root directory
+
+## **<project_root\>/830-DEV/** directory
 
 In the project root directory will be at least these files:
 
@@ -195,7 +198,7 @@ In the project root directory will be at least these files:
 Here is shown an example of project directory structure starting from a `PROJECT-ROOT-DIRECTORY`.
 
 ```
-........\PROJECT-ROOT-DIRECTORY
+.../<PROJECT-ROOT-DIRECTORY>/
         ├───830-DEV/
         │   ├───doc_src/
         │   │   ├───110-SRE/
@@ -207,12 +210,16 @@ Here is shown an example of project directory structure starting from a `PROJECT
         │   │   └─── ... specific project management and contractual docs ...
         │   ├───setup/
         │   ├───static_portal/
+        │   ├───<sys_module_A...dir>/
+        │   ├───<sys_module_B...dir>/
+        │   ├───<sys_module_X...dir>/
         │   ├───Commons/
         │   ├───SysInit/
         │   ├───project.toml
         │   ├───README.md
         │   └───requirements.txt
         └───880-RLSE
+            └─── ... specific organization (see procedure 60-RELM) ...
 ```
 
 

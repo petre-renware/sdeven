@@ -1,53 +1,72 @@
-<small>***RENware Software Systems***</small>
+<small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-**Project Status Report**
+Version: 7.0.10<br>
+Release date: 230804
 
-Reference info:
 
-* *project*: code / name
-* *issued date*: yymmddhHHMM
-* *issued by*: `issuer_name`
+
+-#NOTE the template starts here. README this before using this template<br>
+-#NOTE all fields that should be filled are marked as ***-#NOTE*** and enclosed in ***`<...>`*** as `code section like me`
+
+
+**-#NOTE `<your project name here>`**
+
+***
+
+
+# Project Status Report
+
+* *project code*: `<project code>`
+* *target for meeting type*: `<one of devREVW or prodREVW meeting types>` -#NOTE this establish the expected level pf details in this report
+* *report issued date*: `<yymmdd>`
+* *report issued by*: `<issuer name>`
 
 [TOC]
 
-# Actual overview
 
-## Brief summary ref ...
 
-**Working / done:**
 
-* Something with details...:
-    * detail 1...
-    * detail 2...
-* Something without details...
+## Actual overview
 
-**NOT working / in progress:**
 
-* n/a or something...
+### Work done
 
-## System status
+* -#NOTE list here work done. Normally should refer the CHANGELOG (default expected). Other referred docs should be attached to this report and listed in "Attached documents" section.
 
-* **wip** version: *the current version as in progress / not yet released...*
-* last **released** version: *last released version*
-* last **deployed** version: *n/a or if applicable, last deployed version* on *`server_address`*
-* development server: *IP or name or whatever ID*
-* inLAN opened ports:
-    * *nnnnn* -* what should happen on this port...*
-    * *nnnnn* -* what should happen on this port...*
-* public exposed data: *the complete server address up to port `protocol://server`*
-    * *nnnnn* -* what should happen on this port...*
-    * *nnnnn* -* what should happen on this port...*
 
-## Other remarks
+### Work still in progress
 
-* n/a or something...
+* -#NOTE briefly list here remaining open issues / work to be done up closing. Different docs can be referred (for example an OPEN ISUUES LIST) and must be attached to this report and listed in "Attached documents" section.
 
-# Actions and next steps
 
-* n/a or something...
+### Current system status
 
-# Roadmap proposals
+* -#NOTE describe the current software system status as:
+    * alpha,
+    * beta - waiting for qa testing,
+    * beta - qa testing started
+    * stable & released
 
-* n/a or something...
 
---- ooo ---
+
+
+## Actions and next steps
+
+* -#NOTE if necessary list relevant requirements and actions in order to close issues or to achieve a stable status
+
+
+
+
+
+## Roadmap proposals
+
+* -#NOTE list here the proposals for next features, improvements, fix bugs, ... Use the customer support & feedback channels.
+
+
+
+
+
+
+## Attached documents
+
+* ...

@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.6<br>
-Release date: 230715
+Version: 7.0.10<br>
+Release date: 230804
 
 ***
 
@@ -27,11 +27,11 @@ The following files are mostly present in development projects:
 
 * **RELNOTE...version...** file(s) - this keep the record of things already done in any public released version, RELNOTE name is an acronym for "REALEASE NOTES" (see *NOTE 1: Files with commercial impact*)
 
-Outside of these files, projects can have some files dedicated to project management domain, the most usual files "seen by developers" being **Status_report...** (see *NOTE 1: Files with commercial impact*).
+Outside of these files, projects can have some files dedicated to project management domain, the most usual files "seen by developers" being **[Status_report - TEMPLATE IN `Appendix_C_Status_Report.md`](Appendix_C_Status_Report.md)** (see *NOTE 1: Files with commercial impact*).
 
 
 !!! note "NOTE 1: Files with commercial impact"
-    `ROADMAP`, `RELNOTE...`, `Status_report...` files have commercial impact and could be used by other persons from commercial departments so they should follow just a minimum strictness regarding used language
+    [ROADMAP](Appendix_D_ROADMAP_template.md), `RELNOTE...` (template upcoming...), [Status_report](Appendix_C_Status_Report.md) files have commercial impact and could be used by other persons from commercial departments so they should follow just a minimum strictness regarding used language
 
 
 

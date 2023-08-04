@@ -12,28 +12,52 @@
 
 <small>
 
-* For version code structure meaning see SDEVEN methodology document (*sic !*) :).
-* with (F) are marked those changes that are features in order to be copied in a RELNOTE file
+* For version code structure follows SDEVEN methodology
+* items targeted on RELNOTE docs:
+    * with (F) are marked those changes that are features in order to be copied in a RELNOTE file
+    * with (B) are marked relevant bugfixes (fixed in a released version different that where happened)
 * -#NOTE ____ PUBLISHING IS MADE FROM `PUBLISHING` BRANCH, so wheen publish checkout it or upload from git
 </small>
 
 
 ## 7.0 SDEVEN 7.0
 
-### #TODO PLAN section =========================
+#### [ start of #TODO_PLAN section ]=========================
 
+* tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 * tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
-* tbd... you made accnt on `ReadTheDocs` but need to include a `yaml` file in root to work
 * tbd... make a template for `RELNOTE_version`, code it and ref it in `55-TRACE` (and `60-RELM` ?) procedures
 * tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (otherwise mkdocs will not generate "right side" navigation as TOC):
-    - [ ] Appendix_B_DSGN_Content_Index.md (see doc changed in `wk_crt_proposals/Appendix_B_DSGN_Content_Index.md`)
-    - [ ] Appendix_C_Status_Report.md
+    - [ ] Appendix_B_DSGN_Content_Index.md (see doc changed in `wk_crt_proposals/` directory)
 
-* -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.9
+* -#FIXME_#FIXME_#FIXME_#FIXME ATTN @ NEW VERSION 7.0.10
 
-=============[ END of #TODO-section ]=========================
+* -#NOTE:Cristina pe 14 injectie, 28 sa revina ptr re-internare
+
+#### [ end of #TODO_PLAN section ]=========================
 
 
+### 7.0.11-beta (#NOTE wip)
+
+* wip...
+
+
+
+
+
+
+
+
+
+### 7.0.10-beta SDEVEN Status_report (230804 13:10)
+
+* 230804piu_d updated `SDEVEN.55_TRACE.md` ref section where "Status_report..." is referred to address new file resulted from 230804piu_b
+* 230804piu_c fixed 230804piu_b resulted  doc as: *updated date & version as 7.0.10* 
+* 230804piu_b `Appendix_C_Status_Report.md` update content and set a target reason according to **45.OPME** (usually for one of `devREVW` & `prodREVW` meeting types)
+* 230804piu_a created `.readthedocs.yaml` for integration with and publish on *Read the docs* - experimental, need more work
+* 230803piu_c fixed bugs ref `SDEVEN.62_PSTR.md` directories representation
+* 230803piu_b reviewed and closed `RMAP.001` in ROADMAP file
+* 230803piu_a `SDEVEN.62_PSTR.md` facelifts - improved organization and readability
 
 
 
