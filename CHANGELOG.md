@@ -45,7 +45,7 @@
 
 * wip...
 
-* wip... 230804piu_f make a template for `RELNOTE_version`
+* wip... 230804piu_f make a template for "RELNOTE_version..." as `Appendix_E_RELNOTE_template.md`
 * (B) 230804piu_e fixed bug in `SDEVEN.55-TRACE`, section `Taxonomy`, first paragraph, there is wrong link (has no name and no link address like text `[]...`)
 
 
