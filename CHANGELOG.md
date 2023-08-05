@@ -49,7 +49,7 @@
 
 
 
-### 7.0.12-beta TESTing procedure (230805 09:15)
+### 7.0.12-beta standardize & clean "Appendix (B) DSGN..." procedure (230805 09:15)
 
 * 230805piu_e update `Appendix_B_DSGN_Content_Index.md`,  updated for documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile
 * 230805piu_d appendices title ("Appendix" like) release dates, versions for following files:
