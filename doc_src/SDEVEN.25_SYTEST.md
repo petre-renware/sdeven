@@ -9,18 +9,30 @@
 
 # xxx
 
--#TODO ideas:
+## Preliminaries
 
-* section **Preliminaries**
+* -#TODO ideas ref section **Preliminaries**
     * why need to test software?
+    * when and what need to test?
     * what means terms compliance, bug, acceptable, workaround solverable, ...
 
-* section ref **Test types**:
+
+
+
+
+## Test types
+
+* -#TODO ideas ref section ref **Test types**:
     * unit,
     * functional
     * integration 
 
-* section ref **Test deliverables**:
+
+
+
+## Test deliverables
+
+* -#TODO ideas ref section ref **Test deliverables**:
     * planning ==> Test Plan tmpl
     * scenarios ==> Test Scenario tmpl
 
