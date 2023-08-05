@@ -29,8 +29,12 @@ Release date: 230806
 
 The testing is one of the most important activity in software development as long as a piece of software is NOT written for own purposes.
 
+
+### Why
 The testing may *assure* you that a piece of software do what was intended to do. This is "one face" but testing must also assure the *owner* of the software for the same things. And finally must assure the *end users* (generally the customer) for same things, sometimes more things.
 
+
+### When
 The testing should be done first "internally" (ie, not in the presence of customer's people). Then some more complex, elaborated tests should be done in the customer presence (for customer confidence).
 
 
