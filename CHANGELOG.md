@@ -32,6 +32,8 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
+* tbd... write content to `SDEVEN.25_SYTEST.md`
+
 * wip...
 * 230805piu_h refer test procedure in `SDEVEN.00_INDEX.md`
 * 230805piu_g refer test procedure in `mkdocs.yml`
