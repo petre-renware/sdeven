@@ -35,15 +35,8 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 * **Practices and technical issues** section [SDEVEN.20-RENPRA](SDEVEN.20_RENPRA.md)<br>
     In this section will be found some of the most important practices and advices regarding the software development.
 
-
-
--#TODO work in progress here...
-
 * **System Software Testing** section [SDEVEN.25-SYTEST](SDEVEN.25_SYTEST.md)<br>
-    xxxtbd...
-
-
-
+    This section covers the software *testing* process, first as a *software* (ie, seen from *producer* perspective) and second as a *system / product* (ie, seen from *user* perspective).
 
 * **Versioning** section [SDEVEN.30-RENVER](SDEVEN.30_RENVER.md)<br>
     This section treat the *git* repository for software in particular how to use version codes and tags.
