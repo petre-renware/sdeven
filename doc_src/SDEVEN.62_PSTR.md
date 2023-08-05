@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.9<br>
-Release date: 230803
+Version: 7.0.12<br>
+Release date: 230805
 
 ***
 
@@ -197,29 +197,32 @@ In the project root directory will be at least these files:
 
 Here is shown an example of project directory structure starting from a `PROJECT-ROOT-DIRECTORY`.
 
-```
-.../<PROJECT-ROOT-DIRECTORY>/
-        ├───830-DEV/
-        │   ├───doc_src/
-        │   │   ├───110-SRE/
-        │   │   ├───120-CPTS/
-        │   │   ├───130-SKIT/
-        │   │   └───810-DSGN/
-        │   ├───docs/
-        │   ├───pjm/
-        │   │   └─── ... specific project management and contractual docs ...
-        │   ├───setup/
-        │   ├───static_portal/
-        │   ├───<sys_module_A...dir>/
-        │   ├───<sys_module_B...dir>/
-        │   ├───<sys_module_X...dir>/
-        │   ├───Commons/
-        │   ├───SysInit/
-        │   ├───project.toml
-        │   ├───README.md
-        │   └───requirements.txt
-        └───880-RLSE
-            └─── ... specific organization (see procedure 60-RELM) ...
+```tree
+<PROJECT-ROOT-DIRECTORY>
+    830-DEV/
+        doc_src/
+            110-SRE/
+            120-CPTS/
+            130-SKIT/
+            810-DSGN/
+            other_project_docs...
+        docs/
+        pjm/        # organization specific project management and contractual docs ...
+        setup/
+        static_portal/
+        <sys_module_A...dir>/
+        <sys_module_B...dir>/
+        <sys_module_X...dir>/
+        Commons/
+        SysInit/
+        project.toml
+        README.md
+        requirements.txt
+    880-RLSE/       # specific organization (see procedure 60-RELM) ...
+
+
+
+
 ```
 
 

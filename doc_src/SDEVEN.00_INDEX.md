@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.11<br>
-Last update: 230804
+Version: 7.0.12<br>
+Last update: 230805
 
 ***
 
@@ -25,7 +25,7 @@ The methodology is "flexible enough" to allow changes and liberty for innovation
 
 
 
-## Methodology sections
+## SDEVEN procedures
 
 SDEVEN methodology consists of and includes the following sections (procedures):
 
@@ -89,24 +89,26 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 
 
 
-## Forms, templates, cheat sheets and other helpers
+## SDEVEN appendices
 
-* [Appendix (A) Sematic Versioning (SEMVER)](Appendix_A_Semantic_versioning.md)
-* [Appendix (B) System Design Document Template (810 DSGN)](Appendix_B_DSGN_Content_Index.md)
-* [Appendix (C) Status Report Template (STATUSR)](Appendix_C_Status_Report.md)
-* [Appendix (D) ROADMAP Template (RMAP)](Appendix_D_ROADMAP_template.md)
-* [Appendix (Q) Frequently Asked Questions (FAQ)](Appendix_Q_faq.md)
-* [Appendix (E) Release note template (RELNOTE)](Appendix_E_RELNOTE_template.md)
-* [810 DSGN document template and guide](Appendix_B_DSGN_Content_Index.md)
-* [original "Semantic Versioning" material](https://semver.org/)
+The appendices contains mainly forms, templates, cheat sheets and other helpers. These are:
+
+* [Appendix (A) Sematic Versioning (SEMVER)](Appendix_A_Semantic_versioning.md){ target="_blank" }
+* [Appendix (B) System Design Document Template (810 DSGN)](Appendix_B_DSGN_Content_Index.md){ target="_blank" }
+* [Appendix (C) Status Report Template (STATUSR)](Appendix_C_Status_Report.md){ target="_blank" }
+* [Appendix (D) ROADMAP Template (RMAP)](Appendix_D_ROADMAP_template.md){ target="_blank" }
+* [Appendix (E) Release note template (RELNOTE)](Appendix_E_RELNOTE_template.md){ target="_blank" }
+* [Appendix (Q) Frequently Asked Questions (FAQ)](Appendix_Q_faq.md){ target="_blank" }
 
 
 
 
 ## Books and other reference materials
 
-* Books * [Creative Commons](https://creativecommons.org/publicdomain/)
-* SW * [AGPLv3 GNU Affero](https://www.gnu.org/licenses/agpl-3.0.html)
+* [Manifesto for Agile Software Development](https://agilemanifesto.org/){ target="_blank" }
+* [Scrum Guides](https://scrumguides.org/index.html){ target="_blank" }
+* [Creative Commons](https://creativecommons.org/publicdomain/){ target="_blank" }
+* [AGPLv3 GNU Affero](https://www.gnu.org/licenses/agpl-3.0.html){ target="_blank" }
 
 
 

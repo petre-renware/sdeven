@@ -76,6 +76,7 @@ extra_javascript:
 plugins:
     - search
     - include-markdown
+    - markdown-exec #NOTE Python execution inside markdown files (execution at build time, "compilation like" NOT dynamically NOT JavaScript)
     - git-revision-date-localized
     # - pdf-export #NOTE DO NOT USE this as does not render mermaid in PDF docs
     - print-site: #NOTE put print-site to the bottom of the plugins that may might alter your site navigation (affect order of sections in generated HTML)
@@ -85,6 +86,43 @@ plugins:
         add_table_of_contents: true
     - pdf-with-js:
         enable: true
+        #NOTE - all next are examples...
+        #author: #NOTE defaulted from site_author item
+        #copyright: #NOTE defaulted from copyright item
+        #cover: false
+        #back_cover: true
+        #cover_title: TITLE TEXT
+        #cover_subtitle: SUBTITLE TEXT
+        #custom_template_path: TEMPLATES PATH
+        #
+        #toc_title: TOC TITLE TEXT
+        #heading_shift: false
+        #toc_level: 3
+        #ordered_chapter_level: 2
+        #excludes_children:
+        #    - 'release-notes/:upgrading'
+        #    - 'release-notes/:changelog'
+        #
+        #exclude_pages:
+        #    - 'bugs/'
+        #    - 'appendix/contribute/'
+        #convert_iframe:
+        #    - src: IFRAME SRC
+        #      img: POSTER IMAGE URL
+        #      text: ALTERNATE TEXT
+        #    - src: ...
+        #two_columns_level: 3
+        #
+        #render_js: true
+        #headless_chrome_path: headless-chromium
+        #
+        #output_path: any-place/document.pdf
+        #enabled_if_env: ENABLE_PDF_EXPORT
+        #
+        #debug_html: true
+        #show_anchors: true
+        #verbose: true
+
 
 
 

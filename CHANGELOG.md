@@ -26,26 +26,39 @@
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 
-* tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration
-
-* tbd... Following documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile for `Appendix_B_DSGN_Content_Index.md` (doc wip in `wk_crt_proposals/` directory)
-
-* tbd... install `markdown-exec` and use `tree` feature to update `SDEVEN.62_PSTR.md`, section "Example of project full directory structure"
+* tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration (#NOTE att version 7.0.13-beta)
 
 #### [ end of #TODO_PLAN section ]=========================
 
 
-### 7.0.12-beta TESTing procedure (#NOTE wip)
 
-* wip... (last code used 230804piu_h)
+### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-
-
+* wip...
 
 
 
 
 
+
+
+
+
+
+
+### 7.0.12-beta TESTing procedure (230805 09:15)
+
+* 230805piu_e update `Appendix_B_DSGN_Content_Index.md`,  updated for documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile
+* 230805piu_d appendices title ("Appendix" like) release dates, versions for following files:
+    * [x] `Appendix_A_Semantic_versioning.md`
+    * [x] `Appendix_B_DSGN_Content_Index.md`
+    * [x] `Appendix_C_Status_Report.md`
+    * [x] `Appendix_D_ROADMAP_template.md`
+    * [x] `Appendix_E_RELNOTE_template.md`
+    * [x] `Appendix_Q_faq.md`
+* 230805piu_c `Appendix_B_DSGN_Content_Index.md` updated for documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile (((up to "# 900-OPS Operations", exclusive)))
+* 230805piu_b review of 00.INDEX ref order
+* 230805piu_a installed `markdown-exec` and use `tree` feature to update `SDEVEN.62_PSTR.md`, section "Example of project full directory structure"
 
 
 
@@ -58,7 +71,6 @@
     * updated `Appendix_C_Status_Report.md` set code-name as `STATUSR`
 * 230804piu_f make a new doc for `Appendix_E_RELNOTE_template.md`
 * (B) 230804piu_e fixed bug in `SDEVEN.55-TRACE`, section `Taxonomy`, first paragraph, there is wrong link (has no name and no link address like text `[]...`)
-
 
 
 

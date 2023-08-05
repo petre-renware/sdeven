@@ -1,8 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.11<br>
-Release date: 230804
-
+Version: 7.0.12<br>
+Release date: 230805
 
 
 -#NOTE the template starts here. README this before using this template<br>
@@ -14,7 +13,7 @@ Release date: 230804
 ***
 
 
-# Project Status Report (STATUSR)
+# Appendix C Status Report Template (STATUSR)
 
 * *project code*: `<project code>`
 * *target for meeting type*: `<one of devREVW or prodREVW meeting types>` -#NOTE this establish the expected level pf details in this report

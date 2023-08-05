@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.11<br>
-Release date: 230804
+Version: 7.0.12<br>
+Release date: 230805
 
 
 
@@ -15,8 +15,8 @@ Release date: 230804
 
 ***Document control***
 
-* updated at: \<last updated date\><br>
-* updated by: \<person who made last update\>
+* updated at: `<last updated date>`<br>
+* updated by: `<person who made last update>`
 
 
 
@@ -25,7 +25,7 @@ Release date: 230804
 [TOC]
 
 
-# RELNOTE of version `<version number represented by this release note>`
+# Appendix E Release note template (RELNOTE) of version `<version number represented by this release note>`
 
 
 !!! warning "#TODO CHANGE ME. THIS IS A TEMPLATE DOCUMENT"

@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.9<br>
-Release date: 230802
+Version: 7.0.12<br>
+Release date: 230805
 
 ***
 
@@ -11,7 +11,7 @@ Release date: 230802
 
 ## Copyright
 
-This methodology is a Copyright (c) of **RENware Software Systems**. All rights are reserved by REN CONSULTING SOFT ACTIVITY SRL.
+This methodology is a **Copyright (c) of RENware Software Systems**. All rights are reserved by REN CONSULTING SOFT ACTIVITY SRL.
 
 This methodology is [licensed CC0 1.0 Universal](LICENSE.md).
 

@@ -1,14 +1,19 @@
-*RENware Software Systems*    
-**Software Development Methodology**
+<small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 0.4.10    
-Release date: 220415
+Version: 7.0.12<br>
+Release date: 230805
 
 ***
 
-# RENware DSGN - system design document
+
+
+# Appendix B System Design Document Template (810 DSGN)
+
+**Table of Content**
 
 [TOC]
+
+
 
 ## Preliminaries
 
@@ -16,15 +21,23 @@ Here you'll find a recommended structure of 810-DSGN document containing ALL inf
 
 This structure is enough /comprehensive for most of the projects but it can bw extended in all situations where this brings more recant aspects in a project. 
 
-## Structure of document
+
+### Structure of document
 
 It follows the methodology phases as described in RENBLU document. For each section there is specified if is: MANDATORY, OPTIONAL or RECOMMENDED. Also, should be noted that those sections which have "a full code" (not just a simple number) are intended to be released as separated documents and here make reference to them.
 
-## Structure & content of deliverable
 
-Its important to say that some sections are **mandatory** (and marked accordingly) and should **exists AS IS in all cases**, regardless other information or the same but in other structure presented. 
+### Structure & content of deliverable
 
-# 100-ANA Analysis
+Its important to say that some sections are **mandatory** (and marked accordingly) and should **exists AS IS in all cases**, regardless other information or the same but in other structure presented.
+
+
+
+
+
+
+<!-- -#NOTE start of BIG section -->
+## 100-ANA Analysis
 
 ### 110-SRE System Requirements (REQUIRED always)
 
@@ -42,7 +55,10 @@ of system specific terms, objects, information domains, paradigms, environment (
 
 This information will be BASIS for a future system design.
 
-When ia not necessary? So, in cases when it already exists and system intended modifications are nor of nature to alter these concepts.
+When is not necessary? So, in cases when it already exists and system intended modifications are nor of nature to alter these concepts.
+
+<!-- -#TODO de luat din 120 CPTS din sagaRt project -->
+
 
 ### 130-SKIT Sales Kit(s)
 
@@ -87,23 +103,29 @@ As in the licensing section, there is no need for "sophisticated" text. Anybody 
 
 This section(s) contains the diagrams and pictures used in other parts in their raw form un order to be latter easily converted in other formats needed.
 
-# 800-SWD Software Development
 
-## 810-DSGN System Design
+
+
+
+
+<!-- -#NOTE start of BIG section -->
+## 800-SWD Software Development
+
+### 810-DSGN System Design
 
 The system design document is a collection of more chapters / sections / volumes, and these can be outlined in one or more documents, function of information volume. In that case please keep the convention of file names in order that other people to "recognize" a document first by its name.
 
-### 810.00 Overview - update of *130.02* (REQUIRED)
+#### 810.00 Overview - update of *130.02* (REQUIRED)
 
 Updates the overview of the system (*`130.02`* document). This update is "how things are seen by *system designer*". Anyway at least a reference should be made and a summary of them will bring "more clarity" for software development.
 
-### 810.01 System Requirements - update of *110-SRE* (OPTIONAL)
+#### 810.01 System Requirements - update of *110-SRE* (OPTIONAL)
 
 This is the nature to make things more clear for system development by aligning (mapping) technical taxonomies to existing business ones.
 
 Essentially this is an update of *`110-SRE`* document ref its requirements specification part "as seen by system designer".
 
-### 810.02 System Landscape (REQUIRED)
+#### 810.02 System Landscape (REQUIRED)
 
 The system landscape is anything else that different kinds of architectures, such as logical, functional, physical, interfaces, etc. Some of them are "the same thing" in most cases, but there are situations when small subtle information makes difference.
 
@@ -139,7 +161,7 @@ Important things in architectures design:
 * the whole process should be repeated for each new bubble
 * when to stop with breaking down? the most frequent signal is when **you need to talk about how not only about WHAT**
 
-### 810.03 System Data & Objects (REQUIRED)
+#### 810.03 System Data & Objects (REQUIRED)
 
 For data objects there are more useful levels and taxonomies ref how and what to describe:
 
@@ -160,7 +182,7 @@ Here are some guidelines in designing system data (objects):
 * think relatively agnostic ref database server nature (SQL or noSQL); using ORMs you should be able to work with JSON formats in all cases without too much issues
 * let *detailed diagrams* as much as possible for *`820-SINT System Internals`* document where are specialized sections for these; the other people expect find them there not here
 
-### 810.04 System UI (OPTIONAL RECOMMENDED)
+#### 810.04 System UI (OPTIONAL RECOMMENDED)
 
 Things here should be "obviously", but here are some guidelines:
 
@@ -171,7 +193,7 @@ Things here should be "obviously", but here are some guidelines:
 * be *EXPLICITLY* in specifying all things; avoid to suppose that anyone should know defaults for a framework; even in this case make enough references and put links where defaults ca be found
 * use (wherever is applicable) hierarchical diagrams to show "things"; they offer more "visibility" for auditors
 
-### 810.05a System Processes (REQUIRED)
+#### 810.05a System Processes (REQUIRED)
 
 Here you must define the system processes and functionalities.
 
@@ -195,7 +217,7 @@ So, after outlining a process iy should be "decorated" with:
 
 Identically, all things should be **coherent and consistent**. Some compliance matrices up to architecture will be a very good check for designer but for developer also.
 
-### 810.05b Application Software Organization (OPTIONAL)
+#### 810.05b Application Software Organization (OPTIONAL)
 
 Here are 2 aspects (at least) tha need to be addressed:
 
@@ -222,7 +244,7 @@ From the ***Application Structure / Organization*** perspective it is important:
 
 For small projects it couldn't be necessary this section as probably "everything" are located in one to three directories. 
 
-### 810.06 System API & Interfaces (OPTIONAL)
+#### 810.06 System API & Interfaces (OPTIONAL)
 
 Here is the section which describe the system **interfaces**. Of course these should come from (or go to update) *architecture*.
 
@@ -234,13 +256,13 @@ For each system interface should be outlined:
 * the interface **API** in terms of methods, arguments, returns, usability, etc
 * any other relevant applicable conditions or contexts
 
-### 810.40 System Concepts in Detail - update of *120-CPTS* (OPTIONAL)
+#### 810.40 System Concepts in Detail - update of *120-CPTS* (OPTIONAL)
 
 This section role is to update (clarify or add details) ref to concepts presented in *`120-CTPS`* document as result of different things new or changed along development.
 
 Also, here could appear new concepts but, normally, this indicates a poor analysis process (or incomplete understanding of what system should do). Anyway, **new concepts must be clear and visible marked** and should be **notified** to project management area as they could be subject of change management.
 
-### 810.45 Licensing Model - update of *130.04* (OPTIONAL)
+#### 810.45 Licensing Model - update of *130.04* (OPTIONAL)
 
 This is a dedicated section where licensing model can be explained / detailed. Usual here are information regarding volumetric usable for licensing (as system is aware of and can count them) additionally to *`130.04`* document. The information provided is used by product manager and commercial departments to derive final *product licensing models*.
 
@@ -256,7 +278,7 @@ Guidelines and licensing metrics examples:
 * metric ex: number of days to allow downloading some information
 * metric combinations
 
-### 810.46 Product Features - update of *130.01* (REQUIRED)
+#### 810.46 Product Features - update of *130.01* (REQUIRED)
 
 This is a dedicated section where product features can be explained more clear and detailed. Therefore is an update to *`130.01 Datasheet`* document.
 
@@ -266,49 +288,50 @@ Anyway, this information is also marked (as more raw form) in CHANGELOG, RELNOTE
 
 These information will definitely contribute to *`130.01 Product Datasheet`* and *`130.02 Product Overview`* documents, as being known that it becomes more clear and defined in development process.
 
-### 810.50 to 810.79 Appendices (OPTIONAL)
+#### 810.50 to 810.79 Appendices (OPTIONAL)
 
 This sections reserves numbers / codes starting with **`50`** up to **`79`** for different appendices. Normally, appendices are used:
 
 * if is more useful to separate the information as being large in most cases, and put it on a separate file
 * the information does not need attention when reading all document, but is containing *details* that are useful for "advanced readings" or a deeper understanding of information domain in subject
 
-### 810.80 to 810.99 Design Sketches (OPTIONAL)
+#### 810.80 to 810.99 Design Sketches (OPTIONAL)
 
 This sections reserves numbers / codes starting with **`50`** up to **`79`** for different appendices. Design sketches are sometimes (often) very useful to be as separated files in their raw formats in order to be used latter in other materials (for example by marketing / branding departments).
 
 Pay attention that these sketches could be duplicates of *`190-SKTD Sketches & Technical Diagrams`*, so be aware and try avoid as much as possible duplicates.
 
-### Remarks to 810 DSGN section
+**Remarks to 810 DSGN section**
 
 Sometimes (especially in case of small / med projects) it is easier or required to have one single file - in this case just name the file using `ALL` instead of a volume / section code and "put all together" in that file as "volumes" / sections
 
-## 820-SINT System Internals
+
+### 820-SINT System Internals
 
 These are very technical and specialized sections ref system (internals). They can be simple references to *notorious / known algorithms* or detailed technical notes about *how is implemented*, for example (and most often) for states.
 
-### 820.01 System States (OPTIONAL)
+#### 820.01 System States (OPTIONAL)
 
 Here are described various **system states** used in development process. *This section applies to systems where there are states*. Preferred forms of diagramming follow UML notation standards (they are not excluding one each other):
 
 * ***state diagrams*** (ALWAYS **REQUIRED**) - which relieves all the states (in subject) and *transitions* between them
 * ***sequence diagrams*** (OPTIONAL) - which add the *temporal* information to state diagrams
 
-### 820.02 System Interfaces & BUS-es (OPTIONAL)
+#### 820.02 System Interfaces & BUS-es (OPTIONAL)
 
 Here should be described each system interface (following the guidelines from section *810-DSGN System Design 06 - System API & Interfaces*). The `BUS` term means in this document almost the same thing, but is just a more hardware term. It is quoted here because it is so common that, often, this term will be found.
 
-### 820.03 Synchronization & Clocks (OPTIONAL)
+#### 820.03 Synchronization & Clocks (OPTIONAL)
 
 Here is clearly a very specialized section regarding *clocks*. This is in almost cases REQUIRED if the system is (or part of) a distributed one, where clock synchronization is "something" required.
 
 If present, it should be present both **logical** and **physical** clocks, how are they implemented, if use some "known" algorithms (and a reference to them), sync issues, context conditions for good operations, etc.
 
-### 820.04 Algorithms & Strategies (OPTIONAL)
+#### 820.04 Algorithms & Strategies (OPTIONAL)
 
 This section is "self descriptive" as name. Clearly, if there are *known algorithms*, they shouldn't be described here in detail, but a few words (ref how and why are used) must be written and a reference made (or internet, ie Wikipedia, or book).
 
-### 820.90 Toolstack notes (OPTIONAL)
+#### 820.90 Toolstack notes (OPTIONAL)
 
 Here should be various notes relevant for toolstack and "outside" normal things:
 
@@ -316,9 +339,18 @@ Here should be various notes relevant for toolstack and "outside" normal things:
 * where a framework, library, etc can be found
 * warnings and other known issues (the designer should know them or the most important of them)
 
-## 840-TEST System Test
 
-### 840.01 Test plan (REQUIRED)
+
+### 830-DEV Development (MANDATORY)
+
+This is not a document section. In this folder it is supposed to keep all system code and it is organized as project require.
+
+
+
+### 840-TEST System Test
+
+
+#### 840.01 Test plan (REQUIRED)
 
 Here it will reside the plan for testing. Normally this should be as simple as possible, being "just for your information" at development level. What is really important (especially for own time planning perspective) is what in Project Management discipline is named "***WHO - DOES -WHAT - WHEN***".
 
@@ -333,7 +365,8 @@ Most (almost all) tests of here will be in "black" category, as long as code-in 
 
 Of course there are many other test that should be done (integration, acceptance) but they are not in scope of this methodology, but more in Project Management one.
 
-### 840.02 Test cases / scenarios (REQUIRED)
+
+#### 840.02 Test cases / scenarios (REQUIRED)
 
 A test scenario should be outlined for every system functionality (see *810-DSGN System Design* section *05a - System Processes*). "Test cases" is a list with all test scenarios, ie the table of content or index of them. The difference is so subtle that in most cases they are uses as synonyms for the same thing: test scenario.
 
@@ -345,7 +378,7 @@ Every test scenario should contain:
 * **expected results** (for a *PASS*) the system must "produce" - here a good practice if these are the nature of "real numbers" or "too fine grained dates, as timestamps" is to specify the accepted tolerances (if they are and if appear in documentation)
 * any **condition** that must be met / fulfilled by system as in documentation
 
-### 840.04 Test Report (REQUIRED)
+#### 840.04 Test Report (REQUIRED)
 
 The test report should be a mix between *test plan*, *test cases* and *test scenarios*. In essence this will be a **list** with all **tests** (test cases), **who** executed the test (test plan) for further questions and **result as PASS / FAIL** (test scenarios).
 
@@ -356,17 +389,21 @@ Guidelines:
 * no details (as reasons, motivational facts, etc)
 * just PASS / FAIL; the customer is not interested about why and if, then are other persons who should address that issues
 
-### 840.90 Release Notes (REQUIRED)
+
+#### 840.90 Release Notes (REQUIRED)
 
 This deliverable result as a "humanize" compilation (clean, choose words, etc) of *820-SINT System Internals*  section *04 Test Report* and it will ***accompany the released packaged*** as required part of it.
 
-## 880-RLSE System Release
+
+
+### 880-RLSE System Release
 
 All these parts / sections aim to have a **PACKAGE** (ie, required for a system *product*) that accompany a release. They will (finally) be "what a client see" ref a system update / upgrade package. **It will be "its primary / main source of information" in deciding that will get this package or not**.
 
 Being deliverables with commercial impact they have a *literal code* not only a numerical one. This code is also unique so it can be used as Alternate Key.
 
-### 880.10 FEAT Product Features - update of *130.01* (REQUIRED)
+
+#### 880.10 FEAT Product Features - update of *130.01* (REQUIRED)
 
 It will be get / obtained by a (re)compilation (following mainly a commercial facelift) of *840-TEST System Test* section *90 Release Notes*.
 
@@ -374,13 +411,15 @@ Basically in (after) this step the *`130.01 Product Datasheet`* document should 
 
 The same mentions (please read the previous sections) apply here ref to *130.01* & *130.02* documents. If you're here probably the size / complexity of the system is of nature that require for *`130.01 Product Datasheet`*.
 
-### 880.20 ELPRI Editions, Licensing & Pricing - update of *130.04* (REQUIRED)
+
+#### 880.20 ELPRI Editions, Licensing & Pricing - update of *130.04* (REQUIRED)
 
 This should be the "commercial form" (as more elaborated and with a commercial facelift) of *130-SKIT Sales Kit(s)* section *130.04-SKIT Licensing Editions Pricing*. Essentially this is the update and "commercial facelift" of *`130.04 Licensing Editions & Pricing`* document.
 
 The same mentions (please read the previous sections) apply here ref to *130.01* & *130.02* documents. If you're here probably the size / complexity of the system is of nature that require for *`130.01 Product Datasheet`*.
 
-### 880.30 EUMA End User Manuals
+
+#### 880.30 EUMA End User Manuals
 
 Here are the manuals that will mainly address *end users* (business area) of product. These are usual of two kinds:
 
@@ -388,7 +427,8 @@ Here are the manuals that will mainly address *end users* (business area) of pro
 * **partial** manuals - these are addressed to a more target segment of end users; one manual for a category of end users (typical example are "*Work Procedure*" documents)
 
 So, regardless the enumerated type, our recommendation is to specify the TARGET AUDIENCE for each manual as being a very useful practice.
-#### 880.30 EUMA.QG End User Quick Guide (REQUIRED)
+
+##### 880.30 EUMA.QG End User Quick Guide (REQUIRED)
 
 This kind of manual is intended as a very quick reference where users will find easily what they need or where to look for details. It is a ALL IN ONE manual style containing "nothing about all" as style of information.
 
@@ -398,7 +438,8 @@ As guidelines, it should contain:
 * a quick installation procedure or "how to make it usable first time" - no details, no options; just a simple, default installation
 * a brief tutorial ref "how to use it first time" or "first steps"
 
-#### 880.30 EUMA.WP*nn* Work Procedure *nn* (OPTIONAL)
+
+##### 880.30 EUMA.WP*nn* Work Procedure *nn* (OPTIONAL)
 
 As general rule a "work procedure" is a description of how to do a specific, concrete and atomic activity.
 
@@ -431,9 +472,10 @@ As mandatory work procedures (applicable for any system) are:
 
 Also, keep in mind that many users will print these procedures, so keep a standard paper format and try to include them in **system help** module.
 
->***Where to find out what are those activities that need to have a work procedure?*** Remember, there is a document with system processes (*810.05a System Processes*) - this is the place where to start. 
+>***Where to find out what are those activities that need to have a work procedure?*** Remember, there is a document with system processes (*810.05a System Processes*) - this is the place where to start.
 
-### 880.30 ADMA Administration Manuals
+
+#### 880.30 ADMA Administration Manuals
 
 Here are the manuals that will mainly address *administrators* (IT area) of product. These kind of manuals should address at least the following content:
 
@@ -445,7 +487,8 @@ Here are the manuals that will mainly address *administrators* (IT area) of prod
 
 > These manuals should not contain detailed information (ar advanced information) regarding administration as this is usually subject of payment. The same thing apply for service(ing) procedures / diagrams and so on.
 
-#### 880.30 ADMA.SI System Installation & Configuration (REQUIRED)
+
+##### 880.30 ADMA.SI System Installation & Configuration (REQUIRED)
 
 This manual is about:
 
@@ -455,7 +498,7 @@ This manual is about:
 * basic system configuration (make it to run in in its simplest mode
 * more ref advanced configuration parameters
 
-#### 880.30 ADMA.SA	System Administration (OPTIONAL)
+##### 880.30 ADMA.SA	System Administration (OPTIONAL)
 
 This manual is about:
 
@@ -468,11 +511,11 @@ This manual is about:
 
 Please be aware to general guidelines regarding administration manials.
 
-### 880.40 SKITs update - update all *130.nn* (OPTIONAL)
+#### 880.40 SKITs update - update all *130.nn* (OPTIONAL)
 
 This process, is anything else that **ALL SALES KITS must be reviewed and updated** where applicable. The process is here just a checklist / remember point. Basically all *103.nn* documents should be REVIEWED and give the required "commercial facelift".
 
-### 880.50 TKIT Training Kits & Programmes - update of *130.05* (OPTIONAL)
+#### 880.50 TKIT Training Kits & Programmes - update of *130.05* (OPTIONAL)
 
 Ref "Training Programmes" some basic things are required:
 
@@ -482,7 +525,7 @@ Ref "Training Programmes" some basic things are required:
 
 In next sections, some recommendations and guidelines can be found.
 
-#### List of courses
+##### List of courses
 
 This is "just a table" with all courses relevant for the system. It will be helpful, often required to specify some taxonomies for courses, so:
 
@@ -494,18 +537,20 @@ This is "just a table" with all courses relevant for the system. It will be help
 * ***target auditorium*** as: administrators, end users, etc
 * what will be the benefit after this course, ie "***what you'll learn***"
 
-#### Schedule
+##### Schedule
 
 * Schedule should be a relative on, so no exact calendar dates here, but *periods*, *duration*, a *min*, *max*, *recommended* number of participants.
 * at least an indication of *lectors* or quality of project persons intended to keep that course (ie, analyst, sw engineer, etc)
 
-#### Courses curriculum
+##### Courses curriculum
 
 This should follow a "standard" but simple curse curricula. In its simplest (but very relevant) is a "**COURSE OBJECTIVES**" type of document.
 
 These items will be put in a commercial form (update *`130.05 Service & Training Programs`*).
 
-### 880.60 SRVC Service - update of *130.05* (OPTIONAL)
+
+
+#### 880.60 SRVC Service - update of *130.05* (OPTIONAL)
 
 This section refer to services that can be done for that system in production. This is just a list and **not** HOW WILL BE DONE but **WHAT CAN BE DONE** and is intended to update *`130.05 Service and Training Programmes`*.
 
@@ -515,11 +560,13 @@ Guidelines of list can contain:
 * a med / long term update and support plan
 * assurance of extended warranty
 
-### 880.90 SCA Source Code Archives
+
+#### 880.90 SCA Source Code Archives
 
 Here are just (normally as archives) the tags saved from git repository with aim of "backup copies". No other processing is required if they are saved AS EXPORTED from git in a standard archives format from: *zip*, *tar.gz*, *tar.bz2.*
 
-## 890-MNT System Maintenance
+
+### 890-MNT System Maintenance
 
 This section address those things related to system maintenance as it would be in PRODUCTION, ie "*what should be done to keep system alive after migrate*" it in production environment. It is important to say that, here, things are from software development perspective more exactly, here are those things that results as concrete facts in / after development, what exactly should be done and when to have a "clean - always ready to run & usable" system.
 
@@ -530,11 +577,18 @@ These are some guidelines with what this section should contain:
 * the **response** & **resolve** times - these should be revisited and reviewed
 * few words about **Hot Fixes**, **Security Updates** & **Critical Patches** - what exactly they means for this system, if and how are applicable, etc 
 
-# 900-OPS Operations
+
+
+
+
+
+<!-- -#NOTE start of BIG section -->
+## 900-OPS Operations
 
 This section outlines activities and deliverables that are not necessarily / totally related to engineering of software development, but **directly related** and at its boundary with other company operations (mainly with *Project Management*). They are designed as helpers in software development with more content specific to software "manipulation".
 
-## 920-TLE Prepare temporary live environments (REQUIRED)
+
+### 920-TLE Prepare temporary live environments (REQUIRED)
 
 *ATTN: new in SDEVEN methodology*
 
@@ -542,7 +596,8 @@ This activity is intended to support the software development process and activi
 
 Here it is expected to find a list with all these systems and, if needed, some more specific and detailed information, for example ref operating system, external environment where from system need to be accessed, users, etc.
 
-## 990-PMSP Project Management Support (REQUIRED)
+
+### 990-PMSP Project Management Support (REQUIRED)
 
 *ATTN: new in SDEVEN methodology*
 
@@ -554,4 +609,5 @@ Here, the software engineer should depict some elements useful in this project m
 * a duration for each deliverable
 * any other relevant things resulted from a discussion with the project manager or technical project manager, such as: discussion minutes, various action plans, resource contacts, etc
 
---- ooo ---
+
+

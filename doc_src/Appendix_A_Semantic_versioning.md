@@ -1,12 +1,12 @@
-*RENware Software Systems*    
-**Software Development Methodology**
+<small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 0.4.10    
-Last update: 220415
+Version: 7.0.12<br>
+Release date: 230805
 
 ***
 
-# Appendix A Semantic Versioning
+
+# Appendix A Semantic Versioning (SEMVER)
 
 [*Original version*](https://semver.org/)
 

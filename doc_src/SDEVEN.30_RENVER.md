@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.5<br>
-Release date: 230619
+Version: 7.0.12<br>
+Release date: 230805
 
 ***
 
@@ -17,7 +17,7 @@ Release date: 230619
 
 This section is about versioning scheme practiced by company.
 
-Mainly this scheme is based on *[semantic versioning specifications](https://semver.org/)* or in document *[Appendix A Semantic versioning](Appendix_A_Semantic_versioning.md)* as appendix to this methodology.
+Mainly this scheme is based on *[semantic versioning specifications](https://semver.org/)* or in document *[Appendix A Semantic versioning (SEMVER)](Appendix_A_Semantic_versioning.md)* as appendix to this methodology.
 
 *Semantic Versioning* specifications have been adapted *regarding the qualification part* (NO CHANGE ref major, minor and patch).
 
@@ -39,7 +39,7 @@ The structure of version string is: **`M.m[.p][-buildno][.qual]`**, where versio
 
 **Examples:**
 
-* *1.1.0-548.preview* major 1, minor 1, patch 0, build 058, preview qualifier version 
+* *1.1.0-548.preview* major 1, minor 1, patch 0, build 058, preview qualifier version
 * *2.1.1-621* major 2, minor 1 patch 1, build 621, last qualifier version
 * *3.7* major 3, minor 7, last patch, last build, last qualifier version
 
