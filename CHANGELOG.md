@@ -35,6 +35,7 @@
 * tbd... write content to `SDEVEN.25_SYTEST.md`
 
 * wip...
+* wip... 230805piu_j write content to `SDEVEN.25_SYTEST.md`, first draft for each doc section (existing now...)
 * 230805piu_i `SDEVEN.00_INDEX.md` facelift of structure for a better TOC and doc readability
 * 230805piu_h refer test procedure in `SDEVEN.00_INDEX.md`
 * 230805piu_g refer test procedure in `mkdocs.yml`
