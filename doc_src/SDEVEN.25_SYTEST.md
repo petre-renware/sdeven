@@ -9,7 +9,20 @@
 
 # xxx
 
+-#TODO ideas:
 
+* section **Preliminaries**
+    * why need to test software?
+    * what means terms compliance, bug, acceptable, workaround solverable, ...
+
+* section ref **Test types**:
+    * unit,
+    * functional
+    * integration 
+
+* section ref **Test deliverables**:
+    * planning ==> Test Plan tmpl
+    * scenarios ==> Test Scenario tmpl
 
 
 
