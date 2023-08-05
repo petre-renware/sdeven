@@ -43,11 +43,8 @@ The testing process wil involve some specific  terms and concepts like: *complia
 
 ## Test types
 
-
--#FIXME ---- drop block when finish
+<!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png)
-* ------ file: SDEVEN.25_SYTEST.md
--#FIXME ---- end of block
 
 
 * -#TODO ideas ref section ref **Test types**:
@@ -64,12 +61,8 @@ The testing process wil involve some specific  terms and concepts like: *complia
 
 ## Test deliverables
 
-
-
--#FIXME ---- drop block when finish
+<!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png)
-* ------ file: SDEVEN.25_SYTEST.md
--#FIXME ---- end of block
 
 
 * -#TODO ideas ref section ref **Test deliverables**:
