@@ -26,15 +26,16 @@
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 
-* tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration (#NOTE att version 7.0.13-beta)
-
 #### [ end of #TODO_PLAN section ]=========================
 
 
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
+* tbd... a refer test procedure in `00.INDEX` & `mkdocs.yml`
+
 * wip...
+* 230805piu_f started a draft (toc & ideas ref sections content) testing procedure, doc `SDEVEN.25_SYTEST`, name *System Software Testing*
 
 
 
