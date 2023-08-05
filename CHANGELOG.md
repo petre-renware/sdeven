@@ -32,9 +32,10 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* tbd... a refer test procedure in `00.INDEX`
+* tbd... write content to `SDEVEN.25_SYTEST.md`
 
 * wip...
+* 230805piu_h refer test procedure in `SDEVEN.00_INDEX.md`
 * 230805piu_g refer test procedure in `mkdocs.yml`
 * 230805piu_f started a draft (toc & ideas ref sections content) testing procedure, doc `SDEVEN.25_SYTEST`, name *System Software Testing*
 
@@ -48,7 +49,7 @@
 
 
 
-### 7.0.12-beta TESTing procedure (230805 09:15)
+### 7.0.12-beta standardize & clean "Appendix (B) DSGN..." procedure (230805 09:15)
 
 * 230805piu_e update `Appendix_B_DSGN_Content_Index.md`,  updated for documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile
 * 230805piu_d appendices title ("Appendix" like) release dates, versions for following files:
