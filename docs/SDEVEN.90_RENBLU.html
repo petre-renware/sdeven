@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Petre Iordanescu, RENware Software Systems, petre.iordanescu@gmail.com" name="author"/>
+<link href="SDEVEN.80_COPRI.html" rel="prev"/>
+<link href="SDEVEN.95_COCL.html" rel="next"/>
+<link href="assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.3, mkdocs-material-9.1.13" name="generator"/>
+<title>Phases, Processes and Deliverables (90-RENBLU) - SDEVEN Software Development &amp; Engineering Methodology</title>
+<link href="assets/stylesheets/main.85bb2934.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.a6bdf11c.min.css" rel="stylesheet"/>
+<style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h224V368c0-26.5 21.5-48 48-48h112V96c0-35.3-28.7-64-64-64H64zm384 320H336c-8.8 0-16 7.2-16 16v112l32-32 64-64 32-32z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-40-176h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.4c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4V32zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-86.2-346.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.1 52.4 442.6 6.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5 2.6-10.4 6.5l-16.5 45.9-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4 0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2 0-4.6-3-8.9-7.2-10.4l-45.6-16.8zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9c-22-8-45.8-12.3-70.5-12.3C93.1 96 0 189.1 0 304s93.1 208 208 208 208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-75.1 60.9-136 136-136h8c8.8 0 16 7.2 16 16s-7.2 16-16 16h-8z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9V464c0 26.5 21.5 48 48 48h48v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48v-65.1zM96 256a64 64 0 1 1 128 0 64 64 0 1 1-128 0zm256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M320 0c17.7 0 32 14.3 32 32v64h120c39.8 0 72 32.2 72 72v272c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72h120V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zM264 256a40 40 0 1 0-80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224h16v192H48c-26.5 0-48-21.5-48-48v-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48h-16V224h16z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 0H128c-17.7 0-32 14.3-32 32s14.3 32 32 32v132.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6 0 480.9 31.1 512 69.4 512h309.2c38.3 0 69.4-31.1 69.4-69.4 0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32S337.7 0 320 0h-32zm-96 196.8V64h64v132.8c0 23.7 6.6 46.9 19 67.1l34.5 56.1h-171l34.5-56.1c12.4-20.2 19-43.4 19-67.1z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></svg>');}
+div.download-btn {
+    text-align: right;
+}
+
+@page {
+    size: a4 portrait;
+    margin: 25mm 10mm 25mm 10mm;
+    counter-increment: page;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    white-space: pre;
+    color: grey;
+    @top-left {
+        font-size: x-small;
+        content: 'smaXtec';
+    }
+    @top-center {
+        font-size: x-small;
+        content: string(chapter);
+    }
+    @top-right {
+        font-size: x-small;
+        content: 'Page ' counter(page);
+    }
+}
+
+@media print {
+
+    div.download-btn {
+        display: none;
+    }
+
+    .md-typeset table:not([class]) {
+        display: block;
+        border: none;
+    }
+
+    img {
+        width: 100%;
+        page-break-inside:avoid;
+        page-break-after:avoid;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after:avoid;
+        page-break-inside:avoid;
+    }
+
+    table, pre {
+        page-break-inside:avoid
+    }
+
+    ul, ol, dl {
+        page-break-before:avoid
+    }
+
+}</style>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="assets/_markdown_exec_ansi.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings1.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings2.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings3.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings4.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings5.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings6.css" rel="stylesheet"/>
+<link href="css/print-site.css" rel="stylesheet"/>
+<link href="css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#blueprint-processes-deliverables-sdeven90-renblu">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDEVEN Software Development &amp; Engineering Methodology" class="md-header__button md-logo" data-md-component="logo" href="index.html" title="SDEVEN Software Development &amp; Engineering Methodology">
+<img alt="logo" src="pictures/SDEVEN_logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDEVEN Software Development &amp; Engineering Methodology
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Phases, Processes and Deliverables (90-RENBLU)
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDEVEN Software Development &amp; Engineering Methodology" class="md-nav__button md-logo" data-md-component="logo" href="index.html" title="SDEVEN Software Development &amp; Engineering Methodology">
+<img alt="logo" src="pictures/SDEVEN_logo.png"/>
+</a>
+    SDEVEN Software Development &amp; Engineering Methodology
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="index.html">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.00_INDEX.html">
+        SDEVEN index
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          SDEVEN procedures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          SDEVEN procedures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.10_ADM.html">
+        Administrative (10-ADM)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.20_RENPRA.html">
+        Practices (20-RENPRA)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.30_RENVER.html">
+        Versioning (30-RENVER)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.40_BRAN.html">
+        Branches (40-BRAN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.45_OPME.html">
+        Operational Meetings (45-OPME)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.50_CHGMNG.html">
+        Change Management (50-CHGMNG)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.55_TRACE.html">
+        Logging development changes (55-TRACE)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.60_RELM.html">
+        Release management (60-RELM)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.62_PSTR.html">
+        Project structure (62-PSTR)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.65_DEREV.html">
+        Design approaches, review and changes (65-DEREV)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.68_COREV.html">
+        Code review (68-COREV)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.70_LIP.html">
+        Licenses &amp; products / models (70-LIP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.75_CCEP.html">
+        Code of Conduct. Ethics, Professional and Legal Issues (75-CCEP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.80_COPRI.html">
+        Conventions &amp; principles (80-COPRI)
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Phases, Processes and Deliverables (90-RENBLU)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="SDEVEN.90_RENBLU.html">
+        Phases, Processes and Deliverables (90-RENBLU)
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preamble">
+    Preamble
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blueprint-typologies">
+    Blueprint / typologies
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#roles-responsibilities">
+    Roles &amp; responsibilities
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-100-ana-analysis">
+    Phase 100-ANA Analysis
+  </a>
+<nav aria-label="Phase 100-ANA Analysis" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#110-sre-system-requirements">
+    110-SRE System Requirements
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#120-cpts-system-concepts">
+    120-CPTS System Concepts
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#130-skit-sales-kits">
+    130-SKIT Sales Kit(s)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#190-sktd-sketches-technical-diagrams">
+    190-SKTD Sketches &amp; Technical Diagrams
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-800-swd-software-development">
+    Phase 800-SWD Software Development
+  </a>
+<nav aria-label="Phase 800-SWD Software Development" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#810-dsgn-system-design">
+    810-DSGN System Design
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#820-syint-system-internals">
+    820-SYINT System Internals
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#830-dev-system-development">
+    830-DEV System Development
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#840-test-system-testing">
+    840-TEST System Testing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#880-rlse-system-releases">
+    880-RLSE System Releases
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#890-mnt-system-maintenance">
+    890-MNT System Maintenance
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-900-ops-operations">
+    Phase 900-OPS Operations
+  </a>
+<nav aria-label="Phase 900-OPS Operations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#few-words-about-software-maintenance">
+    Few words about software maintenance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#910-mnt-system-maintenance">
+    910-MNT System Maintenance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#920-tle-prepare-temporary-live-environments">
+    920-TLE Prepare  temporary live environments
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#990-pmsp-project-management-support-required">
+    990-PMSP Project Management Support (REQUIRED)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+    References
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.95_COCL.html">
+        Confidentiality &amp; Classification (95-COCL)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          SDEVEN appendices
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          SDEVEN appendices
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_A_Semantic_versioning.html">
+        Appendix (A) Sematic Versioning (SEMVER)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_B_DSGN_Content_Index.html">
+        Appendix (B) System Design Document Template (810 DSGN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_C_Status_Report.html">
+        Appendix (C) Status Report Template (STATUSR)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_D_ROADMAP_template.html">
+        Appendix (D) ROADMAP Template (RMAP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_E_RELNOTE_template.html">
+        Appendix (E) Release note template (RELNOTE)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_Q_faq.html">
+        Appendix (Q) FAQ. Frequently Asked Questions (FAQ)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="About_SDEVEN.html">
+        About SDEVEN
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="LICENSE.html">
+        License
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="http://www.renware.eu">
+        RENware Software Systems company
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="pdfs/print_page.html/print_page.pdf">
+        Complete SDEVEN Manual (PDF)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="print_page.html">
+        Complete SDEVEN Manual
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preamble">
+    Preamble
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blueprint-typologies">
+    Blueprint / typologies
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#roles-responsibilities">
+    Roles &amp; responsibilities
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-100-ana-analysis">
+    Phase 100-ANA Analysis
+  </a>
+<nav aria-label="Phase 100-ANA Analysis" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#110-sre-system-requirements">
+    110-SRE System Requirements
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#120-cpts-system-concepts">
+    120-CPTS System Concepts
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#130-skit-sales-kits">
+    130-SKIT Sales Kit(s)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#190-sktd-sketches-technical-diagrams">
+    190-SKTD Sketches &amp; Technical Diagrams
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-800-swd-software-development">
+    Phase 800-SWD Software Development
+  </a>
+<nav aria-label="Phase 800-SWD Software Development" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#810-dsgn-system-design">
+    810-DSGN System Design
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#820-syint-system-internals">
+    820-SYINT System Internals
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#830-dev-system-development">
+    830-DEV System Development
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#840-test-system-testing">
+    840-TEST System Testing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#880-rlse-system-releases">
+    880-RLSE System Releases
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#890-mnt-system-maintenance">
+    890-MNT System Maintenance
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-900-ops-operations">
+    Phase 900-OPS Operations
+  </a>
+<nav aria-label="Phase 900-OPS Operations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#few-words-about-software-maintenance">
+    Few words about software maintenance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#910-mnt-system-maintenance">
+    910-MNT System Maintenance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#920-tle-prepare-temporary-live-environments">
+    920-TLE Prepare  temporary live environments
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#990-pmsp-project-management-support-required">
+    990-PMSP Project Management Support (REQUIRED)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+    References
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset"><div class="download-btn"><a href="pdfs\SDEVEN.90_RENBLU.html\SDEVEN.90_RENBLU.pdf">Download PDF</a></div>
+<p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
+<p>Version: 7.0.8<br/>
+Release date: 230730</p>
+<hr/>
+<h1 id="blueprint-processes-deliverables-sdeven90-renblu">Blueprint. Processes &amp; Deliverables (SDEVEN.90-RENBLU)</h1>
+<p><strong>Table of Content</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#blueprint-processes-deliverables-sdeven90-renblu">Blueprint. Processes &amp; Deliverables (SDEVEN.90-RENBLU)</a><ul>
+<li><a href="#preamble">Preamble</a></li>
+<li><a href="#blueprint-typologies">Blueprint / typologies</a></li>
+<li><a href="#roles-responsibilities">Roles &amp; responsibilities</a></li>
+<li><a href="#phase-100-ana-analysis">Phase 100-ANA Analysis</a><ul>
+<li><a href="#110-sre-system-requirements">110-SRE System Requirements</a></li>
+<li><a href="#120-cpts-system-concepts">120-CPTS System Concepts</a></li>
+<li><a href="#130-skit-sales-kits">130-SKIT Sales Kit(s)</a></li>
+<li><a href="#190-sktd-sketches-technical-diagrams">190-SKTD Sketches &amp; Technical Diagrams</a></li>
+</ul>
+</li>
+<li><a href="#phase-800-swd-software-development">Phase 800-SWD Software Development</a><ul>
+<li><a href="#810-dsgn-system-design">810-DSGN System Design</a></li>
+<li><a href="#820-syint-system-internals">820-SYINT System Internals</a></li>
+<li><a href="#830-dev-system-development">830-DEV System Development</a></li>
+<li><a href="#840-test-system-testing">840-TEST System Testing</a></li>
+<li><a href="#880-rlse-system-releases">880-RLSE System Releases</a></li>
+<li><a href="#890-mnt-system-maintenance">890-MNT System Maintenance</a></li>
+</ul>
+</li>
+<li><a href="#phase-900-ops-operations">Phase 900-OPS Operations</a><ul>
+<li><a href="#few-words-about-software-maintenance">Few words about software maintenance</a></li>
+<li><a href="#910-mnt-system-maintenance">910-MNT System Maintenance</a></li>
+<li><a href="#920-tle-prepare-temporary-live-environments">920-TLE Prepare  temporary live environments</a></li>
+<li><a href="#990-pmsp-project-management-support-required">990-PMSP Project Management Support (REQUIRED)</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="preamble">Preamble</h2>
+<p>This section is about whole methodology <strong>phases</strong>, <strong>processes</strong>, <strong>steps</strong>, their <em>codes</em>, all over a cheat sheet / blueprint of "the whole".</p>
+<p>The phases are important as <strong>codes</strong> (on <em>documents</em> for example) and as name and content for a better understanding of process. They can also be used (and this is recommended) <em>as directory / file names</em> for a common understanding (at least 8<em>30-DEV</em> and <em>880-RLSE</em>) but when use them in file system (file or directory names) is important to pay attention to case (<strong>lower ase is accepted</strong>) and the character <code>-</code> (dash) and space (<strong>underscore <code>_</code> is accepted</strong>).</p>
+<p>This methodology, being applicable to all software development projects, not all sections are applicable in all cases, so in <a href="Appendix_B_DSGN_Content_Index.html">design template document - md</a> will be CLEAR specified for each section if it is REQUIRED or OPTIONAL.</p>
+<h2 id="blueprint-typologies">Blueprint / typologies</h2>
+<p>Basically the <strong>RENware SDEVEN)</strong> (aka <em>SDEVEN</em>) methodology name is an acronym of <em>Software Development &amp; ENgineering</em> and is adapted to company <em>practices</em>, <em>software styles</em>, types of software in portfolio and scope  and follows a classic <em>waterfall</em> inspired pattern but which can (and is) be used as an evolutionary model with sprints inspired from Agile methodology.</p>
+<p>There are classic phases up to release a product followed by maintenance and current operations phases post release. After a release, the methodology allows returns to any of the first 6 phases for new features / versions releases, the MAIN OBJECTIVE being a higher coherency, traceability and ability to move project from a team to another team with minimum overheard due to project adoption.</p>
+<p>In this document processes deliverables are summary described keeping a level that facilitate the understanding of principles of methodology. For more details is recommended to consult the appendix referred (see references section).</p>
+<h2 id="roles-responsibilities">Roles &amp; responsibilities</h2>
+<p>For each "final" (ie, leaf) process, the basic required roles was specified. Roles are abbreviated as described in <em>10.ADM</em> section. Also a super generic role was used in places where more and different specific roles should be used depending on project context, size and complexity.</p>
+<h2 id="phase-100-ana-analysis">Phase 100-ANA Analysis</h2>
+<p>This phase is the stage where the system requirements are collected and processed (engineered) to a more structured form in order to be more usable in system / product elaboration process.</p>
+<p>Traditionally the phase start from system requirements which are (re)structured in primary designs (aka high level design) at a level which allows for system blueprint, objectives, structure and functions.</p>
+<p>Also, here are produced the sales kits which will be used by marketing and sales structures in their work to market and sale the system / product.</p>
+<h3 id="110-sre-system-requirements">110-SRE System Requirements</h3>
+<p>These are the requirements as collected (elicitation) and categorized by relevant taxonomies. As mandatory taxonomies are:</p>
+<ul>
+<li><strong>functional</strong> types: functional, implementation issues, performance issues, user interaction issues, interfacing issues, standards compliance</li>
+<li><strong>urgency and importance</strong> types following MoSCoW paradigm - must, should, could, would</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: ban</li>
+<li>RECOMMENDED: rad, twr</li>
+<li>OPTIONAL: sen</li>
+</ul>
+</div>
+<h3 id="120-cpts-system-concepts">120-CPTS System Concepts</h3>
+<p>This is what is called usually <em>High Level Design</em> but it means more than it. This deliverable should contain the following:</p>
+<ul>
+<li>the basic system concepts as business specific terminology</li>
+<li>a high level architecture indicating at least the basic functional components of the system (logical architecture)</li>
+<li>the system universe as other business components which interact with the system and very shortly what kind of information is exchanged in interaction process </li>
+<li>what are the applicable standards and why are they important</li>
+<li>what are the main security issues and how can be avoided</li>
+<li>types / models of user interfaces intended to be implemented</li>
+<li>which logical components are back ends, front ends, communication, interfaces</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: ban, sen</li>
+<li>RECOMMENDED: rad, twr</li>
+<li>OPTIONAL: prm</li>
+</ul>
+</div>
+<h3 id="130-skit-sales-kits">130-SKIT Sales Kit(s)</h3>
+<p>The "things" required to sales structures should be  put under this code, eventually with detailed documents and codes following a class notation (with dot character). The most common things are:</p>
+<ul>
+<li>a system blueprint that can be used in presentations</li>
+<li>a system logical architecture that can be used in presentations</li>
+<li>some key differentiators that can be used in offers and bids</li>
+<li>various pro/con-s analysis ref other market similar products</li>
+<li>a list of system requirements that it satisfy (and usual responses) usable in bidding process</li>
+<li>a list of system standards that it is complaint to (and usual responses) usable in bidding process</li>
+<li>some known "frequently asked questions" and the answers to them</li>
+</ul>
+<p><em>None of these represent new information</em>. All information os to be found in the other documents just it is (re)structured in other way in which is more useful to sales personnel.</p>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: sen, prm</li>
+<li>RECOMMENDED: twr</li>
+<li>OPTIONAL: pm, sect</li>
+</ul>
+</div>
+<h3 id="190-sktd-sketches-technical-diagrams">190-SKTD Sketches &amp; Technical Diagrams</h3>
+<p>These are different drawings of system parts. They are (should be) separated because can be useful (as raw images) in other places / processes such as presentations, UI design, branding, etc.</p>
+<h2 id="phase-800-swd-software-development">Phase 800-SWD Software Development</h2>
+<p>This phase covers the software realization process but from an engineering point of view, meaning not only code and programs writing, but also the design, testing and release processes, Aim is to make a <strong>SYSTEM PRODUCT</strong>, usable and maintainable both by the beneficiary and RENware as the producer. Another important issue is related to capability of the system to be "migrated" to other team members with as less overhead effort as possible.</p>
+<h3 id="810-dsgn-system-design">810-DSGN System Design</h3>
+<p>This is the main technical detailed document of the system. It is the starting point for any developer that join the project snd its job require to understand the system.</p>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: sen</li>
+<li>RECOMMENDED: twr, sect</li>
+<li>OPTIONAL: prm, ptm</li>
+</ul>
+</div>
+<h3 id="820-syint-system-internals">820-SYINT System Internals</h3>
+<p>This is nothing else that low level design too, but is seen as a <em>dedicated chapter or appendix</em> of 810-DSGN and refers technical documents (that often are read singularly, for example a dev needs to review only some states of an object) such as system states, sequence diagrams, etc, documents that by default are classified and should not get out of project without special approvals.</p>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: sen</li>
+<li>RECOMMENDED: twr, ptm</li>
+<li>OPTIONAL: dev, ban</li>
+</ul>
+</div>
+<h3 id="830-dev-system-development">830-DEV System Development</h3>
+<p>This "contains / is" the system as it is on repository system. Practical is the local repository image. It clearly contains all things / codes / programs / scripts needed for system to work, bur it can contain (and it is strongly recommended) the system other documentation being it technical or end user manuals. </p>
+<p>The only thing that must be said is regarding documentation. Therefore the <em>technical one</em> <em>must be in text formats</em> (markdown is preferred) and <em>other documents</em> should be also in <em>text format as much as possible</em>. Binary formats should be strongly avoided (are not "<code>diff</code>-able") but in "no other option" cases, the repository administrator must be informed about binary files to action in consequence. As other suggested options to binary documents would be:</p>
+<ul>
+<li>use markdown extensions like <code>mermaid</code> for "graphical" things / diagrams,</li>
+<li>store them as xml format,</li>
+<li>store them as pdf format,</li>
+<li>use "open text formats", etc.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>all kind of required <em><code>dev</code></em></li>
+<li>sometimes would be necessary <em><code>ptm</code></em> for different clarifications</li>
+</ul>
+</div>
+<h3 id="840-test-system-testing">840-TEST System Testing</h3>
+<p>The things that are mandatory here are:</p>
+<ul>
+<li>a <strong>testing plan</strong>: what to test (<em>REQUIRED</em>), when to tets, by who</li>
+<li><strong>test cases</strong> - that represent for each test required:</li>
+<li>the exact expected steps to be done with a number / code to be easily referred in other places</li>
+<li>the expected result to be obtained by doing previous steps (often is useful to indicated an acceptable tolerance, especially when are talking about numbers or times)</li>
+<li>the system reported messages (if there are) and results, preferably with associated print screens</li>
+<li>a <strong>testing report</strong> that summarize the results of testing process: number of severe / critical bugs, number of acceptable errors (as solvable by work around), recommendations to improve, documentation non conformities, time spent for testing, automation tools used, required and recommended.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: func, scat, sect</li>
+<li>RECOMMENDED: twr,ptm</li>
+<li>OPTIONAL: isat</li>
+</ul>
+</div>
+<h3 id="880-rlse-system-releases">880-RLSE System Releases</h3>
+<p>This refers to releasing process regardless of released version qualifier (not only to <em>release versions</em>) but to any kind of version being it an alpha or a beta or a previewer, etc.</p>
+<p>Any release should pass a test process which is done by developer itself as first test (<strong>alpha test</strong>). No promote to higher version qualifiers is allowed if alpha tests did not pass or was bypassed (skipped).</p>
+<p>After alpha test can be created a branch for testers team or a tag (that will be used latter for a test branch creation).</p>
+<p>Any tag will be kept at least for minimum 4 tags after it but no more than 20 tags after. These min and max can be modified if project require other limits.</p>
+<p>Tags will be saved also on an external backup (in project history).</p>
+<p>Releasing a version must be documented accordingly in project <em>CHANGELOG</em> and if project require, a <em>release note</em> should be issued. Both must be written with enough care to text explanations and having in mind that will be used latter by other persons in writing different product documents and marketing materials.</p>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: isat, scat, sect</li>
+<li>RECOMMENDED: prm, ptm, twr</li>
+<li>OPTIONAL: pm, dev</li>
+</ul>
+</div>
+<h3 id="890-mnt-system-maintenance">890-MNT System Maintenance</h3>
+<p>This phase is about:</p>
+<ul>
+<li>Maintenance Plan</li>
+<li>Hot Fixes</li>
+<li>Critical Patches</li>
+<li>Other Updates</li>
+</ul>
+<p>all of these mainly in relation with "beneficiary" os system / product / application.</p>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: sen, ptm</li>
+<li>RECOMMENDED: sect, twr</li>
+<li>OPTIONAL: pm, dadm</li>
+</ul>
+</div>
+<h2 id="phase-900-ops-operations">Phase 900-OPS Operations</h2>
+<p>This phase is about maintaining the system after a release. In fact is about <strong><em>maintaining a release</em></strong>.</p>
+<h3 id="few-words-about-software-maintenance">Few words about software maintenance</h3>
+<p>The maintenance is probably the hard thing about a software. Software maintainability is the most important issue for any software company that develop its own software as portfolio product.</p>
+<p>Along decades there was more and more improvements in software development process, probably the biggest step being made when <em>software development was considered an ENGINEERING discipline</em> with all things that engineering means. But the biggest issue remained the <em>measurement process</em>.</p>
+<p>From maintenance point of view a released version must be kept "alive" a period of time. That alive is mostly generated by the fact that software being an intangible product, so hard to measure, always could be some astigmatic functionalities, ie non conform ones, aka bugs, that should be remediate after release. Different methods to categorize and measure these non conformities was developed in time. <strong>Now the most accepted "definition" for a "bug" is: a(ny) thing that works otherwise that is written in product documentation</strong>.</p>
+<h3 id="910-mnt-system-maintenance">910-MNT System Maintenance</h3>
+<p>These are current operations related to modifications /changes that must be made to a released version.</p>
+<p>The important things are:</p>
+<ul>
+<li>to maintain an acceptable coherence during modifications in order to avoid <strong><em>side effects</em></strong></li>
+<li>to make changes in a way to not be repeated after some time, ie to not make / solve the same issue more than once in time! </li>
+<li>to present an interface to users that is able to collect and centralize issues (aka support line / center)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: dadm, radm, ptm</li>
+<li>RECOMMENDED: sect, twr</li>
+<li>OPTIONAL: pm, prm</li>
+</ul>
+</div>
+<h3 id="920-tle-prepare-temporary-live-environments">920-TLE Prepare  temporary live environments</h3>
+<p>This activity refers to dev infrastructure administration and in fact, from software development methodology point of view means that who requested for this environment should create a kind of checklist with requirements in order to be easily verified by administrator.</p>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: dadm</li>
+<li>RECOMMENDED: ptm</li>
+<li>OPTIONAL: dev</li>
+</ul>
+</div>
+<h3 id="990-pmsp-project-management-support-required">990-PMSP Project Management Support (REQUIRED)</h3>
+<p>This activity refers to technical support activities required in Project Management, ie estimations, deliveries breakdown and quality factors in PoC calculation, etc.</p>
+<div class="admonition info">
+<p class="admonition-title">Roles &amp; Responsibilities</p>
+<ul>
+<li>REQUIRED: sen, prm</li>
+<li>RECOMMENDED: ptm, pm</li>
+<li>OPTIONAL: ban</li>
+</ul>
+</div>
+<h2 id="references">References</h2>
+<p>A comprehensive template as suggested structure and content can be <a href="Appendix_B_DSGN_Content_Index.html">found here - format md</a>.</p>
+<hr/>
+<div class="md-source-file">
+<small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 30, 2023</span>
+</small>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright (c) RENware Software Systems
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.tabs.sticky", "navigation.path"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="assets/javascripts/bundle.b4d07000.min.js"></script>
+<script src="js/print-site.js"></script>
+<script src="optionalConfig.js"></script>
+<script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
+<script src="extra-loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,761 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Petre Iordanescu, RENware Software Systems, petre.iordanescu@gmail.com" name="author"/>
+<link href="SDEVEN.60_RELM.html" rel="prev"/>
+<link href="SDEVEN.65_DEREV.html" rel="next"/>
+<link href="assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.3, mkdocs-material-9.1.13" name="generator"/>
+<title>Project structure (62-PSTR) - SDEVEN Software Development &amp; Engineering Methodology</title>
+<link href="assets/stylesheets/main.85bb2934.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.a6bdf11c.min.css" rel="stylesheet"/>
+<style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h224V368c0-26.5 21.5-48 48-48h112V96c0-35.3-28.7-64-64-64H64zm384 320H336c-8.8 0-16 7.2-16 16v112l32-32 64-64 32-32z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-40-176h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.4c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4V32zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-86.2-346.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.1 52.4 442.6 6.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5 2.6-10.4 6.5l-16.5 45.9-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4 0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2 0-4.6-3-8.9-7.2-10.4l-45.6-16.8zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9c-22-8-45.8-12.3-70.5-12.3C93.1 96 0 189.1 0 304s93.1 208 208 208 208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-75.1 60.9-136 136-136h8c8.8 0 16 7.2 16 16s-7.2 16-16 16h-8z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9V464c0 26.5 21.5 48 48 48h48v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48v-65.1zM96 256a64 64 0 1 1 128 0 64 64 0 1 1-128 0zm256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M320 0c17.7 0 32 14.3 32 32v64h120c39.8 0 72 32.2 72 72v272c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72h120V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zM264 256a40 40 0 1 0-80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224h16v192H48c-26.5 0-48-21.5-48-48v-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48h-16V224h16z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 0H128c-17.7 0-32 14.3-32 32s14.3 32 32 32v132.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6 0 480.9 31.1 512 69.4 512h309.2c38.3 0 69.4-31.1 69.4-69.4 0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32S337.7 0 320 0h-32zm-96 196.8V64h64v132.8c0 23.7 6.6 46.9 19 67.1l34.5 56.1h-171l34.5-56.1c12.4-20.2 19-43.4 19-67.1z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></svg>');}
+div.download-btn {
+    text-align: right;
+}
+
+@page {
+    size: a4 portrait;
+    margin: 25mm 10mm 25mm 10mm;
+    counter-increment: page;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    white-space: pre;
+    color: grey;
+    @top-left {
+        font-size: x-small;
+        content: 'smaXtec';
+    }
+    @top-center {
+        font-size: x-small;
+        content: string(chapter);
+    }
+    @top-right {
+        font-size: x-small;
+        content: 'Page ' counter(page);
+    }
+}
+
+@media print {
+
+    div.download-btn {
+        display: none;
+    }
+
+    .md-typeset table:not([class]) {
+        display: block;
+        border: none;
+    }
+
+    img {
+        width: 100%;
+        page-break-inside:avoid;
+        page-break-after:avoid;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after:avoid;
+        page-break-inside:avoid;
+    }
+
+    table, pre {
+        page-break-inside:avoid
+    }
+
+    ul, ol, dl {
+        page-break-before:avoid
+    }
+
+}</style>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="assets/_markdown_exec_ansi.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings1.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings2.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings3.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings4.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings5.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings6.css" rel="stylesheet"/>
+<link href="css/print-site.css" rel="stylesheet"/>
+<link href="css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#project-structure-sdeven62-pstr">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDEVEN Software Development &amp; Engineering Methodology" class="md-header__button md-logo" data-md-component="logo" href="index.html" title="SDEVEN Software Development &amp; Engineering Methodology">
+<img alt="logo" src="pictures/SDEVEN_logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDEVEN Software Development &amp; Engineering Methodology
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Project structure (62-PSTR)
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDEVEN Software Development &amp; Engineering Methodology" class="md-nav__button md-logo" data-md-component="logo" href="index.html" title="SDEVEN Software Development &amp; Engineering Methodology">
+<img alt="logo" src="pictures/SDEVEN_logo.png"/>
+</a>
+    SDEVEN Software Development &amp; Engineering Methodology
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="index.html">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.00_INDEX.html">
+        SDEVEN index
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          SDEVEN procedures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          SDEVEN procedures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.10_ADM.html">
+        Administrative (10-ADM)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.20_RENPRA.html">
+        Practices (20-RENPRA)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.30_RENVER.html">
+        Versioning (30-RENVER)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.40_BRAN.html">
+        Branches (40-BRAN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.45_OPME.html">
+        Operational Meetings (45-OPME)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.50_CHGMNG.html">
+        Change Management (50-CHGMNG)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.55_TRACE.html">
+        Logging development changes (55-TRACE)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.60_RELM.html">
+        Release management (60-RELM)
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Project structure (62-PSTR)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="SDEVEN.62_PSTR.html">
+        Project structure (62-PSTR)
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preamble-and-goals">
+    Preamble and goals
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-basic-backbone-structure">
+    Project basic backbone structure
+  </a>
+<nav aria-label="Project basic backbone structure" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#doc_src-directory">
+    doc_src directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#docs-directory">
+    docs directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pjm-directory">
+    pjm directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setup-directory">
+    setup directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#static_portal-directory">
+    static_portal directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sysinit-directory">
+    sysInit directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system_module_x-directory">
+    &lt;system_module_X&gt; directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commons-component">
+    Commons component
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project_root830-dev-directory">
+    &lt;project_root&gt;/830-DEV/ directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-of-project-full-directory-structure">
+    Example of project full directory structure
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.65_DEREV.html">
+        Design approaches, review and changes (65-DEREV)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.68_COREV.html">
+        Code review (68-COREV)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.70_LIP.html">
+        Licenses &amp; products / models (70-LIP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.75_CCEP.html">
+        Code of Conduct. Ethics, Professional and Legal Issues (75-CCEP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.80_COPRI.html">
+        Conventions &amp; principles (80-COPRI)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.90_RENBLU.html">
+        Phases, Processes and Deliverables (90-RENBLU)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.95_COCL.html">
+        Confidentiality &amp; Classification (95-COCL)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          SDEVEN appendices
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          SDEVEN appendices
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_A_Semantic_versioning.html">
+        Appendix (A) Sematic Versioning (SEMVER)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_B_DSGN_Content_Index.html">
+        Appendix (B) System Design Document Template (810 DSGN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_C_Status_Report.html">
+        Appendix (C) Status Report Template (STATUSR)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_D_ROADMAP_template.html">
+        Appendix (D) ROADMAP Template (RMAP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_E_RELNOTE_template.html">
+        Appendix (E) Release note template (RELNOTE)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_Q_faq.html">
+        Appendix (Q) FAQ. Frequently Asked Questions (FAQ)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="About_SDEVEN.html">
+        About SDEVEN
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="LICENSE.html">
+        License
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="http://www.renware.eu">
+        RENware Software Systems company
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="pdfs/print_page.html/print_page.pdf">
+        Complete SDEVEN Manual (PDF)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="print_page.html">
+        Complete SDEVEN Manual
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preamble-and-goals">
+    Preamble and goals
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-basic-backbone-structure">
+    Project basic backbone structure
+  </a>
+<nav aria-label="Project basic backbone structure" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#doc_src-directory">
+    doc_src directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#docs-directory">
+    docs directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pjm-directory">
+    pjm directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setup-directory">
+    setup directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#static_portal-directory">
+    static_portal directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sysinit-directory">
+    sysInit directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system_module_x-directory">
+    &lt;system_module_X&gt; directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commons-component">
+    Commons component
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project_root830-dev-directory">
+    &lt;project_root&gt;/830-DEV/ directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-of-project-full-directory-structure">
+    Example of project full directory structure
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset"><div class="download-btn"><a href="pdfs\SDEVEN.62_PSTR.html\SDEVEN.62_PSTR.pdf">Download PDF</a></div>
+<p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
+<p>Version: 7.0.12<br/>
+Release date: 230805</p>
+<hr/>
+<h1 id="project-structure-sdeven62-pstr">Project structure (SDEVEN.62-PSTR)</h1>
+<p><strong>Table of Content</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#project-structure-sdeven62-pstr">Project structure (SDEVEN.62-PSTR)</a><ul>
+<li><a href="#preamble-and-goals">Preamble and goals</a></li>
+<li><a href="#project-basic-backbone-structure">Project basic backbone structure</a><ul>
+<li><a href="#doc_src-directory">doc_src directory</a></li>
+<li><a href="#docs-directory">docs directory</a></li>
+<li><a href="#pjm-directory">pjm directory</a></li>
+<li><a href="#setup-directory">setup directory</a></li>
+<li><a href="#static_portal-directory">static_portal directory</a></li>
+<li><a href="#sysinit-directory">sysInit directory</a></li>
+<li><a href="#system_module_x-directory">&lt;system_module_X&gt; directory</a></li>
+<li><a href="#commons-component">Commons component</a></li>
+</ul>
+</li>
+<li><a href="#project_root830-dev-directory">&lt;project_root&gt;/830-DEV/ directory</a></li>
+<li><a href="#example-of-project-full-directory-structure">Example of project full directory structure</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="preamble-and-goals">Preamble and goals</h2>
+<p>This procedure contains usual project structure and it is just a recommendation. The <em>Project Manager</em> will organize the project in the best possible mode in order to to be relevant in specific project situations. A common practice is to start with these recommendations and to add (or refine) elements that reflects project particular aspects.</p>
+<h2 id="project-basic-backbone-structure">Project basic backbone structure</h2>
+<p>First level of project backbone consists of:</p>
+<ul>
+<li><strong>830-DEV</strong> - here will take place all system "active" development</li>
+<li><strong>880-RLSE</strong> - here will be kept data for public releases - this directory is not be explained here, for details <a href="SDEVEN.60_RELM.html#release-directory-content-and-structure">see procedure 60-RELM</a></li>
+</ul>
+<p>All product system code is kept under <code>830-DEV</code> directory. The objective of its structuring is to assure as much as possible code reusability and its "after-release" maintainability. This directory contains:</p>
+<ul>
+<li><strong>&lt;project root&gt;/830-DEV/</strong> directory <a href="#project_root830-dev-directory">go to section</a> with <em>following structure</em>:<ul>
+<li><strong>doc_src/</strong> <a href="#doc_src-directory">go to section</a></li>
+<li><strong>docs/</strong> <a href="#docs-directory">go to section</a></li>
+<li><strong>pjm/</strong> <a href="#pjm-directory">go to section</a></li>
+<li><strong>setup/</strong> <a href="#setup-directory">go to section</a></li>
+<li><strong>static_portal/</strong> <a href="#static_portal-directory">go to section</a></li>
+<li><strong>sysInit/</strong> <a href="#sysinit-directory">go to section</a></li>
+<li><strong>&lt;system_module_A&gt;/</strong> - directory dedicated for &lt;system module "A"&gt; <a href="#system_module_x-directory">go to section</a></li>
+<li><strong>&lt;system_module_B&gt;/</strong> - directory dedicated for &lt;system module "B"&gt; <a href="#system_module_x-directory">go to section</a></li>
+<li>... &lt;another system module&gt;/ ... <a href="#system_module_x-directory">go to section</a></li>
+<li><strong>Commons</strong>/ <a href="#commons-component">go to section</a></li>
+</ul>
+</li>
+</ul>
+<p>Each of these directories will be explained in next sections.</p>
+<div class="admonition warning">
+<p class="admonition-title">Naming conventions</p>
+<p>To avoid conflicts and misinterpretations at programming language level it is recommended that in FILES and DIRECTORY NAMES to avoid characters space (<code></code>) and (<code>-</code>) and to replace them with underscores (<code>_</code>).</p>
+</div>
+<p>For a clear "picture" please refer the <a href="#example-of-project-full-directory-structure">"Example of project full directory structure" section</a>.</p>
+<h3 id="doc_src-directory"><strong>doc_src</strong> directory</h3>
+<ul>
+<li>the technical documentation:<ul>
+<li>110-SRE System Requirements</li>
+<li>120-CPTS System Concepts</li>
+<li>130-SKIT Sales Kit(s)</li>
+<li>810-DSGN System Design</li>
+</ul>
+</li>
+<li>system manuals<ul>
+<li>euma</li>
+<li>adma</li>
+</ul>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">system manuals</p>
+<p>system manuals (adma &amp; euma) will be assembled as deliverables in release packages <a href="SDEVEN.60_RELM.html#release-directory-content-and-structure">for details see 60-RELM procedure</a></p>
+</div>
+<h3 id="docs-directory"><strong>docs</strong> directory</h3>
+<p>This directory will accommodate the <strong>FINAL</strong> (<strong>RELEASED</strong>) documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "<em>ENTERPRISE SYSTEMS</em>".</p>
+<div class="admonition warning">
+<p class="admonition-title">remarks</p>
+<ul>
+<li>this directory content is obtained from <code>static_portal</code> directory after tests passed and as preparation for a release (<a href="#static_portal-directory">here go to static_portal directory section</a>)</li>
+<li>this directory is subject to git repository as is part of a release</li>
+</ul>
+</div>
+<h3 id="pjm-directory"><strong>pjm</strong> directory</h3>
+<p>Here are kept project management items that could be necessary in software development <sup id="fnref:pjm_docs"><a class="footnote-ref" href="#fn:pjm_docs">1</a></sup>, things like that:</p>
+<ul>
+<li>project contract</li>
+<li>project tests &amp; acceptances procedures</li>
+<li>deliveries content and schedule</li>
+<li>... etc</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">project management documents</p>
+<p>the project management documents make subject of Project Management discipline and will not be explained here or in other SDEVEN section</p>
+</div>
+<h3 id="setup-directory"><strong>setup</strong> directory</h3>
+<p>The aim of this directory is to keep code to install the system by this understanding the code that:</p>
+<ul>
+<li>
+<p>create all directory structure required to accommodate and run developed system</p>
+</li>
+<li>
+<p>create all OS level users, groups or other administrative OS "items"</p>
+</li>
+<li>
+<p>install all required OS level dependencies and applications (for example a local particular database system, a system application used to manage the network components, etc)</p>
+</li>
+<li>
+<p>install the framework(s) components that are required to run developed system (for example JRE for Java components, PHP Laravel, Python Flask, etc)</p>
+</li>
+<li>
+<p>configure OS installed components in corresponding directories (for example on Linux some changes in directories <code>/etc</code>, <code>/var</code>, etc)</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">setup components language</p>
+<p>A general practice is to make setup components in usual OS scripting language (Bash, Power Shell, etc) but is not mandatory to do like that. A good practice is to use a language that:</p>
+<ul>
+<li>can assure enough independence of OS specific commands and "formats" (for example the directory separation character, <code>\</code> vs <code>/</code>)</li>
+<li>can be executed on all known public OS-es (Linux, MacOS, Windows)</li>
+<li>one of the "perfect" candidates is <em>Python 3</em></li>
+</ul>
+</div>
+<h3 id="static_portal-directory"><strong>static_portal</strong> directory</h3>
+<p>This directory will accommodate the documentation static portal that accompanies the developed system. This is part of what is known as "Help Center" of that system This is mandatory for products from category "<em>ENTERPRISE SYSTEMS</em>".</p>
+<div class="admonition info">
+<p class="admonition-title">how to create documentation static portal</p>
+<ul>
+<li>the company practice is to use <a href="https://www.mkdocs.org/">mkdocs</a> to build this portal</li>
+<li>this directory is used for testing and validation resulted portal - released portal is kept in <a href="#docs-directory"><code>docs/</code> directory</a></li>
+</ul>
+</div>
+<h3 id="sysinit-directory"><strong>sysInit</strong> directory</h3>
+<p>The <code>sysInit</code> directory accommodates code that initialize all system modules. This system initialization routine <strong>SHOULD BE THE CENTRALIZED ONE</strong> meaning:</p>
+<ul>
+<li>each system module / component must have its initialization code (<a href="#system_module_x-directory">as described in "system module X"</a>)</li>
+<li>the <code>sysInit</code> code centralize all modules initialization in <strong>correct order</strong></li>
+</ul>
+<p>The code of <code>sysInit</code> module should be called repeatedly without generate side effects except that determine system initialization and loosing all sessions in work data. But repeating calls should all system data is correctly flushed and persisted and no <strong>UNEXPECTED</strong> <strong><em>missing</em></strong> (of course others that "unsaved data") or other files, configurations <strong><em>damage</em></strong> is happening.</p>
+<h3 id="system_module_x-directory"><strong>&lt;system_module_X&gt;</strong> directory</h3>
+<p>The system must be designed following the next principles:</p>
+<ul>
+<li>must be structured in "independent <strong>modules</strong>" (see the next explanation)</li>
+<li><strong>modules</strong> should interact between them ONLY:<ul>
+<li>using parameters and returns</li>
+<li>using defined interfaces (as recommended in OOP guides)</li>
+<li>using a external shared - common - data component</li>
+</ul>
+</li>
+<li>interactions or communication between <strong>modules</strong> that require global variables should use the <strong>Commons</strong> component (<a href="#commons-component">see Common section</a>)</li>
+<li>should have their own <em>initialization</em> code callable from <code>sysInit</code></li>
+<li>should have their own <code>README_moduleX.md</code> file containing specific technical specs and info (will become technical documentation)</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">What means an independent module?</p>
+<p>A software module can be considered independent enough when it can be "transformed" into a distinct library with an <em>acceptable work around</em> effort meaning without change or alter its functional code but only the required code to make it separated "package or library" (ie, the code that define its library definition)</p>
+</div>
+<h3 id="commons-component"><strong>Commons</strong> component</h3>
+<p>This component is a specialized module used to replace direct usage of <strong><em>global variables</em></strong>. It usually is implemented as a <code>class</code> object and take care of global variables by meaning:</p>
+<ul>
+<li>assure their consistency such as they are critical regions</li>
+<li>prevent circular references when using them (everybody import only <code>Commons</code> module)</li>
+</ul>
+<p><code>Commons</code> component (if is present) should have data initialized by each module that post any global data and in <code>sysInit</code> module should be among the first created, if not the very first.</p>
+<div class="admonition warning">
+<p class="admonition-title">Commons component code-name</p>
+<p>The <code>Commons</code> component has the name starting with <em>uppercase</em> especially to avoid confusions with <code>commons</code> name which can be used in more other contexts being an usual and general term. So, the idea is <strong>to use in clear <code>Commons</code></strong> instead of <code>commons</code> and to potentially get some warnings at least in stating / initializing phases...</p>
+</div>
+<h2 id="project_root830-dev-directory"><strong>&lt;project_root&gt;/830-DEV/</strong> directory</h2>
+<p>In the project root directory will be at least these files:</p>
+<ul>
+<li><code>README.md</code> which contains a kind of product data sheet with project information</li>
+<li><code>project.toml</code> which contains project information like:<ul>
+<li><em>name</em> - product / system / project code-name / short-name as known in organization</li>
+<li><em>description</em> a short description of the project (just emphasizes the essence or "reason to ve" of product because more detailed information is offered through README)</li>
+<li><em>version</em> is the product version (the product in that package !) and must conform all <a href="SDEVEN.30_RENVER.html">SDEVEN versioning specifications</a></li>
+<li><em>license</em> type</li>
+<li>... more information, usually this file being also required by PACKAGING AND DEPENDENCY MANAGEMENT used solution ...</li>
+</ul>
+</li>
+<li><code>requirements.txt</code> which contain product / system internal and libraries dependencies (just system level not OS level)</li>
+</ul>
+<h2 id="example-of-project-full-directory-structure">Example of project full directory structure</h2>
+<p>Here is shown an example of project directory structure starting from a <code>PROJECT-ROOT-DIRECTORY</code>.</p>
+<div class="highlight"><pre><span></span><code>📁<span class="w"> </span>&lt;PROJECT-ROOT-DIRECTORY&gt;
+├──<span class="w"> </span>📁<span class="w"> </span><span class="m">830</span>-DEV/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>doc_src/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span><span class="m">110</span>-SRE/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span><span class="m">120</span>-CPTS/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span><span class="m">130</span>-SKIT/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span><span class="m">810</span>-DSGN/
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>📄<span class="w"> </span>other_project_docs...
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>docs/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>pjm/<span class="w">        </span><span class="c1"># organization specific project management and contractual docs ...</span>
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>setup/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>static_portal/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>&lt;sys_module_A...dir&gt;/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>&lt;sys_module_B...dir&gt;/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>&lt;sys_module_X...dir&gt;/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>Commons/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>SysInit/
+│<span class="w">   </span>├──<span class="w"> </span>📄<span class="w"> </span>project.toml
+│<span class="w">   </span>├──<span class="w"> </span>📄<span class="w"> </span>README.md
+│<span class="w">   </span>└──<span class="w"> </span>📄<span class="w"> </span>requirements.txt
+└──<span class="w"> </span>📁<span class="w"> </span><span class="m">880</span>-RLSE/<span class="w">       </span><span class="c1"># specific organization (see procedure 60-RELM) ...</span>
+</code></pre></div>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:pjm_docs">
+<p>The reason that project management documents are kept "in development repository" is to be available for the whole team. This is not mandatory and in special cases this directory can be moved out of development repository. <a class="footnote-backref" href="#fnref:pjm_docs" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+<hr/>
+<div class="md-source-file">
+<small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 5, 2023</span>
+</small>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright (c) RENware Software Systems
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.tabs.sticky", "navigation.path"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="assets/javascripts/bundle.b4d07000.min.js"></script>
+<script src="js/print-site.js"></script>
+<script src="optionalConfig.js"></script>
+<script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
+<script src="extra-loader.js"></script>
+</body>
+</html>
