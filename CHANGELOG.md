@@ -32,9 +32,10 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* tbd... a refer test procedure in `00.INDEX` & `mkdocs.yml`
+* tbd... a refer test procedure in `00.INDEX`
 
 * wip...
+* wip... 230805piu_g refer test procedure in `mkdocs.yml`
 * 230805piu_f started a draft (toc & ideas ref sections content) testing procedure, doc `SDEVEN.25_SYTEST`, name *System Software Testing*
 
 
