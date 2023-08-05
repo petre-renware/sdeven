@@ -24,7 +24,7 @@ Release date: 230806
 * -#TODO ideas ref section **Preliminaries**
     * why need to test software?
     * when and what need to test?
-    * what means terms compliance, bug, acceptable, workaround solverable, ...
+    * what means terms compliance, bug, acceptable, workaround solvable, ...
 
 
 The testing is one of the most important activity in software development as long as a piece of software is NOT written for own purposes.
@@ -37,6 +37,9 @@ The testing may *assure* you that a piece of software do what was intended to do
 ### When
 The testing should be done first "internally" (ie, not in the presence of customer's people). Then some more complex, elaborated tests should be done in the customer presence (for customer confidence).
 
+
+## Vocabulary
+The testing process wil involve some specific  terms and concepts like: *compliance*, *bug*, *acceptable*, *workaround solution*, ... These terms are not necessarily new terms but they will make more sense, will get a more clear meaning  "if are seen" from testing perspective.
 
 
 
