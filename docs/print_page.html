@@ -81,6 +81,8 @@
       
     
     
+      <link rel="stylesheet" href="assets/_markdown_exec_ansi.css">
+    
       <link rel="stylesheet" href="css/print-site-enum-headings1.css">
     
       <link rel="stylesheet" href="css/print-site-enum-headings2.css">
@@ -2035,8 +2037,8 @@ Release date: 230621</p>
 <p>All sections content comes from information "produced" in design and development phases.</p>
 </div>
 <p>Related procedure: <a href="#sdeven.90_renblu-880-rlse-system-releases">SDEVEN.90 RENBLU document</a>.</p></section><section class="print-page" id="sdeven.62_pstr"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
-<p>Version: 7.0.9<br>
-Release date: 230803</p>
+<p>Version: 7.0.12<br>
+Release date: 230805</p>
 <hr />
 <h1 id="sdeven.62_pstr-project-structure-sdeven62-pstr">Project structure (SDEVEN.62-PSTR)</h1>
 <p><strong>Table of Content</strong></p>
@@ -2220,28 +2222,27 @@ Release date: 230803</p>
 </ul>
 <h2 id="sdeven.62_pstr-example-of-project-full-directory-structure">Example of project full directory structure</h2>
 <p>Here is shown an example of project directory structure starting from a <code>PROJECT-ROOT-DIRECTORY</code>.</p>
-<div class="highlight"><pre><span></span><code>.../&lt;PROJECT-ROOT-DIRECTORY&gt;/
-        ├───830-DEV/
-        │   ├───doc_src/
-        │   │   ├───110-SRE/
-        │   │   ├───120-CPTS/
-        │   │   ├───130-SKIT/
-        │   │   └───810-DSGN/
-        │   ├───docs/
-        │   ├───pjm/
-        │   │   └─── ... specific project management and contractual docs ...
-        │   ├───setup/
-        │   ├───static_portal/
-        │   ├───&lt;sys_module_A...dir&gt;/
-        │   ├───&lt;sys_module_B...dir&gt;/
-        │   ├───&lt;sys_module_X...dir&gt;/
-        │   ├───Commons/
-        │   ├───SysInit/
-        │   ├───project.toml
-        │   ├───README.md
-        │   └───requirements.txt
-        └───880-RLSE
-            └─── ... specific organization (see procedure 60-RELM) ...
+<div class="highlight"><pre><span></span><code>📁<span class="w"> </span>&lt;PROJECT-ROOT-DIRECTORY&gt;
+├──<span class="w"> </span>📁<span class="w"> </span><span class="m">830</span>-DEV/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>doc_src/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span><span class="m">110</span>-SRE/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span><span class="m">120</span>-CPTS/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span><span class="m">130</span>-SKIT/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span><span class="m">810</span>-DSGN/
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>📄<span class="w"> </span>other_project_docs...
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>docs/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>pjm/<span class="w">        </span><span class="c1"># organization specific project management and contractual docs ...</span>
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>setup/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>static_portal/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>&lt;sys_module_A...dir&gt;/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>&lt;sys_module_B...dir&gt;/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>&lt;sys_module_X...dir&gt;/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>Commons/
+│<span class="w">   </span>├──<span class="w"> </span>📁<span class="w"> </span>SysInit/
+│<span class="w">   </span>├──<span class="w"> </span>📄<span class="w"> </span>project.toml
+│<span class="w">   </span>├──<span class="w"> </span>📄<span class="w"> </span>README.md
+│<span class="w">   </span>└──<span class="w"> </span>📄<span class="w"> </span>requirements.txt
+└──<span class="w"> </span>📁<span class="w"> </span><span class="m">880</span>-RLSE/<span class="w">       </span><span class="c1"># specific organization (see procedure 60-RELM) ...</span>
 </code></pre></div>
 <div class="footnote">
 <hr />
