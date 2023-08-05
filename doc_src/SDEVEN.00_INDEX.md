@@ -1,6 +1,6 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.12<br>
+Version: 7.0.13<br>
 Last update: 230805
 
 ***
@@ -34,6 +34,16 @@ SDEVEN methodology consists of and includes the following sections (procedures):
 
 * **Practices and technical issues** section [SDEVEN.20-RENPRA](SDEVEN.20_RENPRA.md)<br>
     In this section will be found some of the most important practices and advices regarding the software development.
+
+
+
+-#TODO work in progress here...
+
+* **System Software Testing** section [SDEVEN.25-SYTEST](SDEVEN.25_SYTEST.md)<br>
+    xxxtbd...
+
+
+
 
 * **Versioning** section [SDEVEN.30-RENVER](SDEVEN.30_RENVER.md)<br>
     This section treat the *git* repository for software in particular how to use version codes and tags.
