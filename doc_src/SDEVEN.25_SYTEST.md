@@ -27,9 +27,9 @@ Release date: 230806
     * what means terms compliance, bug, acceptable, workaround solverable, ...
 
 
-The testing is one of the most important activity in software development as long as a piece of sofrware is written NOT for own purposes.
+The testing is one of the most important activity in software development as long as a piece of software is NOT written for own purposes.
 
-The testing may assure you that a piece of software do what was intended to do. This is "one face" but testing also must assure the beneficiary of the software for the same things, maybe more ones.
+The testing may *assure* you that a piece of software do what was intended to do. This is "one face" but testing must also assure the *owner* of the software for the same things. And finally must assure the *end users* (generally the customer) for same things, sometimes more things.
 
 
 
