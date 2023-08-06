@@ -66,7 +66,7 @@ The testing process will involve some specific  terms and concepts like: *compli
 
 
 * -#TODO ideas ref section content:
-    * discuss about environments, what are good for and what is the idea
+    * [x] discuss about environments, what are good for and what is the idea
     * make a flow ref how "information flow" from one environment to other (a sequence diagram is perfect)
     * **development** environment
     * **qa test** environment
@@ -77,7 +77,7 @@ The testing process will involve some specific  terms and concepts like: *compli
 
 ### Why need for more environments 
 
-The basic assumption of testing theory: **the final produced system must run on different machines** than those where it was produced.
+The basic assumption of testing theory is: **the final produced system must run on different machines** than those where it was produced.
 
 Using more than one environment is a *must* because:
 
