@@ -92,7 +92,6 @@ Using more than one environment is a *must* because:
 
 ```mermaid
 flowchart TD
-
     dev[Development]
     test[QA and Test]
     prod[Production]
@@ -104,7 +103,24 @@ flowchart TD
 ```
 
 
+```mermaid
+sequenceDiagram
+    autonumber
+    dev[Development]
+    test[QA and Test]
+    prod[Production]
 
+    dev->>test: test alpha for beta code
+    test->>prod: final delivery
+
+    test>->dev: fix bugs
+
+
+
+
+
+
+```
 
 
 
