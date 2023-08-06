@@ -134,7 +134,10 @@ The development environment is very *tight and dedicated* to a project and is no
 ![wip pic](pictures/under_maintenance.png)
 
 
-### **Production** environment
+
+
+
+### **QA** environment
 
 
 <!-- -#FIXME drop image when finish -->
@@ -145,7 +148,7 @@ The development environment is very *tight and dedicated* to a project and is no
 
 
 
-### **QA** environment
+### **Production** environment
 
 
 <!-- -#FIXME drop image when finish -->
