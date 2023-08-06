@@ -96,10 +96,12 @@ flowchart TD
     test[QA and Test]
     prod[Production]
 
-    dev --> test
+    dev -->|test \n work| test
+    test -->|fix bugs \n continue \n work| dev
+
     test -->|final \n delivery| prod
 
-    test -->|fix bugs| dev
+    
 ```
 
 
