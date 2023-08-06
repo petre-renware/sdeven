@@ -61,20 +61,6 @@ The testing process will involve some specific  terms and concepts like: *compli
 
 ## Testing and working environments
 
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png)
-
-
-* -#TODO ideas ref section content:
-    * [x] discuss about environments, what are good for and what is the idea
-    * [x] make a flow ref how "information flow" from one environment to other (a sequence diagram is perfect)
-    * [ ] **development** environment
-    * [ ] **qa test** environment
-    * [ ] **production** environment
-    * [ ] disc ref who has rights and who does what when
-    * [x] set a WARNING ref production environment
-
-
 ### Why need for more environments 
 
 The basic assumption of testing theory is: **the final produced system must run on different machines** than those where it was produced.
@@ -125,17 +111,22 @@ Each one will be treated in details in next sections.
 
 ### **Development** environment
 
-tbd...
+<!-- -#FIXME drop image when finish -->
+![wip pic](pictures/under_maintenance.png)
 
 
 ### **Test** environment
 
-tbd...
+
+<!-- -#FIXME drop image when finish -->
+![wip pic](pictures/under_maintenance.png)
 
 
 ### **Production** environment
 
-tbd...
+
+<!-- -#FIXME drop image when finish -->
+![wip pic](pictures/under_maintenance.png)
 
 
 
