@@ -103,7 +103,7 @@ flowchart TD
     dev -->|test work to \n for beta states| test
     test -->|fix bugs \n continue \n work| dev
 
-    test -->|final \n delivery| prod
+    test -->|final delivery \n release states| prod
 ```
 
 
