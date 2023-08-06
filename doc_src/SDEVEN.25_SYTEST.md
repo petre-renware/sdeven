@@ -107,9 +107,10 @@ Diagram reveal the following environments:
 * **development** aka **dev**
 * **test**
 * **qa**
-* <small markdown>**qa-test** combined `qa` & `test`</small>
 * **production** aka **prod**
 
+><small markdown>In some projects `test` and `qa` environments are combined in a single environment usually called `qa-test` or simply `test`, environment who takes on the role of both.</small>
+ 
 Each one will be treated in details in next sections.
 
 
@@ -125,7 +126,7 @@ The development environment is very *tight and dedicated* to a project and is no
 
 
 !!! info "Resulted version quality"
-    Software versions resulted from development environment ***cannot be "rated" more than `alpha`***.
+    Software versions resulted from development environment ***cannot be "graded" more than `alpha`***.
 
 
 
@@ -137,6 +138,10 @@ The development environment is very *tight and dedicated* to a project and is no
 
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png)
+
+
+
+
 
 
 
