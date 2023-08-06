@@ -146,7 +146,7 @@ The ideal `test` environment is obtained by cloning an existing `production` env
 >The test environment is MANDATORY to be limited to one project and one test phase. Other test phases will need another test environment. (The test process can alter enough the environment so other tests to be irrelevant).
 
 !!! info "Resulted version quality"
-    Software versions resulted from test environment are usually "graded" as beta. But this depends more on type of tests conducted, ie, integration, functional, acceptance, etc.
+    Software versions resulted from test environment are ***usually "graded" as `beta`***. But this depends more on type of tests conducted, ie, integration, functional, acceptance, etc.
 
 
 ### **QA** environment
