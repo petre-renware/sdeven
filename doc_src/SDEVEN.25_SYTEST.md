@@ -75,6 +75,16 @@ The testing process will involve some specific  terms and concepts like: *compli
     * set a WARNING ref production environment
 
 
+### Why need for more environments 
+
+Using more than one environment is a *must* because:
+    * anyway you use at least two environments, the one **where you develop tge software** and another one **where the system / application will be installed** to be used
+    * ...
+
+
+
+
+
 
 
 
