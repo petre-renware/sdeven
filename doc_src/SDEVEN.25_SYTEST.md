@@ -78,8 +78,9 @@ The testing process will involve some specific  terms and concepts like: *compli
 ### Why need for more environments 
 
 Using more than one environment is a *must* because:
-    * anyway you use at least two environments, the one **where you develop tge software** and another one **where the system / application will be installed** to be used
-    * ...
+
+    * anyway you use at least two environments, the one **where you develop tge software** and another one **where the system application will be installed** to be used
+    * these two environments are *not guaranteed to be identical* and the one where the system application will be installed you even do *not know "how it looks like"* - the only thing you can do is to make some recommendations but that's all
 
 
 
