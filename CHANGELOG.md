@@ -34,10 +34,9 @@
 
 * tbd... write content to `SDEVEN.25_SYTEST.md`, section ...
 
-* tbd... write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _Production environment_
-
 * wip...
 
+* wip... 230806piu_f write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _Production environment_
 * 230806piu_e write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _QA environment_ 
 * 230806piu_d write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _Test environment_
 * 230806piu_c update `SDEVEN.25_SYTEST.md` ref test env(s), separate *test and QA*
