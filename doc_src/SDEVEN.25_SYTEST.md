@@ -59,6 +59,19 @@ The testing process will involve some specific  terms and concepts like: *compli
 
 
 
+## Testing and working environments
+
+<!-- -#FIXME drop image when finish -->
+![wip pic](pictures/under_maintenance.png)
+
+
+
+
+
+
+
+
+
 ## Test deliverables
 
 <!-- -#FIXME drop image when finish -->
