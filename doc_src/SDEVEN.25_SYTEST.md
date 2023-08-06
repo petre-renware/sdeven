@@ -91,6 +91,9 @@ Using more than one environment is a *must* because:
 ### Environments and  Information flow
 
 ```mermaid
+---
+title: xxx
+---
 flowchart TD
     dev[Development]
     test[QA and Test]
@@ -100,8 +103,6 @@ flowchart TD
     test -->|fix bugs \n continue \n work| dev
 
     test -->|final \n delivery| prod
-
-    
 ```
 
 
