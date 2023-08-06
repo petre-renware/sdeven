@@ -109,9 +109,10 @@ Diagram reveal the following environments:
 * **qa**
 * **production** aka **prod**
 
-><small>In some projects `test` and `qa` environments are combined in a single one usually called `qa-test` or simply `test`, environment who takes on the role of both.</small>
+!!! note "test & qa combined"
+    In some projects `test` and `qa` environments are combined in a single one usually called `qa-test` or simply `test`, environment who takes on the role of both.
  
-Each one will be treated in details in next sections.
+Each environment will be treated in details in next sections.
 
 
 ### **Development** environment
