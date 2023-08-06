@@ -88,14 +88,20 @@ Using more than one environment is a *must* because:
 * so, at least an environment where you'll test the system is absolutely necessary and this should be different that the one where you developed (or still developing) the system
 
 
-### Information flow between environments
+### Environments and  Information flow
 
 ```mermaid
 flowchart TD
 
-    dev
-    qa_test
-    prod
+    dev[Development]
+    test[QA and Test]
+    prod[Production]
+
+    dev --> test
+    test --> dev
+
+    test -->|fix bugs| prod   
+
 
 ```
 
