@@ -36,6 +36,7 @@
 
 * wip...
 
+* wip... 230806piu_b write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_
 * 230806piu_a `SDEVEN.25_SYTEST.md` new section ref to "Testing and working environments"
 * 230805piu_j write content to `SDEVEN.25_SYTEST.md`, section _Preliminaries_
 * 230805piu_i `SDEVEN.00_INDEX.md` facelift of structure for a better TOC and doc readability
