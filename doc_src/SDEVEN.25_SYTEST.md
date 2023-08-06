@@ -115,7 +115,7 @@ The *development environment* means *all systems and tools you use to develop th
 
 Could be situation when some simple devices are not enough to finalize a development step and a  more powerful machine, a server is needed in that process. In this situations, dedicated servers are used for development and they are called *development servers*.
 
-The development environment is very *tight and dedicated* to a project and is not recommend to be reused from one project to another. Development environment is also very specific to a person, each developer having its affinity, preferences and productivity by using different tools, and AS LONG AS THIS DOES NOT CREATE INTERFACE PROBLEMS with the other team members or LICENSING ISSUES, its perfectly to use them (this is frequently happen for code IDEs and editors).
+The development environment is very *tight and dedicated* to a project and is not recommend to be reused from one project to another. Development environment is also very specific to a person, each developer having his affinity, preferences and productivity by using different tools, and *AS LONG AS THIS DOES NOT CREATE INTERFACE PROBLEMS* with the other team members or *LICENSING ISSUES*, its perfectly to use them (this is frequently happen for code IDEs and editors).
 
 
 
