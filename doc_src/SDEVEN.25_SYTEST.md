@@ -107,7 +107,9 @@ flowchart TD
 Diagram reveal the following environments:
 
 * **develompment** aka **dev**
-* **test** aka **QA** or **QA & test**
+* **test**
+* **qa**
+* <small markdown>**qa-test** combined `qa` & `test`</small>
 * **production** aka **prod**
 
 Each one will be treated in details in next sections.
@@ -130,6 +132,28 @@ The development environment is very *tight and dedicated* to a project and is no
 
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png)
+
+
+### **Production** environment
+
+
+<!-- -#FIXME drop image when finish -->
+![wip pic](pictures/under_maintenance.png)
+
+
+
+
+
+
+### **QA** environment
+
+
+<!-- -#FIXME drop image when finish -->
+![wip pic](pictures/under_maintenance.png)
+
+
+
+
 
 
 ### **Production** environment
