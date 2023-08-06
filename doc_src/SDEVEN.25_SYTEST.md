@@ -143,7 +143,7 @@ Doing so, any software components, libraries, code parts, text files characteris
 
 The ideal `test` environment is obtained by cloning an existing `production` environment and if necessary (in case the production machine is a "huge resources" one) make **only "quantitative"** adjustments, not qualitative ones (ie, downsize not downgrade).
 
->The test environment is MANDATORY to be limited to one project and one test phase. Other test phases will need another test environment. <small>(The test process can alter enough the environment so other tests to be irrelevant)</small>
+>The test environment is MANDATORY to be limited to one project and one test phase. Other test phases will need another test environment. (The test process can alter enough the environment so other tests to be irrelevant).
 
 !!! info "Resulted version quality"
     Software versions resulted from test environment are usually "graded" as beta. But this depends more on type of tests conducted, ie, integration, functional, acceptance, etc.
