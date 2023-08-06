@@ -90,14 +90,18 @@ title: Testing flow
 ---
 flowchart TD
     dev[Development]
-    test[QA and Test]
+    test[Test]
+    qa[QA]
     prod[Production]
 
     dev -->|local tests \n alpha states| dev
     dev -->|test work to \n for beta states| test
     test -->|fix bugs \n continue \n work| dev
 
-    test -->|final delivery \n release states| prod
+    test -->|test work to \n for release states| qa
+    qa -->|fix bugs \n continue \n work| dev
+
+    test -->|final delivery| prod
 ```
 
 Diagram reveal the following environments:
