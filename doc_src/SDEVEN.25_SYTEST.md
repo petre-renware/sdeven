@@ -47,10 +47,15 @@ The testing process will involve some specific  terms and concepts like: *compli
 ![wip pic](pictures/under_maintenance.png)
 
 
-* -#TODO ideas ref section content:
-    * unit,
+-#TODO ideas ref section content:
+* technical ones
+    * unit, unitary
     * functional
-    * integration 
+    * integration
+* compliance related
+    * acceptance
+    * standards conformity
+    * performance
 
 
 
@@ -61,9 +66,7 @@ The testing process will involve some specific  terms and concepts like: *compli
 
 ## Testing and working environments
 
-### Why need for more environments 
-
-The basic assumption of testing theory is: **the final produced system must run on different machines** than those where it was produced.
+The basic assumption of testing theory is: **the final produced system must be able run on different machines** than those where it was produced.
 
 Using more than one environment is a *must* because:
 
@@ -109,10 +112,12 @@ Diagram reveal the following environments:
 * **development** aka **dev**
 * **test**
 * **qa**
-* <small markdown>**qa-test** combined `qa` & `test`</small>
 * **production** aka **prod**
 
-Each one will be treated in details in next sections.
+!!! note "test & qa combined"
+    In some projects `test` and `qa` environments are combined in a single one usually called `qa-test` or simply `test`, environment who takes on the role of both.
+ 
+Each environment will be treated in details in next sections.
 
 
 ### **Development** environment
@@ -127,21 +132,21 @@ The development environment is very *tight and dedicated* to a project and is no
 
 
 !!! info "Resulted version quality"
-    Software versions resulted from development environment ***cannot be "rated" more than `alpha`***.
-
-
-
-
+    Software versions resulted from development environment ***cannot be "graded" more than `alpha`***.
 
 
 ### **Test** environment
 
+The *test environment* has the role to test the system on other completely different environment than the one in which development was made.
 
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png)
+Doing so, any software components, libraries, code parts, text files characteristics, date or time stamps, user environment data, operating system configuration, or *other kind of system particular configuration* **WILL BE DETECTED** by making this kind of testing. Remember the basic objective of testing process: "*the final produced system must be able run on different machines*".
 
+The ideal `test` environment is obtained by cloning an existing `production` environment and if necessary (in case the production machine is a "huge resources" one) make **only "quantitative"** adjustments, not qualitative ones (ie, downsize not downgrade).
 
+>The test environment is MANDATORY to be limited to one project and one test phase. Other test phases will need another test environment. (The test process can alter enough the environment so other tests to be irrelevant).
 
+!!! info "Resulted version quality"
+    Software versions resulted from test environment are ***usually "graded" as `beta`***. But this depends more on type of tests conducted, ie, integration, functional, acceptance, etc.
 
 
 ### **QA** environment
