@@ -90,6 +90,8 @@ Using more than one environment is a *must* because:
 
 ### Environments and  Information flow
 
+The next diagram shows the most basic flow of testing without extending it after delivery of product.
+
 ```mermaid
 ---
 title: Testing flow
@@ -106,10 +108,28 @@ flowchart TD
     test -->|final delivery \n release states| prod
 ```
 
+Diagram reveal the following environments:
+
+* **develompment** aka **dev**
+* **test** aka **QA** or **QA & test**
+* **production** aka **prod**
+
+Each one will be treated in details in next sections.
 
 
+### **develompment** environment
+
+tbd...
 
 
+### **test** environment
+
+tbd...
+
+
+### **production** environment
+
+tbd...
 
 
 
