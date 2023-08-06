@@ -93,6 +93,9 @@ Using more than one environment is a *must* because:
 ```mermaid
 flowchart TD
 
+    dev
+    qa_test
+    prod
 
 ```
 
