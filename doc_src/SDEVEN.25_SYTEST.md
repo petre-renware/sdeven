@@ -149,7 +149,7 @@ The ideal `test` environment is obtained by cloning an existing `production` env
     Software versions resulted from test environment are ***usually "graded" as `beta`***. But this depends more on type of tests conducted, ie, integration, functional, acceptance, etc.
 
 !!! note "Testing team"
-    Testing conducted in `test` are executed by and in presence of producer team. This is done exclusively in all cases is possible this not being a matter of confidence but a matter of focalization on "doing what you have to do and only this and now !" - see also the section ref `qa` environment.
+    Testing conducted in `test` are executed by and in **presence of producer team**. This is done exclusively in all cases is possible this not being a matter of confidence but a matter of focalization on "doing what you have to do and only this and now !" - see also the section ref `qa` environment.
 
 
 
@@ -158,6 +158,12 @@ The ideal `test` environment is obtained by cloning an existing `production` env
 
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png)
+
+
+!!! note "Testing team"
+    Testing conducted in `qa` are executed in **presence of customer team** and this is mandatory. For particular / producer only tests, see the section ref `test` environment.
+
+
 
 
 
