@@ -80,7 +80,7 @@ Using more than one environment is a *must* because:
 ### Environments and  Information flow
 
 !!! warning  "Production environment"
-    Production environment is a **real & live** environment, where our customers work and operate their current business. **IT IS COMPLETELY FORBIDDEN TO ACCESS THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL .**
+    Production environment is a **real & live** environment, where our customers work and operate their current business. **IT IS COMPLETELY FORBIDDEN TO ACCESS THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL.**
 
 
 
@@ -164,15 +164,16 @@ The *qa environment* is absolutely identical with `test` environment and all thi
 
 The *production environment* is the place where the customer business reflected by the (through) system is happening. Live, real, with real data and critical as functioning (at least from the provider perspective).
 
+!!! warning  "Production environment"
+    Production environment is a **real & live** environment, where our customers work and operate their current business. **IT IS COMPLETELY FORBIDDEN TO ACCESS THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL.**
 
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png)
+There are no more things to say about production environment except the warning, production environment should not be **accessed, modified, queried, etc, generally no operation**.
 
+Any intervention required in production environment must be done **ONLY BY AUTHORIZED PERSONNEL AND ONLY WITH CUSTOMER WRITTEN PERMISSION.** Credentials for any component from production environment are subject of **customer strict confidential data and "secrets"**. The customer must be instructed **to change all credentials** used in environment setup phase.
 
+All other operations regarding production environment (for example backup or update) are ONLY *customer responsibility*.
 
-
-
-
+Any **copies of production environment** can be made ONLY by customer authorized personnel and obtained ONLY with customer representative consent.
 
 
 ## Test deliverables
