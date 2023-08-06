@@ -47,7 +47,7 @@ The testing process will involve some specific  terms and concepts like: *compli
 ![wip pic](pictures/under_maintenance.png)
 
 
-* -#TODO ideas ref section ref **Test types**:
+* -#TODO ideas ref section content:
     * unit,
     * functional
     * integration 
@@ -65,6 +65,15 @@ The testing process will involve some specific  terms and concepts like: *compli
 ![wip pic](pictures/under_maintenance.png)
 
 
+* -#TODO ideas ref section content:
+    * discuss about environments, what are good for and what is the idea
+    * make a flow ref how "information pass" from one environment to other
+    * **develompment** environment
+    * **qa test** environment
+    * **production** environment
+    * disc ref who has rights and who does what when
+    * set a WARNING ref production environment
+
 
 
 
@@ -78,7 +87,7 @@ The testing process will involve some specific  terms and concepts like: *compli
 ![wip pic](pictures/under_maintenance.png)
 
 
-* -#TODO ideas ref section ref **Test deliverables**:
+* -#TODO ideas ref section content:
     * planning ==> Test Plan tmpl
     * scenarios ==> Test Scenario tmpl
 
