@@ -68,7 +68,7 @@ The testing process will involve some specific  terms and concepts like: *compli
 * -#TODO ideas ref section content:
     * discuss about environments, what are good for and what is the idea
     * make a flow ref how "information pass" from one environment to other
-    * **develompment** environment
+    * **development** environment
     * **qa test** environment
     * **production** environment
     * disc ref who has rights and who does what when
