@@ -61,7 +61,7 @@ The testing process will involve some specific  terms and concepts like: *compli
 
 ## Testing and working environments
 
-The basic assumption of testing theory is: **the final produced system must run on different machines** than those where it was produced.
+The basic assumption of testing theory is: **the final produced system must be able run on different machines** than those where it was produced.
 
 Using more than one environment is a *must* because:
 
@@ -136,7 +136,14 @@ The development environment is very *tight and dedicated* to a project and is no
 
 ### **Test** environment
 
-The *test environment* has the role to test the system on other completely different environment than those uaed for development.
+The *test environment* has the role to test the system on other completely different environment the one in which development was made.
+
+Doing so, any software components, libraries, code parts, text files characteristics, date or time stamps, user environment data, operating system configuration, or *other kind of system particular configuration* **WILL BE DETECTED** by making this kind of testing. Remember the basic objective of testing process: "*the final produced system must be able run on different machines*".
+
+The ideal `test` environment is obtained by cloning an existing `production` environment and if necessary (in case the production machine is a "huge resources" one) make **only "quantitative"** adjustments, not qualitative ones (ie, downsize not downgrade).
+
+
+
 
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png)
