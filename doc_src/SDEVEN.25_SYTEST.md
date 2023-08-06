@@ -77,10 +77,16 @@ The testing process will involve some specific  terms and concepts like: *compli
 
 ### Why need for more environments 
 
+The basic assumption of testing theory: **the final produced system must run on different machines** than those where it was produced.
+
 Using more than one environment is a *must* because:
 
 * anyway you use at least two environments, the one **where you develop tge software** and another one **where the system application will be installed** to be used
+
 * these two environments are *not guaranteed to be identical* and the one where the system application will be installed you even do *not know "how it looks like"* - the only thing you can do is to make some recommendations but that's all
+
+* so, at least an environment where you'll test the system is absolutely necessary and this should be different that the one where you developed (or still developing) the system
+
 
 
 
@@ -99,8 +105,10 @@ Using more than one environment is a *must* because:
 
 
 * -#TODO ideas ref section content:
-    * planning ==> Test Plan tmpl
-    * scenarios ==> Test Scenario tmpl
+    * Test Plan
+    * Test Scenarios
+    * System Requirements
+    * to make some templates for each one
 
 
 
