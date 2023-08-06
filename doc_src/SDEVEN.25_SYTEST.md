@@ -61,8 +61,6 @@ The testing process will involve some specific  terms and concepts like: *compli
 
 ## Testing and working environments
 
-### Why need for more environments 
-
 The basic assumption of testing theory is: **the final produced system must run on different machines** than those where it was produced.
 
 Using more than one environment is a *must* because:
