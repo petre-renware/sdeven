@@ -67,12 +67,12 @@ The testing process will involve some specific  terms and concepts like: *compli
 
 * -#TODO ideas ref section content:
     * [x] discuss about environments, what are good for and what is the idea
-    * make a flow ref how "information flow" from one environment to other (a sequence diagram is perfect)
-    * **development** environment
-    * **qa test** environment
-    * **production** environment
-    * disc ref who has rights and who does what when
-    * set a WARNING ref production environment
+    * [x] make a flow ref how "information flow" from one environment to other (a sequence diagram is perfect)
+    * [ ] **development** environment
+    * [ ] **qa test** environment
+    * [ ] **production** environment
+    * [ ] disc ref who has rights and who does what when
+    * [x] set a WARNING ref production environment
 
 
 ### Why need for more environments 
@@ -89,6 +89,12 @@ Using more than one environment is a *must* because:
 
 
 ### Environments and  Information flow
+
+!!! warning  "Production environment"
+    Production environment is a **real & live** environment, where our customers work and operate their current business. **IT IS COMPLETELY FORBIDDEN TO ACCESS THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL .**
+
+
+
 
 The next diagram shows the most basic flow of testing without extending it after delivery of product.
 
