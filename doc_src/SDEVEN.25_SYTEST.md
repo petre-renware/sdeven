@@ -22,12 +22,12 @@ The testing is one of the most important activity in software development as lon
 
 ### Why
 
-The testing may *assure* you that a piece of software do what was intended to do. This is "one face" but testing must also assure the *owner* of the software for the same things. And finally must assure the *end users* (generally the customer) for same things, sometimes more things.
+The testing may *assure* you that a piece of software *do what was intended to do*. This is "one face" but testing must also assure the *owner* of the software for the same things. And finally must assure the *end users* (generally the customer) for same things, sometimes more things.
 
 
 ### When
 
-The testing should be done first "internally" (ie, not in the presence of customer's people). Then some more complex, elaborated tests should be done in the customer presence (for customer confidence).
+The testing should be done (conducted) first "internally" (ie, not in the presence of customer's people). Then some more complex, elaborated tests should be done in the customer presence (for customer confidence).
 
 
 ### Vocabulary
@@ -44,7 +44,7 @@ The testing process will involve some specific  terms and concepts like: *compli
 ## Test types
 
 <!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png)
+![wip pic](pictures/under_maintenance.png){ width="300" }
 
 
 -#TODO ideas ref section content:
@@ -70,7 +70,7 @@ The basic assumption of testing theory is: **the final produced system must be a
 
 Using more than one environment is a *must* because:
 
-* anyway you use at least two environments, the one **where you develop tge software** and another one **where the system application will be installed** to be used
+* anyway you use at least two environments, the one **where you develop the software** and another one **where the system application will be installed** to be used
 
 * these two environments are *not guaranteed to be identical* and the one where the system application will be installed you even do *not know "how it looks like"* - the only thing you can do is to make some recommendations but that's all
 
@@ -79,8 +79,8 @@ Using more than one environment is a *must* because:
 
 ### Environments and  Information flow
 
-!!! warning  "Production environment"
-    Production environment is a **real & live** environment, where our customers work and operate their current business. **IT IS COMPLETELY FORBIDDEN TO ACCESS THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL.**
+!!! danger "Production environment"
+    Production environment is a **real & live** environment, where our customers work and operate their current business. IT IS COMPLETELY **FORBIDDEN TO ACCESS** THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL.
 
 
 
@@ -116,7 +116,7 @@ Diagram reveal the following environments:
 
 !!! note "test & qa combined"
     In some projects `test` and `qa` environments are combined in a single one usually called `qa-test` or simply `test`, environment who takes on the role of both.
- 
+
 Each environment will be treated in details in next sections.
 
 
@@ -149,7 +149,7 @@ The ideal `test` environment is obtained by cloning an existing `production` env
     Software versions resulted from test environment are ***usually "graded" as `beta`***. But this depends more on type of tests conducted, ie, integration, functional, acceptance, etc.
 
 !!! note "Testing team"
-    Testing conducted in `test` are executed by and in **presence of producer team**. This is done exclusively in all cases is possible this not being a matter of confidence but a matter of focalization on "doing what you have to do and only this and now !" - see also the section ref `qa` environment.
+    Testing conducted in `test` are executed by and in **presence of producer team**. This is done exclusively in all cases is possible this not being a matter of confidence but a matter of fucus on "doing what you have to do and only this and now !" - see also the section ref `qa` environment.
 
 
 ### **QA** environment
@@ -164,8 +164,8 @@ The *qa environment* is absolutely identical with `test` environment and all thi
 
 The *production environment* is the place where the customer business reflected by the (through) system is happening. Live, real, with real data and critical as functioning (at least from the provider perspective).
 
-!!! warning  "Production environment"
-    Production environment is a **real & live** environment, where our customers work and operate their current business. **IT IS COMPLETELY FORBIDDEN TO ACCESS THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL.**
+!!! danger "Production environment"
+    Production environment is a **real & live** environment, where our customers work and operate their current business. IT IS COMPLETELY **FORBIDDEN TO** ACCESS THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL.
 
 There are no more things to say about production environment except the warning, production environment should not be **accessed, modified, queried, etc, generally no operation**.
 
@@ -179,7 +179,7 @@ Any **copies of production environment** can be made ONLY by customer authorized
 ## Test deliverables
 
 <!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png)
+![wip pic](pictures/under_maintenance.png){ width="300" }
 
 
 * -#TODO ideas ref section content:

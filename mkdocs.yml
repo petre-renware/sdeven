@@ -42,6 +42,9 @@ nav:
 
 
 
+
+
+
 markdown_extensions:
     - admonition
     - tables
@@ -80,7 +83,7 @@ plugins:
     - markdown-exec #NOTE Python execution inside markdown files (execution at build time, "compilation like" NOT dynamically NOT JavaScript)
     - git-revision-date-localized
     # - pdf-export #NOTE DO NOT USE this as does not render mermaid in PDF docs
-    - print-site: #NOTE put print-site to the bottom of the plugins that may might alter your site navigation (affect order of sections in generated HTML)
+    - print-site: #NOTE_IMPORTANT_#NOTE put `print-site` plug in BEFORE `pdf-with-js` in order to works the workaround wit a fake `print_page.md` that will determine generation of 'print_page.pdf' as any other page generated pdf by `pdf-with-js`; ingnore warning ` [mkdocs-print-site] 'print-site' should be defined as the *last* plugin,to ensure...`
         add_to_navigation: true
         print_page_title: 'Complete SDEVEN Manual'
         add_full_urls: true
