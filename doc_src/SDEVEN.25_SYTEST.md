@@ -137,7 +137,7 @@ The development environment is very *tight and dedicated* to a project and is no
 
 ### **Test** environment
 
-The *test environment* has the role to test the system on other completely different environment the one in which development was made.
+The *test environment* has the role to test the system on other completely different environment than the one in which development was made.
 
 Doing so, any software components, libraries, code parts, text files characteristics, date or time stamps, user environment data, operating system configuration, or *other kind of system particular configuration* **WILL BE DETECTED** by making this kind of testing. Remember the basic objective of testing process: "*the final produced system must be able run on different machines*".
 
