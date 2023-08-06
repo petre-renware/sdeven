@@ -101,7 +101,7 @@ flowchart TD
     test -->|test work to \n for release states| qa
     qa -->|fix bugs \n continue \n work| dev
 
-    test -->|final delivery| prod
+    qa -->|final delivery| prod
 ```
 
 Diagram reveal the following environments:
