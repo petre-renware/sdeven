@@ -98,9 +98,10 @@ flowchart TD
     prod[Production]
 
     dev --> test
-    test --> dev
+    test --> prod
 
-    test -->|fix bugs| prod   
+    test -->|fox bugs| dev
+    prod -->|fix bugs| test
 
 
 ```
