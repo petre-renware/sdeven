@@ -32,7 +32,7 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* tbd... write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_
+* tbd... write content to `SDEVEN.25_SYTEST.md`, section _Test Types_
 
 * tbd... write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_
 
