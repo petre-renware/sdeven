@@ -162,6 +162,8 @@ The *qa environment* is absolutely identical with `test` environment and all thi
 
 ### **Production** environment
 
+The *production environment* is the place where the customer business reflected by the (through) system is happening. Live, real, with real data and critical as functioning (at least from the provider perspective).
+
 
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png)
