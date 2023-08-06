@@ -117,17 +117,17 @@ Diagram reveal the following environments:
 Each one will be treated in details in next sections.
 
 
-### **develompment** environment
+### **Development** environment
 
 tbd...
 
 
-### **test** environment
+### **Test** environment
 
 tbd...
 
 
-### **production** environment
+### **Production** environment
 
 tbd...
 
