@@ -126,7 +126,7 @@ The development environment is very *tight and dedicated* to a project and is no
 >So the development environment life is limited to one project or even only to  a phase of a project. Development environment can contain all things that developer (or the team if use a development server) consider necessary to use. Especially when using development servers *it is very useful if the development language / framework allow for some instruments to isolate environments* and clearly the should be used (examples are: `Poetry` or `venv` for Pyrhon, `composer` for PHP and Laravel, `cargo` for Rust, etc).
 
 
-!!! tip "Resulted version quality"
+!!! info "Resulted version quality"
     Software versions resulted from development environment ***cannot be "rated" more than `alpha`***.
 
 
