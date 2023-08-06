@@ -122,7 +122,7 @@ Each environment will be treated in details in next sections.
 
 ### **Development** environment
 
-The *development environment* means *all systems and tools you use to develop the software system* (application, product, etc). These could be on more than one device (for example use a phone or tablet to edit some files, a git repository to store them and a laptop to make some compilation, a git client to manipulate its data, a IDE tool to edit code, a compiler to compila code, etc) the idea being that development environment does not means necessarily one device.
+The *development environment* means *all systems and tools you use to develop the software system* (application, product, etc). These could be on more than one device (for example use a phone or tablet to edit some files, a git repository to store them and a laptop to make some compilation, a git client to manipulate its data, a IDE tool to edit code, a compiler to compile code, etc) the idea being that development environment does not means necessarily one device.
 
 Could be situation when some simple devices are not enough to finalize a development step and a  more powerful machine, a server is needed in that process. In this situations, dedicated servers are used for development and they are called *development servers*.
 
@@ -148,16 +148,16 @@ The ideal `test` environment is obtained by cloning an existing `production` env
 !!! info "Resulted version quality"
     Software versions resulted from test environment are ***usually "graded" as `beta`***. But this depends more on type of tests conducted, ie, integration, functional, acceptance, etc.
 
+!!! note "Testing team"
+    Testing conducted in `test` are executed by and in **presence of producer team**. This is done exclusively in all cases is possible this not being a matter of confidence but a matter of focalization on "doing what you have to do and only this and now !" - see also the section ref `qa` environment.
+
 
 ### **QA** environment
 
+The *qa environment* is absolutely identical with `test` environment and all things from `test` must be applied for `qa`. The only difference is regarding the presence of customer team.
 
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png)
-
-
-
-
+!!! note "Testing team"
+    Testing conducted in `qa` are executed in **presence of customer team** and this is mandatory. For particular / producer only tests, see the section ref `test` environment.
 
 
 ### **Production** environment
