@@ -103,24 +103,7 @@ flowchart TD
 ```
 
 
-```mermaid
-sequenceDiagram
-    autonumber
-    dev[Development]
-    test[QA and Test]
-    prod[Production]
 
-    dev->>test: test alpha for beta code
-    test->>prod: final delivery
-
-    test>->dev: fix bugs
-
-
-
-
-
-
-```
 
 
 
