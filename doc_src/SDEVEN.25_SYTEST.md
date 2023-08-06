@@ -92,14 +92,15 @@ Using more than one environment is a *must* because:
 
 ```mermaid
 ---
-title: xxx
+title: Testing flow
 ---
 flowchart TD
     dev[Development]
     test[QA and Test]
     prod[Production]
 
-    dev -->|test \n work| test
+    dev -->|local tests \n alpha states| dev
+    dev -->|test work to \n for beta states| test
     test -->|fix bugs \n continue \n work| dev
 
     test -->|final \n delivery| prod
