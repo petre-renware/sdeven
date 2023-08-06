@@ -136,6 +136,7 @@ The development environment is very *tight and dedicated* to a project and is no
 
 ### **Test** environment
 
+The *test environment* has the role to test the system on other completely different environment than those uaed for development.
 
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png)
