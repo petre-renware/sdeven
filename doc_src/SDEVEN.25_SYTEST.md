@@ -135,10 +135,6 @@ The development environment is very *tight and dedicated* to a project and is no
     Software versions resulted from development environment ***cannot be "graded" more than `alpha`***.
 
 
-
-
-
-
 ### **Test** environment
 
 The *test environment* has the role to test the system on other completely different environment the one in which development was made.
@@ -151,19 +147,6 @@ The ideal `test` environment is obtained by cloning an existing `production` env
 
 !!! info "Resulted version quality"
     Software versions resulted from test environment are usually "graded" as beta. But this depends more on type of tests conducted, ie, integration, functional, acceptance, etc.
-
-
-
-
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png)
-
-
-
-
-
-
-
 
 
 ### **QA** environment
