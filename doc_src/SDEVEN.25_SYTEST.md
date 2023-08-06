@@ -88,6 +88,14 @@ Using more than one environment is a *must* because:
 * so, at least an environment where you'll test the system is absolutely necessary and this should be different that the one where you developed (or still developing) the system
 
 
+### Information flow between environments
+
+```mermaid
+flowchart TD
+
+
+```
+
 
 
 
