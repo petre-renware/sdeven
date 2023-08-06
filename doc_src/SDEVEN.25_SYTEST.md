@@ -106,7 +106,7 @@ flowchart TD
 
 Diagram reveal the following environments:
 
-* **develompment** aka **dev**
+* **development** aka **dev**
 * **test**
 * **qa**
 * <small markdown>**qa-test** combined `qa` & `test`</small>
@@ -123,8 +123,15 @@ Could be situation when some simple devices are not enough to finalize a develop
 
 The development environment is very *tight and dedicated* to a project and is not recommend to be reused from one project to another. Development environment is also very specific to a person, each developer having his affinity, preferences and productivity by using different tools, and *AS LONG AS THIS DOES NOT CREATE INTERFACE PROBLEMS* with the other team members or *LICENSING ISSUES*, its perfectly to use them (this is frequently happen for code IDEs and editors).
 
-!!! note "dev environment life cycle"
-    So the development environment life is limited to one project or even only to  a phase of a project. Development environment can contain all things that developer (or the team if use a development server) consider necessary to use. Especially when using development servers *it is very useful if the development language / framework allow for some instruments to isolate environments* and clearly the should be used (examples are: `Poetry` or `venv` for Pyrhon, `composer` for PHP and Laravel, `cargo` for Rust, etc).
+>So the development environment life is limited to one project or even only to  a phase of a project. Development environment can contain all things that developer (or the team if use a development server) consider necessary to use. Especially when using development servers *it is very useful if the development language / framework allow for some instruments to isolate environments* and clearly the should be used (examples are: `Poetry` or `venv` for Pyrhon, `composer` for PHP and Laravel, `cargo` for Rust, etc).
+
+
+!!! tip "Resulted version quality"
+    Software versions resulted from development environment ***cannot be "rated" more than `alpha`***.
+
+
+
+
 
 
 ### **Test** environment
@@ -155,15 +162,6 @@ The development environment is very *tight and dedicated* to a project and is no
 ![wip pic](pictures/under_maintenance.png)
 
 
-
-
-
-
-### **Production** environment
-
-
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png)
 
 
 
