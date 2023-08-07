@@ -177,13 +177,7 @@ Any **copies of production environment** can be made ONLY by customer authorized
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png){ width="300" }
 
-
-* -#TODO ideas ref section content:
-    * Test Plan
-    * Test Scenarios
-    * System hardware requirements
-    * POC (proof of concept) document agreed
-    * to make some templates for each one
+-#TODO make some templates for each one
 
 
 
