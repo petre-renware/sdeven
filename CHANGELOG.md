@@ -24,7 +24,11 @@
 
 #### [ start of #TODO_PLAN section ]=========================
 
-* tbd... to integrate old version (`v6.0` in example) in current (new future) version:
+* tbd... to integrate old version... see doc `how_integrate_oldver_in_newver.md`
+
+
+
+ (`v6.0` in example) in current (new future) version:
     1. save `doc_src/` ==> `doc_src_v6.0/
     2. save `static_portal/`==> `static_portal_v6.0/`
     3. create `doc_src/v6.0/` directory with an empty `index.md` text file (just to exists when used as reference, if feel better can write a comment inside it as it will never be generated as html) 
