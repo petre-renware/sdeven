@@ -215,6 +215,10 @@ flowchart TD
 
     pln ==> tpln
     pln ==> tsce
+
+    tsce --> exec
+    exec --> poc
+
     poc ==> pocdoc
     concl ==> sysrq
 
