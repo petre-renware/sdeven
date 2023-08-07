@@ -203,14 +203,21 @@ title: Testing process and Deliverables
 ---
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart TD
-    pln[Test Process \n Planning]
-    exec[Test Running]
-    poc[Proof of \n concept]
-    concl[Concluding]
+    pln["Test Process \n Planning"]
+    exec["Test Running"]
+    poc["Proof of \n concept"]
+    concl["Concluding"]
 
-    tpln[/Test Plan/]
-    tsce[/Test Scenario *n*/]
+    tpln[/"**Test Plan**"/]
+    tsce[/"**Test Scenario** *n*"/]
+    pocdoc[/" *Acceptance** \n document"/]
+    sysrq[/"System hardware \n **Requirements**"/]
 
+
+```
+
+
+<!-- #NOTE just for copy paste until finish diagram...
 
     dev -->|local tests \n alpha states| dev
     dev -->|test work to \n for beta states| test
@@ -220,7 +227,7 @@ flowchart TD
     qa -->|fix bugs \n continue \n work| dev
 
     qa -->|final delivery| prod
-```
+-->
 
 
 
