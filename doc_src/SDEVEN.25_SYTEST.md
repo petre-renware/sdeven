@@ -186,3 +186,5 @@ Any **copies of production environment** can be made ONLY by customer authorized
 
 
 
+In order to be consistently applied and to be a proof of functioning, the testing process includes a series of activities and a set of deliverables that are explained in the following.
+
