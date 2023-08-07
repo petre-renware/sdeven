@@ -201,7 +201,7 @@ The following diagram summarizes the testing process.
 ---
 title: Testing process and Deliverables
 ---
-%%{init: {"flowchart": {"htmlLabels": false}}
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart TD
     pln[Test Process \n Planning]
     exec[Test Running]
@@ -221,4 +221,7 @@ flowchart TD
 
     qa -->|final delivery| prod
 ```
+
+
+
 
