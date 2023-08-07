@@ -202,19 +202,22 @@ The following diagram summarizes the testing process.
 title: Testing process and Deliverables
 ---
 flowchart TD
-    pln["Test Process \n Planning"]
-    exec["Test Running"]
-    poc["Proof of \n concept"]
-    concl["Concluding"]
+    pln[["Test Process \n Planning"]]
+    exec[["Test Running"]]
+    poc[["Proof of \n concept"]]
+    concl[["Concluding"]]
 
-    tpln[/"**Test Plan**"/]
-    tsce[/"**Test Scenario** *n*"/]
-    pocdoc[/" *Acceptance** \n document"/]
-    sysrq[/"System hardware \n **Requirements**"/]
+    tpln("Test Plan")
+    tsce("Test Scenario x")
+    pocdoc("Acceptance \n document")
+    sysrq("System hardware \n Requirements")
 
 
     pln ==> tpln
     pln ==> tsce
+    poc ==> pocdoc
+    concl ==> sysrq
+
 
 ```
 
