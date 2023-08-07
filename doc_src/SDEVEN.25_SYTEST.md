@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.13<br>
-Release date: 230806
+Release date: 230807
 
 ***
 
@@ -16,49 +16,41 @@ Release date: 230806
 
 ## Preliminaries
 
-
 The testing is one of the most important activity in software development as long as a piece of software is NOT written for own purposes.
-
 
 ### Why
 
 The testing may *assure* you that a piece of software *do what was intended to do*. This is "one face" but testing must also assure the *owner* of the software for the same things. And finally must assure the *end users* (generally the customer) for same things, sometimes more things.
 
-
 ### When
 
 The testing should be done (conducted) first "internally" (ie, not in the presence of customer's people). Then some more complex, elaborated tests should be done in the customer presence (for customer confidence).
-
 
 ### Vocabulary
 
 The testing process will involve some specific  terms and concepts like: *compliance*, *bug*, *acceptable*, *workaround solution*, ... These terms are not necessarily new terms but they will make more sense, will get a more clear meaning  "if are seen" from testing perspective.
 
 
+### Test types
 
+In testing process more test types will be conducted. The *type of tests* can be seen from more perspectives, but those that relevant in this context are:
 
+* access to code perspective:
+    * *white box tests* - apply when code is known and can be accessed and test that code by expecting some behavior in known conditions
+    * *black box tests* - apply without knowing the code but expecting some results for some given input - because they address functionalities these are called  **functional tests**
 
+* scope / range of code impact perspective:
+    * *unit, unitary* tests - these tests apply on small code blocks (for example a function or a procedure)
+    * *integration* tests - these test address more complex portions of code and are mainly "looking for" their good working when interact one with others - in most cases these test are simply known as **acceptance tests**
 
+* performance and compliance perspective:
+    * *standards conformity* - these ones seek to demonstrate the system conformity to some standards or practices
+    * *performance* - these ones seek to demonstrate the system performance in some given "stress" conditions, also from these tests results what is known as **System hardware requirements**
 
+More details regarding test types is out this document scope. They are fundamental learning units in software engineering theory. The reason why some of them were listed here is to be aware that:
 
-## Test types
-
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png){ width="300" }
-
-
--#TODO ideas ref section content:
-* technical ones
-    * unit, unitary
-    * functional
-    * integration
-* compliance related
-    * acceptance
-    * standards conformity
-    * performance
-
-
-
+* they are used and applied in current job operations
+* the other members of the team expect you to know what are them about
 
 
 
@@ -81,9 +73,6 @@ Using more than one environment is a *must* because:
 
 !!! danger "Production environment"
     Production environment is a **real & live** environment, where our customers work and operate their current business. IT IS COMPLETELY **FORBIDDEN TO ACCESS** THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL.
-
-
-
 
 The next diagram shows the most basic flow of testing without extending it after delivery of product.
 
@@ -130,7 +119,6 @@ The development environment is very *tight and dedicated* to a project and is no
 
 >So the development environment life is limited to one project or even only to  a phase of a project. Development environment can contain all things that developer (or the team if use a development server) consider necessary to use. Especially when using development servers *it is very useful if the development language / framework allow for some instruments to isolate environments* and clearly the should be used (examples are: `Poetry` or `venv` for Pyrhon, `composer` for PHP and Laravel, `cargo` for Rust, etc).
 
-
 !!! info "Resulted version quality"
     Software versions resulted from development environment ***cannot be "graded" more than `alpha`***.
 
@@ -176,6 +164,9 @@ All other operations regarding production environment (for example backup or upd
 Any **copies of production environment** can be made ONLY by customer authorized personnel and obtained ONLY with customer representative consent.
 
 
+
+
+
 ## Test deliverables
 
 <!-- -#FIXME drop image when finish -->
@@ -185,7 +176,7 @@ Any **copies of production environment** can be made ONLY by customer authorized
 * -#TODO ideas ref section content:
     * Test Plan
     * Test Scenarios
-    * System Requirements
+    * System hardware requirements
     * to make some templates for each one
 
 

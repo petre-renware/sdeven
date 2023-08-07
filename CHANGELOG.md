@@ -32,13 +32,14 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* tbd... write content to `SDEVEN.25_SYTEST.md`, section _Test Types_
+* 
 
 * tbd... write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_
 
 
 * wip...
 
+* 230807piu_a write content to `SDEVEN.25_SYTEST.md`, section _Test Types_
 * 230806piu_g clean `SDEVEN.25_SYTEST.md` mistypings unobserved on phone working
 * 230806piu_f write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _Production environment_
 * 230806piu_e write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _QA environment_
