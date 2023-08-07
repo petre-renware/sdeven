@@ -213,8 +213,8 @@ flowchart TD
     sysrq[/"System hardware \n **Requirements**"/]
 
 
-    tpln ==> tpln
-    tpln ==> tsce
+    pln ==> tpln
+    pln ==> tsce
 
 ```
 
