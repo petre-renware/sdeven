@@ -34,13 +34,12 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* 
-
 * tbd... write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_
 
 
 * wip...
 
+* 230807piu_c elaborated a doc `how_integrate_oldver_in_newver.md` ref how to integrate prev old content versions in the current / active one
 * 230807piu_b update `SDEVEN.25_SYTEST.md` section "Production environment" and specify as WARNING that only **release** graded versions are allowed to be installed on `production` environment
 * 230807piu_a write content to `SDEVEN.25_SYTEST.md`, section _Test Types_
 * 230806piu_g clean `SDEVEN.25_SYTEST.md` mistypings unobserved on phone working
