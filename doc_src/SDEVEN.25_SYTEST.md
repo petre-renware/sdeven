@@ -163,6 +163,11 @@ All other operations regarding production environment (for example backup or upd
 
 Any **copies of production environment** can be made ONLY by customer authorized personnel and obtained ONLY with customer representative consent.
 
+!!! warning "Accepted version grades"
+    In `production` environment only **`release`** graded versions are allowed to be installed. Only as exceptions and:
+    * for ***critical business*** reasons
+    * from trusted sources
+    versions `beta` graded will be allowed
 
 
 

@@ -35,10 +35,11 @@
 * 
 
 * tbd... write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_
-* tbd... update `SDEVEN.25_SYTEST.md` section "Production environment" and specify as WARNING that only **release** graded versions are allowed to be installed on `production` environment
+
 
 * wip...
 
+* 230807piu_b update `SDEVEN.25_SYTEST.md` section "Production environment" and specify as WARNING that only **release** graded versions are allowed to be installed on `production` environment
 * 230807piu_a write content to `SDEVEN.25_SYTEST.md`, section _Test Types_
 * 230806piu_g clean `SDEVEN.25_SYTEST.md` mistypings unobserved on phone working
 * 230806piu_f write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _Production environment_
