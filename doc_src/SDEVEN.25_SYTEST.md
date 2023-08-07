@@ -207,7 +207,7 @@ flowchart LR
     poc[["Proof of \n concept"]]
     concl[["Concluding"]]
 
-    tpln("Test Plan")
+    tpln[\"Test Plan"/]
     tsce("Test Scenario x")
     pocdoc("Acceptance \n document")
     sysrq("System hardware \n Requirements")
