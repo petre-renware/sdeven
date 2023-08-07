@@ -196,3 +196,24 @@ The following diagram summarizes the testing process.
 
 
 
+
+```mermaid
+---
+title: Testing flow
+---
+flowchart TD
+    pln[Test Process \n Planning]
+    exec[Test Running]
+    poc[Proof of \n concept]
+    concl[Concluding]
+
+    dev -->|local tests \n alpha states| dev
+    dev -->|test work to \n for beta states| test
+    test -->|fix bugs \n continue \n work| dev
+
+    test -->|test work to \n for release states| qa
+    qa -->|fix bugs \n continue \n work| dev
+
+    qa -->|final delivery| prod
+```
+
