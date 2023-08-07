@@ -199,8 +199,9 @@ The following diagram summarizes the testing process.
 
 ```mermaid
 ---
-title: Testing flow
+title: Testing process and Deliverables
 ---
+%%{init: {"flowchart": {"htmlLabels": false}}
 flowchart TD
     pln[Test Process \n Planning]
     exec[Test Running]
