@@ -165,6 +165,7 @@ Any **copies of production environment** can be made ONLY by customer authorized
 
 !!! warning "Accepted version grades"
     In `production` environment only **`release`** graded versions are allowed to be installed. Only as exceptions and:
+
     * for ***critical business*** reasons
     * from trusted sources
     versions `beta` graded will be allowed
