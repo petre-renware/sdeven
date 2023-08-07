@@ -195,8 +195,6 @@ All these deliverables must be formally agreed by customer.
 The following diagram summarizes the testing process.
 
 
-
-
 ```mermaid
 ---
 title: Testing process and Deliverables
@@ -224,7 +222,25 @@ flowchart LR
 
     poc ==> pocdoc
     concl ==> sysrq
-
-
 ```
+
+The following sections will discuss each deliverable focusing on its content and purpose. Those aspects that are not always in the sphere of *perfect (with zero deviation)* but have a level of approximation and tolerance that *must be kept in a zone of comfort, trust and functional acceptability to not alter business operations*.
+
+
+### Test Plan
+
+
+
+### Test Scenarios
+
+
+
+### System hardware requirements
+
+
+
+### Proof of Concept
+
+
+
 
