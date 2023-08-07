@@ -32,13 +32,22 @@
 
 
 
+
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* tbd... write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_
+* tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
+
+* tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
+
+* tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
+
+* tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Proof of Concept_
+
 
 
 * wip...
 
+* 230807piu_d write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_ for the whole approach and picture
 * 230807piu_c elaborated a doc `how_integrate_oldver_in_newver.md` ref how to integrate prev old content versions in the current / active one
 * 230807piu_b update `SDEVEN.25_SYTEST.md` section "Production environment" and specify as WARNING that only **release** graded versions are allowed to be installed on `production` environment
 * 230807piu_a write content to `SDEVEN.25_SYTEST.md`, section _Test Types_
@@ -54,13 +63,6 @@
 * 230805piu_h refer test procedure in `SDEVEN.00_INDEX.md`
 * 230805piu_g refer test procedure in `mkdocs.yml`
 * 230805piu_f started a draft (toc & ideas ref sections content) testing procedure, doc `SDEVEN.25_SYTEST`, name *System Software Testing*
-
-
-
-
-
-
-
 
 
 

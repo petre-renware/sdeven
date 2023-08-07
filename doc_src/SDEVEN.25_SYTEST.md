@@ -165,6 +165,7 @@ Any **copies of production environment** can be made ONLY by customer authorized
 
 !!! warning "Accepted version grades"
     In `production` environment only **`release`** graded versions are allowed to be installed. Only as exceptions and:
+
     * for ***critical business*** reasons
     * from trusted sources
     versions `beta` graded will be allowed
@@ -174,15 +175,77 @@ Any **copies of production environment** can be made ONLY by customer authorized
 
 ## Test deliverables
 
+In order to be consistently applied and to be a proof of functioning, the testing process includes a series of *activities* and a set of *deliverables* that will be explained in next sections.
+
+Deliverables that must be created are:
+
+* **Test Plan**
+* **Test Scenarios**
+* **System hardware requirements**
+* **Proof of Concept** document (aka **PoC** or **Acceptance** document)
+
+All these deliverables must be formally agreed by customer.
+
+The following diagram summarizes the testing process.
+
+
+```mermaid
+---
+title: Testing process and Deliverables
+---
+flowchart LR
+    pln[["Test Process \n Planning"]]
+    exec[["Test Running"]]
+    poc[["Proof of \n concept"]]
+    concl[["Concluding"]]
+
+    tpln[\"Test Plan"/]
+    tsce[\"Test Scenario x"/]
+    pocdoc[\"Acceptance \n document"/]
+    sysrq[\"System hardware \n Requirements"/]
+
+
+    pln ==> tpln
+    pln ==> tsce
+
+    tsce --> exec
+    exec --> exec
+    exec --> poc
+
+    poc --> concl
+
+    poc ==> pocdoc
+    concl ==> sysrq
+```
+
+The following sections will discuss each deliverable focusing on its content and purpose. Those aspects that are not always in the sphere of *perfect (with zero deviation)* but have a level of approximation and tolerance that *must be kept in a zone of comfort, trust and functional acceptability to not alter business operations*.
+
+
+
+### Test Plan
+
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png){ width="300" }
 
 
-* -#TODO ideas ref section content:
-    * Test Plan
-    * Test Scenarios
-    * System hardware requirements
-    * to make some templates for each one
 
+### Test Scenarios
+
+<!-- -#FIXME drop image when finish -->
+![wip pic](pictures/under_maintenance.png){ width="300" }
+
+
+
+### System hardware requirements
+
+<!-- -#FIXME drop image when finish -->
+![wip pic](pictures/under_maintenance.png){ width="300" }
+
+
+
+### Proof of Concept
+
+<!-- -#FIXME drop image when finish -->
+![wip pic](pictures/under_maintenance.png){ width="300" }
 
 
