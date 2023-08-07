@@ -198,8 +198,6 @@ Deliverables that must be created are:
 
 All these deliverables must be formally agreed by customer.
 
-
-
 The following diagram summarizes the testing process.
 
 
