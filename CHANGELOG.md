@@ -24,7 +24,7 @@
 
 #### [ start of #TODO_PLAN section ]=========================
 
-* tbd... to integrate old version (example for `v6.0`) in current (future  version:
+* tbd... to integrate old version (`v6.0` in example) in current (new future) version:
     1. save `doc_src/` ==> `doc_src_v6.0/
     2. save `static_portal/`==> `static_portal_v6.0/`
     3. create `doc_src/v6.0/` directory with an empty `.gitkeep` file (to be preserved by git) 
