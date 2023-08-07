@@ -27,8 +27,8 @@
 * tbd... to integrate old version (`v6.0` in example) in current (new future) version:
     1. save `doc_src/` ==> `doc_src_v6.0/
     2. save `static_portal/`==> `static_portal_v6.0/`
-    3. create `doc_src/v6.0/` directory with an empty `.gitkeep` file (to be preserved by git) 
-    4. update `mkdocs.yml` to ignore directory `doc_src/v6.0/`
+    3. create `doc_src/v6.0/` directory with an empty `empty.md` text file (to be preserved by git and by mkdocs builder) 
+    4. update `mkdocs.yml` to ignore directory `doc_src/v6.0/` by mkdocs builder (but will keep it as is)
     5. create `docs/v6.0/` directory
     6. min in `publishing` branch copy old version generated site to dir from step (2), ie `static_portal_v6.0/` --> `docs/v6.0/`
 
