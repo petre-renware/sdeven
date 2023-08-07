@@ -208,9 +208,9 @@ flowchart LR
     concl[["Concluding"]]
 
     tpln[\"Test Plan"/]
-    tsce("Test Scenario x")
-    pocdoc("Acceptance \n document")
-    sysrq("System hardware \n Requirements")
+    tsce[\"Test Scenario x"/]
+    pocdoc[\"Acceptance \n document"/]
+    sysrq[\"System hardware \n Requirements"/]
 
 
     pln ==> tpln
