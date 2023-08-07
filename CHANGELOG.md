@@ -35,7 +35,7 @@
 * 
 
 * tbd... write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_
-
+* tbd... update `SDEVEN.25_SYTEST.md` section "Production environment" and specify as WARNING that only **release** graded versions are allowed to be installed on `production` environment
 
 * wip...
 
