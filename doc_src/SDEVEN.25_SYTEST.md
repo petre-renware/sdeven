@@ -220,6 +220,8 @@ flowchart TD
     exec --> exec
     exec --> poc
 
+    poc --> concl
+
     poc ==> pocdoc
     concl ==> sysrq
 
