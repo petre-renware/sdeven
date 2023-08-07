@@ -28,9 +28,9 @@
     1. save `doc_src/` ==> `doc_src_v6.0/
     2. save `static_portal/`==> `static_portal_v6.0/`
     3. create `doc_src/v6.0/` directory
-    4. update `mkdocs.yml` to ignore directory `doc_src/v6.0/`
+    4. update `mkdocs.yml` to ignore directory `doc_src/v6.0/` with an empty `.gitkeep` file (to be preserved by git)
     5. create `docs/v6.0/` directory
-    6. min in `publishing` branch copy old version generated site to dir from step (6), ie `static_portal_v6.0/` --> `docs/v6.0/`
+    6. min in `publishing` branch copy old version generated site to dir from step (2), ie `static_portal_v6.0/` --> `docs/v6.0/`
 
 
 
