@@ -201,7 +201,6 @@ The following diagram summarizes the testing process.
 ---
 title: Testing process and Deliverables
 ---
-%%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart TD
     pln["Test Process \n Planning"]
     exec["Test Running"]
@@ -213,6 +212,9 @@ flowchart TD
     pocdoc[/" *Acceptance** \n document"/]
     sysrq[/"System hardware \n **Requirements**"/]
 
+
+    tpln ==> tpln
+    tpln ==> tsce
 
 ```
 
