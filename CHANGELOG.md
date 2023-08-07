@@ -25,9 +25,9 @@
 #### [ start of #TODO_PLAN section ]=========================
 
 * tbd... to integrate nxt versions:
-    1. save `doc_src/` ==> `doc_src_v6.0/`
+    1. save `doc_src/` ==> `doc_src_v6.0/
     2. save `static_portal/`==> `docs_v6.0/`
-    3. ...
+    3. 
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 
