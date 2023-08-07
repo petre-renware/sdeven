@@ -207,6 +207,10 @@ flowchart TD
     poc[Proof of \n concept]
     concl[Concluding]
 
+    tpln[/Test Plan/]
+    tsce[/Test Scenario *n*/]
+
+
     dev -->|local tests \n alpha states| dev
     dev -->|test work to \n for beta states| test
     test -->|fix bugs \n continue \n work| dev
