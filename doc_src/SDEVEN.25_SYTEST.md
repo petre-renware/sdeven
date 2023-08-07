@@ -182,9 +182,25 @@ Any **copies of production environment** can be made ONLY by customer authorized
     * Test Plan
     * Test Scenarios
     * System hardware requirements
+    * POC (proof of concept) document agreed
     * to make some templates for each one
 
 
 
-In order to be consistently applied and to be a proof of functioning, the testing process includes a series of activities and a set of deliverables that are explained in the following.
+In order to be consistently applied and to be a proof of functioning, the testing process includes a series of *activities* and a set of *deliverables* that will be explained in next sections.
+
+Deliverables that must be created are:
+
+* **Test Plan**
+* **Test Scenarios**
+* **System hardware requirements**
+* **Proof of Concept** document (aka **PoC** or **Acceptance** document)
+
+All these deliverables must be formally agreed by customer.
+
+
+
+The following diagram summarizes the testing process.
+
+
 
