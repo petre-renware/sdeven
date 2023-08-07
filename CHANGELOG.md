@@ -27,7 +27,11 @@
 * tbd... to integrate nxt versions:
     1. save `doc_src/` ==> `doc_src_v6.0/
     2. save `static_portal/`==> `docs_v6.0/`
-    3. 
+    3. create `doc_src/v6.0/`
+    3. update `mkdocs.yml` to ignore directory `doc_src/v6.0/`
+
+
+
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 
