@@ -37,7 +37,7 @@
 
 * tbd... template for test scenario and ref it in doc at corresponding section (a FIXME as HTNL comment was left)
 
-* tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
+* tbd...
 
 * tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
 
@@ -46,6 +46,8 @@
 
 
 * wip...
+
+* wip... 230808piu_b write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 
 * 230808piu_a review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
 * 230808piu_a write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
