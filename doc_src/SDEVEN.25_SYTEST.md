@@ -235,8 +235,7 @@ The test scenario is a form of verification of a punctual, concrete functionalit
 
 Through the test scenario, we aim to achieve a desired result for a series of known conditions. In other words, for a known set of input data, it is verified if the results are the expected ones. Thus, for each aspect that needs to be checked, a test scenario will have to be created. 
 
-A test scenario must have (and guarantee) the some qualities (properties, characteristics) which gives confidence to the person who decides whether the test result is CONFORM (PASS) or NON-CONFORM (FAIL)
-
+A test scenario must have (and guarantee) some qualities (properties, characteristics) which gives confidence to the person who decides whether the test result is CONFORM (PASS) or NON-CONFORM (FAIL). This can be done by'
 
 * 
 
