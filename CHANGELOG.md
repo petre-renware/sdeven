@@ -37,8 +37,6 @@
 
 * tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 
-* tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
-
 * tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
 
 * tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Proof of Concept_
@@ -46,6 +44,8 @@
 
 
 * wip...
+
+* wip... 230808piu_a write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
 
 * 230807piu_d write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_ for the whole approach and picture
 * 230807piu_c elaborated a doc `how_integrate_oldver_in_newver.md` ref how to integrate prev old content versions in the current / active one
