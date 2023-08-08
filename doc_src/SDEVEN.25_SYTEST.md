@@ -243,7 +243,11 @@ A test scenario must have (and guarantee) some qualities (properties, characteri
 
 * tested case should be as smaller as possible but enough relevant for customer, more precisely, to avoid falling into the trivial, irrelevant, useless
 
-* 
+The scenario must have a series of snall steps eaxh one being clear ref:
+
+* what and how should be operated in system
+* what is the expected system behavior
+* what are the expected results
 
 
 
