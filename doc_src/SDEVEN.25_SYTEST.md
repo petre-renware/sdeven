@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.13<br>
-Release date: 230807
+Release date: 230808
 
 ***
 
@@ -231,8 +231,17 @@ The following sections will discuss each deliverable focusing on its content and
 
 ### Test Scenarios
 
+The test scenario is a form of verification of a punctual, concrete functionality, which is *completely defined*, by this understanding that its finality is known exactly.
+
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png){ width="300" }
+
+
+
+
+
+
+
 
 
 
