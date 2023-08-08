@@ -237,6 +237,9 @@ Through the test scenario, we aim to achieve a desired result for a series of kn
 
 A test scenario must have (and guarantee) the following qualities (properties, characteristics):
 
+the person who decides whether the test result is CONFORM (PASS) or NON-CONFORM (FAIL)
+
+
 * 
 
 * 
