@@ -1550,7 +1550,7 @@ Release date: 230619</p>
 </li>
 </ul></section><section class="print-page" id="sdeven.25_sytest"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
 <p>Version: 7.0.13<br>
-Release date: 230807</p>
+Release date: 230808</p>
 <hr />
 <h1 id="sdeven.25_sytest-system-software-testing-sdeven25-sytest">System Software Testing (SDEVEN.25-SYTEST)</h1>
 <p><strong>Table of Content</strong></p>
@@ -1572,7 +1572,13 @@ Release date: 230807</p>
 <li><a href="#sdeven.25_sytest-production-environment">Production environment</a></li>
 </ul>
 </li>
-<li><a href="#sdeven.25_sytest-test-deliverables">Test deliverables</a></li>
+<li><a href="#sdeven.25_sytest-test-deliverables">Test deliverables</a><ul>
+<li><a href="#sdeven.25_sytest-test-plan">Test Plan</a></li>
+<li><a href="#sdeven.25_sytest-test-scenarios">Test Scenarios</a></li>
+<li><a href="#sdeven.25_sytest-system-hardware-requirements">System hardware requirements</a></li>
+<li><a href="#sdeven.25_sytest-proof-of-concept">Proof of Concept</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1706,18 +1712,88 @@ flowchart TD
 <p>Any intervention required in production environment must be done <strong>ONLY BY AUTHORIZED PERSONNEL AND ONLY WITH CUSTOMER WRITTEN PERMISSION.</strong> Credentials for any component from production environment are subject of <strong>customer strict confidential data and "secrets"</strong>. The customer must be instructed <strong>to change all credentials</strong> used in environment setup phase.</p>
 <p>All other operations regarding production environment (for example backup or update) are ONLY <em>customer responsibility</em>.</p>
 <p>Any <strong>copies of production environment</strong> can be made ONLY by customer authorized personnel and obtained ONLY with customer representative consent.</p>
+<div class="admonition warning">
+<p class="admonition-title">Accepted version grades</p>
+<p>In <code>production</code> environment only <strong><code>release</code></strong> graded versions are allowed to be installed. Only as exceptions and:</p>
+<ul>
+<li>for <strong><em>critical business</em></strong> reasons</li>
+<li>from trusted sources
+versions <code>beta</code> graded will be allowed</li>
+</ul>
+</div>
 <h2 id="sdeven.25_sytest-test-deliverables">Test deliverables</h2>
+<p>In order to be consistently applied and to be a proof of functioning, the testing process includes a series of <em>activities</em> and a set of <em>deliverables</em> that will be explained in next sections.</p>
+<p>Deliverables that must be created are:</p>
+<ul>
+<li><strong>Test Plan</strong></li>
+<li><strong>Test Scenarios</strong></li>
+<li><strong>System hardware requirements</strong></li>
+<li><strong>Proof of Concept</strong> document (aka <strong>PoC</strong> or <strong>Acceptance</strong> document)</li>
+</ul>
+<p>All these deliverables must be formally agreed by customer.</p>
+<p>The following diagram summarizes the testing process.</p>
+<pre class="mermaid"><code>---
+title: Testing process and Deliverables
+---
+flowchart LR
+    pln[["Test Process \n Planning"]]
+    exec[["Test Running"]]
+    poc[["Proof of \n concept"]]
+    concl[["Concluding"]]
+
+    tpln[\"Test Plan"/]
+    tsce[\"Test Scenario x"/]
+    pocdoc[\"Acceptance \n document"/]
+    sysrq[\"System hardware \n Requirements"/]
+
+
+    pln ==&gt; tpln
+    pln ==&gt; tsce
+
+    tsce --&gt; exec
+    exec --&gt; exec
+    exec --&gt; poc
+
+    poc --&gt; concl
+
+    poc ==&gt; pocdoc
+    concl ==&gt; sysrq</code></pre>
+<p>The following sections will discuss each deliverable focusing on its content and purpose. Those aspects that are not always in the sphere of <em>perfect (with zero deviation)</em> but have a level of approximation and tolerance that <em>must be kept in a zone of comfort, trust and functional acceptability to not alter business operations</em>.</p>
+<h3 id="sdeven.25_sytest-test-plan">Test Plan</h3>
 <!-- -#FIXME drop image when finish -->
 <p><img alt="wip pic" src="pictures/under_maintenance.png" width="300" /></p>
+<h3 id="sdeven.25_sytest-test-scenarios">Test Scenarios</h3>
+<p>The test scenario is a <em>form of verification</em> of a punctual, concrete functionality, which is <em>completely defined</em>, by this understanding that its finality is known exactly.</p>
+<p>Through the <strong>test scenario, we aim to achieve a desired result for a series of known conditions</strong>. In other words, for a known set of input data, it is verified if the results are the expected ones. Thus, for each aspect that needs to be checked, a test scenario will have to be created.</p>
+<p>A test scenario must have (and guarantee) some <em>qualities</em> (properties, characteristics) which gives confidence to the person who decides whether the test result is <em>CONFORM (PASS)</em> or <em>NON-CONFORM (FAIL)</em>. This can be done by:</p>
 <ul>
-<li>-#TODO ideas ref section content:<ul>
-<li>Test Plan</li>
-<li>Test Scenarios</li>
-<li>System hardware requirements</li>
-<li>to make some templates for each one</li>
-</ul>
+<li>
+<p>establishing what means <em>acceptable tolerance</em> when comparing obtained result with the expected one - this tolerance should be quantified in any rational-measurable way</p>
 </li>
-</ul></section><section class="print-page" id="sdeven.30_renver"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
+<li>
+<p>if test scenario has <em>more than two or three particular cases</em> (ie, if-cases), cases leading to results of different natures, then the test scenario must be divided, separated in more test scenario one for each expected result nature</p>
+</li>
+<li>
+<p>tested case should be as <em>smaller as possible but enough relevant</em> for customer, more precisely, to avoid falling into the trivial, irrelevant, useless</p>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Well defined test scenario</p>
+<p>The scenario must have a series of small steps each one being clear ref:</p>
+<ul>
+<li>what and how should be operated in system</li>
+<li>what is the expected system behavior</li>
+<li>what are the expected results</li>
+</ul>
+</div>
+<p>Each test scenario must be closed with a clear resolution <strong>PASS</strong> or <strong>FAIL</strong>. In case of fail  some short recommendations or explanation ref what should be done (these are subject to future <strong><em>bug fix issues</em></strong>).</p>
+<p>A test scenario template can be found here (UPCOMING...). <!--#FIXME a template should be provided here --></p>
+<h3 id="sdeven.25_sytest-system-hardware-requirements">System hardware requirements</h3>
+<!-- -#FIXME drop image when finish -->
+<p><img alt="wip pic" src="pictures/under_maintenance.png" width="300" /></p>
+<h3 id="sdeven.25_sytest-proof-of-concept">Proof of Concept</h3>
+<!-- -#FIXME drop image when finish -->
+<p><img alt="wip pic" src="pictures/under_maintenance.png" width="300" /></p></section><section class="print-page" id="sdeven.30_renver"><p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
 <p>Version: 7.0.12<br>
 Release date: 230805</p>
 <hr />
