@@ -233,6 +233,11 @@ The following sections will discuss each deliverable focusing on its content and
 
 The test scenario is a form of verification of a punctual, concrete functionality, which is *completely defined*, by this understanding that its finality is known exactly.
 
+Through the test scenario, we aim to achieve a desired result for a series of known conditions. In other words, for a known set of input data, it is verified if the results are the expected ones.
+
+
+
+
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png){ width="300" }
 
