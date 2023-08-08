@@ -226,22 +226,15 @@ The following sections will discuss each deliverable focusing on its content and
 The test plan is mainly a planning of [test scenarios](#test-scenarios):
 
 * a summary list with all scenarios expected to be executed
-
 * a time frame in which each scenario execution will take place
-
 * a general objective (*plan objective*) that establish the *goal* of test plan execution, more exactly what **acceptance** type is targeted
-
-* for each scenarion which functionality(ies) will be demonstrated (not detailed because these are written in scenario test)
-
-* required team for each scenario (at "mandatory / optinal" level)
-
+* for each scenario which functionality(ies) will be demonstrated (not detailed because these are written in scenario test)
+* required team for each scenario (at "mandatory / optional" level)
 * who approve the scenario resolution (pass or fail)
-
 * a pre-requisites list and different other requirements, IT, logistics, rooms, etc
-
 * who will execute each test scenario
 
-The test plan should be a contractul and an official document, so its change is subject of *change control procedure*.
+The test plan should be considered a contractual and an official document, so its change is subject of *change control procedure*.
 
 A test plan template can be found here (UPCOMING...). <!--#FIXME a template should be provided here -->
 

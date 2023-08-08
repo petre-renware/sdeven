@@ -47,6 +47,7 @@
 
 * wip...
 
+* 230808piu_c review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 * 230808piu_b write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 * 230808piu_a review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
 * 230808piu_a write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
