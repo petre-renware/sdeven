@@ -35,9 +35,9 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* tbd... template for test scenario and ref it in doc at corresponding section (a FIXME as HTNL comment was left)
+* tbd... template for __test scenario__ and ref it in doc at corresponding section (a FIXME as HTNL comment was left)
 
-* tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
+* tbd... template for __test plan__ and ref it in doc at corresponding section (a FIXME as HTNL comment was left)
 
 * tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
 
@@ -47,6 +47,7 @@
 
 * wip...
 
+* 230808piu_b write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 * 230808piu_a review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
 * 230808piu_a write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
 * 230807piu_d write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_ for the whole approach and picture

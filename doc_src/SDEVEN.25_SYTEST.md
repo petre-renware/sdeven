@@ -221,19 +221,29 @@ flowchart LR
 The following sections will discuss each deliverable focusing on its content and purpose. Those aspects that are not always in the sphere of *perfect (with zero deviation)* but have a level of approximation and tolerance that *must be kept in a zone of comfort, trust and functional acceptability to not alter business operations*.
 
 
-
-
-
-
-
 ### Test Plan
 
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png){ width="300" }
+The test plan is mainly a planning of [test scenarios](#test-scenarios):
 
+* a summary list with all scenarios expected to be executed
 
+* a time frame in which each scenario execution will take place
 
+* a general objective (*plan objective*) that establish the *goal* of test plan execution, more exactly what **acceptance** type is targeted
 
+* for each scenarion which functionality(ies) will be demonstrated (not detailed because these are written in scenario test)
+
+* required team for each scenario (at "mandatory / optinal" level)
+
+* who approve the scenario resolution (pass or fail)
+
+* a pre-requisites list and different other requirements, IT, logistics, rooms, etc
+
+* who will execute each test scenario
+
+The test plan should be a contractul and an official document, so its change is subject of *change control procedure*.
+
+A test plan template can be found here (UPCOMING...). <!--#FIXME a template should be provided here -->
 
 
 
