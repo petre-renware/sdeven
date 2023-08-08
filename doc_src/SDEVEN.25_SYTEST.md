@@ -231,6 +231,13 @@ The following sections will discuss each deliverable focusing on its content and
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png){ width="300" }
 
+The test plan is mainly a planning of [test scenarios](#test-scenarios):
+
+* a list with all scenarios expected to be executed
+* 
+
+
+
 
 
 
