@@ -249,7 +249,7 @@ The scenario must have a series of snall steps eaxh one being clear ref:
 * what is the expected system behavior
 * what are the expected results
 
-
+Each test scenario must be closed with a clear resolution PASS or FAIL. In case of fail  some short recommendations or explanation ref what should be done (these are subject to future ___bug fix issues___).
 
 
 <!-- -#FIXME drop image when finish -->
