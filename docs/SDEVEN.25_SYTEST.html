@@ -157,7 +157,7 @@ div.download-btn {
 <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
-<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--integrated" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="SDEVEN Software Development &amp; Engineering Methodology" class="md-nav__button md-logo" data-md-component="logo" href="index.html" title="SDEVEN Software Development &amp; Engineering Methodology">
 <img alt="logo" src="pictures/SDEVEN_logo.png"/>
@@ -455,112 +455,6 @@ div.download-btn {
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#preliminaries">
-    Preliminaries
-  </a>
-<nav aria-label="Preliminaries" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#why">
-    Why
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#when">
-    When
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#vocabulary">
-    Vocabulary
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#test-types">
-    Test types
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#testing-and-working-environments">
-    Testing and working environments
-  </a>
-<nav aria-label="Testing and working environments" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#environments-and-information-flow">
-    Environments and  Information flow
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#development-environment">
-    Development environment
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#test-environment">
-    Test environment
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#qa-environment">
-    QA environment
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#production-environment">
-    Production environment
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#test-deliverables">
-    Test deliverables
-  </a>
-<nav aria-label="Test deliverables" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#test-plan">
-    Test Plan
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#test-scenarios">
-    Test Scenarios
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#system-hardware-requirements">
-    System hardware requirements
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#proof-of-concept">
-    Proof of Concept
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset"><div class="download-btn"><a href="pdfs\SDEVEN.25_SYTEST.html\SDEVEN.25_SYTEST.pdf">Download PDF</a></div>
 <p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
@@ -775,8 +669,19 @@ flowchart LR
     concl ==&gt; sysrq</code></pre>
 <p>The following sections will discuss each deliverable focusing on its content and purpose. Those aspects that are not always in the sphere of <em>perfect (with zero deviation)</em> but have a level of approximation and tolerance that <em>must be kept in a zone of comfort, trust and functional acceptability to not alter business operations</em>.</p>
 <h3 id="test-plan">Test Plan</h3>
-<!-- -#FIXME drop image when finish -->
-<p><img alt="wip pic" src="pictures/under_maintenance.png" width="300"/></p>
+<p>The test plan is mainly a planning of <a href="#test-scenarios">test scenarios</a>:</p>
+<ul>
+<li>a summary list with all scenarios expected to be executed</li>
+<li>a time frame in which each scenario execution will take place</li>
+<li>a general objective (<em>plan objective</em>) that establish the <em>goal</em> of test plan execution, more exactly what <strong>acceptance</strong> type is targeted</li>
+<li>for each scenario which functionality(ies) will be demonstrated (not detailed because these are written in scenario test)</li>
+<li>required team for each scenario (at "mandatory / optional" level)</li>
+<li>who approve the scenario resolution (pass or fail)</li>
+<li>a pre-requisites list and different other requirements, IT, logistics, rooms, etc</li>
+<li>who will execute each test scenario</li>
+</ul>
+<p>The test plan should be considered a contractual and an official document, so its change is subject of <em>change control procedure</em>.</p>
+<p>A test plan template can be found here (UPCOMING...). <!--#FIXME a template should be provided here --></p>
 <h3 id="test-scenarios">Test Scenarios</h3>
 <p>The test scenario is a <em>form of verification</em> of a punctual, concrete functionality, which is <em>completely defined</em>, by this understanding that its finality is known exactly.</p>
 <p>Through the <strong>test scenario, we aim to achieve a desired result for a series of known conditions</strong>. In other words, for a known set of input data, it is verified if the results are the expected ones. Thus, for each aspect that needs to be checked, a test scenario will have to be created.</p>
@@ -842,7 +747,7 @@ flowchart LR
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.tabs.sticky", "navigation.path"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.tabs.sticky", "navigation.path", "toc.integrate"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
 <script src="assets/javascripts/bundle.b4d07000.min.js"></script>
 <script src="js/print-site.js"></script>
 <script src="optionalConfig.js"></script>
