@@ -259,7 +259,7 @@ The scenario must have a series of snall steps each one being clear ref:
 
 Each test scenario must be closed with a clear resolution **PASS** or **FAIL**. In case of fail  some short recommendations or explanation ref what should be done (these are subject to future ___bug fix issues___).
 
-
+A test scenario template can be found here (UPCOMING...). <!--#FIXME a template should be provided here -->
 
 
 
