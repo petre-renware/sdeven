@@ -243,6 +243,9 @@ The test plan is mainly a planning of [test scenarios](#test-scenarios):
 
 The test plan should be a contractul and an official document, so its change is subject of *change control procedure*.
 
+A test plan template can be found here (UPCOMING...). <!--#FIXME a template should be provided here -->
+
+
 
 ### Test Scenarios
 
