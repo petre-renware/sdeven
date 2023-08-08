@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.13<br>
-Release date: 230807
+Release date: 230808
 
 ***
 
@@ -222,6 +222,10 @@ The following sections will discuss each deliverable focusing on its content and
 
 
 
+
+
+
+
 ### Test Plan
 
 <!-- -#FIXME drop image when finish -->
@@ -229,10 +233,33 @@ The following sections will discuss each deliverable focusing on its content and
 
 
 
+
+
+
+
 ### Test Scenarios
 
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png){ width="300" }
+The test scenario is a form of verification of a punctual, concrete functionality, which is *completely defined*, by this understanding that its finality is known exactly.
+
+Through the test scenario, we aim to achieve a desired result for a series of known conditions. In other words, for a known set of input data, it is verified if the results are the expected ones. Thus, for each aspect that needs to be checked, a test scenario will have to be created. 
+
+A test scenario must have (and guarantee) some qualities (properties, characteristics) which gives confidence to the person who decides whether the test result is CONFORM (PASS) or NON-CONFORM (FAIL). This can be done by:
+
+* establishing what means acceptable tolerance when comparing obtained result with the expected one - this tolerance should be quantified in any rational-measurable way
+
+* if test scenario has more than two or three particular cases (ie, if-cases), cases leading to results of different natures, then the test scenario must be divided, separated in more test scenario one for each expected result nature
+
+* tested case should be as smaller as possible but enough relevant for customer, more precisely, to avoid falling into the trivial, irrelevant, useless
+
+The scenario must have a series of snall steps each one being clear ref:
+
+* what and how should be operated in system
+* what is the expected system behavior
+* what are the expected results
+
+Each test scenario must be closed with a clear resolution **PASS** or **FAIL**. In case of fail  some short recommendations or explanation ref what should be done (these are subject to future ___bug fix issues___).
+
+A test scenario template can be found here (UPCOMING...). <!--#FIXME a template should be provided here -->
 
 
 
