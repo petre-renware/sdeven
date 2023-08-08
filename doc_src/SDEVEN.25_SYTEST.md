@@ -247,7 +247,7 @@ A test scenario must have (and guarantee) some qualities (properties, characteri
 
 * establishing what means acceptable tolerance when comparing obtained result with the expected one - this tolerance should be quantified in any rational-measurable way
 
-* if test scenario has more than two or three particular cases (ie, if-cases), cases leading to results of different natures, then tge test scenario must be divided, separated in more test scenario one for each expected result nature
+* if test scenario has more than two or three particular cases (ie, if-cases), cases leading to results of different natures, then the test scenario must be divided, separated in more test scenario one for each expected result nature
 
 * tested case should be as smaller as possible but enough relevant for customer, more precisely, to avoid falling into the trivial, irrelevant, useless
 
