@@ -1,4 +1,4 @@
-<!-- 
+<!-- #NOTE how to use me
 
 - this file should be included as is in a `index.html` as will automatically redirect in `content` seconds
 
