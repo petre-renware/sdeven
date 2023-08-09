@@ -46,8 +46,8 @@
 
 
 * wip...
-* wip... 230809piu_a archived `RMAP.001` to `versions_history/RMAP_001.md` and create a Markdown template for redirecting `doc_src/redirect_template.md`
 
+* 230809piu_a archived `RMAP.001` to `versions_history/RMAP_001.md` and create a Markdown template for redirecting `doc_src/redirect_template.md`
 * 230808piu_c review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 * 230808piu_b write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 * 230808piu_a review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
