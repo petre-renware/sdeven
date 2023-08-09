@@ -4,6 +4,8 @@
 
 - carefully use it in Markdown files as the `md_to_html` converter add its HTML DOCTYPE and meta tags
 
+- consider **`redirect_templare_2.md`** for a "pure" Markdown Implementation
+
 -->
 
 
