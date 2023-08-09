@@ -236,7 +236,7 @@ The test plan is mainly a planning of [test scenarios](#test-scenarios):
 
 The test plan should be considered a contractual and an official document, so its change is subject of *change control procedure*.
 
-A test plan template can be found here (UPCOMING...). <!--#TODO see [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates) -->
+A [test plan template can be found here](Appendix_F1_TestPlan_template.md).
 
 
 ### Test Scenarios
