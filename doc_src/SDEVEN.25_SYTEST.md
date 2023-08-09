@@ -280,7 +280,14 @@ Level of details *System hardware requirements* deliverable should be minimal re
 
 ### Proof of Concept
 
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png){ width="300" }
-
 This deliverable is nothing else that a simple **acceptance agreement** *as a formal confirmantion of test objectives* (ie, from [*Test plan* document](#test-plan)).
+
+!!! warning "Referred documents"
+    If the *test plan* was "well done" and formally agreed the it just will be referred in this document.
+    
+    Also, is recommended that *test scenarios* (resulted after their execution) to be referred
+
+Finally must remember that this document will become **part of contract** and will be the *fundament of future financial* documents (for example *invoice*) and operations, so it must **respect all legal requirements** stated contractual agreement between parts (customer and supplier). At least a brief review from legal perspective of this document is strongly recommended.
+
+The concrete form of this document is subject of contractul terms and cannot be generalized here.
+
