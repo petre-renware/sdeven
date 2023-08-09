@@ -39,8 +39,7 @@
 
 * wip...
 
-* wip... 230809piu_h RMAP.002 - 25_SYTEST template for _Test Plan_ doc template ==> `Appendix_F1_TestPlan_template.md`
-
+* 230809piu_h RMAP.002 - 25_SYTEST template for _Test Plan_ doc template ==> `Appendix_F1_TestPlan_template.md`
 * 230809piu_g put "how to integrate old version in new ones..." - see doc `how_integrate_oldver_in_newver.md` on RMAP.003
 * 230809piu_f review all `SDEVEN.25_SYTEST.md` procedure
 * 230809piu_e write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Proof of Concept_
