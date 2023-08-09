@@ -28,6 +28,8 @@
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 
+* tbd... full review of `Licenses and Products (SDEVEN.70-LIP)`. There are a log of mistyping, company name wrond written (for ex inly System instead of RENware Software Systems), when disc ref copyright for open source sys is not clear that is ref OWN systems (not 3rd party) and more...
+
 #### [ end of #TODO_PLAN section ]=========================
 
 
