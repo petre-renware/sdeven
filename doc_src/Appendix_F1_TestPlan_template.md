@@ -38,13 +38,14 @@ Release date: 230809
 
 * **Plan objective & goal**: #NOTE `<targeted proof of concept>`
 * **Scheduled period**: #NOTE `<execution planed period>`
-* ...see if need more...
 
 
 
 ## Requirements
 
 * ... -#NOTE `<here is the list with requirements to execute in good conditions all test scenarios>`
+* ... ex; projector
+* ... ex: video camera
 * ...
 
 
