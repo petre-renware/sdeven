@@ -47,14 +47,15 @@ Release date: 230809
 
 tbd... here a table...
 
-| # | Scenario code     | ATo  | £  |
-|---|-------------------|------|----|
-| 1 | `<scenario code>` | 100% | €  |
+| # | Scenario code     | ATo  | EsD    |
+|---|-------------------|------|--------|
+| 1 | `<scenario code>` | 100% | yymmdd |
 
 
 **Legend**
 
 * **ATo** = acceptable tolerance
+* **EsD** = estimated execution date
 
 
 
