@@ -37,7 +37,7 @@ Release date: 230809
 ## General information
 
 * **Plan objective & goal**: #NOTE `<targeted proof of concept>`
-* **Scheduled period**: #NOTE `<execution planed period>`
+* **Scheduled period**: #NOTE `<test execution planed period>`
 * **contract reference**: #NOTE `<contract registration number & date>`
 
 
