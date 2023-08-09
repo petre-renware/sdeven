@@ -24,7 +24,7 @@
 
 #### [ start of #TODO_PLAN section ]=========================
 
-* tbd... to integrate old version in new ones... see doc `how_integrate_oldver_in_newver.md`
+* tbd... RMAP.003 - integrate old version in new ones (already in RMAP.003 content, but.. see doc `how_integrate_oldver_in_newver.md`)
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 
@@ -39,6 +39,7 @@
 
 * wip...
 
+* 230809piu_g put "how to integrate old version in new ones..." - see doc `how_integrate_oldver_in_newver.md` on RMAP.003
 * 230809piu_f review all `SDEVEN.25_SYTEST.md` procedure
 * 230809piu_e write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Proof of Concept_
 * 230809piu_d write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
