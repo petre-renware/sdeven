@@ -41,23 +41,19 @@ Release date: 230809
 
 
 
-## Definitions
-
-* acceptable tolerance - 
-* ...
-
-
 
 ## Scenarios and activities
 
 tbd... here a table...
 
-| # | Scenario code     | £   | £  |
-|---|-------------------|-----|----|
-| 1 | `<scenario code>` | €   | €  |
+| # | Scenario code     | ATo  | £  |
+|---|-------------------|------|----|
+| 1 | `<scenario code>` | 100% | €  |
 
 
+**Legend**
 
+* **ATo** = acceptable tolerance
 
 
 
