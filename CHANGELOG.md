@@ -35,9 +35,7 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* tbd... template for __test scenario__ and ref it in doc at corresponding section (a FIXME as HTNL comment was left)
-
-* tbd... template for __test plan__ and ref it in doc at corresponding section (a FIXME as HTNL comment was left)
+* tbd...(WRITE_in_this_rmap_rest_of_tmpls) [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates)
 
 * tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
 
@@ -47,6 +45,7 @@
 
 * wip...
 
+* 230809piu_b created `RMAP.002 - 25_SYTEST templates` for `SDEVEN.25_SYTEST.md` deliverable doc templates and ref it in procedure
 * 230809piu_a archived `RMAP.001` to `versions_history/RMAP_001.md` and create a Markdown template for redirecting `doc_src/redirect_template.md`
 * 230808piu_c review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 * 230808piu_b write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_

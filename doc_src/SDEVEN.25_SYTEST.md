@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.13<br>
-Release date: 230808
+Release date: 230809
 
 ***
 
@@ -236,7 +236,7 @@ The test plan is mainly a planning of [test scenarios](#test-scenarios):
 
 The test plan should be considered a contractual and an official document, so its change is subject of *change control procedure*.
 
-A test plan template can be found here (UPCOMING...). <!--#FIXME a template should be provided here -->
+A test plan template can be found here (UPCOMING...). <!--#FIXME see [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates) -->
 
 
 
@@ -263,7 +263,7 @@ A test scenario must have (and guarantee) some *qualities* (properties, characte
 
 Each test scenario must be closed with a clear resolution **PASS** or **FAIL**. In case of fail  some short recommendations or explanation ref what should be done (these are subject to future ___bug fix issues___).
 
-A test scenario template can be found here (UPCOMING...). <!--#FIXME a template should be provided here -->
+A test scenario template can be found here (UPCOMING...). <!--#FIXME see [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates) -->
 
 
 

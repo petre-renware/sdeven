@@ -2,7 +2,7 @@
 
 - this file should be included as is in a `index.html` as will automatically redirect in `content` seconds
 
-- carefully use it in Markdown files as the `md --> html` converter add its HTML DOCTYPE and meta tags
+- carefully use it in Markdown files as the `md_to_html` converter add its HTML DOCTYPE and meta tags
 
 -->
 
