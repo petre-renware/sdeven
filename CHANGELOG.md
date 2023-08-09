@@ -37,10 +37,9 @@
 
 * tbd... [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates)
 
-* tbd... review all procedure and release version
-
 * wip...
 
+* 230809piu_f review all `SDEVEN.25_SYTEST.md` procedure
 * 230809piu_e write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Proof of Concept_
 * 230809piu_d write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
 * 230809piu_c created a new Markdown template for redirecting `doc_src/redirect_template_2.md` and renamed previous to `...samename..._1.md`

@@ -236,7 +236,7 @@ The test plan is mainly a planning of [test scenarios](#test-scenarios):
 
 The test plan should be considered a contractual and an official document, so its change is subject of *change control procedure*.
 
-A test plan template can be found here (UPCOMING...). <!--#FIXME see [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates) -->
+A test plan template can be found here (UPCOMING...). <!--#TODO see [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates) -->
 
 
 ### Test Scenarios
@@ -262,14 +262,14 @@ A test scenario must have (and guarantee) some *qualities* (properties, characte
 
 Each test scenario must be closed with a clear resolution **PASS** or **FAIL**. In case of fail  some short recommendations or explanation ref what should be done (these are subject to future ___bug fix issues___).
 
-A test scenario template can be found here (UPCOMING...). <!--#FIXME see [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates) -->
+A test scenario template can be found here (UPCOMING...). <!--#TODO see [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates) -->
 
 
 ### System hardware requirements
 
-This deliverable must show the necessary hardware requirements for the system (product, application) to run in *normal operating conditions* and this is tight correlated with concept of ***sysyem load***.
+This deliverable must show the necessary hardware requirements for the system (product, application) to run in *normal operating conditions* and this is tight correlated with concept of ***system load***.
 
-To be able to estimate and to acceptable fulfill this requirement, some *volume metrics* should be identified, but these ones **must be relevant for system** regarding *loading situations*. *Loading* is clearly a pure techinal aspect and should be FIRST established and defined (as system / application relevant metrics and units of measures) by system architects and designers.
+To be able to estimate and to acceptable fulfill this requirement, some *volume metrics* should be identified, but these ones **must be relevant for system** regarding *loading situations*. *Loading* is clearly a pure technical aspect and should be FIRST established and defined (as system / application relevant metrics and units of measures) by system architects and designers.
 
 "Conversion" to hardware resources required to allow execution under those loading conditions is another pure technical thing that should be defined (in terms of equivalence) by infrastructure specialized people.
 
@@ -280,14 +280,13 @@ Level of details in *System hardware requirements* deliverable should be minimal
 
 ### Proof of Concept
 
-This deliverable is the **acceptance agreement** *as a formal confirmantion of test objectives* (ie, from [*Test plan* document](#test-plan)).
+This deliverable is the **acceptance agreement** *as a formal confirmation of test objectives* (ie, from [*Test plan* document](#test-plan)).
 
 !!! warning "Referred documents"
-    If the *test plan* was "well done" and formally agreed the it just will be referred in this document.
-    
-    Also, is recommended that *test scenarios* (resulted after their execution) to be referred
+    * If the *test plan* was "well done" and formally agreed the it just will be referred in this document.
+    * Also, is recommended that *test scenarios* (resulted after their execution) to be referred
 
 Finally must remember that this document will become **part of contract** and will be the *fundament of future financial* documents (for example *invoice*) and operations, so it must **respect all legal requirements** stated contractual agreement between parts (customer and supplier). At least a brief review from legal perspective of this document is strongly recommended.
 
-The concrete form of this document is subject of contractul terms and cannot be generalized here.
+The concrete form of this document is subject of contractual terms and cannot be generalized here.
 
