@@ -45,7 +45,6 @@ Release date: 230809
 
 ## Scenarios and activities
 
-tbd... here a table...
 
 | # | Scenario code     | ATo  | EsD    |
 |---|-------------------|------|--------|
