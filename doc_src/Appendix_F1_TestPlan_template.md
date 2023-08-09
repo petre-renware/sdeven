@@ -36,8 +36,8 @@ Release date: 230809
 
 ## Plan scope
 
-* **Plan objective & goal**: `<targeted proof of concept>`
-* **Scheduled period**:  
+* **Plan objective & goal**: #NOTE `<targeted proof of concept>`
+* **Scheduled period**: #NOTE `<execution planed period>`
 * ...see if need more...
 
 
