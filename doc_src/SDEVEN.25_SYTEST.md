@@ -273,7 +273,7 @@ To be able to estimate and to acceptable fulfill this requirement, some *volume 
 
 "Conversion" to hardware resources required to allow execution under those loading conditions is another pure technical thing that should be defined (in terms of equivalence) by infrastructure specialized people.
 
-Normally *System hardware requirements* deliverable should present the **minimum** requirements the system to run.
+Normally *System hardware requirements* deliverable should present the **minimum** requirements the system to run, Is optional (but recommended) to present the requirements for an optimal system run, or to offer a "way" to determine how to calculate them when loading conditions are changimg.
 
 
 
