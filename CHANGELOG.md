@@ -37,6 +37,9 @@
 
 * tbd_test_scenario... [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates)
 
+* tbd... de referentiat template facut in 00.INDEX
+* tbd... tabelul de la lista plan scenarii de adaugat inca una sau 2 linii goale cu puncte suspensie
+
 * wip...
 
 * 230809piu_h RMAP.002 - 25_SYTEST template for _Test Plan_ doc template ==> `Appendix_F1_TestPlan_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
