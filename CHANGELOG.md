@@ -37,13 +37,13 @@
 
 * tbd...(WRITE_in_this_rmap_rest_of_tmpls) [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates)
 
-* tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
-
 * tbd... ... write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Proof of Concept_
 
 
 
 * wip...
+
+* wip... 230809piu_d write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
 
 * 230809piu_c created a new Markdown template for redirecting `doc_src/redirect_template_2.md` and renamed previous to `...samename..._1.md`
 * 230809piu_b created `RMAP.002 - 25_SYTEST templates` for `SDEVEN.25_SYTEST.md` deliverable doc templates and ref it in procedure
