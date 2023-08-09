@@ -41,13 +41,13 @@ Release date: 230809
 
 
 
+
 ## Requirements
 
-* ... -#NOTE `<here is the list with requirements to execute in good conditions all test scenarios>`
+* ... #NOTE here is the list with requirements to execute in good conditions all test scenarios
 * ... ex; projector
 * ... ex: video camera
 * ...
-
 
 
 
@@ -63,6 +63,7 @@ Release date: 230809
 
 **Legend**
 
+* **#** = an unique number which allow "in document" easy reference of activities
 * **ATo** = acceptable tolerance
 * **EsD** = estimated execution date
 * **RqTm** = required team members indicating:
@@ -76,8 +77,19 @@ Release date: 230809
 
 
 
+## Final notes & remarks
+
+-#NOTE this section is reserved for various notes and remarks regarding a particular scenario (refered by line #) or the plan itself
+
+* ...
+* ...
 
 
+
+
+## Approvals
+
+-#NOTE this section is reserved for approver's signature
 
 
 
