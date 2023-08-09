@@ -45,8 +45,9 @@
 
 * wip...
 
+* 230809piu_c created a new Markdown template for redirecting `doc_src/redirect_template_2.md` and renamed previous to `...samename..._1.md`
 * 230809piu_b created `RMAP.002 - 25_SYTEST templates` for `SDEVEN.25_SYTEST.md` deliverable doc templates and ref it in procedure
-* 230809piu_a archived `RMAP.001` to `versions_history/RMAP_001.md` and create a Markdown template for redirecting `doc_src/redirect_template.md`
+* 230809piu_a archived `RMAP.001` to `versions_history/RMAP_001.md` and created a Markdown template for redirecting `doc_src/redirect_template.md`
 * 230808piu_c review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 * 230808piu_b write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
 * 230808piu_a review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
