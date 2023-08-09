@@ -25,6 +25,7 @@
 #### [ start of #TODO_PLAN section ]=========================
 
 * tbd... RMAP.003 - integrate old version in new ones (already in RMAP.003 content, but.. see doc `how_integrate_oldver_in_newver.md`)
+* tbd... test `redirect_templare_x.md`
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 
@@ -39,11 +40,9 @@
 
 * tbd_test_scenario... [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates)
 
-* tbd... de referentiat template facut in 00.INDEX
-* tbd... tabelul de la lista plan scenarii de adaugat inca una sau 2 linii goale cu puncte suspensie
-
 * wip...
 
+* 230809piu_i `Appendix_F1_TestPlan_template.md` the table from "Scenarios and activities" section, to add more empty lines + to refer it in `SDEVEN.00_INDEX.md`
 * 230809piu_h RMAP.002 - 25_SYTEST template for _Test Plan_ doc template ==> `Appendix_F1_TestPlan_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
 * 230809piu_g put "how to integrate old version in new ones..." - see doc `how_integrate_oldver_in_newver.md` on RMAP.003
 * 230809piu_f review all `SDEVEN.25_SYTEST.md` procedure

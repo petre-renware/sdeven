@@ -56,24 +56,25 @@ Release date: 230809
 ## Scenarios and activities
 
 
-| # | Scenario code     | ATo  | EsD    |  RqTm | OptTm | Decident | Exc | ReqNt | ExD    | Stat |
-|---|-------------------|------|--------|-------|-------|----------|-----|-------|--------|------|
-| 1 | `<scenario code>` | 100% | yymmdd |  ...  | ...   | name ... | ... | code# | yymmdd | ...  |
-
+| #   | Scenario code     | ATo  | EsD    | RqTm | OptTm | Decident | Exc | ReqNt | ExD    | Stat |
+| --- | ----------------- | ---- | ------ | ---- | ----- | -------- | --- | ----- | ------ | ---- |
+| 1   | `<scenario code>` | 100% | yymmdd | ...  | ...   | name ... | ... | code# | yymmdd | ...  |
+| 2   | ...               | ...  | ...    | ...  | ...   | ...      | ... | ...   | ...    | ...  |
+| 3   | ...               | ...  | ...    | ...  | ....  | ...      | ... | ...   | ...    | ...  |
 
 
 **Legend**
 
-* **#** = an unique number which allow "in document" easy reference of activities
-* **ATo** = acceptable tolerance
-* **EsD** = estimated execution date
-* **RqTm** = required team members indicating:
-  * person name
-  * person role
-* **OptTm** = optional team members (only person name because these members will be considered *observers*)
-* **Exc** = name of person who will execute the scenario (ie, operate the system)
-* **ExD** = actual execution date
-* **Stat** = status as `PASS` or `FAIL`
+* **`#`** = an unique number which allow "in document" easy reference of activities
+* **`ATo`** = acceptable tolerance
+* **`EsD`** = estimated execution date
+* **`RqTm`** = required team members indicating:
+    * person name
+    * person role
+* **`OptTm`** = optional team members (only person name because these members will be considered *observers*)
+* **`Exc`** = name of person who will execute the scenario (ie, operate the system)
+* **`ExD`** = actual execution date
+* **`Stat`** = status as `PASS` or `FAIL`
 
 
 

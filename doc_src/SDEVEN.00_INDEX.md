@@ -100,6 +100,7 @@ The appendices contains mainly forms, templates, cheat sheets and other helpers.
 * [Appendix (C) Status Report Template (STATUSR)](Appendix_C_Status_Report.md){ target="_blank" }
 * [Appendix (D) ROADMAP Template (RMAP)](Appendix_D_ROADMAP_template.md){ target="_blank" }
 * [Appendix (E) Release note template (RELNOTE)](Appendix_E_RELNOTE_template.md){ target="_blank" }
+* [Appendix (F1) Test Plan template (TESTPLAN)](Appendix_F1_TestPlan_template.md){ target="_blank" }
 * [Appendix (Q) Frequently Asked Questions (FAQ)](Appendix_Q_faq.md){ target="_blank" }
 
 
