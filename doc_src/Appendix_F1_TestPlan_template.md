@@ -36,12 +36,8 @@ Release date: 230809
 
 ## Plan scope
 
-* Plan objectives (goal): `<targeted proof of concept>`
-* 
-* 
-* 
-* 
-* 
+* **Plan objective & goal**: `<targeted proof of concept>`
+* ...see if need more...
 
 
 
@@ -52,13 +48,13 @@ Release date: 230809
 
 
 
-## Activities
+## Scenarios and activities
 
 tbd... here a table...
 
-| £   | £  | £   | £  |
-|-----|----|-----|----|
-| €   | €  | €   | €  |
+| # | Scenario code     | £   | £  |
+|---|-------------------|-----|----|
+| 1 | `<scenario code>` | €   | €  |
 
 
 
