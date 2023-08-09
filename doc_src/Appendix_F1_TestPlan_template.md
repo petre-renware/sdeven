@@ -36,6 +36,7 @@ Release date: 230809
 
 ## Plan scope
 
+* Plan objectives (goal): `<targeted proof of concept>`
 * 
 * 
 * 
