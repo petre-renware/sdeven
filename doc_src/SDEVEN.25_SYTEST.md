@@ -239,7 +239,6 @@ The test plan should be considered a contractual and an official document, so it
 A test plan template can be found here (UPCOMING...). <!--#FIXME see [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates) -->
 
 
-
 ### Test Scenarios
 
 The test scenario is a *form of verification* of a punctual, concrete functionality, which is *completely defined*, by this understanding that its finality is known exactly.
@@ -266,16 +265,7 @@ Each test scenario must be closed with a clear resolution **PASS** or **FAIL**. 
 A test scenario template can be found here (UPCOMING...). <!--#FIXME see [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates) -->
 
 
-
-
-
-
-
-
 ### System hardware requirements
-
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png){ width="300" }
 
 This deliverable must show the necessary hardware requirements for the system (product, application) to run in *normal operating conditions* and this is extremely correlated with concept of ***sysyem load***.
 
@@ -283,7 +273,7 @@ To be able to estimate and to acceptable fulfill this requirement, some *volume 
 
 "Conversion" to hardware resources required to allow execution under those loading conditions is another pure technical thing that should be defined (in terms of equivalence) by infrastructure specialized people.
 
-
+Normally *System hardware requirements* deliverable should present the **minimum** requirements the system to run.
 
 
 
