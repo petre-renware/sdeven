@@ -275,7 +275,7 @@ To be able to estimate and to acceptable fulfill this requirement, some *volume 
 
 Normally *System hardware requirements* deliverable should present the **minimum** requirements the system to run. Is optional (but recommended) to present also the requirements for an **optimal** system run, or to offer a "way" to determine how to calculate them when loading conditions are changing.
 
-Level of details *System hardware requirements* deliverable should be minimal regarding resource types (as these change very rapidly in time...) but enough for a customer to be able to determine what to buy (or to make available) in a reasonable way (for example regarding storage do not idicate the type of disks but only required capacity as operating system can directly  access, or for processing capacity do not indicate the CPU type but indicate the number of unit of processing units, some necessary features like hardware virtualization, and so on).
+Level of details in *System hardware requirements* deliverable should be minimal regarding resource types (as these change very rapidly in time...) but enough for a customer to be able to determine what to buy (or to make available) in a reasonable way (for example regarding storage do not idicate the type of disks but only required capacity as operating system can directly  access, or for processing capacity do not indicate the CPU type but indicate the number of unit of processing units, some necessary features like hardware virtualization, and so on).
 
 
 ### Proof of Concept
