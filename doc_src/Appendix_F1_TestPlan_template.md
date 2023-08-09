@@ -46,16 +46,19 @@ Release date: 230809
 ## Scenarios and activities
 
 
-| # | Scenario code     | ATo  | EsD    |  €  |
-|---|-------------------|------|--------|-----|
-| 1 | `<scenario code>` | 100% | yymmdd | xxx |
+| # | Scenario code     | ATo  | EsD    |  RqTm   |
+|---|-------------------|------|--------|-------|
+| 1 | `<scenario code>` | 100% | yymmdd |  ... |
 
 
 **Legend**
 
 * **ATo** = acceptable tolerance
 * **EsD** = estimated execution date
-
+* **RqTm** = required team members indicating:
+  * person name
+  * person role
+* **OptTm** = optional team members (only person name because these members will be considered *observers*)
 
 
 
