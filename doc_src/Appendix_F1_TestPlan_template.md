@@ -56,9 +56,9 @@ Release date: 230809
 
 ```
 
-| # | Scenario code     | ATo  | EsD    |  RqTm | OptTm | Decident | Exc | ReqNt | ExD    |
-|---|-------------------|------|--------|-------|-------|----------|-----|-------|--------|
-| 1 | `<scenario code>` | 100% | yymmdd |  ...  | ...   | name ... | ... | code# | yymmdd |
+| # | Scenario code     | ATo  | EsD    |  RqTm | OptTm | Decident | Exc | ReqNt | ExD    | Stat |
+|---|-------------------|------|--------|-------|-------|----------|-----|-------|--------|------|
+| 1 | `<scenario code>` | 100% | yymmdd |  ...  | ...   | name ... | ... | code# | yymmdd | ...  |
 
 ```
 
@@ -71,6 +71,8 @@ Release date: 230809
   * person role
 * **OptTm** = optional team members (only person name because these members will be considered *observers*)
 * **Exc** = name of person who will execute the scenario (ie, operate the system)
+* **ExD** = actual execution date
+* **Stat** = status as `PASS` or `FAIL`
 
 
 
