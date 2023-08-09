@@ -34,7 +34,29 @@ Release date: 230809
 
 
 
-## doc_section...tbd...
+## General data
+
+* 
+* 
+* 
+* 
+* 
+
+
+## Activities
+
+tbd... here a table...
+
+| £   | £  | £   | £  |
+|-----|----|-----|----|
+| €   | €  | €   | €  |
+
+
+
+
+
+
+
 
 
 
