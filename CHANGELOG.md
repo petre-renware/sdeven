@@ -37,6 +37,7 @@
 
 * tbd... [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates)
 
+* tbd... review all procedure and release version
 
 * wip...
 
