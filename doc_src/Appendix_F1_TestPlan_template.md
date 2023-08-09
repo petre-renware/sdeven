@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.12<br>
-Release date: 230805
+Version: 7.0.13<br>
+Release date: 230809
 
 
 
@@ -25,7 +25,7 @@ Release date: 230805
 [TOC]
 
 
-# Appendix E Release note template (RELNOTE) of version `<version number represented by this release note>`
+# Appendix F1 Test Plan
 
 
 !!! warning "#TODO CHANGE ME. THIS IS A TEMPLATE DOCUMENT"
