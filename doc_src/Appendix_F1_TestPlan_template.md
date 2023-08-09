@@ -54,11 +54,13 @@ Release date: 230809
 
 ## Scenarios and activities
 
+```
 
-| # | Scenario code     | ATo  | EsD    |  RqTm | OptTm | Decident | Exc | ReqNt |
-|---|-------------------|------|--------|-------|-------|----------|-----|-------|
-| 1 | `<scenario code>` | 100% | yymmdd |  ...  | ...   | name ... | ... | code# |
+| # | Scenario code     | ATo  | EsD    |  RqTm | OptTm | Decident | Exc | ReqNt | ExD    |
+|---|-------------------|------|--------|-------|-------|----------|-----|-------|--------|
+| 1 | `<scenario code>` | 100% | yymmdd |  ...  | ...   | name ... | ... | code# | yymmdd |
 
+```
 
 **Legend**
 
