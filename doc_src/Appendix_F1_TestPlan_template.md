@@ -42,13 +42,21 @@ Release date: 230809
 
 
 
+## Requirements
+
+* ... -#NOTE `<here is the list with requirements to execute in good conditions all test scenarios>`
+* ...
+
+
+
+
 
 ## Scenarios and activities
 
 
-| # | Scenario code     | ATo  | EsD    |  RqTm   | OptTm | Decident |
-|---|-------------------|------|--------|-------|-------|----------|
-| 1 | `<scenario code>` | 100% | yymmdd |  ... | ...   | name ... |
+| # | Scenario code     | ATo  | EsD    |  RqTm | OptTm | Decident | Exc | ReqNt |
+|---|-------------------|------|--------|-------|-------|----------|-----|-------|
+| 1 | `<scenario code>` | 100% | yymmdd |  ...  | ...   | name ... | ... | code# |
 
 
 **Legend**
@@ -59,6 +67,9 @@ Release date: 230809
   * person name
   * person role
 * **OptTm** = optional team members (only person name because these members will be considered *observers*)
+* **Exc** = name of person who will execute the scenario (ie, operate the system)
+
+
 
 
 
