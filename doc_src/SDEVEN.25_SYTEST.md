@@ -267,7 +267,7 @@ A test scenario template can be found here (UPCOMING...). <!--#FIXME see [RMAP.0
 
 ### System hardware requirements
 
-This deliverable must show the necessary hardware requirements for the system (product, application) to run in *normal operating conditions* and this is extremely correlated with concept of ***sysyem load***.
+This deliverable must show the necessary hardware requirements for the system (product, application) to run in *normal operating conditions* and this is tight correlated with concept of ***sysyem load***.
 
 To be able to estimate and to acceptable fulfill this requirement, some *volume metrics* should be identified, but these ones **must be relevant for system** regarding *loading situations*. *Loading* is clearly a pure techinal aspect and should be FIRST established and defined (as system / application relevant metrics and units of measures) by system architects and designers.
 
@@ -275,13 +275,19 @@ To be able to estimate and to acceptable fulfill this requirement, some *volume 
 
 Normally *System hardware requirements* deliverable should present the **minimum** requirements the system to run. Is optional (but recommended) to present also the requirements for an **optimal** system run, or to offer a "way" to determine how to calculate them when loading conditions are changing.
 
-
-
+Level of details in *System hardware requirements* deliverable should be minimal regarding resource types (as these change very rapidly in time...) but enough for a customer to be able to determine what to buy (or to make available) in a reasonable way (for example regarding storage do not idicate the type of disks but only required capacity as operating system can directly  access, or for processing capacity do not indicate the CPU type but indicate the number of unit of processing units, some necessary features like hardware virtualization, and so on).
 
 
 ### Proof of Concept
 
-<!-- -#FIXME drop image when finish -->
-![wip pic](pictures/under_maintenance.png){ width="300" }
+This deliverable is the **acceptance agreement** *as a formal confirmantion of test objectives* (ie, from [*Test plan* document](#test-plan)).
 
+!!! warning "Referred documents"
+    If the *test plan* was "well done" and formally agreed the it just will be referred in this document.
+    
+    Also, is recommended that *test scenarios* (resulted after their execution) to be referred
+
+Finally must remember that this document will become **part of contract** and will be the *fundament of future financial* documents (for example *invoice*) and operations, so it must **respect all legal requirements** stated contractual agreement between parts (customer and supplier). At least a brief review from legal perspective of this document is strongly recommended.
+
+The concrete form of this document is subject of contractul terms and cannot be generalized here.
 
