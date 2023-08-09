@@ -280,7 +280,7 @@ Level of details in *System hardware requirements* deliverable should be minimal
 
 ### Proof of Concept
 
-This deliverable the **acceptance agreement** *as a formal confirmantion of test objectives* (ie, from [*Test plan* document](#test-plan)).
+This deliverable is the **acceptance agreement** *as a formal confirmantion of test objectives* (ie, from [*Test plan* document](#test-plan)).
 
 !!! warning "Referred documents"
     If the *test plan* was "well done" and formally agreed the it just will be referred in this document.
