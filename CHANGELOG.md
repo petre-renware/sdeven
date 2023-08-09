@@ -35,10 +35,11 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* tbd... [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates)
+* tbd_test_scenario... [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates)
 
 * wip...
 
+* 230809piu_h RMAP.002 - 25_SYTEST template for _Test Plan_ doc template ==> `Appendix_F1_TestPlan_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
 * 230809piu_g put "how to integrate old version in new ones..." - see doc `how_integrate_oldver_in_newver.md` on RMAP.003
 * 230809piu_f review all `SDEVEN.25_SYTEST.md` procedure
 * 230809piu_e write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Proof of Concept_
