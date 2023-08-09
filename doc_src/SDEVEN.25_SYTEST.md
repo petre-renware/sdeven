@@ -279,7 +279,9 @@ A test scenario template can be found here (UPCOMING...). <!--#FIXME see [RMAP.0
 
 This deliverable must show the necessary hardware requirements for the system (product, application) to run in *normal operating conditions* and this is extremely correlated with concept of ***sysyem load***.
 
-To be able to estimate and to acceptable fulfill this requirement, some *volume metrics* should be identified, but these ones **must be relevant for system** regarding *loading situations*. *Loading* is clearly a pure techinal aspect and should be FIRST established and defined (as metrics and units of measures) by system architects and designers.
+To be able to estimate and to acceptable fulfill this requirement, some *volume metrics* should be identified, but these ones **must be relevant for system** regarding *loading situations*. *Loading* is clearly a pure techinal aspect and should be FIRST established and defined (as system / application relevant metrics and units of measures) by system architects and designers.
+
+"Conversion" to hardware resources required to allow execution under those loading conditions is another pure technical thing that should be defined (in terms of equivalence) by infrastructure specialized people.
 
 
 
