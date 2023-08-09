@@ -18,7 +18,7 @@
 # ROADMAP
 
 
-## RMAP.002 - 25_SYTEST templates
+## RMAP.002 - 25_SYTEST templates (wip...)
 
 * **Objective:** deliverable doc templates for **System Software Testing (SDEVEN.25-SYTEST)** procedure
 * **Recorded at:** 230809
