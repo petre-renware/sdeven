@@ -34,13 +34,21 @@ Release date: 230809
 
 
 
-## General data
+## Plan scope
 
 * 
 * 
 * 
 * 
 * 
+
+
+
+## Definitions
+
+* acceptable tolerance - 
+* ...
+
 
 
 ## Activities
