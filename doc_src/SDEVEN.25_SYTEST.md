@@ -278,10 +278,9 @@ Normally *System hardware requirements* deliverable should present the **minimum
 Level of details *System hardware requirements* deliverable should be minimal regarding resource types (as these change very rapidly in time...) but enough for a customer to be able to determine what to buy (or to make available) in a reasonable way (for example regarding storage do not idicate the type of disks but only required capacity as operating system can directly  access, or for processing capacity do not indicate the CPU type but indicate the number of unit of processing units, some necessary features like hardware virtualization, and so on).
 
 
-
 ### Proof of Concept
 
 <!-- -#FIXME drop image when finish -->
 ![wip pic](pictures/under_maintenance.png){ width="300" }
 
-
+This deliverable is nothing else that a simple **acceptance agreement** *as a formal confirmantion of test objectives* (ie, from [*Test plan* document](#test-plan)).
