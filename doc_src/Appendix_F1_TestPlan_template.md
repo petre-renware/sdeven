@@ -46,9 +46,9 @@ Release date: 230809
 ## Scenarios and activities
 
 
-| # | Scenario code     | ATo  | EsD    |
-|---|-------------------|------|--------|
-| 1 | `<scenario code>` | 100% | yymmdd |
+| # | Scenario code     | ATo  | EsD    |  €  |
+|---|-------------------|------|--------|-----|
+| 1 | `<scenario code>` | 100% | yymmdd | xxx |
 
 
 **Legend**
