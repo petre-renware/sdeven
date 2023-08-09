@@ -37,6 +37,7 @@ Release date: 230809
 ## Plan scope
 
 * **Plan objective & goal**: `<targeted proof of concept>`
+* **Scheduled period**:  
 * ...see if need more...
 
 
