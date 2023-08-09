@@ -34,10 +34,11 @@ Release date: 230809
 
 
 
-## Plan scope
+## General information
 
 * **Plan objective & goal**: #NOTE `<targeted proof of concept>`
 * **Scheduled period**: #NOTE `<execution planed period>`
+* **contract reference**: #NOTE `<contract registration number & date>`
 
 
 
