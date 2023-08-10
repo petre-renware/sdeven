@@ -94,10 +94,10 @@
 
 
 
-# Closed issues
+# Closed and archived issues
 
 * [RMAP.002 - 25_SYTEST templates](versions_history/RMAP_002.md)
-* [RMAP.001 - OPME](versions_history/RMAP_001.md) closed & archived 
+* [RMAP.001 - OPME](versions_history/RMAP_001.md)
 
 
 
