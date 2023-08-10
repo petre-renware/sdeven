@@ -25,8 +25,12 @@ Release date: 230810
 [TOC]
 
 
--#NOTE `<set in title the scenario code-name that identify it...>`
+
 # Appendix F2 Test Scenario `<code-name>`
+
+-#NOTE `<set in title the scenario code-name that identify it...>`
+
+
 
 
 !!! warning "#TODO CHANGE ME. THIS IS A TEMPLATE DOCUMENT"
@@ -37,10 +41,8 @@ Release date: 230810
 
 ## General information
 
-* **Plan objective & goal**: #NOTE `<targeted proof of concept>`
-* **Scheduled period**: #NOTE `<test execution planed period>`
-* **contract reference**: #NOTE `<contract registration number & date>`
-
+* **code-name**: `<scenario code-name as set in title>`
+* ****: #NOTE `<target functionality to test it>`
 
 
 
@@ -76,23 +78,6 @@ Release date: 230810
 * **`Exc`** = name of person who will execute the scenario (ie, operate the system)
 * **`ExD`** = actual execution date
 * **`Stat`** = status as `PASS` or `FAIL`
-
-
-
-
-## Final notes & remarks
-
--#NOTE this section is reserved for various notes and remarks regarding a particular scenario (refered by line #) or the plan itself
-
-* ...
-* ...
-
-
-
-
-## Approvals
-
--#NOTE this section is reserved for approver's signature
 
 
 
