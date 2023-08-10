@@ -41,9 +41,11 @@
 
 ### 7.0.13-beta TESTing procedure (#NOTE wip)
 
-* tbd_test_scenario... [RMAP.002 - 25_SYTEST templates](ROADMAP.md#rmap002---25_sytest-templates)
+* tbd_
 
 * wip...
+
+* wip... 230810piu_c RMAP.002 - 25_SYTEST template for _Test Scenario_ doc template ==> `Appendix_F2_TestScen_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml` 
 
 * 230810piu_b tested RMAP.004 and write resolution at its "Updated at" section
 * 230810piu_a created new _RMAP.004 - convert to Word (docx) format the full document_
