@@ -1,12 +1,9 @@
 
-
-
-
-## RMAP.002 - 25_SYTEST templates (closed)
+## RMAP.002 - 25_SYTEST templates (closed @ 230810)
 
 * **Objective:** deliverable doc templates for **System Software Testing (SDEVEN.25-SYTEST)** procedure
 * **Recorded at:** 230809
-* **Updated at**: 230809 (wip & partially closed)
+* **Updated at**: 230809 (closed)
 * **Recorded by:** Petre Iordanescu (piu)
 * **Detailed  description:**
     * [x] template for __test scenario__ and ref it in doc at corresponding section (a FIXME as HTNL comment was left)
