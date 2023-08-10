@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.13<br>
-Release date: 230809
+Release date: 230810
 
 
 
@@ -25,7 +25,8 @@ Release date: 230809
 [TOC]
 
 
-# Appendix F1 Test Plan
+<!-- -#NOTE set in title the scenario code-name that identify it... -->
+# Appendix F2 Test Scenario `<code-name>`
 
 
 !!! warning "#TODO CHANGE ME. THIS IS A TEMPLATE DOCUMENT"
