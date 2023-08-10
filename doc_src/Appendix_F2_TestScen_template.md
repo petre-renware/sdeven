@@ -74,8 +74,7 @@ Release date: 230810
 
 * **`#`** = an unique number which allow "in document" easy reference of step
 * **`ATo`** = acceptable tolerance
-* **`Dur`** = estimated execution duration
-
+* **`Dur`** = estimated duration
 * **`RqTm`** = required team members indicating:
     * person name
     * person role
@@ -83,6 +82,15 @@ Release date: 230810
 * **`Exc`** = name of person who will execute the scenario (ie, operate the system)
 * **`ExD`** = actual execution date
 * **`Stat`** = status as `PASS` or `FAIL`
+
+
+!!! warning “Notes & Remarks"
+    For each *Scenario step* will be indicated:
+    
+    * *operation(s)* that should d be executed in system (for example controls that shoud be actioned, change focus in field, etc)
+    * *data in* as data that shoud be entered (clear & concrete values, not generic)
+    * *expected output* data that is expect to be obtained and system behavior (messages, events like refresh, waiting cursor, etc)
+
 
 
 
