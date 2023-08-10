@@ -47,7 +47,7 @@
 
 * tbd... close RMAP.002 
 
-* wip_onlydoc_remained... 230810piu_c RMAP.002 - 25_SYTEST template for _Test Scenario_ doc template ==> `Appendix_F2_TestScen_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
+* 230810piu_c RMAP.002 - 25_SYTEST template for _Test Scenario_ doc template ==> `Appendix_F2_TestScen_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
 
 * 230810piu_b tested RMAP.004 and write resolution at its "Updated at" section
 * 230810piu_a created new _RMAP.004 - convert to Word (docx) format the full document_
