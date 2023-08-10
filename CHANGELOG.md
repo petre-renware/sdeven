@@ -28,7 +28,7 @@
 
 * tbd... #NOTE RMAP.003 - integrate old version in new ones (#NOTE already in RMAP.003 content, but.. see doc `how_integrate_oldver_in_newver.md`)
 
-* tbd... #NOTE RMAP.004 - convert to Word (docx) format the full document
+* tbd... #NOTE RMAP.004 - convert to Word (docx) format the full document, implement under DISCLAIMER that is needed a license for a full clear and free doc or set a higher price for this option
 
 * tbd... test `redirect_template_2.md` or simply just go on pure HTML version (`redirect_template_1.md`) __which is safer__
 
@@ -43,7 +43,7 @@
 
 * tbd... review of templates and release
 
-* wip... 230910piu_d close & archive RMAP.002 
+* 230910piu_d closed & archived RMAP.002 
 * 230810piu_c RMAP.002 - 25_SYTEST template for _Test Scenario_ doc template ==> `Appendix_F2_TestScen_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
 * 230810piu_b tested RMAP.004 and write resolution at its "Updated at" section
 * 230810piu_a created new _RMAP.004 - convert to Word (docx) format the full document_
