@@ -61,14 +61,13 @@ Release date: 230810
 ## Scenarios and activities
 
 
-```
 | #   | Scenario step     | ATo  | Dur   | RqTm | OptTm | Decident | Exc | ExD    | Stat |
 | --- | ----------------- | ---- | ----- | ---- | ----- | -------- | --- | ------ | ---- |
 | 1   | `<scenario step>` | 100% | hh:mm | ...  | ...   | name ... | ... | yymmdd | ...  |
 | 2   | ...               | ...  | ...   | ...  | ...   | ...      | ... | ...    | ...  |
 | 3   | ...               | ...  | ...   | ...  | ....  | ...      | ... | ...    | ...  |
 
-```
+
 
 **Legend**
 
