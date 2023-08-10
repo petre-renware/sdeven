@@ -28,7 +28,7 @@ Release date: 230810
 
 # Appendix F2 Test Scenario `<code-name>`
 
--#NOTE `<set in title the scenario code-name that identify it...>`
+-#NOTE `<set in title the scenario code-name that identify it>`
 
 
 
@@ -42,7 +42,7 @@ Release date: 230810
 ## General information
 
 * **code-name**: `<scenario code-name as set in title>`
-* **tested functionality**: `<target functionality to test it>`
+* **tested functionality**: `<target functionality to test>`
 
 
 
