@@ -5,7 +5,7 @@
 
 ***Document control***
 
-* updated at: 230809<br>
+* updated at: 230810<br>
 * updated by: Petre Iordanescu
 
 
@@ -65,7 +65,8 @@
 
 * **Objective:** convert to Word (docx) format the full document
 * **Recorded at:** 230810
-* **Updated at**: n/a
+* **Updated at**:
+    * 230810 [Petre Iordanescu] tested locally, generated `DOCX` from `HTML` & `PDF` ok, resulted document has "protection" footers that can be manually dropped or by using a paid license (price magnitude 1.5 - 3 kUSD), genration time ~10sec for source full SDEVEN HTML and ~1min for full SDEVEN PDF
 * **Recorded by:** Petre Iordanescu (piu)
 * **Detailed  description:**
     * convert to Word (docx) format the full document
