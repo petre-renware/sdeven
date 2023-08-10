@@ -42,7 +42,7 @@ Release date: 230810
 ## General information
 
 * **code-name**: `<scenario code-name as set in title>`
-* ****: #NOTE `<target functionality to test it>`
+* **tested functionality**: #NOTE `<target functionality to test it>`
 
 
 
