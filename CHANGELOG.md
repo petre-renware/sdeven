@@ -26,13 +26,18 @@
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 
-* tbd... a TEST procedure should be made explaining just TEST types: unit, functional integration (#NOTE att version 7.0.13-beta)
+* tbd... #NOTE RMAP.003 - integrate old version in new ones (#NOTE already in RMAP.003 content, but.. see doc `how_integrate_oldver_in_newver.md`)
+
+* tbd... #NOTE RMAP.004 - convert to Word (docx) format the full document, implement under DISCLAIMER that is needed a license for a full clear and free doc or set a higher price for this option
+
+* tbd... test `redirect_template_2.md` or simply just go on pure HTML version (`redirect_template_1.md`) __which is safer__
+
+* tbd... full review of `Licenses and Products (SDEVEN.70-LIP)`. There are a log of mistyping, company name wrong written (for ex inly System instead of RENware Software Systems), when disc ref copyright for open source sys is not clear that is ref OWN systems (not 3rd party) and more...
 
 #### [ end of #TODO_PLAN section ]=========================
 
 
-
-### 7.0.13-beta TESTing procedure (#NOTE wip)
+### 7.0.14-release (#NOTE wip)
 
 * wip...
 
@@ -43,10 +48,47 @@
 
 
 
+### 7.0.13-beta TESTing procedure (#NOTE wip)
+
+* 230910piu_e review of templates and release
+* 230910piu_d closed & archived RMAP.002
+* 230810piu_c RMAP.002 - 25_SYTEST template for _Test Scenario_ doc template ==> `Appendix_F2_TestScen_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
+* 230810piu_b tested RMAP.004 and write resolution at its "Updated at" section
+* 230810piu_a created new _RMAP.004 - convert to Word (docx) format the full document_
+* 230809piu_i `Appendix_F1_TestPlan_template.md` the table from "Scenarios and activities" section, to add more empty lines + to refer it in `SDEVEN.00_INDEX.md`
+* 230809piu_h RMAP.002 - 25_SYTEST template for _Test Plan_ doc template ==> `Appendix_F1_TestPlan_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
+* 230809piu_g put "how to integrate old version in new ones..." - see doc `how_integrate_oldver_in_newver.md` on RMAP.003
+* 230809piu_f review all `SDEVEN.25_SYTEST.md` procedure
+* 230809piu_e write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Proof of Concept_
+* 230809piu_d write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _System hardware requirements_
+* 230809piu_c created a new Markdown template for redirecting `doc_src/redirect_template_2.md` and renamed previous to `...samename..._1.md`
+* 230809piu_b created `RMAP.002 - 25_SYTEST templates` for `SDEVEN.25_SYTEST.md` deliverable doc templates and ref it in procedure
+* 230809piu_a archived `RMAP.001` to `versions_history/RMAP_001.md` and created a Markdown template for redirecting `doc_src/redirect_template.md`
+* 230808piu_c review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
+* 230808piu_b write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Plan_
+* 230808piu_a review, correct & publish `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
+* 230808piu_a write content to `SDEVEN.25_SYTEST.md`, Test Deliverables, _Test Scenarios_
+* 230807piu_d write content to `SDEVEN.25_SYTEST.md`, section _Test Deliverables_ for the whole approach and picture
+* 230807piu_c elaborated a doc `how_integrate_oldver_in_newver.md` ref how to integrate prev old content versions in the current / active one
+* 230807piu_b update `SDEVEN.25_SYTEST.md` section "Production environment" and specify as WARNING that only **release** graded versions are allowed to be installed on `production` environment
+* 230807piu_a write content to `SDEVEN.25_SYTEST.md`, section _Test Types_
+* 230806piu_g clean `SDEVEN.25_SYTEST.md` mistypings unobserved on phone working
+* 230806piu_f write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _Production environment_
+* 230806piu_e write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _QA environment_
+* 230806piu_d write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _Test environment_
+* 230806piu_c update `SDEVEN.25_SYTEST.md` ref test env(s), separate *test and QA*
+* 230806piu_b write content to`SDEVEN.25_SYTEST.md`, section _Testing and working environments_, _Development environment_
+* 230806piu_a `SDEVEN.25_SYTEST.md` new section ref to "Testing and working environments"
+* 230805piu_j write content to `SDEVEN.25_SYTEST.md`, section _Preliminaries_
+* 230805piu_i `SDEVEN.00_INDEX.md` facelift of structure for a better TOC and doc readability
+* 230805piu_h refer test procedure in `SDEVEN.00_INDEX.md`
+* 230805piu_g refer test procedure in `mkdocs.yml`
+* 230805piu_f started a draft (toc & ideas ref sections content) testing procedure, doc `SDEVEN.25_SYTEST`, name *System Software Testing*
 
 
 
-### 7.0.12-beta TESTing procedure (230805 09:15)
+
+### 7.0.12-beta standardize & clean "Appendix (B) DSGN..." procedure (230805 09:15)
 
 * 230805piu_e update `Appendix_B_DSGN_Content_Index.md`,  updated for documents should "indent" for Heading 1 (`#`) entries and left just 1 representing the doc tile
 * 230805piu_d appendices title ("Appendix" like) release dates, versions for following files:

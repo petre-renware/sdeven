@@ -11,6 +11,7 @@ nav:
     - SDEVEN procedures:
         - Administrative (10-ADM): 'SDEVEN.10_ADM.md'
         - Practices (20-RENPRA): 'SDEVEN.20_RENPRA.md'
+        - System Software Testing (25-SYTEST): 'SDEVEN.25_SYTEST.md'
         - Versioning (30-RENVER): SDEVEN.30_RENVER.md
         - Branches (40-BRAN): 'SDEVEN.40_BRAN.md'
         - Operational Meetings (45-OPME): 'SDEVEN.45_OPME.md'
@@ -31,11 +32,16 @@ nav:
         - Appendix (C) Status Report Template (STATUSR): 'Appendix_C_Status_Report.md'
         - Appendix (D) ROADMAP Template (RMAP): 'Appendix_D_ROADMAP_template.md'
         - Appendix (E) Release note template (RELNOTE): 'Appendix_E_RELNOTE_template.md'
+        - Appendix (F1) Test Plan template (TESTPLAN): 'Appendix_F1_TestPlan_template.md'
+        - Appendix (F2) Test Scenario template (TESTSCEN): 'Appendix_F2_TestScen_template.md'
         - Appendix (Q) FAQ. Frequently Asked Questions (FAQ): 'Appendix_Q_faq.md'
     - About SDEVEN: 'About_SDEVEN.md'
     - License: 'LICENSE.md'
     - RENware Software Systems company: 'http://www.renware.eu'
     - Complete SDEVEN Manual (PDF): 'pdfs/print_page.html/print_page.pdf'
+
+
+
 
 
 
@@ -79,7 +85,7 @@ plugins:
     - markdown-exec #NOTE Python execution inside markdown files (execution at build time, "compilation like" NOT dynamically NOT JavaScript)
     - git-revision-date-localized
     # - pdf-export #NOTE DO NOT USE this as does not render mermaid in PDF docs
-    - print-site: #NOTE put print-site to the bottom of the plugins that may might alter your site navigation (affect order of sections in generated HTML)
+    - print-site: #NOTE_IMPORTANT_#NOTE put `print-site` plug in BEFORE `pdf-with-js` in order to works the workaround wit a fake `print_page.md` that will determine generation of 'print_page.pdf' as any other page generated pdf by `pdf-with-js`; ingnore warning ` [mkdocs-print-site] 'print-site' should be defined as the *last* plugin,to ensure...`
         add_to_navigation: true
         print_page_title: 'Complete SDEVEN Manual'
         add_full_urls: true
@@ -131,10 +137,11 @@ theme:
     logo: pictures/SDEVEN_logo.png #NOTE_REN_picture pictures/REN_stamp_logo_transparent.png
     name: material
     features:
-        # - navigation.tabs # left navigation side bar, all level 1 will be shown as top navigation bar
+        #- navigation.tabs # left navigation side bar, all level 1 will be shown as top navigation bar
         - navigation.tracking
         - navigation.tabs.sticky
         - navigation.path
+        - toc.integrate #NOTE integrates all navigation only in left nav bar
     palette:
         primary: teal # see https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/ for other color options
         accent: blue
