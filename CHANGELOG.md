@@ -24,14 +24,15 @@
 
 #### [ start of #TODO_PLAN section ]=========================
 
-* tbd... RMAP.003 - integrate old version in new ones (already in RMAP.003 content, but.. see doc `how_integrate_oldver_in_newver.md`)
-* tbd... test `redirect_templare_x.md`
-
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
 
-* tbd... install a ord generator for full HTML doc - details @ `https://pypi.org/project/aspose-words/` (#NOTE mk me RMAP)
+* tbd... #NOTE RMAP.003 - integrate old version in new ones (#NOTE already in RMAP.003 content, but.. see doc `how_integrate_oldver_in_newver.md`)
 
-* tbd... full review of `Licenses and Products (SDEVEN.70-LIP)`. There are a log of mistyping, company name wrond written (for ex inly System instead of RENware Software Systems), when disc ref copyright for open source sys is not clear that is ref OWN systems (not 3rd party) and more...
+* tbd... #NOTE RMAP.004 - convert to Word (docx) format the full document
+
+* tbd... test `redirect_template_2.md` or simply just go on pure HTML version (`redirect_template_1.md`) __which is safer__
+
+* tbd... full review of `Licenses and Products (SDEVEN.70-LIP)`. There are a log of mistyping, company name wrong written (for ex inly System instead of RENware Software Systems), when disc ref copyright for open source sys is not clear that is ref OWN systems (not 3rd party) and more...
 
 #### [ end of #TODO_PLAN section ]=========================
 
@@ -44,6 +45,7 @@
 
 * wip...
 
+* 230810piu_a created new __RMAP.004 - convert to Word (docx) format the full document__
 * 230809piu_i `Appendix_F1_TestPlan_template.md` the table from "Scenarios and activities" section, to add more empty lines + to refer it in `SDEVEN.00_INDEX.md`
 * 230809piu_h RMAP.002 - 25_SYTEST template for _Test Plan_ doc template ==> `Appendix_F1_TestPlan_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
 * 230809piu_g put "how to integrate old version in new ones..." - see doc `how_integrate_oldver_in_newver.md` on RMAP.003
