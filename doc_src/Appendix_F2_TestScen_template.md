@@ -46,6 +46,8 @@ Release date: 230810
 
 
 
+
+
 ## Requirements
 
 * ... #NOTE here is the list with requirements to execute in good conditions all test scenarios
@@ -59,18 +61,19 @@ Release date: 230810
 ## Scenarios and activities
 
 
-| #   | Scenario code     | ATo  | EsD    | RqTm | OptTm | Decident | Exc | ReqNt | ExD    | Stat |
+| #   | Scenario step     | ATo  | Dur    | RqTm | OptTm | Decident | Exc | ReqNt | ExD    | Stat |
 | --- | ----------------- | ---- | ------ | ---- | ----- | -------- | --- | ----- | ------ | ---- |
-| 1   | `<scenario code>` | 100% | yymmdd | ...  | ...   | name ... | ... | code# | yymmdd | ...  |
+| 1   | `<scenario step>` | 100% | yymmdd | ...  | ...   | name ... | ... | code# | yymmdd | ...  |
 | 2   | ...               | ...  | ...    | ...  | ...   | ...      | ... | ...   | ...    | ...  |
 | 3   | ...               | ...  | ...    | ...  | ....  | ...      | ... | ...   | ...    | ...  |
 
 
 **Legend**
 
-* **`#`** = an unique number which allow "in document" easy reference of activities
+* **`#`** = an unique number which allow "in document" easy reference of step
 * **`ATo`** = acceptable tolerance
-* **`EsD`** = estimated execution date
+* **`Dur`** = estimated execution duration
+
 * **`RqTm`** = required team members indicating:
     * person name
     * person role
