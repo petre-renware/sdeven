@@ -43,12 +43,8 @@
 
 * tbd... review of templates and release
 
-* wip...
-
-* tbd... close RMAP.002 
-
+* wip... 230910piu_d close & archive RMAP.002 
 * 230810piu_c RMAP.002 - 25_SYTEST template for _Test Scenario_ doc template ==> `Appendix_F2_TestScen_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
-
 * 230810piu_b tested RMAP.004 and write resolution at its "Updated at" section
 * 230810piu_a created new _RMAP.004 - convert to Word (docx) format the full document_
 * 230809piu_i `Appendix_F1_TestPlan_template.md` the table from "Scenarios and activities" section, to add more empty lines + to refer it in `SDEVEN.00_INDEX.md`
