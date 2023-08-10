@@ -3,7 +3,7 @@
 
 * **Objective:** deliverable doc templates for **System Software Testing (SDEVEN.25-SYTEST)** procedure
 * **Recorded at:** 230809
-* **Updated at**: 230809 (closed)
+* **Updated at**: closed@230809
 * **Recorded by:** Petre Iordanescu (piu)
 * **Detailed  description:**
     * [x] template for __test scenario__ and ref it in doc at corresponding section - closes @ 230810
