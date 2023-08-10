@@ -6,7 +6,7 @@
 * **Updated at**: 230809 (closed)
 * **Recorded by:** Petre Iordanescu (piu)
 * **Detailed  description:**
-    * [x] template for __test scenario__ and ref it in doc at corresponding section (a FIXME as HTNL comment was left)
+    * [x] template for __test scenario__ and ref it in doc at corresponding section - closes @ 230810
     * [x] template for __test plan__ and ref it in doc at corresponding section (a FIXME as HTNL comment was left) - closed @ 230809
 * **Recommendations:**
     * file to be updated with reference to created templates: `SDEVEN.25_SYTEST.md`
