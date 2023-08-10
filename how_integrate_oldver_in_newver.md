@@ -14,7 +14,7 @@ action plan to integrate old version (`v6.0` in example) in current (new future)
 
 5. create `docs/v6.0/` directory
 
-6. at least in `publishing` branch copy the old version saved site to dir from step (2), ie `static_portal_v6.0/` --> `docs/v6.0/`
+6. at least in `publishing` branch copy the old version saved site to dir from step (2), ie `static_portal_v6.0/` --> `docs/v6.0/` then **make READONLY** `docs/v6.0/` directory (you'll never change it - ir is a closed version !)
 
 * *Take care of:*
     * update new version `index.md` to reference previous version (`v6.0/index.md`)
