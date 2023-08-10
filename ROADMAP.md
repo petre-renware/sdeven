@@ -73,7 +73,7 @@
     * _Aspose_ offer multiple variants for output file (`doc` & `docx`) - choose the _free commercially licensed one_
 * **Recommendations:**
     * use _Aspose_ tool (see refs)
-    * make a _Python script_ that is execute after `mkdocs build` finish execution (in order to have the full doc generated as HTML and PDF)
+    * make a _Python script_ that is execute ***after*** `mkdocs build` finish execution (in order to have the full doc generated as HTML and PDF)
     * create a script (`bash` and `cmd / bat` types) that "integrates" final build (by running Word generator after mkdocs build)
 * **Known dependencies:** -
 * **Assigned to:** Petre Iordanescu
