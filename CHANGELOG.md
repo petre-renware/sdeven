@@ -45,6 +45,7 @@
 
 * wip...
 
+* 230810piu_b tested RMAP.004 and write conclusions at its "Updated at" section
 * 230810piu_a created new __RMAP.004 - convert to Word (docx) format the full document__
 * 230809piu_i `Appendix_F1_TestPlan_template.md` the table from "Scenarios and activities" section, to add more empty lines + to refer it in `SDEVEN.00_INDEX.md`
 * 230809piu_h RMAP.002 - 25_SYTEST template for _Test Plan_ doc template ==> `Appendix_F1_TestPlan_template.md`, update `SDEVEN.25_SYTEST.md` & `mkdocs.yml`
