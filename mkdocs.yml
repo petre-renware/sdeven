@@ -33,9 +33,7 @@ nav:
         - Appendix (D) ROADMAP Template (RMAP): 'Appendix_D_ROADMAP_template.md'
         - Appendix (E) Release note template (RELNOTE): 'Appendix_E_RELNOTE_template.md'
         - Appendix (F1) Test Plan template (TESTPLAN): 'Appendix_F1_TestPlan_template.md'
-
         - Appendix (F2) Test Scenario template (TESTSCEN): 'Appendix_F2_TestScen_template.md'
-
         - Appendix (Q) FAQ. Frequently Asked Questions (FAQ): 'Appendix_Q_faq.md'
     - About SDEVEN: 'About_SDEVEN.md'
     - License: 'LICENSE.md'
