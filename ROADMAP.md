@@ -61,7 +61,7 @@
 
 
 
-## RMAP.004 - convert to Word (docx) format the full document
+## RMAP.004 - convert to Word (docx) format the full document - (temp closed @ 230810)
 
 * **Objective:** convert to Word (docx) format the full document
 * **Recorded at:** 230810
@@ -72,13 +72,13 @@
     * convert to Word (docx) format the full document
     * Aspose offer multiple variants for output file (`doc` & `docx`) - choose the _free commercially licensed one_
 * **Recommendations:**
-    * use _Aspose_ tool details @ `https://pypi.org/project/aspose-words/`
+    * use _Aspose_ tool (see refs)
     * make a _Python script_ that is execute after `mkdocs build` finish execution (in order to have the full doc generated as HTML and PDF)
     * create a script (`bash` and `cmd / bat` types) that "integrates" final build (by running Word generator after mkdocs build)
 * **Known dependencies:** -
-* **Assigned to:** n/a
+* **Assigned to:** Petre Iordanescu
 * **References & notes:**
-    * n/a
+    * _Aspose_ tool details @ `https://pypi.org/project/aspose-words/` 
 
 
 
