@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.13<br>
-Last update: 230805
+Last update: 230810
 
 ***
 
@@ -101,6 +101,7 @@ The appendices contains mainly forms, templates, cheat sheets and other helpers.
 * [Appendix (D) ROADMAP Template (RMAP)](Appendix_D_ROADMAP_template.md){ target="_blank" }
 * [Appendix (E) Release note template (RELNOTE)](Appendix_E_RELNOTE_template.md){ target="_blank" }
 * [Appendix (F1) Test Plan template (TESTPLAN)](Appendix_F1_TestPlan_template.md){ target="_blank" }
+* [Appendix (F2) Test Scenario template (TESTSCEN)](Appendix_F2_TestScen_template.md){ target="_blank" }
 * [Appendix (Q) Frequently Asked Questions (FAQ)](Appendix_Q_faq.md){ target="_blank" }
 
 
