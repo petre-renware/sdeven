@@ -84,3 +84,19 @@ Release date: 230810
 
 
 
+
+
+## Final notes & remarks
+
+-#NOTE this section is reserved for various notes and remarks regarding a particular scenario (refered by line #) or the plan itself
+
+* ...
+* ...
+
+
+
+
+## Approvals
+
+-#NOTE this section is reserved for approver's signature
+
