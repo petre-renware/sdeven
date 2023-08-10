@@ -67,6 +67,7 @@
 * **Recorded at:** 230810
 * **Updated at**:
     * 230810 [Petre Iordanescu] tested locally, generated `DOCX` from `HTML` & `PDF` ok, resulted document has "protection" footers and banners (ie, undesired, unwanted text) that can be manually dropped or by using a paid license (price magnitude 1.5 - 3 kUSD), genration time ~10sec for source full SDEVEN HTML and ~1min for full SDEVEN PDF
+    * 230810 [Petre Iordanescu] **resolution**: not to be used except a licence is paid by client, can be kept as optional feature included in site generation only with paid license
 * **Recorded by:** Petre Iordanescu (piu)
 * **Detailed  description:**
     * convert to Word (docx) format the full document
