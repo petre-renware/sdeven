@@ -174,7 +174,9 @@ docs_dir: './doc_src'
 #NOTE root directory where to be generated portal (should be `./static_portal`)
 site_dir: './static_portal'
 
-
+#NOTE directories intended to exclude - [Petre Iordanescu] designed to keep old SDEVEN versions as ALREADY BUILT SITE (will be copied in `static_portal/` as are)
+exclude_docs: |
+    v_/
 
 #NOTE other useful configurations
 use_directory_urls: false # allow link between pages to work properly when used as OFFLINE deployment (ie, static site an "callable" as `file:///...`)
