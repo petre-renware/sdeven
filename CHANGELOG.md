@@ -35,8 +35,9 @@
 #### [ end of #TODO_PLAN section ]=========================
 
 
-### 7.0.14-release (#NOTE wip)
+### 7.0.14-release multi language or old versions ? (#NOTE wip)
 
+* tbd... ref multi language for material theme, see `https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/`
 * wip...
 
 * 230811piu_a made a test configuration in `mkdocs.yml` ref `exclude_docs:` entry for all directories like `v_/` and created `doc_scr/v0.6/TEST.html` as first step in RMAP.003 implementation
