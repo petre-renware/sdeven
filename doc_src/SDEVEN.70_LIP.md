@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.6<br>
-Release date: 230626
+Version: 7.0.14<br>
+Release date: 230810
 
 ***
 
@@ -15,28 +15,30 @@ Release date: 230626
 
 ## Preamble
 
-This section refers to software licenses and products, how are used and what are good for.
+This procedure refers to software licenses and products, how are used and what are good for.
 
-Procedure present what kind of licenses are practiced and generally how a software system becomes a product (or when can be considered product).
+Procedure present:
 
-<small>
-This procedure is not mandatory for software development process itself but gives an idea about "what will happen with product for which I did write code". The licensing problem is a commercial and legal one. Its just "for your information", just because many people want to know what becomes their work, and because sometimes is good to know why some decisions are made and wht is the rationality behind them.
-</small>
+* what kind of licenses are practiced and
+* how a software system becomes a product (or when can be considered product).
+
+><small>This procedure is not mandatory for software development process but explain how a "program" becomes a "product".</small>
+>
+><small>Also ref licensing aspect, this is clearly a commercial and legal one, but there are situations where licensing needs some *measurable metrics* which can be identified only in strong correlation with software as design and development.</small>
+
 
 
 
 
 ## Software licenses universe
 
-A software license, without any other clause, is about the legal(ity) and right(s) to use the respective product / system.
+Without any other clauses a software license is about the *legal rights to use* the respective product / system.
 
-Generally speaking, you can download, copy, install, remove, etc the system, free and in most cases without any payment required. All legal.
+A software system can download, copied, installed, removed, etc in most cases free (without any payment required). But that's all. From legal perspective **you cannot use it (for any purpose) without a license**. And sometimes even the installation can be considered "out of law".
 
-But there are two things that are not always free and MUST BE ESTABLISHED BY LICENSE:
+Another important fact that must be understood is that a **license DO NOT transfer you the intellectual property of the software code, even of the software product**, You cannot treat it as your own property, You CAN ONLY USE IT *for your own and in your name*. Also you can make safety copies, can backup it and restore it.
 
-* A FUNDAMENTAL FACT: The one **you are not the proprietary of code**, you cannot treat it as its your own property, but you can use it ***JUST for your own and IN YOUR NAME***, make safety copies, backup it, restore it, and
-
-* You **cannot use** it without permission (from legal point of view), EVEN THEN SYSTEM DOES NOT ENFORCE ANY RESTRICTION
+From legal perspective you **cannot use the software** without permission (given by license), Even if system does not enforce any restriction.
 
 
 
@@ -45,28 +47,44 @@ But there are two things that are not always free and MUST BE ESTABLISHED BY LIC
 
 There are 3 kind of license models (types) used by company for software products:
 
-* **open licenses** - these are free (there is no cost to pay for them); for these licenses the company still preserve the *intellectual property and copyright*, just offer for free the rights of use; any other services *are not necessarily and default covered by this license*, but if you how to do it, you're free to download the software, install and use it without any obligations; however, ***you cannot sale / resale*** the system /product as it would be your own property
+`open licenses`
 
-* **turn key licenses** - these are systems / products made especially for a customer, eventually paid by him and the intellectual property is transferred to the customer; so, after finishing the system, ***company has no right to sell / resell or use the code or parts of code AS IT WAS TRANSFERRED***; however, in most cases, two "evidence" read only CD are made with the code for which the intellectual property is transferred
+:   these are *free* (ie, there is no cost to pay for them) - for these licenses the company preserve the *intellectual property and copyright* and offer for free the rights of use - any other services *are not default covered by this license* - *cannot sale or resale* the system / product
 
-* **commercial licenses** - these are strictly with payment for usage; quantification of payment is / can be made in various forms, for example number of users, number of computers, number of processors, quantity of memory, and so on; in most cases, the software restrict usage by "forcing" in a way these quantities, of course first thing being the software ability to "count" for them
 
-Of course there are many other taxonomies but these are relevant for software development as activity, the others being useful for other domains like product management or legal / lawyers structures.
+`turn key licenses`
 
->**IMPORTANT notice**: If not otherwise specified, open licenses should be accompanied with text: "**This software is a copyright of company Systems (REN CONSULTING SOFT ACTIVITY SRL).**". Text should be put at start of license content as to not alter its original text which is usually published and can be referred AS IS.
+:   these are system products *made especially* for a customer, paid by him and the *intellectual property is transferred* to the customer - after finishing the system, *company has no right to sell / resell or use the code or parts of code AS IT WAS TRANSFERRED* - however, in most cases, two "evidence" `read only CDs` are made having a reference of the code for which the intellectual property is transferred
+
+
+`commercial licenses`
+
+:   these are strictly with *payment for usage* - quantification of payment is be made in various forms (and unit of measures), for example number of users, number of computers, number of processors, quantity of memory, and so on - the software can restrict usage (but is not mandatory, being a design specification) by "forcing" in a way these quantities, of course first thing being the software ability to "count" for them
+
+
+!!! warning "IMPORTANT notice"
+    If not otherwise specified, open licenses should be accompanied with text: "**This software is a copyright of company Systems (REN CONSULTING SOFT ACTIVITY SRL).**". Text should be put at start of license content as to not alter its original text which is usually published and can be referred AS IS.
 
 
 
 
 ## System vs Product
 
-For a software there are 3 major "end of cycle": to become a product, to become a system or both.
+!!! tip "Software targets of development cycle"
+    For a software there are 3 major *targets of development cycle*:
 
-As **system**, a software should have an installation procedure, which could be just a documentation or other automation software. This procedure should be *clear*, *well defined* (ie, deterministic, without ambiguities) and *repeatable*.
+    * to become a product
+    * to become a system
+    * to become both.
 
-As **product** must have an *usage documentation* (ie, day by day), an *administration documentation* (ie, installation, configuration, maintenance), a *packaging* procedure.
+As **system**, a software should have an *installation* procedure, which could be just a documentation or other automation software. This procedure should be *clear*, *well defined* (ie, deterministic, without ambiguities) and *repeatable*.
 
-These are from manufacturing point of view, other processes requiring any other issues, for example in marketing a logo would bw required for a product, etc.
+As **product** must have an *usage documentation* (ie, work procedures), an *administration documentation* (ie, installation, configuration, maintenance), a *packaging* procedure.
+
+There are also other "things" especially from commercial point of view such as:
+
+* a logo would bw required for a product
+* presentation materials, presentation views (ie, slides), a presentation site, some hints for sales and bid teams (ie, `130-SKIT` elements)
 
 This methodology assures that the essential parts of both taxonomies will be covered, at least in raw forms creating the base for future / next refinement levels.
 
