@@ -51,7 +51,8 @@ For supplementary detailes ref test types see [25-SYTEST procedure, "Test types"
     * production environment *first creation*,
     * live demo machines,
     * any other ad-hoc required environments
-their installation, cloning, backup, making iso images, availability (from different locations according to needs), security issues, and so on
+
+for their installation, cloning, backup, making iso images, availability (from different locations according to needs), security issues, and so on
 
 
 ### Project management
