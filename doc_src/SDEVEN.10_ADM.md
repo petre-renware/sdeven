@@ -14,7 +14,13 @@ Release date: 230812
 
 This procedure describes the **roles** used in software development organizational structure. Roles are presented by software engineering *activity domain* and are not strict related only to software code development activity.
 
-Also procedure presents some aspects and issues regarding **projects and teams organization** in software engineering process, aspects as seen from *staffing perspective*.
+Also procedure presents *VERY BRIEFLY* some other aspects and issues regarding:
+
+* **projects and teams organization** in software engineering process, aspects as seen from *staffing perspective*
+
+* **working technical environments** required for a good software production process
+
+* some things ref **escalation procedures and practices** just to be known that they exists and are part of the process...
 
 
 
@@ -70,6 +76,7 @@ Teams are dynamically allocated per projects as needed. (**DYNAMIC ALLOCATION**)
 ### Applicable procedures
 
 For a detailed description of project management policies refer the applicable *Project Management Methodology*.
+
 
 
 
