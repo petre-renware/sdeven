@@ -64,9 +64,11 @@ For supplementary detailes ref test types see [25-SYTEST procedure, "Test types"
     * check that a version from roadmap is completely and well defined and is relevant for market and as current best practices
     * checks financial aspects of projects
 
-* **ptm** *project technical compliance tester / auditor* - check if a version that is intended to be released is complete enough to be released (documentation, migration, and so on)
+* **pqm** *project technical compliance tester & auditor* - check if a version that is intended to be released is completed and ca be released (for documentation, migrations, procedures, release notes, and so on)
 
-* **pm** *project manager*
+* **ptl** *project team leader* - assure operations management from technical point of view (aka team leading)
+
+* **pm** *project manager* this does bot need details here
 
 
 
