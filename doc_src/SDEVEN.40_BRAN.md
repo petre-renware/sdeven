@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.5<br>
-Release date: 230620
+Version: 7.0.14<br>
+Release date: 230812
 
 ***
 
@@ -77,11 +77,41 @@ Usually, as not stated otherwise in a project, the following branches should be 
 
 ## Graphic basic flow
 
-This diagram shows the basic flow for `master (main)`, `development` and one `xxx-dev` branch. Also on graphic the practices ref tagging are shown:
+This diagram shows the basic flow for `master (main)`, `development` and one `xxx-dev` branch. Also on graphic the practices ref tagging are shown.
+
+**Example for git 1<sup>st</sup> organization by issues**
 
 ``` mermaid
 ---
-title: SDEVEN basic git flow
+title: git flow org by issues
+---
+gitGraph
+    commit id: "init repo"
+    branch "development"
+    commit id: "start of iss A"
+    branch "iss-A"
+    commit
+    commit
+    commit id: "alpha rdy to test"
+    branch "qa-iss-A"
+    commit id: "test of iss A"
+    commit id: "beta PASSED"
+    checkout "development"
+    merge "qa-iss-A" tag: "beta of iss-A"
+    commit id: "prep for release"
+    branch "qa-release"
+    commit id: "documentation Ok"
+    commit id: "deployment kit OK"
+    commit id: "release PASSED"
+    checkout "main"
+    merge "qa-release" tag: "M.m.p-release"
+```
+
+**Example for git 1<sup>st</sup> organization by developers**
+
+``` mermaid
+---
+title: git flow org by developer
 ---
 gitGraph
     commit
