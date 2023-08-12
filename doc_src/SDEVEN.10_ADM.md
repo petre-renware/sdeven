@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.8<br>
-Release date: 230730
+Version: 7.0.14<br>
+Release date: 230812
 
 ***
 
@@ -11,9 +11,8 @@ Release date: 230730
 
 [TOC]
 
-## Preamble
 
-This section describes the organization environment and framework of software development structure.
+This procedure describes the roles used in software development organizational structure. Roles are presented by software engineering *activity domain* and are not strict related only to software code development activity.
 
 
 
