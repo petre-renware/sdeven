@@ -87,6 +87,16 @@ gitGraph
     commit id: "init repo"
     branch "development"
     commit id: "start of iss A"
+    branch "iss-A"
+    commit
+    commit
+    commit id: "alpha rdy to test"
+    branch "qa-iss-A"
+    commit id: "test of iss A"
+    commit id: "beta PASSED"
+    checkout "development"
+    merge "qa-iss-A" tag: "beta of iss-A"
+    
 
 
 
