@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.5<br>
-Release date: 230619
+Version: 7.0.14<br>
+Release date: 230812
 
 ***
 
@@ -12,9 +12,17 @@ Release date: 230619
 [TOC]
 
 
-## Preamble
 
-This procedure contains common used practices of development work especially when using standard `git` systems. Objective is to assure a good level of communication, exchange information, synchronizing activities and work, presenting results and obtain best benefits.
+This procedure recommend "day-by-day" practices in software development work targeting the following objectives:
+
+* to assure a good level of communication and exchange information
+* to create premises for a good synchronization of activities and work
+* to allow for clear presentations of work results and obtain best benefits
+
+
+!!! tip "Git usage"
+    Recommendations are more easily applicable when using standard `git` systems (*practice strongly recommended by SDEVEN methodology*).
+
 
 
 
@@ -22,11 +30,12 @@ This procedure contains common used practices of development work especially whe
 
 Here is a list with the most common and frequent situations:
 
-* never change ANYTHING ref a *closed version*. Better is to create a new issue instead of changing the existing one.
+* *never change anything for a closed version* or *issue*. Normal way is to create a new issue instead of changing the existing one.
 
 * organize development issues in *sprints* as small chunks of changes that have clear objective, specs (following Agile principle) and a short enough deadline to remain "*useful & valuable*" at finish
 
-* when work at an issue make a dedicated branch, and MAKE STRICTLY WHAT IS INTENDED, EXPECTED,  REQUIRED TO DO, otherwise so it will be difficult to reverse work in case of something goes wrong and is not in issue objective. This usually will high impact the quality of result and clearly the deadline term. Respect the principle that states "when you do something, do ONLY THAT THING and do it WELL".
+* when work for an issue always create a dedicated branch, and make STRICTLY WHAT IS INTENDED, EXPECTED and REQUIRED TO DO (otherwise could be difficult to reverse work, for example in case of something goes wrong with unlikely impact to the quality of result and the deadline term). Respect the principle that states "*when you do something, do ONLY THAT THING and do it WELL*".
+
 
 
 
@@ -35,7 +44,6 @@ Here is a list with the most common and frequent situations:
 * always make a branch for each change / sprint, even is a short one (will allow you to quickly rollback work) - this branch should be locally on your development machine but is not mandatory, it could be remote and devops engineer should be notified
 
 * try to *avoid mixing with other branches* even if they're still yours (as work in progress)
-
 
 
 
@@ -60,6 +68,7 @@ Here is a check list regarding most important issues that need attention before 
 
 
 
+
 ## Technical issues regarding syncing and distributed execution
 
 * ref sync subject objects it is recommended to be accompany them with useful metadata at least with info ref to *last sync* date time stamp
@@ -76,6 +85,7 @@ More information, techniques and practices can be find in template of [Software 
 
 
 
+
 ## Tool stacks components versions
 
 * new (not enough tested in market) version of a toolstack component must be avoided, especially when is a core one for system where work is done
@@ -83,6 +93,7 @@ More information, techniques and practices can be find in template of [Software 
 * if a feature intended to be used is not backward compatible, before using or updating it must check for:
     * the impact to already developed or in development code by any member
     * adoption of this version in standard operating systems
+
 
 
 
