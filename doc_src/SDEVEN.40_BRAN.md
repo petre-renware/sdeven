@@ -81,6 +81,20 @@ This diagram shows the basic flow for `master (main)`, `development` and one `xx
 
 ``` mermaid
 ---
+title: git flow 1st by issue
+---
+gitGraph
+    commit id: "init repo"
+    branch "development"
+    commit id: "start of iss A"
+
+
+
+```
+
+
+``` mermaid
+---
 title: SDEVEN basic git flow
 ---
 gitGraph
