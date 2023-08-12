@@ -70,6 +70,18 @@ markdown_extensions:
 
 
 
+#NOTE language options - FUTURE FEATURE - should first have a translation...
+#extra:
+#  alternate:
+#    - name: English
+#      link: /
+#      lang: en
+#    - name: Romanian
+#      link: /ro/
+#      lang: ro
+
+
+
 
 #NOTE required to render `mermaid` diagrams
 extra_javascript:
@@ -134,6 +146,7 @@ plugins:
 
 #NOTE provide material theme
 theme:
+    # language: en #NOTE FUTURE FEATURE - should first have a translation...
     logo: pictures/SDEVEN_logo.png #NOTE_REN_picture pictures/REN_stamp_logo_transparent.png
     name: material
     features:
@@ -141,7 +154,7 @@ theme:
         - navigation.tracking
         - navigation.tabs.sticky
         - navigation.path
-        - toc.integrate #NOTE integrates all navigation only in left nav bar
+        #- toc.integrate #NOTE integrates all navigation only in left nav bar
     palette:
         primary: teal # see https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/ for other color options
         accent: blue

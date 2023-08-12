@@ -35,11 +35,16 @@
 #### [ end of #TODO_PLAN section ]=========================
 
 
-### 7.0.14-release multi language or old versions ? (#NOTE wip)
+
+### 7.0.14-beta procedures review & prepare for translation
 
 * tbd... ref multi language for material theme, see `https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/`
+* tbd... oth procedures review then (before 2023-0814) release
 * wip...
 
+* 230812piu_b more:
+    * [x] made left-side navigation without integrating page TOC because is too bushy (complex) to find out what you need (if you know, otherwise...) +
+    * [x] tested (OK-PASS) and left commented in `mkdocs.yml` what is needed to activate multi-language - a translation engine is REQUIRED, should see how...
 * 230812piu_a review & update `SDEVEN.10-ADM` procedure
 * 230811piu_a made a test configuration in `mkdocs.yml` ref `exclude_docs:` entry for all directories like `v_/` and created `doc_scr/v0.6/TEST.html` as first step in RMAP.003 implementation
 * 230810piu_f review & update of _Licenses and Products (SDEVEN.70-LIP)_ procedure (file `SDEVEN.70_LIP.md`)
@@ -47,13 +52,7 @@
 
 
 
-
-
-
-
-
-
-### 7.0.13-beta TESTing procedure (#NOTE wip)
+### 7.0.13-beta TESTing procedure (230810 17:00)
 
 * 230810piu_e review of templates and release
 * 230810piu_d closed & archived RMAP.002
