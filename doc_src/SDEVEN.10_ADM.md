@@ -40,9 +40,10 @@ Also procedure presents *VERY BRIEFLY* some other aspects and issues regarding:
 For supplementary detailes ref test types see [25-SYTEST procedure, "Test types" section](SDEVEN.25_SYTEST.md#test-types).
 
 
-### DevOps and systems administration
+### Infrastructure systems administration
 
-* **radm** *repository admin* - assures the project / software repository(es) are up to date, clean and can be accessed by team
+* **radm** *repository admin* - assures the project `Git` repository(es) are up to date, clean, can be accessed by team, current maintenance (for example merges that sould be made remotely because of large data volumes to re-pull) and periodic maintenance (git clean, drop unnecessary commits, etc)
+
 * **dadm** *dev infra admin* - assure the drvelopment infrastructure / environment for a project, meaning at least: development, testing, production like, live demo machines, their installation, cloning, backup, making iso images, availability (from different locations according to needs), security issues, and so on
 
 
