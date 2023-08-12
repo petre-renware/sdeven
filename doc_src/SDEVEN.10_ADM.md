@@ -111,7 +111,7 @@ Working environments can be classified as:
 * *test* (aka QA-envs) - for testing issues, regardless by which members are (to be) done
 * *production* systems - also for testing issues but used in final stages, just before committing work to client users. These environments should be as much as possible very appropriate to a real machine that exists in current use at client
 
-For supplementary detailes ref working environments see [25-SYTEST procedure, "Test types" section](SDEVEN.25_SYTEST.md#testing-and-working-environments).
+For supplementary detailes ref working environments see [25-SYTEST procedure, "Testing and working environments" section](SDEVEN.25_SYTEST.md#testing-and-working-environments).
 
 
 
