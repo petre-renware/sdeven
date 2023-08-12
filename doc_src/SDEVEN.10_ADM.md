@@ -74,10 +74,14 @@ For supplementary detailes ref test types see [25-SYTEST procedure, "Test types"
 
 ### Development and research
 
-* **dev** *developers* - assure code, programs, scripts etc writing 
+* **dev** *developers* - assure code, programs, scripts etc writing
+
 * **sen** *software engineers* - assure technical organization, design, architectures, toolstacks, practices, patterns
-* **ban** *analysts* - assure understanding of targeted information domains, elaborate functional testing strategy plans 
-* **rad** *researchers* - assure discovery and usage strategies for technical market (best) practices and patterns; elaborate methods for different technologies usage, elaborate integration strategies 
+
+* **ban** *analysts* - assure understanding of targeted information domains, elaborate functional testing strategy plans
+
+* **rad** *researchers* - assure discovery and usage strategies for technical market (best) practices and patterns; elaborate methods for different technologies usage, elaborate integration strategies
+
 * **twr** *technical writer* - write and check technical documentation
 
 
@@ -110,11 +114,13 @@ For a detailed description of project management policies refer the applicable *
 Working environments can be classified as:
 
 * *development* - usually on personal computer, but could be situations where one or more development servers are needed especially for remote work, operating system issues, processing power, testing on more "real" machines, etc
+
 * *test* (aka QA-envs) - for testing issues, regardless by which members are (to be) done
+
 * *production* systems - also for testing issues but used in final stages, just before committing work to client users. These environments should be as much as possible very appropriate to a real machine that exists in current use at client
 
-For supplementary detailes ref working environments see [25-SYTEST procedure, "Testing and working environments" section](SDEVEN.25_SYTEST.md#testing-and-working-environments).
 
+For supplementary detailes ref working environments see [25-SYTEST procedure, "Testing and working environments" section](SDEVEN.25_SYTEST.md#testing-and-working-environments).
 
 
 
