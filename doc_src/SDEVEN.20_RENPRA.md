@@ -13,11 +13,15 @@ Release date: 230812
 
 
 
-This procedure contains common used practices of development work especially when using standard `git` versioning systems (*practice strongly recommended by SDEVEN methodology*). The objectives are:
+This procedure recommend "day-by-day" practices in software development work targeting the following objectives:
 
 * to assure a good level of communication and exchange information
 * to create premises for a good synchronization of activities and work
 * to allow for clear presentations of work results and obtain best benefits
+
+
+!!! tip "Git usage"
+    Recommendations are easier applicable when using standard `git` versioning systems (*practice strongly recommended by SDEVEN methodology*).
 
 
 
