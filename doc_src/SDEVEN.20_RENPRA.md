@@ -21,7 +21,7 @@ This procedure recommend "day-by-day" practices in software development work tar
 
 
 !!! tip "Git usage"
-    Recommendations are easier applicable when using standard `git` versioning systems (*practice strongly recommended by SDEVEN methodology*).
+    Recommendations are more easily applicable when using standard `git` systems (*practice strongly recommended by SDEVEN methodology*).
 
 
 
