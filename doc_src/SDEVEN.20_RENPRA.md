@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.5<br>
-Release date: 230619
+Version: 7.0.14<br>
+Release date: 230812
 
 ***
 
@@ -12,9 +12,13 @@ Release date: 230619
 [TOC]
 
 
-## Preamble
 
-This procedure contains common used practices of development work especially when using standard `git` systems. Objective is to assure a good level of communication, exchange information, synchronizing activities and work, presenting results and obtain best benefits.
+This procedure contains common used practices of development work especially when using standard `git` versioning systems (*practice strongly recommended by SDEVEN methodology*). The objectives are:
+
+* to assure a good level of communication and exchange information
+* to create premises for a good synchronization of activities and work
+* to allow for clear presentations of work results and obtain best benefits
+
 
 
 
@@ -30,12 +34,12 @@ Here is a list with the most common and frequent situations:
 
 
 
+
 ## Branches and repository
 
 * always make a branch for each change / sprint, even is a short one (will allow you to quickly rollback work) - this branch should be locally on your development machine but is not mandatory, it could be remote and devops engineer should be notified
 
 * try to *avoid mixing with other branches* even if they're still yours (as work in progress)
-
 
 
 
@@ -60,6 +64,7 @@ Here is a check list regarding most important issues that need attention before 
 
 
 
+
 ## Technical issues regarding syncing and distributed execution
 
 * ref sync subject objects it is recommended to be accompany them with useful metadata at least with info ref to *last sync* date time stamp
@@ -76,6 +81,7 @@ More information, techniques and practices can be find in template of [Software 
 
 
 
+
 ## Tool stacks components versions
 
 * new (not enough tested in market) version of a toolstack component must be avoided, especially when is a core one for system where work is done
@@ -83,6 +89,7 @@ More information, techniques and practices can be find in template of [Software 
 * if a feature intended to be used is not backward compatible, before using or updating it must check for:
     * the impact to already developed or in development code by any member
     * adoption of this version in standard operating systems
+
 
 
 
