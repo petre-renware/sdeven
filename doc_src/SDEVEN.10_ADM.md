@@ -37,7 +37,7 @@ Also procedure presents *VERY BRIEFLY* some other aspects and issues regarding:
 
 * **sect** *security tester* - check for system security according to usual practices, known / usual attacks and vulnerabilities
 
-For supplementary detailes ref test types ([see  25-SYTEST procedure, "Test types" section](SDEVEN.25_SYTEST.md#test-types)).
+For supplementary detailes ref test types see [25-SYTEST procedure, "Test types" section](SDEVEN.25_SYTEST.md#test-types).
 
 
 ### DevOps and systems administration
