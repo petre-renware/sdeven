@@ -29,9 +29,12 @@ Also procedure presents *VERY BRIEFLY* some other aspects and issues regarding:
 
 ### Testing
 
-* **funt** *functional tester* - test the system from the functional point of view (black-box testing)
-* **scat** *external standards compliance tester / auditor* - check the system declared external standards for compliance at least minimum mandatory requirements; a;so check if standard is still active, used at least as best practices and relevant for system 
+* **funt** *functional tester* - test the system from functional point of view ([see  25-SYTEST pricedure, "Test types" section](SDEVEN.25_SYTEST.html#test-types)
+
+* **scat** *external standards compliance tester / auditor* - check the system declared external standards for compliance at least minimum mandatory requirements; a;so check if standard is still active, used at least as best practices and relevant for system
+
 * **isat** *internal standards tester / auditor* - check if the system is compliant with company applicable and relevant standards
+
 * **sect** *security tester* - check for system security according to usual practices, known / usual attacks and vulnerabilities
 
 
