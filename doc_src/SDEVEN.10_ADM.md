@@ -29,7 +29,7 @@ Also procedure presents *VERY BRIEFLY* some other aspects and issues regarding:
 
 ### Testing
 
-* **funt** *functional tester* - test the system from functional point of view ([see  25-SYTEST pricedure, "Test types" section](SDEVEN.25_SYTEST.md#test-types)
+* **funt** *functional tester* - test the system from functional point of view ([see  25-SYTEST pricedure, "Test types" section](SDEVEN.25_SYTEST.md#test-types))
 
 * **scat** *external standards compliance tester / auditor* - check the system declared external standards for compliance at least minimum mandatory requirements; a;so check if standard is still active, used at least as best practices and relevant for system
 
