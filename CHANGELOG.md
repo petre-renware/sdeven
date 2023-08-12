@@ -43,7 +43,7 @@
 
 * wip...
 
-* wip... 230812piu_c review &update `SDEVEN.20-RENPRA` procedure
+* 230812piu_c review &update `SDEVEN.20-RENPRA` procedure
 * 230812piu_b more:
     * [x] made left-side navigation without integrating page TOC because is too bushy (complex) to find out what you need (if you know, otherwise...) +
     * [x] tested (OK-PASS) and left commented in `mkdocs.yml` what is needed to activate multi-language - a translation engine is REQUIRED, should see how...
