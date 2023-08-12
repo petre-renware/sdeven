@@ -34,7 +34,7 @@ Here is a list with the most common and frequent situations:
 
 * organize development issues in *sprints* as small chunks of changes that have clear objective, specs (following Agile principle) and a short enough deadline to remain "*useful & valuable*" at finish
 
-* when work for an issue always create a dedicated branch, and make STRICTLY WHAT IS INTENDED, EXPECTED and REQUIRED TO DO (otherwise could be difficult to reverse work, for example in case of something goes wrong and is not in issue objective with unlikely impact to the quality of result and the deadline term). Respect the principle that states "when you do something, do ONLY THAT THING and do it WELL".
+* when work for an issue always create a dedicated branch, and make STRICTLY WHAT IS INTENDED, EXPECTED and REQUIRED TO DO (otherwise could be difficult to reverse work, for example in case of something goes wrong with unlikely impact to the quality of result and the deadline term). Respect the principle that states "*when you do something, do ONLY THAT THING and do it WELL*".
 
 
 
