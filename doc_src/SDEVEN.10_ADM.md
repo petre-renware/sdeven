@@ -66,7 +66,7 @@ For supplementary detailes ref test types see [25-SYTEST procedure, "Test types"
 
 * **pqm** *project technical compliance tester & auditor* - check if a version that is intended to be released is completed and ca be released (for documentation, migrations, procedures, release notes, and so on)
 
-* **ptl** *project team leader* - assure operations management from technical point of view (aka team leading)
+* **ptm** *project team manager, leader* - assure operations management from technical point of view (aka team leading)
 
 * **pm** *project manager* this does bot need details here
 
