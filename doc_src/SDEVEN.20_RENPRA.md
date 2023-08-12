@@ -30,11 +30,11 @@ This procedure recommend "day-by-day" practices in software development work tar
 
 Here is a list with the most common and frequent situations:
 
-* never change ANYTHING ref a *closed version*. Better is to create a new issue instead of changing the existing one.
+* *never change anything for a closed version* or *issue*. Normal way is to create a new issue instead of changing the existing one.
 
 * organize development issues in *sprints* as small chunks of changes that have clear objective, specs (following Agile principle) and a short enough deadline to remain "*useful & valuable*" at finish
 
-* when work at an issue make a dedicated branch, and MAKE STRICTLY WHAT IS INTENDED, EXPECTED,  REQUIRED TO DO, otherwise so it will be difficult to reverse work in case of something goes wrong and is not in issue objective. This usually will high impact the quality of result and clearly the deadline term. Respect the principle that states "when you do something, do ONLY THAT THING and do it WELL".
+* when work for an issue always create a dedicated branch, and make STRICTLY WHAT IS INTENDED, EXPECTED and REQUIRED TO DO (otherwise could be difficult to reverse work, for example in case of something goes wrong and is not in issue objective with unlikely impact to the quality of result and the deadline term). Respect the principle that states "when you do something, do ONLY THAT THING and do it WELL".
 
 
 
