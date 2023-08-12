@@ -36,7 +36,7 @@
 
 
 
-### 7.0.14-beta procedures review & prepare for translation (#FIXME wip...)
+### 7.0.14-release procedures review & prepare for translation (#FIXME wip...)
 
 * tbd... ref multi language for material theme, see `https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/`
 * tbd... oth procedures review then (before 2023-0814) release
