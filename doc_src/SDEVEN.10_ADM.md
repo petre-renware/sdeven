@@ -12,7 +12,10 @@ Release date: 230812
 [TOC]
 
 
-This procedure describes the roles used in software development organizational structure. Roles are presented by software engineering *activity domain* and are not strict related only to software code development activity.
+This procedure describes the **roles** used in software development organizational structure. Roles are presented by software engineering *activity domain* and are not strict related only to software code development activity.
+
+Also procedure presents some aspects and issues regarding **projects and teams organization** in software engineering process, aspects as seen from *staffing perspective*.
+
 
 
 
