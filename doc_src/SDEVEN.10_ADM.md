@@ -44,7 +44,7 @@ For supplementary detailes ref test types see [25-SYTEST procedure, "Test types"
 
 * **radm** *repository admin* - assures the project `Git` repository(es) are up to date, clean, can be accessed by team, current maintenance (for example merges that should be made remotely because of large data volumes to re-pull) and periodic maintenance (git clean, drop unnecessary commits, etc)
 
-* **dadm** *dev infra admin* - assure the work environments infrastructure for a project, at least for:
+* **dadm** *dev infra admin* - assure the work environments infrastructure for a project:
     * development environments,
     * testing environments,
     * qa environments,
