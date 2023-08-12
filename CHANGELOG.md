@@ -43,7 +43,7 @@
 
 * wip...
 
-* wip... 230812piu_d review & update `SDEVEN.40-BRAN` procedure
+* 230812piu_d review & update `SDEVEN.40-BRAN` procedure
 * 230812piu_c review &update `SDEVEN.20-RENPRA` procedure
 * 230812piu_b more:
     * [x] made left-side navigation without integrating page TOC because is too bushy (complex) to find out what you need (if you know, otherwise...) +
