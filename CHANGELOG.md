@@ -40,6 +40,7 @@
 * tbd... ref multi language for material theme, see `https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/`
 * wip...
 
+* wip... 230812piu_a review & update `SDEVEN.10-ADM` procedure
 * 230811piu_a made a test configuration in `mkdocs.yml` ref `exclude_docs:` entry for all directories like `v_/` and created `doc_scr/v0.6/TEST.html` as first step in RMAP.003 implementation
 * 230810piu_f review & update of _Licenses and Products (SDEVEN.70-LIP)_ procedure (file `SDEVEN.70_LIP.md`)
 
