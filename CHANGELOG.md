@@ -42,6 +42,7 @@
 
 * wip...
 
+* 230813piu_g updated ROADMAP for `RMAP.003 - integrate old version in new ones` ref `230813piu_f`
 * 230813piu_f prepared `doc_src/v_7.0/` directory to accommodate 7.0 version and referred it in `index.html` (LINK IS COMMENTED up to v7.0 release and 7.1 in progress)
 * 230813piu_e tested 230813piu_b (OK), 230813piu_c (OK), 230813piu_d (OK) and published site
 * 230813piu_d fixed `SDEVEN.65-DEREV` doubled word "allows" in introductory section
