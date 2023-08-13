@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.12<br>
-Release date: 230805
+Version: 7.0.14<br>
+Release date: 230813
 
 ***
 
@@ -13,7 +13,6 @@ Release date: 230805
 
 
 
-## Preamble and goals
 
 This procedure contains usual project structure and it is just a recommendation. The *Project Manager* will organize the project in the best possible mode in order to to be relevant in specific project situations. A common practice is to start with these recommendations and to add (or refine) elements that reflects project particular aspects.
 
