@@ -43,8 +43,9 @@ All product system code is kept under `830-DEV` directory. The objective of its 
 
 Each of these directories will be explained in next sections.
 
-!!! warning "Naming conventions"
-    To avoid conflicts and misinterpretations at programming language level it is recommended that in FILES and DIRECTORY NAMES to avoid characters space (` `) and (`-`) and to replace them with underscores (`_`).
+!!! warning "Conventions"
+    * To avoid conflicts and misinterpretations at programming language level it is recommended that in FILES and DIRECTORY NAMES to avoid characters space (` `) and (`-`) and to replace them with underscores (`_`)
+    * it is good practice that all directories (especially those that are created just because the deployed system will need them) to contain an *empty hidden file* usual named `.gitkeep` that will prevent its deletion by some git products. Also these directories usually are subject of `.gitignore` file
 
 For a clear "picture" please refer the ["Example of project full directory structure" section](#example-of-project-full-directory-structure).
 
@@ -228,6 +229,7 @@ Here is shown an example of project directory structure starting from a `PROJECT
         SysInit/
         project.toml
         README.md
+        .gitignore
         requirements.txt
     880-RLSE/       # specific organization (see procedure 60-RELM) ...
 
