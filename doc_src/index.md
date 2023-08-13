@@ -15,9 +15,12 @@
 
 [Download complete manual PDF](pdfs/print_page.html/print_page.pdf)
 
-Previous versions:
+Previous versions: *n/a*
 
-* [release 6.0](v_0.6/index.html) (*ATTN* this is a very old release and could not work always - to obtain an archive please call [support](http://www.renware.eu))
+<!--#TODO when 7.0 was release and another version is in progress. Also drop n/a from item list...
 
+* [release 7.0](v_7.0/index.html)
+
+-->
 
 

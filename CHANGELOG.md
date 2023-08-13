@@ -42,8 +42,7 @@
 
 * wip...
 
-* -#TODO_tstme 230813piu_f prepared `doc_src/v_0.6/` directory to accommodate 0.6 version and referred it in `index.md`
-
+* 230813piu_f prepared `doc_src/v_7.0/` directory to accommodate 7.0 version and referred it in `index.html` (LINK IS COMMENTED up to v7.0 release and 7.1 in progress)
 * 230813piu_e tested 230813piu_b (OK), 230813piu_c (OK), 230813piu_d (OK) and published site
 * 230813piu_d fixed `SDEVEN.65-DEREV` doubled word "allows" in introductory section
 * 230813piu_c update `SDEVEN.70-LIP` & `SDEVEN.62-PSTR` ref system logs, its directory and rotate policies
