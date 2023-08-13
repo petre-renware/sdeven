@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.14<br>
-Release date: 230810
+Release date: 230813
 
 ***
 
@@ -13,7 +13,6 @@ Release date: 230810
 
 
 
-## Preamble
 
 This procedure refers to software licenses and products, how are used and what are good for.
 
@@ -77,7 +76,12 @@ There are 3 kind of license models (types) used by company for software products
     * to become a system
     * to become both.
 
-As **system**, a software should have an *installation* procedure, which could be just a documentation or other automation software. This procedure should be *clear*, *well defined* (ie, deterministic, without ambiguities) and *repeatable*.
+As **system**, a software should have:
+
+* an *installation procedure*, which could be just a documentation or other automation software. This procedure should be *clear*, *well defined* (ie, deterministic, without ambiguities) and *repeatable*.
+
+* a *logging mechanism* and some rotate policies. Using host operating system standards is recommend in order to be easy maintained by any system administrator
+
 
 As **product** must have an *usage documentation* (ie, work procedures), an *administration documentation* (ie, installation, configuration, maintenance), a *packaging* procedure.
 
