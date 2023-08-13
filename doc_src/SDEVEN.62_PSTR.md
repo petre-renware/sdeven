@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.12<br>
-Release date: 230805
+Version: 7.0.14<br>
+Release date: 230813
 
 ***
 
@@ -13,7 +13,6 @@ Release date: 230805
 
 
 
-## Preamble and goals
 
 This procedure contains usual project structure and it is just a recommendation. The *Project Manager* will organize the project in the best possible mode in order to to be relevant in specific project situations. A common practice is to start with these recommendations and to add (or refine) elements that reflects project particular aspects.
 
@@ -34,6 +33,7 @@ All product system code is kept under `830-DEV` directory. The objective of its 
     * **docs/** [go to section](#docs-directory)
     * **pjm/** [go to section](#pjm-directory)
     * **setup/** [go to section](#setup-directory)
+    * **logs/** [go to section](#logs-directory)
     * **static_portal/** [go to section](#static_portal-directory)
     * **sysInit/** [go to section](#sysinit-directory)
     * **<system_module_A\>/** - directory dedicated for <system module "A"\> [go to section](#system_module_x-directory)
@@ -43,8 +43,9 @@ All product system code is kept under `830-DEV` directory. The objective of its 
 
 Each of these directories will be explained in next sections.
 
-!!! warning "Naming conventions"
-    To avoid conflicts and misinterpretations at programming language level it is recommended that in FILES and DIRECTORY NAMES to avoid characters space (` `) and (`-`) and to replace them with underscores (`_`).
+!!! warning "Conventions"
+    * To avoid conflicts and misinterpretations at programming language level it is recommended that in FILES and DIRECTORY NAMES to avoid characters space (` `) and (`-`) and to replace them with underscores (`_`)
+    * it is good practice that all directories (especially those that are created just because the deployed system will need them) to contain an *empty hidden file* usual named `.gitkeep` that will prevent its deletion by some git products. Also these directories usually are subject of `.gitignore` file
 
 For a clear "picture" please refer the ["Example of project full directory structure" section](#example-of-project-full-directory-structure).
 
@@ -117,6 +118,15 @@ The aim of this directory is to keep code to install the system by this understa
     * can assure enough independence of OS specific commands and "formats" (for example the directory separation character, `\` vs `/`)
     * can be executed on all known public OS-es (Linux, MacOS, Windows)
     * one of the "perfect" candidates is *Python 3*
+
+
+
+
+### **logs** directory
+
+This directory will accommodate the *application logs*. It is complete optional and is recommended to follow the host operating system "standards".
+
+Regardless which directory will be used for application logs, a *log rotate* policy is desirable.
 
 
 
@@ -209,6 +219,8 @@ Here is shown an example of project directory structure starting from a `PROJECT
         docs/
         pjm/        # organization specific project management and contractual docs ...
         setup/
+        logs/				# optional
+            .gitkeep		# empty hidden file to keep dir on git system
         static_portal/
         <sys_module_A...dir>/
         <sys_module_B...dir>/
@@ -217,6 +229,7 @@ Here is shown an example of project directory structure starting from a `PROJECT
         SysInit/
         project.toml
         README.md
+        .gitignore
         requirements.txt
     880-RLSE/       # specific organization (see procedure 60-RELM) ...
 
