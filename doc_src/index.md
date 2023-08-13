@@ -13,7 +13,7 @@
 
 [Start book here](SDEVEN.00_INDEX.md)
 
-[Download complete manual PDF](./pdfs/print_page.html/print_page.pdf)
+[Download complete manual PDF](pdfs/print_page.html/print_page.pdf)
 
 Previous versions:
 
