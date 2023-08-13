@@ -76,6 +76,9 @@ There are 3 kind of license models (types) used by company for software products
     * to become a system
     * to become both.
 
+As **product** must have an *usage documentation* (ie, work procedures), an *administration documentation* (ie, installation, configuration, maintenance), a *packaging* procedure.
+
+
 As **system**, a software should have:
 
 * an *installation procedure*, which could be just a documentation or other automation software. This procedure should be *clear*, *well defined* (ie, deterministic, without ambiguities) and *repeatable*.
@@ -83,9 +86,10 @@ As **system**, a software should have:
 * a *logging mechanism* and some rotate policies. Using host operating system standards is recommend in order to be easy maintained by any system administrator
 
 
-As **product** must have an *usage documentation* (ie, work procedures), an *administration documentation* (ie, installation, configuration, maintenance), a *packaging* procedure.
+As **system product** inherit the requirements from both categories.
 
-There are also other "things" especially from commercial point of view such as:
+
+There are also other "things" that must be satisfied, especially from commercial point of view such as:
 
 * a logo would bw required for a product
 * presentation materials, presentation views (ie, slides), a presentation site, some hints for sales and bid teams (ie, `130-SKIT` elements)
