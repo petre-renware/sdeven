@@ -42,8 +42,9 @@
 
 * wip...
 
-* 230813piu_c update `SDEVEN.70-LIP` & `SDEVEN.62-PSTR` ref system logs, its directory and rotate policies
-* 230813piu_b clean & update `SDEVEN.40-BRAN` procedure
+* #TODO_testme 230813piu_c update `SDEVEN.70-LIP` & `SDEVEN.62-PSTR` ref system logs, its directory and rotate policies
+* #TODO_testme 230813piu_b clean & update `SDEVEN.40-BRAN` procedure
+
 * 230813piu_a more review & update `SDEVEN.40-BRAN` procedure
 * 230812piu_d review & update `SDEVEN.40-BRAN` procedure
 * 230812piu_c review &update `SDEVEN.20-RENPRA` procedure
