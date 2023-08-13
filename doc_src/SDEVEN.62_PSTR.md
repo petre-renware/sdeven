@@ -33,6 +33,7 @@ All product system code is kept under `830-DEV` directory. The objective of its 
     * **docs/** [go to section](#docs-directory)
     * **pjm/** [go to section](#pjm-directory)
     * **setup/** [go to section](#setup-directory)
+    * **logs/** [go to section](#logs-directory)
     * **static_portal/** [go to section](#static_portal-directory)
     * **sysInit/** [go to section](#sysinit-directory)
     * **<system_module_A\>/** - directory dedicated for <system module "A"\> [go to section](#system_module_x-directory)
@@ -116,6 +117,15 @@ The aim of this directory is to keep code to install the system by this understa
     * can assure enough independence of OS specific commands and "formats" (for example the directory separation character, `\` vs `/`)
     * can be executed on all known public OS-es (Linux, MacOS, Windows)
     * one of the "perfect" candidates is *Python 3*
+
+
+
+
+### **logs** directory
+
+This directory will accommodate the application *logs*. It is complete optional and is recommended to follow the host operating system "standards".
+
+Regardless which directory will be used for application logs, a *log rotate* policy is desirable.
 
 
 
