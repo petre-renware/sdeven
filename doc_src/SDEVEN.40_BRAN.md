@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
 Version: 7.0.14<br>
-Release date: 230812
+Release date: 230813
 
 ***
 
@@ -12,11 +12,7 @@ Release date: 230812
 [TOC]
 
 
-
-## Preamble
-
-This section refers the current policies regarding *git repository* branches.
-
+This procedure refers the current policies regarding usage of *git branches*.
 
 
 ## Classification
@@ -153,10 +149,6 @@ gitGraph
     merge "qa-release" tag: "M.m.p-release"
 
     checkout "personA-dev"
-    commit id: "other work"
-    commit id: "more other work"
-
-    checkout "development"
     commit id: "other work"
     commit id: "more other work"
 ```
