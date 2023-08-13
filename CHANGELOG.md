@@ -38,9 +38,11 @@
 
 
 
-### 7.0.14-release procedures review & prepare for translation (#FIXME wip...)
+### 7.0.14-release procedures review & prepare for other versions upload and reference (#FIXME wip...)
 
 * wip...
+
+* -#TODO_tstme 230813piu_f prepared `doc_src/v_0.6/` directory to accommodate 0.6 version and referred it in `index.md`
 
 * 230813piu_e tested 230813piu_b (OK), 230813piu_c (OK), 230813piu_d (OK) and published site
 * 230813piu_d fixed `SDEVEN.65-DEREV` doubled word "allows" in introductory section
