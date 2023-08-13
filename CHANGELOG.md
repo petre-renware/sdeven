@@ -34,7 +34,7 @@
 
 ## 7.xxx #TODO future...
 
-
+* before starting a new version, copy `..\880-RLSE\880.90_SCA_Source_Code_Archives\sdeven-7.0\sdeven-7.0-site-build\static_portal_build_7.0-release.zip` to `doc_src/v_7.0/` un-archived and as is
 
 
 
