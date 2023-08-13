@@ -1,7 +1,7 @@
 <small>**SDEVEN Software Development & Engineering Methodology**</small>
 
-Version: 7.0.5<br>
-Release date: 230626
+Version: 7.0.14<br>
+Release date: 230813
 
 ***
 
@@ -13,12 +13,10 @@ Release date: 230626
 
 
 
-## Preliminaries
-
 This SDEVEN section presents some common design approaches (also used as review objective) practiced in company. The existing software engineering theory behind these approach is supposed to be known and understood by team members with role in software engineering ([`sen` role explained in "Administrative policies (SDEVEN.10-ADM)" section "Development and research"](SDEVEN.10_ADM.md#development-and-research)).
 
 !!! warning "Review process and design approach"
-    The review process is strongly correlated with design approach followed by project. This allows allows _compliance with standards_ to be verified and to make "good, reliable and usable" recommendations after a code review.
+    The review process is strongly correlated with design approach followed by project. This allows _compliance with standards_ to be verified and to make "good, reliable and usable" recommendations after a code review.
 
 
 
