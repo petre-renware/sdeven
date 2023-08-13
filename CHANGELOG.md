@@ -19,7 +19,7 @@
 * -#NOTE ____ PUBLISHING IS MADE FROM `PUBLISHING` BRANCH, so wheen publish checkout it or upload from git
 </small>
 
-
+## 7.xxx #TODO future...
 
 #### [ start of #TODO_PLAN section ]=========================
 
@@ -40,6 +40,9 @@
 * -#FIXMEtbd... make a full review and if everything ok then _close 7.0.14_ and __release 7.0__
 
 ### 7.0.14-release procedures review & prepare for other versions upload and reference (#FIXME wip...)
+
+* wip... 230813piu_h search FIXMEs & TODOs, close & cleanup them:
+  * xxx
 
 * 230813piu_g updated ROADMAP for `RMAP.003 - integrate old version in new ones` ref `230813piu_f`
 * 230813piu_f prepared `doc_src/v_7.0/` directory to accommodate 7.0 version and referred it in `index.html` (LINK IS COMMENTED up to v7.0 release and 7.1 in progress)
