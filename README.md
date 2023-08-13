@@ -1,10 +1,11 @@
 ***(c) 2021 - 2023 RENware Software Systems***
 
 <small>*Document control:*<br>
-* last  update: 230723
-* last update by: piu (Petre Iordanescu)</small>
+* last  update: 230813
+* last update by: Petre Iordanescu (piu)</small>
 
 ***
+
 
 **REN-SDEVEN Software Development Methodology**
 
@@ -35,25 +36,12 @@ Content history its a place where previous content versions can be found. [For m
 
 # Versions and roadmap
 
-* Published version: -n/a-
-* Next scheduled version: 7.0 (wip)
+* Published version: 7.p
+* Next scheduled version: n/a
 * Publishing directory:
     * RELEASED version: branch `publishing`, directory `/docs'
-    * LAST work version: other branches, directory `static_portal`
-* Publishing URL: **`http://sdeven.renware.eu`** (through GitHub repository, branch `publishing`)
-
-
-
-
-
-# Some rules
-
-* current work / scratch is supposed to be in `wip_crt` directory (if exists)
-* last version of published content can stay in a directory named `content[_nnn]`, where nnn is optional and can be a version identifier
-* content for static site building is duplicated in *static site generator*; for this reason ***NEVER CHANGE A PUBLISHED VERSION, EVEN FOR HOT FIXES - ALWAYS OPEN A NEW VERSION***
-* publishing directory name is imposed thorough `GitHub` policy
-
-
+    * DEVELOPMENT version: other branches, directory `static_portal`
+* Publishing URL: **`http://sdeven.renware.eu`** (hosted by GitHub repository, branch `publishing`, directory `docs/`)
 
 
 
@@ -70,12 +58,12 @@ Development and current / in progress work is located in `doc_src/` directory (c
 
 ## Static site publishing
 
-Static site publishing is made through *GitHub*. `GitHub` is configured to publish the site from branch `publishing` directory `docs/` under a custom domain name (`sdeven.renware.eu`).
+Static site publishing is made through *GitHub*. `GitHub` is configured to publish the site from branch `publishing` directory `docs/` under a custom domain name (`CNAME` for `sdeven.renware.eu`).
 
 Here are the basic rules:
 
-* directory `docs/` has content ONLY on branch `publishing`
-* it is used by `GitHub` to publish the site (from branch `publishing` directory `docs/`) and is upload when a public release is decideded
+* directory `docs/` has content guaranteed ONLY on branch `publishing`
+* it is used by `GitHub` to publish the site (from branch `publishing` directory `docs/`, so upload can be controlled when a public release is decideded
 
 
 
@@ -96,7 +84,7 @@ A history of changes is available in `versions_history` directory.
 
 ## ROADMAP
 
-This file (if exists) keeps all future intentions for SDEVEN content changes, improvements and any other such as intentions.
+This file keeps all future intentions for SDEVEN content changes, improvements and any other such as intentions.
 
 SDEVEN is on continuously improvement based on real practice and users (developers, product managers, etc) recommendations, but is published only after management approval for *company policy implementation*.
 
