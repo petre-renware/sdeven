@@ -17,7 +17,7 @@
 
 Previous versions:
 
-* [release 6.0](./v_0.6/index.html)
+* [release 6.0](v_0.6/index.html)
 
 
 
