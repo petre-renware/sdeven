@@ -20,13 +20,10 @@
 </small>
 
 
-## 7.0 SDEVEN 7.0
 
 #### [ start of #TODO_PLAN section ]=========================
 
 * tbd... rework `readthedocs` but just refer `sdeven.renware.eu` and should work AND IS PRESENT ON READ_THE_DOCS
-
-* tbd... #NOTE RMAP.003 - integrate old version in new ones (#NOTE already in RMAP.003 content, but.. see doc `how_integrate_oldver_in_newver.md`)
 
 * tbd... #NOTE RMAP.004 - convert to Word (docx) format the full document, implement under DISCLAIMER that is needed a license for a full clear and free doc or set a higher price for this option
 
@@ -38,9 +35,11 @@
 
 
 
-### 7.0.14-release procedures review & prepare for other versions upload and reference (#FIXME wip...)
+## 7.0 SDEVEN 7.0
 
-* wip...
+* -#FIXMEtbd... make a full review and if everything ok then _close 7.0.14_ and __release 7.0__
+
+### 7.0.14-release procedures review & prepare for other versions upload and reference (#FIXME wip...)
 
 * 230813piu_g updated ROADMAP for `RMAP.003 - integrate old version in new ones` ref `230813piu_f`
 * 230813piu_f prepared `doc_src/v_7.0/` directory to accommodate 7.0 version and referred it in `index.html` (LINK IS COMMENTED up to v7.0 release and 7.1 in progress)
