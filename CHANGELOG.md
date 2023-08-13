@@ -39,12 +39,11 @@
 
 * -#FIXMEtbd... make a full review and if everything ok then _close 7.0.14_ and __release 7.0__
 
-### 7.0.14-release procedures review & prepare for other versions upload and reference (#FIXME wip...)
+### 7.0.14-release procedures review & prepare for other versions upload and reference (230813 18:30)
 
-* wip... 230813piu_h search FIXMEs & TODOs, close & cleanup them:
+* 230813piu_h search FIXMEs & TODOs, close & cleanup them:
   * `Appendix (B)...` section 120-CPTS an obsolete TODOs
-  * `README.md` clean
-
+  * `README.md` update & clean
 * 230813piu_g updated ROADMAP for `RMAP.003 - integrate old version in new ones` ref `230813piu_f`
 * 230813piu_f prepared `doc_src/v_7.0/` directory to accommodate 7.0 version and referred it in `index.html` (LINK IS COMMENTED up to v7.0 release and 7.1 in progress)
 * 230813piu_e tested 230813piu_b (OK), 230813piu_c (OK), 230813piu_d (OK) and published site
