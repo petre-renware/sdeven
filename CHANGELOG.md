@@ -42,7 +42,7 @@
 
 * wip...
 
-* -#TODO_testme 230813piu_d fixed `SDEVEN.65-DEREV` doubled word "allowed" in doc introductory section
+* -#TODO_testme 230813piu_d fixed `SDEVEN.65-DEREV` doubled word "allows" in introductory section
 * -#TODO_testme 230813piu_c update `SDEVEN.70-LIP` & `SDEVEN.62-PSTR` ref system logs, its directory and rotate policies
 * -#TODO_testme 230813piu_b clean & update `SDEVEN.40-BRAN` procedure
 
