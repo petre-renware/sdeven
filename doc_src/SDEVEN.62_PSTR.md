@@ -123,7 +123,7 @@ The aim of this directory is to keep code to install the system by this understa
 
 ### **logs** directory
 
-This directory will accommodate the application *logs*. It is complete optional and is recommended to follow the host operating system "standards".
+This directory will accommodate the *application logs*. It is complete optional and is recommended to follow the host operating system "standards".
 
 Regardless which directory will be used for application logs, a *log rotate* policy is desirable.
 
@@ -218,6 +218,8 @@ Here is shown an example of project directory structure starting from a `PROJECT
         docs/
         pjm/        # organization specific project management and contractual docs ...
         setup/
+        logs/				# optional
+            .gitkeep		# empty hidden file to keep dir on git system
         static_portal/
         <sys_module_A...dir>/
         <sys_module_B...dir>/
