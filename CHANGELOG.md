@@ -19,7 +19,7 @@
 * -#NOTE ____ PUBLISHING IS MADE FROM `PUBLISHING` BRANCH, so wheen publish checkout it or upload from git
 </small>
 
-## 7.xxx #TODO future...
+
 
 #### [ start of #TODO_PLAN section ]=========================
 
@@ -32,14 +32,19 @@
 #### [ end of #TODO_PLAN section ]=========================
 
 
+## 7.xxx #TODO future...
+
+
+
+
+
+
 
 
 
 ## 7.0 SDEVEN 7.0
 
-* -#FIXMEtbd... make a full review and if everything ok then _close 7.0.14_ and __release 7.0__
-
-### 7.0.14-release procedures review & prepare for other versions upload and reference (#FIXME can merge in dev & release me...)
+### 7.0.14-release procedures review & prepare for other versions upload and reference
 
 * 230813piu_h search FIXMEs & TODOs, close & cleanup them:
   * `Appendix (B)...` section 120-CPTS an obsolete TODOs
