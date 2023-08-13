@@ -30,19 +30,19 @@
 
 * tbd... #NOTE RMAP.004 - convert to Word (docx) format the full document, implement under DISCLAIMER that is needed a license for a full clear and free doc or set a higher price for this option
 
-* tbd... test `redirect_template_2.md` or simply just go on pure HTML version (`redirect_template_1.md`) __which is safer__
+* tbd... ref multi language for material theme, see `https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/`
 
 #### [ end of #TODO_PLAN section ]=========================
 
 
 
-### 7.0.14-release procedures review & prepare for translation (#FIXME wip...)
 
-* tbd... ref multi language for material theme, see `https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/`
-* tbd... oth procedures review then (before 2023-0814) release
+
+### 7.0.14-release procedures review & prepare for translation (#FIXME wip...)
 
 * wip...
 
+* 230813piu_a more review & update `SDEVEN.40-BRAN` procedure
 * 230812piu_d review & update `SDEVEN.40-BRAN` procedure
 * 230812piu_c review &update `SDEVEN.20-RENPRA` procedure
 * 230812piu_b more:

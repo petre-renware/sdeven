@@ -79,26 +79,33 @@ Usually, as not stated otherwise in a project, the following branches should be 
 
 This diagram shows the basic flow for `master (main)`, `development` and one `xxx-dev` branch. Also on graphic the practices ref tagging are shown.
 
-**Example for git 1<sup>st</sup> organization by issues**
+
+### Example for git 1<sup>st</sup> organization by issues
+
+For each issue a dedicated brach will be created. These branches have a "short" existence being destroyed after the issue pass *QA tests to be promoted to beta*.
 
 ``` mermaid
 ---
-title: git flow org by issues
+title: git flow organized by issues
 ---
 gitGraph
     commit id: "init repo"
     branch "development"
     commit id: "start of iss A"
-    branch "iss-A"
+
+    branch "iss-001"
     commit
     commit
     commit id: "alpha rdy to test"
-    branch "qa-iss-A"
+
+    branch "qa-iss-001"
     commit id: "test of iss A"
     commit id: "beta PASSED"
+
     checkout "development"
-    merge "qa-iss-A" tag: "beta of iss-A"
+    merge "qa-iss-001" tag: "beta of iss-001"
     commit id: "prep for release"
+
     branch "qa-release"
     commit id: "documentation Ok"
     commit id: "deployment kit OK"
@@ -107,52 +114,57 @@ gitGraph
     merge "qa-release" tag: "M.m.p-release"
 ```
 
-**Example for git 1<sup>st</sup> organization by developers**
+
+### Example for git 1<sup>st</sup> organization by developers
+
+For each development team member a dedicated branch will be created. These branches will have a "longer" existence (as long as that team member is active).
 
 ``` mermaid
 ---
-title: git flow org by developer
+title: git flow organized by developer
 ---
 gitGraph
-    commit
-
+    commit id: "init repo"
     branch "development"
-    commit id: "review and close development"
+    commit id: "start of iss A"
 
     branch "personA-dev"
-    commit id: "work iss 001"
+    commit id: "prepare branch"
+    branch "iss-001"
     commit
     commit
+    commit id: "end iss 001" tag: "alpha of iss A"
+
+    branch "qa-iss-001"
+    commit id: "prepare test of iss A"
+    commit "beta passed"
 
     checkout "development"
-    branch "personX-dev"
-    commit id: "work to iss 002"
-    commit
-    
-    checkout "personA-dev"
-    commit id: "finished iss 001" tag: "ALPHA tag for iss-001"
-    branch "test-QA-check"
-    commit
-    commit id: "test work for iss 001"
-    commit id: "passed"
-    checkout "development"
-    merge "test-QA-check" id: "get iss 001" tag: "BETA tag for iss-001"
-    checkout "personA-dev"
-    merge "development"
-    commit
+    merge "qa-iss-001" tag: "beta of iss A"
 
-    branch "release-QA"
+    checkout "personA-dev"
     merge "development"
-    commit "...checks for release iss 001"
+
+    branch "qa-release"
+    commit id: "documentation Ok"
+    commit id: "deployment kit OK"
+    commit id: "release PASSED"
     checkout "main"
-    merge "release-QA" tag: "RELEASE tag for iss-001"
+    merge "qa-release" tag: "M.m.p-release"
+
+    checkout "personA-dev"
+    commit id: "other work"
+    commit id: "more other work"
+
+    checkout "development"
+    commit id: "other work"
+    commit id: "more other work"
 ```
 
 Names and codes used in diagram:
 
 * `iss-001` is an issue that needs to be closed (and coded)
 * `personA-dev` is a _personal_ branch created for "person A" to work (in example for issue 001)
-* `personX-dev` is a _personal_ branch created for another developer (persona X)
 
 Also diagram shows different tags created as occasioned by "issue 001".
 
