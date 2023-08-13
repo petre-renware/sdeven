@@ -57,9 +57,6 @@ This information will be BASIS for a future system design.
 
 When is not necessary? So, in cases when it already exists and system intended modifications are nor of nature to alter these concepts.
 
-<!-- -#TODO de luat din 120 CPTS din sagaRt project -->
-
-
 ### 130-SKIT Sales Kit(s)
 
 #### 130.01 Product Datasheet (REQUIRED always)
