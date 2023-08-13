@@ -42,10 +42,10 @@
 
 * wip...
 
-* -#TODO_testme 230813piu_d fixed `SDEVEN.65-DEREV` doubled word "allows" in introductory section
-* -#TODO_testme 230813piu_c update `SDEVEN.70-LIP` & `SDEVEN.62-PSTR` ref system logs, its directory and rotate policies
-* -#TODO_testme 230813piu_b clean & update `SDEVEN.40-BRAN` procedure
-
+* 230813piu_e tested 230813piu_b (OK), 230813piu_c (OK), 230813piu_d (OK) and published site
+* 230813piu_d fixed `SDEVEN.65-DEREV` doubled word "allows" in introductory section
+* 230813piu_c update `SDEVEN.70-LIP` & `SDEVEN.62-PSTR` ref system logs, its directory and rotate policies
+* 230813piu_b clean & update `SDEVEN.40-BRAN` procedure
 * 230813piu_a more review & update `SDEVEN.40-BRAN` procedure
 * 230812piu_d review & update `SDEVEN.40-BRAN` procedure
 * 230812piu_c review &update `SDEVEN.20-RENPRA` procedure
