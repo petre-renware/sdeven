@@ -13,9 +13,11 @@
 
 [Start book here](SDEVEN.00_INDEX.md)
 
-[Download complete manual PDF](./pdfs/print_page.html/print_page.pdf)
+[Download complete manual PDF](pdfs/print_page.html/print_page.pdf)
 
-Previous versions: *n/a*
+Previous versions:
+
+* [release 6.0](v_0.6/index.html) (*ATTN* this is a very old release and could not work always - to obtain an archive please call [support](http://www.renware.eu))
 
 
 
