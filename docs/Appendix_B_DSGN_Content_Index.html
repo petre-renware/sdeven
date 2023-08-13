@@ -1,0 +1,1639 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Petre Iordanescu, RENware Software Systems, petre.iordanescu@gmail.com" name="author"/>
+<link href="Appendix_A_Semantic_versioning.html" rel="prev"/>
+<link href="Appendix_C_Status_Report.html" rel="next"/>
+<link href="assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.3, mkdocs-material-9.1.13" name="generator"/>
+<title>Appendix (B) System Design Document Template (810 DSGN) - SDEVEN Software Development &amp; Engineering Methodology</title>
+<link href="assets/stylesheets/main.85bb2934.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.a6bdf11c.min.css" rel="stylesheet"/>
+<style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h224V368c0-26.5 21.5-48 48-48h112V96c0-35.3-28.7-64-64-64H64zm384 320H336c-8.8 0-16 7.2-16 16v112l32-32 64-64 32-32z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-40-176h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.4c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4V32zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-86.2-346.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.1 52.4 442.6 6.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5 2.6-10.4 6.5l-16.5 45.9-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4 0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2 0-4.6-3-8.9-7.2-10.4l-45.6-16.8zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9c-22-8-45.8-12.3-70.5-12.3C93.1 96 0 189.1 0 304s93.1 208 208 208 208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-75.1 60.9-136 136-136h8c8.8 0 16 7.2 16 16s-7.2 16-16 16h-8z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9V464c0 26.5 21.5 48 48 48h48v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48v-65.1zM96 256a64 64 0 1 1 128 0 64 64 0 1 1-128 0zm256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M320 0c17.7 0 32 14.3 32 32v64h120c39.8 0 72 32.2 72 72v272c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72h120V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zM264 256a40 40 0 1 0-80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224h16v192H48c-26.5 0-48-21.5-48-48v-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48h-16V224h16z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 0H128c-17.7 0-32 14.3-32 32s14.3 32 32 32v132.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6 0 480.9 31.1 512 69.4 512h309.2c38.3 0 69.4-31.1 69.4-69.4 0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32S337.7 0 320 0h-32zm-96 196.8V64h64v132.8c0 23.7 6.6 46.9 19 67.1l34.5 56.1h-171l34.5-56.1c12.4-20.2 19-43.4 19-67.1z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></svg>');}
+div.download-btn {
+    text-align: right;
+}
+
+@page {
+    size: a4 portrait;
+    margin: 25mm 10mm 25mm 10mm;
+    counter-increment: page;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    white-space: pre;
+    color: grey;
+    @top-left {
+        font-size: x-small;
+        content: 'smaXtec';
+    }
+    @top-center {
+        font-size: x-small;
+        content: string(chapter);
+    }
+    @top-right {
+        font-size: x-small;
+        content: 'Page ' counter(page);
+    }
+}
+
+@media print {
+
+    div.download-btn {
+        display: none;
+    }
+
+    .md-typeset table:not([class]) {
+        display: block;
+        border: none;
+    }
+
+    img {
+        width: 100%;
+        page-break-inside:avoid;
+        page-break-after:avoid;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after:avoid;
+        page-break-inside:avoid;
+    }
+
+    table, pre {
+        page-break-inside:avoid
+    }
+
+    ul, ol, dl {
+        page-break-before:avoid
+    }
+
+}</style>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="assets/_markdown_exec_ansi.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings1.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings2.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings3.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings4.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings5.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings6.css" rel="stylesheet"/>
+<link href="css/print-site.css" rel="stylesheet"/>
+<link href="css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#appendix-b-system-design-document-template-810-dsgn">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDEVEN Software Development &amp; Engineering Methodology" class="md-header__button md-logo" data-md-component="logo" href="index.html" title="SDEVEN Software Development &amp; Engineering Methodology">
+<img alt="logo" src="pictures/SDEVEN_logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDEVEN Software Development &amp; Engineering Methodology
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Appendix (B) System Design Document Template (810 DSGN)
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDEVEN Software Development &amp; Engineering Methodology" class="md-nav__button md-logo" data-md-component="logo" href="index.html" title="SDEVEN Software Development &amp; Engineering Methodology">
+<img alt="logo" src="pictures/SDEVEN_logo.png"/>
+</a>
+    SDEVEN Software Development &amp; Engineering Methodology
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="index.html">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.00_INDEX.html">
+        SDEVEN index
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          SDEVEN procedures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          SDEVEN procedures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.10_ADM.html">
+        Administrative (10-ADM)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.20_RENPRA.html">
+        Practices (20-RENPRA)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.25_SYTEST.html">
+        System Software Testing (25-SYTEST)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.30_RENVER.html">
+        Versioning (30-RENVER)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.40_BRAN.html">
+        Branches (40-BRAN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.45_OPME.html">
+        Operational Meetings (45-OPME)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.50_CHGMNG.html">
+        Change Management (50-CHGMNG)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.55_TRACE.html">
+        Logging development changes (55-TRACE)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.60_RELM.html">
+        Release management (60-RELM)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.62_PSTR.html">
+        Project structure (62-PSTR)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.65_DEREV.html">
+        Design approaches, review and changes (65-DEREV)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.68_COREV.html">
+        Code review (68-COREV)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.70_LIP.html">
+        Licenses &amp; products / models (70-LIP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.75_CCEP.html">
+        Code of Conduct. Ethics, Professional and Legal Issues (75-CCEP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.80_COPRI.html">
+        Conventions &amp; principles (80-COPRI)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.90_RENBLU.html">
+        Phases, Processes and Deliverables (90-RENBLU)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.95_COCL.html">
+        Confidentiality &amp; Classification (95-COCL)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          SDEVEN appendices
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          SDEVEN appendices
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_A_Semantic_versioning.html">
+        Appendix (A) Sematic Versioning (SEMVER)
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Appendix (B) System Design Document Template (810 DSGN)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="Appendix_B_DSGN_Content_Index.html">
+        Appendix (B) System Design Document Template (810 DSGN)
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preliminaries">
+    Preliminaries
+  </a>
+<nav aria-label="Preliminaries" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#structure-of-document">
+    Structure of document
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#structure-content-of-deliverable">
+    Structure &amp; content of deliverable
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#100-ana-analysis">
+    100-ANA Analysis
+  </a>
+<nav aria-label="100-ANA Analysis" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#110-sre-system-requirements-required-always">
+    110-SRE System Requirements (REQUIRED always)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#120-cpts-system-concepts-required-in-almost-all-cases">
+    120-CPTS System Concepts (REQUIRED in almost all cases)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#130-skit-sales-kits">
+    130-SKIT Sales Kit(s)
+  </a>
+<nav aria-label="130-SKIT Sales Kit(s)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13001-product-datasheet-required-always">
+    130.01 Product Datasheet (REQUIRED always)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13002-product-overview-required-if-not-present-in-datasheet">
+    130.02 Product Overview (REQUIRED if not present in Datasheet)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13003-spin-documents-optional">
+    130.03 SPIN documents (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13004-licensing-editions-pricing-optional">
+    130.04 Licensing Editions &amp; Pricing (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13005-service-training-programmes-optional-as-recommended">
+    130.05 Service &amp; Training Programmes (OPTIONAL as RECOMMENDED)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#190-sktd-sketches-technical-diagrams-optional">
+    190-SKTD Sketches &amp; Technical Diagrams (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#800-swd-software-development">
+    800-SWD Software Development
+  </a>
+<nav aria-label="800-SWD Software Development" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#810-dsgn-system-design">
+    810-DSGN System Design
+  </a>
+<nav aria-label="810-DSGN System Design" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81000-overview-update-of-13002-required">
+    810.00 Overview - update of 130.02 (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81001-system-requirements-update-of-110-sre-optional">
+    810.01 System Requirements - update of 110-SRE (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81002-system-landscape-required">
+    810.02 System Landscape (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81003-system-data-objects-required">
+    810.03 System Data &amp; Objects (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81004-system-ui-optional-recommended">
+    810.04 System UI (OPTIONAL RECOMMENDED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81005a-system-processes-required">
+    810.05a System Processes (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81005b-application-software-organization-optional">
+    810.05b Application Software Organization (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81006-system-api-interfaces-optional">
+    810.06 System API &amp; Interfaces (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81040-system-concepts-in-detail-update-of-120-cpts-optional">
+    810.40 System Concepts in Detail - update of 120-CPTS (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81045-licensing-model-update-of-13004-optional">
+    810.45 Licensing Model - update of 130.04 (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81046-product-features-update-of-13001-required">
+    810.46 Product Features - update of 130.01 (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81050-to-81079-appendices-optional">
+    810.50 to 810.79 Appendices (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81080-to-81099-design-sketches-optional">
+    810.80 to 810.99 Design Sketches (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#820-sint-system-internals">
+    820-SINT System Internals
+  </a>
+<nav aria-label="820-SINT System Internals" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82001-system-states-optional">
+    820.01 System States (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82002-system-interfaces-bus-es-optional">
+    820.02 System Interfaces &amp; BUS-es (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82003-synchronization-clocks-optional">
+    820.03 Synchronization &amp; Clocks (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82004-algorithms-strategies-optional">
+    820.04 Algorithms &amp; Strategies (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82090-toolstack-notes-optional">
+    820.90 Toolstack notes (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#830-dev-development-mandatory">
+    830-DEV Development (MANDATORY)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#840-test-system-test">
+    840-TEST System Test
+  </a>
+<nav aria-label="840-TEST System Test" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#84001-test-plan-required">
+    840.01 Test plan (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#84002-test-cases-scenarios-required">
+    840.02 Test cases / scenarios (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#84004-test-report-required">
+    840.04 Test Report (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#84090-release-notes-required">
+    840.90 Release Notes (REQUIRED)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#880-rlse-system-release">
+    880-RLSE System Release
+  </a>
+<nav aria-label="880-RLSE System Release" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88010-feat-product-features-update-of-13001-required">
+    880.10 FEAT Product Features - update of 130.01 (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88020-elpri-editions-licensing-pricing-update-of-13004-required">
+    880.20 ELPRI Editions, Licensing &amp; Pricing - update of 130.04 (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-euma-end-user-manuals">
+    880.30 EUMA End User Manuals
+  </a>
+<nav aria-label="880.30 EUMA End User Manuals" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-eumaqg-end-user-quick-guide-required">
+    880.30 EUMA.QG End User Quick Guide (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-eumawpnn-work-procedure-nn-optional">
+    880.30 EUMA.WPnn Work Procedure nn (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-adma-administration-manuals">
+    880.30 ADMA Administration Manuals
+  </a>
+<nav aria-label="880.30 ADMA Administration Manuals" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-admasi-system-installation-configuration-required">
+    880.30 ADMA.SI System Installation &amp; Configuration (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-admasa-system-administration-optional">
+    880.30 ADMA.SA    System Administration (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88040-skits-update-update-all-130nn-optional">
+    880.40 SKITs update - update all 130.nn (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88050-tkit-training-kits-programmes-update-of-13005-optional">
+    880.50 TKIT Training Kits &amp; Programmes - update of 130.05 (OPTIONAL)
+  </a>
+<nav aria-label="880.50 TKIT Training Kits &amp; Programmes - update of 130.05 (OPTIONAL)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#list-of-courses">
+    List of courses
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schedule">
+    Schedule
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#courses-curriculum">
+    Courses curriculum
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88060-srvc-service-update-of-13005-optional">
+    880.60 SRVC Service - update of 130.05 (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88090-sca-source-code-archives">
+    880.90 SCA Source Code Archives
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#890-mnt-system-maintenance">
+    890-MNT System Maintenance
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#900-ops-operations">
+    900-OPS Operations
+  </a>
+<nav aria-label="900-OPS Operations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#920-tle-prepare-temporary-live-environments-required">
+    920-TLE Prepare temporary live environments (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#990-pmsp-project-management-support-required">
+    990-PMSP Project Management Support (REQUIRED)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_C_Status_Report.html">
+        Appendix (C) Status Report Template (STATUSR)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_D_ROADMAP_template.html">
+        Appendix (D) ROADMAP Template (RMAP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_E_RELNOTE_template.html">
+        Appendix (E) Release note template (RELNOTE)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_F1_TestPlan_template.html">
+        Appendix (F1) Test Plan template (TESTPLAN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_F2_TestScen_template.html">
+        Appendix (F2) Test Scenario template (TESTSCEN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_Q_faq.html">
+        Appendix (Q) FAQ. Frequently Asked Questions (FAQ)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="About_SDEVEN.html">
+        About SDEVEN
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="LICENSE.html">
+        License
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="http://www.renware.eu">
+        RENware Software Systems company
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="pdfs/print_page.html/print_page.pdf">
+        Complete SDEVEN Manual (PDF)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="print_page.html">
+        Complete SDEVEN Manual
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preliminaries">
+    Preliminaries
+  </a>
+<nav aria-label="Preliminaries" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#structure-of-document">
+    Structure of document
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#structure-content-of-deliverable">
+    Structure &amp; content of deliverable
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#100-ana-analysis">
+    100-ANA Analysis
+  </a>
+<nav aria-label="100-ANA Analysis" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#110-sre-system-requirements-required-always">
+    110-SRE System Requirements (REQUIRED always)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#120-cpts-system-concepts-required-in-almost-all-cases">
+    120-CPTS System Concepts (REQUIRED in almost all cases)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#130-skit-sales-kits">
+    130-SKIT Sales Kit(s)
+  </a>
+<nav aria-label="130-SKIT Sales Kit(s)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13001-product-datasheet-required-always">
+    130.01 Product Datasheet (REQUIRED always)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13002-product-overview-required-if-not-present-in-datasheet">
+    130.02 Product Overview (REQUIRED if not present in Datasheet)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13003-spin-documents-optional">
+    130.03 SPIN documents (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13004-licensing-editions-pricing-optional">
+    130.04 Licensing Editions &amp; Pricing (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13005-service-training-programmes-optional-as-recommended">
+    130.05 Service &amp; Training Programmes (OPTIONAL as RECOMMENDED)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#190-sktd-sketches-technical-diagrams-optional">
+    190-SKTD Sketches &amp; Technical Diagrams (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#800-swd-software-development">
+    800-SWD Software Development
+  </a>
+<nav aria-label="800-SWD Software Development" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#810-dsgn-system-design">
+    810-DSGN System Design
+  </a>
+<nav aria-label="810-DSGN System Design" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81000-overview-update-of-13002-required">
+    810.00 Overview - update of 130.02 (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81001-system-requirements-update-of-110-sre-optional">
+    810.01 System Requirements - update of 110-SRE (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81002-system-landscape-required">
+    810.02 System Landscape (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81003-system-data-objects-required">
+    810.03 System Data &amp; Objects (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81004-system-ui-optional-recommended">
+    810.04 System UI (OPTIONAL RECOMMENDED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81005a-system-processes-required">
+    810.05a System Processes (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81005b-application-software-organization-optional">
+    810.05b Application Software Organization (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81006-system-api-interfaces-optional">
+    810.06 System API &amp; Interfaces (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81040-system-concepts-in-detail-update-of-120-cpts-optional">
+    810.40 System Concepts in Detail - update of 120-CPTS (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81045-licensing-model-update-of-13004-optional">
+    810.45 Licensing Model - update of 130.04 (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81046-product-features-update-of-13001-required">
+    810.46 Product Features - update of 130.01 (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81050-to-81079-appendices-optional">
+    810.50 to 810.79 Appendices (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81080-to-81099-design-sketches-optional">
+    810.80 to 810.99 Design Sketches (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#820-sint-system-internals">
+    820-SINT System Internals
+  </a>
+<nav aria-label="820-SINT System Internals" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82001-system-states-optional">
+    820.01 System States (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82002-system-interfaces-bus-es-optional">
+    820.02 System Interfaces &amp; BUS-es (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82003-synchronization-clocks-optional">
+    820.03 Synchronization &amp; Clocks (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82004-algorithms-strategies-optional">
+    820.04 Algorithms &amp; Strategies (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82090-toolstack-notes-optional">
+    820.90 Toolstack notes (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#830-dev-development-mandatory">
+    830-DEV Development (MANDATORY)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#840-test-system-test">
+    840-TEST System Test
+  </a>
+<nav aria-label="840-TEST System Test" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#84001-test-plan-required">
+    840.01 Test plan (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#84002-test-cases-scenarios-required">
+    840.02 Test cases / scenarios (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#84004-test-report-required">
+    840.04 Test Report (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#84090-release-notes-required">
+    840.90 Release Notes (REQUIRED)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#880-rlse-system-release">
+    880-RLSE System Release
+  </a>
+<nav aria-label="880-RLSE System Release" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88010-feat-product-features-update-of-13001-required">
+    880.10 FEAT Product Features - update of 130.01 (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88020-elpri-editions-licensing-pricing-update-of-13004-required">
+    880.20 ELPRI Editions, Licensing &amp; Pricing - update of 130.04 (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-euma-end-user-manuals">
+    880.30 EUMA End User Manuals
+  </a>
+<nav aria-label="880.30 EUMA End User Manuals" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-eumaqg-end-user-quick-guide-required">
+    880.30 EUMA.QG End User Quick Guide (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-eumawpnn-work-procedure-nn-optional">
+    880.30 EUMA.WPnn Work Procedure nn (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-adma-administration-manuals">
+    880.30 ADMA Administration Manuals
+  </a>
+<nav aria-label="880.30 ADMA Administration Manuals" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-admasi-system-installation-configuration-required">
+    880.30 ADMA.SI System Installation &amp; Configuration (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88030-admasa-system-administration-optional">
+    880.30 ADMA.SA    System Administration (OPTIONAL)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88040-skits-update-update-all-130nn-optional">
+    880.40 SKITs update - update all 130.nn (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88050-tkit-training-kits-programmes-update-of-13005-optional">
+    880.50 TKIT Training Kits &amp; Programmes - update of 130.05 (OPTIONAL)
+  </a>
+<nav aria-label="880.50 TKIT Training Kits &amp; Programmes - update of 130.05 (OPTIONAL)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#list-of-courses">
+    List of courses
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schedule">
+    Schedule
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#courses-curriculum">
+    Courses curriculum
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88060-srvc-service-update-of-13005-optional">
+    880.60 SRVC Service - update of 130.05 (OPTIONAL)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#88090-sca-source-code-archives">
+    880.90 SCA Source Code Archives
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#890-mnt-system-maintenance">
+    890-MNT System Maintenance
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#900-ops-operations">
+    900-OPS Operations
+  </a>
+<nav aria-label="900-OPS Operations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#920-tle-prepare-temporary-live-environments-required">
+    920-TLE Prepare temporary live environments (REQUIRED)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#990-pmsp-project-management-support-required">
+    990-PMSP Project Management Support (REQUIRED)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset"><div class="download-btn"><a href="pdfs\Appendix_B_DSGN_Content_Index.html\Appendix_B_DSGN_Content_Index.pdf">Download PDF</a></div>
+<p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
+<p>Version: 7.0.12<br/>
+Release date: 230805</p>
+<hr/>
+<h1 id="appendix-b-system-design-document-template-810-dsgn">Appendix B System Design Document Template (810 DSGN)</h1>
+<p><strong>Table of Content</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#appendix-b-system-design-document-template-810-dsgn">Appendix B System Design Document Template (810 DSGN)</a><ul>
+<li><a href="#preliminaries">Preliminaries</a><ul>
+<li><a href="#structure-of-document">Structure of document</a></li>
+<li><a href="#structure-content-of-deliverable">Structure &amp; content of deliverable</a></li>
+</ul>
+</li>
+<li><a href="#100-ana-analysis">100-ANA Analysis</a><ul>
+<li><a href="#110-sre-system-requirements-required-always">110-SRE System Requirements (REQUIRED always)</a></li>
+<li><a href="#120-cpts-system-concepts-required-in-almost-all-cases">120-CPTS System Concepts (REQUIRED in almost all cases)</a></li>
+<li><a href="#130-skit-sales-kits">130-SKIT Sales Kit(s)</a><ul>
+<li><a href="#13001-product-datasheet-required-always">130.01 Product Datasheet (REQUIRED always)</a></li>
+<li><a href="#13002-product-overview-required-if-not-present-in-datasheet">130.02 Product Overview (REQUIRED if not present in Datasheet)</a></li>
+<li><a href="#13003-spin-documents-optional">130.03 SPIN documents (OPTIONAL)</a></li>
+<li><a href="#13004-licensing-editions-pricing-optional">130.04 Licensing Editions &amp; Pricing (OPTIONAL)</a></li>
+<li><a href="#13005-service-training-programmes-optional-as-recommended">130.05 Service &amp; Training Programmes (OPTIONAL as RECOMMENDED)</a></li>
+</ul>
+</li>
+<li><a href="#190-sktd-sketches-technical-diagrams-optional">190-SKTD Sketches &amp; Technical Diagrams (OPTIONAL)</a></li>
+</ul>
+</li>
+<li><a href="#800-swd-software-development">800-SWD Software Development</a><ul>
+<li><a href="#810-dsgn-system-design">810-DSGN System Design</a><ul>
+<li><a href="#81000-overview-update-of-13002-required">810.00 Overview - update of 130.02 (REQUIRED)</a></li>
+<li><a href="#81001-system-requirements-update-of-110-sre-optional">810.01 System Requirements - update of 110-SRE (OPTIONAL)</a></li>
+<li><a href="#81002-system-landscape-required">810.02 System Landscape (REQUIRED)</a></li>
+<li><a href="#81003-system-data-objects-required">810.03 System Data &amp; Objects (REQUIRED)</a></li>
+<li><a href="#81004-system-ui-optional-recommended">810.04 System UI (OPTIONAL RECOMMENDED)</a></li>
+<li><a href="#81005a-system-processes-required">810.05a System Processes (REQUIRED)</a></li>
+<li><a href="#81005b-application-software-organization-optional">810.05b Application Software Organization (OPTIONAL)</a></li>
+<li><a href="#81006-system-api-interfaces-optional">810.06 System API &amp; Interfaces (OPTIONAL)</a></li>
+<li><a href="#81040-system-concepts-in-detail-update-of-120-cpts-optional">810.40 System Concepts in Detail - update of 120-CPTS (OPTIONAL)</a></li>
+<li><a href="#81045-licensing-model-update-of-13004-optional">810.45 Licensing Model - update of 130.04 (OPTIONAL)</a></li>
+<li><a href="#81046-product-features-update-of-13001-required">810.46 Product Features - update of 130.01 (REQUIRED)</a></li>
+<li><a href="#81050-to-81079-appendices-optional">810.50 to 810.79 Appendices (OPTIONAL)</a></li>
+<li><a href="#81080-to-81099-design-sketches-optional">810.80 to 810.99 Design Sketches (OPTIONAL)</a></li>
+</ul>
+</li>
+<li><a href="#820-sint-system-internals">820-SINT System Internals</a><ul>
+<li><a href="#82001-system-states-optional">820.01 System States (OPTIONAL)</a></li>
+<li><a href="#82002-system-interfaces-bus-es-optional">820.02 System Interfaces &amp; BUS-es (OPTIONAL)</a></li>
+<li><a href="#82003-synchronization-clocks-optional">820.03 Synchronization &amp; Clocks (OPTIONAL)</a></li>
+<li><a href="#82004-algorithms-strategies-optional">820.04 Algorithms &amp; Strategies (OPTIONAL)</a></li>
+<li><a href="#82090-toolstack-notes-optional">820.90 Toolstack notes (OPTIONAL)</a></li>
+</ul>
+</li>
+<li><a href="#830-dev-development-mandatory">830-DEV Development (MANDATORY)</a></li>
+<li><a href="#840-test-system-test">840-TEST System Test</a><ul>
+<li><a href="#84001-test-plan-required">840.01 Test plan (REQUIRED)</a></li>
+<li><a href="#84002-test-cases-scenarios-required">840.02 Test cases / scenarios (REQUIRED)</a></li>
+<li><a href="#84004-test-report-required">840.04 Test Report (REQUIRED)</a></li>
+<li><a href="#84090-release-notes-required">840.90 Release Notes (REQUIRED)</a></li>
+</ul>
+</li>
+<li><a href="#880-rlse-system-release">880-RLSE System Release</a><ul>
+<li><a href="#88010-feat-product-features-update-of-13001-required">880.10 FEAT Product Features - update of 130.01 (REQUIRED)</a></li>
+<li><a href="#88020-elpri-editions-licensing-pricing-update-of-13004-required">880.20 ELPRI Editions, Licensing &amp; Pricing - update of 130.04 (REQUIRED)</a></li>
+<li><a href="#88030-euma-end-user-manuals">880.30 EUMA End User Manuals</a><ul>
+<li><a href="#88030-eumaqg-end-user-quick-guide-required">880.30 EUMA.QG End User Quick Guide (REQUIRED)</a></li>
+<li><a href="#88030-eumawpnn-work-procedure-nn-optional">880.30 EUMA.WPnn Work Procedure nn (OPTIONAL)</a></li>
+</ul>
+</li>
+<li><a href="#88030-adma-administration-manuals">880.30 ADMA Administration Manuals</a><ul>
+<li><a href="#88030-admasi-system-installation-configuration-required">880.30 ADMA.SI System Installation &amp; Configuration (REQUIRED)</a></li>
+<li><a href="#88030-admasa-system-administration-optional">880.30 ADMA.SA    System Administration (OPTIONAL)</a></li>
+</ul>
+</li>
+<li><a href="#88040-skits-update-update-all-130nn-optional">880.40 SKITs update - update all 130.nn (OPTIONAL)</a></li>
+<li><a href="#88050-tkit-training-kits-programmes-update-of-13005-optional">880.50 TKIT Training Kits &amp; Programmes - update of 130.05 (OPTIONAL)</a><ul>
+<li><a href="#list-of-courses">List of courses</a></li>
+<li><a href="#schedule">Schedule</a></li>
+<li><a href="#courses-curriculum">Courses curriculum</a></li>
+</ul>
+</li>
+<li><a href="#88060-srvc-service-update-of-13005-optional">880.60 SRVC Service - update of 130.05 (OPTIONAL)</a></li>
+<li><a href="#88090-sca-source-code-archives">880.90 SCA Source Code Archives</a></li>
+</ul>
+</li>
+<li><a href="#890-mnt-system-maintenance">890-MNT System Maintenance</a></li>
+</ul>
+</li>
+<li><a href="#900-ops-operations">900-OPS Operations</a><ul>
+<li><a href="#920-tle-prepare-temporary-live-environments-required">920-TLE Prepare temporary live environments (REQUIRED)</a></li>
+<li><a href="#990-pmsp-project-management-support-required">990-PMSP Project Management Support (REQUIRED)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="preliminaries">Preliminaries</h2>
+<p>Here you'll find a recommended structure of 810-DSGN document containing ALL information that it can contain.</p>
+<p>This structure is enough /comprehensive for most of the projects but it can bw extended in all situations where this brings more recant aspects in a project. </p>
+<h3 id="structure-of-document">Structure of document</h3>
+<p>It follows the methodology phases as described in RENBLU document. For each section there is specified if is: MANDATORY, OPTIONAL or RECOMMENDED. Also, should be noted that those sections which have "a full code" (not just a simple number) are intended to be released as separated documents and here make reference to them.</p>
+<h3 id="structure-content-of-deliverable">Structure &amp; content of deliverable</h3>
+<p>Its important to say that some sections are <strong>mandatory</strong> (and marked accordingly) and should <strong>exists AS IS in all cases</strong>, regardless other information or the same but in other structure presented.</p>
+<!-- -#NOTE start of BIG section -->
+<h2 id="100-ana-analysis">100-ANA Analysis</h2>
+<h3 id="110-sre-system-requirements-required-always">110-SRE System Requirements (REQUIRED always)</h3>
+<p>Here are the requirements in most raw form, meaning "exactly as collected". It seems that sometimes is optional but:</p>
+<ul>
+<li>if requirements are already in a bid documentation - a reference to this document should be made</li>
+<li>if this is a new version with just some issues, too few and clear - even so, after some time should be not SO CLEAR as it was...</li>
+</ul>
+<p>If section a better approach is to make some short notes following “MoSCoW" taxonomy, if possible or if no then let some margins for future hand wrote annotations for a reviewer.</p>
+<h3 id="120-cpts-system-concepts-required-in-almost-all-cases">120-CPTS System Concepts (REQUIRED in almost all cases)</h3>
+<p>Here should be at least a detailed description 
+of system specific terms, objects, information domains, paradigms, environment (business or technical), similitude, different relevant taxonomies, etc, whatever is considered important to a good understanding of system.</p>
+<p>This information will be BASIS for a future system design.</p>
+<p>When is not necessary? So, in cases when it already exists and system intended modifications are nor of nature to alter these concepts.</p>
+<h3 id="130-skit-sales-kits">130-SKIT Sales Kit(s)</h3>
+<h4 id="13001-product-datasheet-required-always">130.01 Product Datasheet (REQUIRED always)</h4>
+<p>The datasheet is an element that describe the product itself, mostly from technical point of view. It is very common as engineering practice and its structure is not "something standard" but in practice the following information should appear here:</p>
+<ul>
+<li>what the product is good for</li>
+<li>technical specifications, mainly the standards which are compliant</li>
+<li>interfaces (if are), shortly and technically how to use them</li>
+<li>the product ecosystem: ie if there are more editions available, trainings available, etc</li>
+</ul>
+<p>Basically a datasheet contains all that is considered useful for a person "at first look". Then, if really interested, will search for other detailed documents. This document is required being considered "<em>one of the first contacts with customer</em>". Many sites (search engines) are looking for <code>motors</code> section in HTML and what is considered as datasheet is one of the first elements to be displayed.</p>
+<p>There are many examples (different forms and kind of products) of this document for RENNware products, not being a standard form (but changes with market trends) so here will not be included one.</p>
+<h4 id="13002-product-overview-required-if-not-present-in-datasheet">130.02 Product Overview (REQUIRED if not present in <em>Datasheet</em>)</h4>
+<p>This section is mandatory if it is not present in datasheet (see previous section) and it should contain exactly what its name say, an overview of system / product. Many companies name this document as "flyer", "products brochure", and so on, but mainly is an overview of product ref <em>what is good for</em>.</p>
+<h4 id="13003-spin-documents-optional">130.03 SPIN documents (OPTIONAL)</h4>
+<p>This section is absolutely optional as not any developer knows what it is. It contains (if present) useful information for sales department to build cheat sheets ref problems that could be addressed at a customer in business context of this product.</p>
+<p>Just for as curiosity, SPIN is a sales technique and the acronym is derived from Situation, Problems, Increase (problems) and Needs.</p>
+<h4 id="13004-licensing-editions-pricing-optional">130.04 Licensing Editions &amp; Pricing (OPTIONAL)</h4>
+<p>This section is optional if the system is "one edition - one license" model.</p>
+<p>If there are more options for licensing or the product has been elaborated with "more editions in mind", so these should be written here as for sales / product manager references.</p>
+<p>There is no need for elaborated or "sophisticated" text / content. Just enumerated options, what exactly would be the metric for licensing and some information useful to have an ideea of how could be established a price (if there are known). The document will be reviewed and (re)written by somebody else from product management area.</p>
+<h4 id="13005-service-training-programmes-optional-as-recommended">130.05 Service &amp; Training Programmes (OPTIONAL as RECOMMENDED)</h4>
+<p>This section should be present in all cases as it describe what other services (installation, configuring, migration, etc) and training programs are available and how can be accessed / requested.</p>
+<p>As in the licensing section, there is no need for "sophisticated" text. Anybody else would process latter this document but need to understand some basics and to have a future reference where to "come back" to check for missing ideas or useful things.</p>
+<h3 id="190-sktd-sketches-technical-diagrams-optional">190-SKTD Sketches &amp; Technical Diagrams (OPTIONAL)</h3>
+<p>This section(s) contains the diagrams and pictures used in other parts in their raw form un order to be latter easily converted in other formats needed.</p>
+<!-- -#NOTE start of BIG section -->
+<h2 id="800-swd-software-development">800-SWD Software Development</h2>
+<h3 id="810-dsgn-system-design">810-DSGN System Design</h3>
+<p>The system design document is a collection of more chapters / sections / volumes, and these can be outlined in one or more documents, function of information volume. In that case please keep the convention of file names in order that other people to "recognize" a document first by its name.</p>
+<h4 id="81000-overview-update-of-13002-required">810.00 Overview - update of <em>130.02</em> (REQUIRED)</h4>
+<p>Updates the overview of the system (<em><code>130.02</code></em> document). This update is "how things are seen by <em>system designer</em>". Anyway at least a reference should be made and a summary of them will bring "more clarity" for software development.</p>
+<h4 id="81001-system-requirements-update-of-110-sre-optional">810.01 System Requirements - update of <em>110-SRE</em> (OPTIONAL)</h4>
+<p>This is the nature to make things more clear for system development by aligning (mapping) technical taxonomies to existing business ones.</p>
+<p>Essentially this is an update of <em><code>110-SRE</code></em> document ref its requirements specification part "as seen by system designer".</p>
+<h4 id="81002-system-landscape-required">810.02 System Landscape (REQUIRED)</h4>
+<p>The system landscape is anything else that different kinds of architectures, such as logical, functional, physical, interfaces, etc. Some of them are "the same thing" in most cases, but there are situations when small subtle information makes difference.</p>
+<p>The basic idea is to depict the whole system in smaller parts un order to be manageable from all points of view.</p>
+<p>Another important aspect is that the <strong>architectures must be coherent between them</strong>. They represent the same system from different perspectives and clearly <strong>must exists a map between them</strong>, not necessarily 1 to 1 (it would be impossible) but in any cardinality it must be and <strong>must be a deterministic one</strong>.</p>
+<p>As architectures, at least a <strong>logical</strong> one should be, describing those logical components and their relationships. </p>
+<p>Must be clear that all next sections will be <em>details</em> of the landscape and to avoid complexity you should <strong>focus here on WHAT</strong> system has to do and NOT on how system will do. For "how" there are next sections and references to them are clearly useful.</p>
+<p>As architectures here are mentioned the most used and common ones:</p>
+<ul>
+<li>
+<p><em>logical</em> architecture - this depict the system logic for its coherent functionality</p>
+</li>
+<li>
+<p><em>functional</em> architecture - in almost cases is just a breakdown of system functionalities</p>
+</li>
+<li>
+<p><em>physical</em> architecture - describe the physical environment on which the components will operate (machines, devices, etc)</p>
+</li>
+<li>
+<p><em>interfaces</em> - describe those system interfaces designed to be used by various other systems to communicate with this one</p>
+</li>
+</ul>
+<p>Important things in architectures design:</p>
+<ul>
+<li>start with an "overall" picture; this contains just the system as bubble and all its external environment, meaning data (generally named messages at this level)</li>
+<li>do not concentrate at first level for what is / will be inside the "system bubble", just on its external environment</li>
+<li><em>name</em> each message outlined in system environment; associate some codes with these names to assure that is unique</li>
+<li>use a future dot (<code>.</code>) scheme for hierarchy and do not concentrate on ordering on messages here - there should be no relevant ordering at this level</li>
+<li>give a <em>direction</em> to these messages; direction should be as "seen" from system perspective and can be: IN, OUT, BIDIRECTIONAL</li>
+<li>each message should be triggered by "something" and at this level is important to mark the triggers; these could be: an event, an user action / manual, another system automate action, etc</li>
+<li>do not mix messages with their triggers; latter you will need to have them as  separate</li>
+<li>when ready (must establish a "ready", latter you can and will come back and review these) <strong>break the system bubble</strong> in smaller parts / bubbles and repeat the same schema with messages</li>
+<li>at this level consider any sub-bubble as an independent system itself and treat it like did for first system bubble</li>
+<li>the whole process should be repeated for each new bubble</li>
+<li>when to stop with breaking down? the most frequent signal is when <strong>you need to talk about how not only about WHAT</strong></li>
+</ul>
+<h4 id="81003-system-data-objects-required">810.03 System Data &amp; Objects (REQUIRED)</h4>
+<p>For data objects there are more useful levels and taxonomies ref how and what to describe:</p>
+<ul>
+<li><strong>conceptual schema</strong> - this level focus on list (inventory) of objects and their relationships. <strong>THIS IS THE LEVEL WHERE YOU MUST START</strong>. this model is. mostly known as "conceptual ER diagram" </li>
+<li><strong>behavioral schema</strong> - this model focus on how data <em>react</em> at various events / triggers and how it transform depending on context</li>
+</ul>
+<p>From other point of view (taxonomy) there could be:</p>
+<ul>
+<li><strong>physical schema</strong> - that describe data from database server (whatever it would be) perspective; the biggest problem with this is the <em>model dependency of database server</em>; at this moment and in most cases we do not want to create <em>so hard</em> dependencies such a database server - our intention is to let these aspects as "large / open" as possible but continuing development</li>
+<li><strong>ORM schemes</strong> - this kind of schemas describe data as <em>classes</em> (in their true sense); <strong><em>this is the most preferred model</em></strong> as being in almost cases agnostic to database server (but in a way depends of programming language); it should be able to model both the <em>conceptual</em> and <em>behavioral</em> aspects of data (lifecycle)</li>
+</ul>
+<p>Here are some guidelines in designing system data (objects):</p>
+<ul>
+<li>use underscore (<code>_</code>) to prefix those attributes that are not necessarily / directly related to business; in most languages, variables beginning with <code>_</code> are private or protected by default</li>
+<li>prefix names with <code>_pk</code> for primary keys; this is preferred instead of <code>id</code> which could create unwanted dependencies being so large practiced</li>
+<li>prefix names with <code>_fk</code> for foreign keys; keep a "clean" name for business relations instead (usable only in ORM schemas)</li>
+<li>keep a largely supported, best know and with enough language libraries available ORM; <strong><em>SQLAlchemy</em></strong> is the most preferred, but could be others except those that limit usability strictly to one language and / or, directly / indirectly to one operating system for a real production deployment (which must be "something" stable and robust enough by definition)</li>
+<li>think relatively agnostic ref database server nature (SQL or noSQL); using ORMs you should be able to work with JSON formats in all cases without too much issues</li>
+<li>let <em>detailed diagrams</em> as much as possible for <em><code>820-SINT System Internals</code></em> document where are specialized sections for these; the other people expect find them there not here</li>
+</ul>
+<h4 id="81004-system-ui-optional-recommended">810.04 System UI (OPTIONAL RECOMMENDED)</h4>
+<p>Things here should be "obviously", but here are some guidelines:</p>
+<ul>
+<li>keep a "clean" Ui interface, with simple and usual widgets</li>
+<li>be clear with user information ref widgets - for example for a "Browse..." button it should be clear what files are visible: from its local system or from server...</li>
+<li>think for usage of simple template frameworks, use a simple one (like <em>Bootstrap</em> or <em>UI Kit</em>) and try to avoid as much as possible to mix them, or assure they have good enough disseminated properties in order to be mixed (for example <em>UI Kit)</em></li>
+<li>use any kind of mockups you think give enough clarity for (the other) developers in coding <code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>, etc sections</li>
+<li>be <em>EXPLICITLY</em> in specifying all things; avoid to suppose that anyone should know defaults for a framework; even in this case make enough references and put links where defaults ca be found</li>
+<li>use (wherever is applicable) hierarchical diagrams to show "things"; they offer more "visibility" for auditors</li>
+</ul>
+<h4 id="81005a-system-processes-required">810.05a System Processes (REQUIRED)</h4>
+<p>Here you must define the system processes and functionalities.</p>
+<p>Start with a functionalities list. Organize it hierarchically having in mind a business criteria relevant for system informational domain. As a good check, any functionality is outlined here should be assured by at least one component from logical / functional architecture. So a <em>compliance matrix "functionality by component"</em> will be clearly very helpful. If there are functionalities assured by more than 1 logical component, instead a simple "x" in matrix cells, use more symbols, for example "s" for start here, "e" for ends here, "n" for notification, etc. DO NOT FORGET TO ANNOTATE MATRIX WITH A <strong>LEGEND</strong>. Even if seems that abbreviations are / should be very clear, there is not necessarily true. Remember basic rules:</p>
+<ul>
+<li>Do not be IMPLICIT, but EXPLICIT.</li>
+<li>Do not suppose anything; do not make assumptions</li>
+</ul>
+<p>When the functionalities list is ready or for those which are clear, a (one for start) process should be outlined for it. </p>
+<p>The processes are "coming" not only directly from functionalities but can be derived from other "places". Even so, these places will be addressed from some functionalities, maybe not necessarily as first level but from a functionality.</p>
+<p>This functionality is not necessarily to be one directly "visible" for end users.</p>
+<p>So, after outlining a process iy should be "decorated" with:</p>
+<ul>
+<li>a code and a human understandable name</li>
+<li>a description of what will do this process (ie what is good for)</li>
+<li>a list of what data will be required in this process</li>
+<li>the results will produce</li>
+</ul>
+<p>Identically, all things should be <strong>coherent and consistent</strong>. Some compliance matrices up to architecture will be a very good check for designer but for developer also.</p>
+<h4 id="81005b-application-software-organization-optional">810.05b Application Software Organization (OPTIONAL)</h4>
+<p>Here are 2 aspects (at least) tha need to be addressed:</p>
+<ul>
+<li>toolstack used / proposed to be used</li>
+<li>application structure / organization</li>
+</ul>
+<p>From the <strong><em>Toolstack</em></strong> perspective there must be said:</p>
+<ul>
+<li>the programming languages</li>
+<li>scripting languages</li>
+<li>operating systems required compatibility</li>
+<li>frameworks and libraries proposed</li>
+</ul>
+<p>From the <strong><em>Application Structure / Organization</em></strong> perspective it is important:</p>
+<ul>
+<li>to design a simple directory structure; make use as much as possible of known practices, for example anybody will expect that in a directory named <code>doc</code> to find out some documentation</li>
+<li>for data as physical one, if applicable (not only / necessarily database files, even JSON files for example) think a <code>/data</code> directory directly from application root</li>
+<li>for data model think a <code>/data_models</code> directory directly from application root as it could be used by many system components</li>
+<li>always outline a <code>/test</code> directory</li>
+<li>always outline a <code>static</code> directory (preferable at application root level) for any kind of static files (style files, different data, etc) - doing so will be much easier to protect it on production system and to give "right security fio right persons</li>
+<li>in most situations a <code>libutils</code> directory is good; it can accommodate all project specific general purpose modules</li>
+<li>not as last case, have in mind that application is better to be put on an automated backup system, being this just a simple script, and who does that should have a simple and clear scheme of <em>what to backup</em>; also when ned to restore data from an old backup, people should be able to find the right places without making <em>"special analysis"</em> for that</li>
+<li>be consistent, avoid changing directories and file names as this could have a <strong><em>severe</em></strong> impact on code</li>
+</ul>
+<p>For small projects it couldn't be necessary this section as probably "everything" are located in one to three directories. </p>
+<h4 id="81006-system-api-interfaces-optional">810.06 System API &amp; Interfaces (OPTIONAL)</h4>
+<p>Here is the section which describe the system <strong>interfaces</strong>. Of course these should come from (or go to update) <em>architecture</em>.</p>
+<p>For each system interface should be outlined:</p>
+<ul>
+<li>an unique <strong>code</strong> (name)</li>
+<li>a <strong>description</strong> ref what does and what is good for</li>
+<li>the interface <strong>protocol</strong> often aka handshaking model</li>
+<li>the interface <strong>API</strong> in terms of methods, arguments, returns, usability, etc</li>
+<li>any other relevant applicable conditions or contexts</li>
+</ul>
+<h4 id="81040-system-concepts-in-detail-update-of-120-cpts-optional">810.40 System Concepts in Detail - update of <em>120-CPTS</em> (OPTIONAL)</h4>
+<p>This section role is to update (clarify or add details) ref to concepts presented in <em><code>120-CTPS</code></em> document as result of different things new or changed along development.</p>
+<p>Also, here could appear new concepts but, normally, this indicates a poor analysis process (or incomplete understanding of what system should do). Anyway, <strong>new concepts must be clear and visible marked</strong> and should be <strong>notified</strong> to project management area as they could be subject of change management.</p>
+<h4 id="81045-licensing-model-update-of-13004-optional">810.45 Licensing Model - update of <em>130.04</em> (OPTIONAL)</h4>
+<p>This is a dedicated section where licensing model can be explained / detailed. Usual here are information regarding volumetric usable for licensing (as system is aware of and can count them) additionally to <em><code>130.04</code></em> document. The information provided is used by product manager and commercial departments to derive final <em>product licensing models</em>.</p>
+<p>Essentially the information provided here will update <em><code>130.04 Licensing Editions &amp; Pricing</code></em> document, as this kind of information become clear along development process.</p>
+<p>Guidelines and licensing metrics examples:</p>
+<ul>
+<li>keep a dedicated section in <em><code>130.04</code></em> document this being too technical for commercial use; therefore will be easier to clean commercial information</li>
+<li>metric ex: named users - the registered enabled users in system</li>
+<li>metric ex: size of uploaded files</li>
+<li>metric ex: number of days for subscriptions</li>
+<li>metric ex: number of tokens / certificates given</li>
+<li>metric ex: number of days to allow downloading some information</li>
+<li>metric combinations</li>
+</ul>
+<h4 id="81046-product-features-update-of-13001-required">810.46 Product Features - update of <em>130.01</em> (REQUIRED)</h4>
+<p>This is a dedicated section where product features can be explained more clear and detailed. Therefore is an update to <em><code>130.01 Datasheet</code></em> document.</p>
+<p>For smaller projects only <em><code>130.02 Overview</code></em> will be updated, but if 130.01 exists, this should be updated, the other (130.02) being a subset of it.</p>
+<p>Anyway, this information is also marked (as more raw form) in CHANGELOG, RELNOTE, README files.</p>
+<p>These information will definitely contribute to <em><code>130.01 Product Datasheet</code></em> and <em><code>130.02 Product Overview</code></em> documents, as being known that it becomes more clear and defined in development process.</p>
+<h4 id="81050-to-81079-appendices-optional">810.50 to 810.79 Appendices (OPTIONAL)</h4>
+<p>This sections reserves numbers / codes starting with <strong><code>50</code></strong> up to <strong><code>79</code></strong> for different appendices. Normally, appendices are used:</p>
+<ul>
+<li>if is more useful to separate the information as being large in most cases, and put it on a separate file</li>
+<li>the information does not need attention when reading all document, but is containing <em>details</em> that are useful for "advanced readings" or a deeper understanding of information domain in subject</li>
+</ul>
+<h4 id="81080-to-81099-design-sketches-optional">810.80 to 810.99 Design Sketches (OPTIONAL)</h4>
+<p>This sections reserves numbers / codes starting with <strong><code>50</code></strong> up to <strong><code>79</code></strong> for different appendices. Design sketches are sometimes (often) very useful to be as separated files in their raw formats in order to be used latter in other materials (for example by marketing / branding departments).</p>
+<p>Pay attention that these sketches could be duplicates of <em><code>190-SKTD Sketches &amp; Technical Diagrams</code></em>, so be aware and try avoid as much as possible duplicates.</p>
+<p><strong>Remarks to 810 DSGN section</strong></p>
+<p>Sometimes (especially in case of small / med projects) it is easier or required to have one single file - in this case just name the file using <code>ALL</code> instead of a volume / section code and "put all together" in that file as "volumes" / sections</p>
+<h3 id="820-sint-system-internals">820-SINT System Internals</h3>
+<p>These are very technical and specialized sections ref system (internals). They can be simple references to <em>notorious / known algorithms</em> or detailed technical notes about <em>how is implemented</em>, for example (and most often) for states.</p>
+<h4 id="82001-system-states-optional">820.01 System States (OPTIONAL)</h4>
+<p>Here are described various <strong>system states</strong> used in development process. <em>This section applies to systems where there are states</em>. Preferred forms of diagramming follow UML notation standards (they are not excluding one each other):</p>
+<ul>
+<li><strong><em>state diagrams</em></strong> (ALWAYS <strong>REQUIRED</strong>) - which relieves all the states (in subject) and <em>transitions</em> between them</li>
+<li><strong><em>sequence diagrams</em></strong> (OPTIONAL) - which add the <em>temporal</em> information to state diagrams</li>
+</ul>
+<h4 id="82002-system-interfaces-bus-es-optional">820.02 System Interfaces &amp; BUS-es (OPTIONAL)</h4>
+<p>Here should be described each system interface (following the guidelines from section <em>810-DSGN System Design 06 - System API &amp; Interfaces</em>). The <code>BUS</code> term means in this document almost the same thing, but is just a more hardware term. It is quoted here because it is so common that, often, this term will be found.</p>
+<h4 id="82003-synchronization-clocks-optional">820.03 Synchronization &amp; Clocks (OPTIONAL)</h4>
+<p>Here is clearly a very specialized section regarding <em>clocks</em>. This is in almost cases REQUIRED if the system is (or part of) a distributed one, where clock synchronization is "something" required.</p>
+<p>If present, it should be present both <strong>logical</strong> and <strong>physical</strong> clocks, how are they implemented, if use some "known" algorithms (and a reference to them), sync issues, context conditions for good operations, etc.</p>
+<h4 id="82004-algorithms-strategies-optional">820.04 Algorithms &amp; Strategies (OPTIONAL)</h4>
+<p>This section is "self descriptive" as name. Clearly, if there are <em>known algorithms</em>, they shouldn't be described here in detail, but a few words (ref how and why are used) must be written and a reference made (or internet, ie Wikipedia, or book).</p>
+<h4 id="82090-toolstack-notes-optional">820.90 Toolstack notes (OPTIONAL)</h4>
+<p>Here should be various notes relevant for toolstack and "outside" normal things:</p>
+<ul>
+<li>special remarks, ie how to, which parts / components, etc</li>
+<li>where a framework, library, etc can be found</li>
+<li>warnings and other known issues (the designer should know them or the most important of them)</li>
+</ul>
+<h3 id="830-dev-development-mandatory">830-DEV Development (MANDATORY)</h3>
+<p>This is not a document section. In this folder it is supposed to keep all system code and it is organized as project require.</p>
+<h3 id="840-test-system-test">840-TEST System Test</h3>
+<h4 id="84001-test-plan-required">840.01 Test plan (REQUIRED)</h4>
+<p>Here it will reside the plan for testing. Normally this should be as simple as possible, being "just for your information" at development level. What is really important (especially for own time planning perspective) is what in Project Management discipline is named "<strong><em>WHO - DOES -WHAT - WHEN</em></strong>".</p>
+<p>So a simply "agenda like" will be enough. Not details, not why, not specificities, etc. The WHAT part should be exactly what respective person wil have to do, in fact indicating a <em>test case number / id</em>.</p>
+<p>Also it will be very good to specify the nature of test:</p>
+<ul>
+<li>"white" test - ie with "entry" to code level</li>
+<li>"black" test - aka functional testing, just "looking &amp; exercising" from an end user perspective</li>
+</ul>
+<p>Most (almost all) tests of here will be in "black" category, as long as code-in testing is the developer's responsibility for "alpha" releases testing.</p>
+<p>Of course there are many other test that should be done (integration, acceptance) but they are not in scope of this methodology, but more in Project Management one.</p>
+<h4 id="84002-test-cases-scenarios-required">840.02 Test cases / scenarios (REQUIRED)</h4>
+<p>A test scenario should be outlined for every system functionality (see <em>810-DSGN System Design</em> section <em>05a - System Processes</em>). "Test cases" is a list with all test scenarios, ie the table of content or index of them. The difference is so subtle that in most cases they are uses as synonyms for the same thing: test scenario.</p>
+<p>Every test scenario should contain:</p>
+<ul>
+<li>an <strong>unique code</strong> / number / identifier so will give us the possibility to reference it latter</li>
+<li>a brief <strong>description</strong> of what the functionality under test should (is expected) do</li>
+<li>the (ordered) <em>NORMAL</em> <strong>steps</strong> that should be done for functionality to fulfill it; pay attention, these steps should reflect the end user manual or help or working procedure as they should be here exactly how an end user would do</li>
+<li><strong>expected results</strong> (for a <em>PASS</em>) the system must "produce" - here a good practice if these are the nature of "real numbers" or "too fine grained dates, as timestamps" is to specify the accepted tolerances (if they are and if appear in documentation)</li>
+<li>any <strong>condition</strong> that must be met / fulfilled by system as in documentation</li>
+</ul>
+<h4 id="84004-test-report-required">840.04 Test Report (REQUIRED)</h4>
+<p>The test report should be a mix between <em>test plan</em>, <em>test cases</em> and <em>test scenarios</em>. In essence this will be a <strong>list</strong> with all <strong>tests</strong> (test cases), <strong>who</strong> executed the test (test plan) for further questions and <strong>result as PASS / FAIL</strong> (test scenarios).</p>
+<p>Guidelines:</p>
+<ul>
+<li>keep it simple</li>
+<li>it will be just an input for <em>Release Notes</em>; not subject for any organizational regulations</li>
+<li>no details (as reasons, motivational facts, etc)</li>
+<li>just PASS / FAIL; the customer is not interested about why and if, then are other persons who should address that issues</li>
+</ul>
+<h4 id="84090-release-notes-required">840.90 Release Notes (REQUIRED)</h4>
+<p>This deliverable result as a "humanize" compilation (clean, choose words, etc) of <em>820-SINT System Internals</em>  section <em>04 Test Report</em> and it will <strong><em>accompany the released packaged</em></strong> as required part of it.</p>
+<h3 id="880-rlse-system-release">880-RLSE System Release</h3>
+<p>All these parts / sections aim to have a <strong>PACKAGE</strong> (ie, required for a system <em>product</em>) that accompany a release. They will (finally) be "what a client see" ref a system update / upgrade package. <strong>It will be "its primary / main source of information" in deciding that will get this package or not</strong>.</p>
+<p>Being deliverables with commercial impact they have a <em>literal code</em> not only a numerical one. This code is also unique so it can be used as Alternate Key.</p>
+<h4 id="88010-feat-product-features-update-of-13001-required">880.10 FEAT Product Features - update of <em>130.01</em> (REQUIRED)</h4>
+<p>It will be get / obtained by a (re)compilation (following mainly a commercial facelift) of <em>840-TEST System Test</em> section <em>90 Release Notes</em>.</p>
+<p>Basically in (after) this step the <em><code>130.01 Product Datasheet</code></em> document should be updated, or to create a new one based on it. Idea is that here, this document will <strong>BE A FULLY COMMERCIAL</strong> one.</p>
+<p>The same mentions (please read the previous sections) apply here ref to <em>130.01</em> &amp; <em>130.02</em> documents. If you're here probably the size / complexity of the system is of nature that require for <em><code>130.01 Product Datasheet</code></em>.</p>
+<h4 id="88020-elpri-editions-licensing-pricing-update-of-13004-required">880.20 ELPRI Editions, Licensing &amp; Pricing - update of <em>130.04</em> (REQUIRED)</h4>
+<p>This should be the "commercial form" (as more elaborated and with a commercial facelift) of <em>130-SKIT Sales Kit(s)</em> section <em>130.04-SKIT Licensing Editions Pricing</em>. Essentially this is the update and "commercial facelift" of <em><code>130.04 Licensing Editions &amp; Pricing</code></em> document.</p>
+<p>The same mentions (please read the previous sections) apply here ref to <em>130.01</em> &amp; <em>130.02</em> documents. If you're here probably the size / complexity of the system is of nature that require for <em><code>130.01 Product Datasheet</code></em>.</p>
+<h4 id="88030-euma-end-user-manuals">880.30 EUMA End User Manuals</h4>
+<p>Here are the manuals that will mainly address <em>end users</em> (business area) of product. These are usual of two kinds:</p>
+<ul>
+<li><strong>full</strong> / complete manuals - these are "monolithic" documents containing all information needed for end users, doesn't matter what kind of end user is reading it (a very common example is "<em>Quick Reference Guide</em>")</li>
+<li><strong>partial</strong> manuals - these are addressed to a more target segment of end users; one manual for a category of end users (typical example are "<em>Work Procedure</em>" documents)</li>
+</ul>
+<p>So, regardless the enumerated type, our recommendation is to specify the TARGET AUDIENCE for each manual as being a very useful practice.</p>
+<h5 id="88030-eumaqg-end-user-quick-guide-required">880.30 EUMA.QG End User Quick Guide (REQUIRED)</h5>
+<p>This kind of manual is intended as a very quick reference where users will find easily what they need or where to look for details. It is a ALL IN ONE manual style containing "nothing about all" as style of information.</p>
+<p>As guidelines, it should contain:</p>
+<ul>
+<li>a brief overview referring functional aspects, not technical ones</li>
+<li>a quick installation procedure or "how to make it usable first time" - no details, no options; just a simple, default installation</li>
+<li>a brief tutorial ref "how to use it first time" or "first steps"</li>
+</ul>
+<h5 id="88030-eumawpnn-work-procedure-nn-optional">880.30 EUMA.WP<em>nn</em> Work Procedure <em>nn</em> (OPTIONAL)</h5>
+<p>As general rule a "work procedure" is a description of how to do a specific, concrete and atomic activity.</p>
+<blockquote>
+<p><strong>Specific</strong> means that activity is specific to business that system is implementing</p>
+<p><strong>Concrete</strong> means that activity is not a generic one, but a very concrete, one of the known activity for targeted audience</p>
+<p><strong>Atomic</strong> means the respective activity is not normally breakable in smaller parts with the risk of inconsistencies and normally is executed in full up to finish, ie, technically speaking not let open states(!)</p>
+</blockquote>
+<p>As good and best practice, the work procedures package should be accompanied by a <em>catalog</em> document which is an index with all work procedures, a table at least code and name foe convenience ordered by procedure name.</p>
+<p>Procedure content guidelines:</p>
+<ul>
+<li><strong>code</strong> the activity and mark this code; remark that usually is a number, those <em>nn</em> from document title; this code is subject of project conventions</li>
+<li><strong>name</strong> the activity just procedured as it is known in business; try to keep a "human name"</li>
+<li>specify the intended <strong>audience</strong> as business roles (<em>attn not system, but business role if they are not the same</em>)</li>
+<li>specify the <strong>navigation path</strong> to achieve this activity in system</li>
+<li>specify all <strong>steps</strong> that must be followed to successfully fulfill activity</li>
+<li>for steps give an aid using <strong>screen captures</strong> and annotate them</li>
+<li>give indications ref every <strong>field</strong> that appear on that step; be clear, make references where from that information is coming, etc</li>
+<li>do not suppose anything; just explain everything even it seems simple or annoying</li>
+<li><strong>number steps</strong> as can be referred easier</li>
+<li>for each step give <strong>hints</strong> ref expected results and system behavior (surprises are not something good at job), identically even it seems obvious for you</li>
+</ul>
+<p>As mandatory work procedures (applicable for any system) are:</p>
+<ul>
+<li><strong><em>System navigation</em></strong> - this contains specific instructions ref how access a functionality in system, usual the menu path and other relevant info</li>
+<li><strong><em>Authentication in system</em></strong> - explain how to login, logout, change user, change password, etc</li>
+<li><strong><em>System indicators</em></strong> - explain what are good for and how to use all system icons, widgets iconic butons, status indicators, etc - if it is small enough this procedure is included in navigation</li>
+</ul>
+<p>Also, keep in mind that many users will print these procedures, so keep a standard paper format and try to include them in <strong>system help</strong> module.</p>
+<blockquote>
+<p><strong><em>Where to find out what are those activities that need to have a work procedure?</em></strong> Remember, there is a document with system processes (<em>810.05a System Processes</em>) - this is the place where to start.</p>
+</blockquote>
+<h4 id="88030-adma-administration-manuals">880.30 ADMA Administration Manuals</h4>
+<p>Here are the manuals that will mainly address <em>administrators</em> (IT area) of product. These kind of manuals should address at least the following content:</p>
+<ul>
+<li>current system maintenance</li>
+<li>installation and first configuration</li>
+<li>initial system credentials</li>
+<li>some disclaimers regarding initial credentials clean</li>
+<li>how to make some safety copies</li>
+</ul>
+<blockquote>
+<p>These manuals should not contain detailed information (ar advanced information) regarding administration as this is usually subject of payment. The same thing apply for service(ing) procedures / diagrams and so on.</p>
+</blockquote>
+<h5 id="88030-admasi-system-installation-configuration-required">880.30 ADMA.SI System Installation &amp; Configuration (REQUIRED)</h5>
+<p>This manual is about:</p>
+<ul>
+<li>how to install the system in various deployment scenarios</li>
+<li>deployment scenarios that system is prepared for</li>
+<li>how to change initial sensitive data</li>
+<li>basic system configuration (make it to run in in its simplest mode</li>
+<li>more ref advanced configuration parameters</li>
+</ul>
+<h5 id="88030-admasa-system-administration-optional">880.30 ADMA.SA    System Administration (OPTIONAL)</h5>
+<p>This manual is about:</p>
+<ul>
+<li>current maintenance operations</li>
+<li>backup the system and system data (if applicable)</li>
+<li>enable / disable users</li>
+<li>enable / disable other system objects</li>
+<li>starting / stopping different interface / communication / messaging components</li>
+<li>clone system for testing purposes</li>
+</ul>
+<p>Please be aware to general guidelines regarding administration manials.</p>
+<h4 id="88040-skits-update-update-all-130nn-optional">880.40 SKITs update - update all <em>130.nn</em> (OPTIONAL)</h4>
+<p>This process, is anything else that <strong>ALL SALES KITS must be reviewed and updated</strong> where applicable. The process is here just a checklist / remember point. Basically all <em>103.nn</em> documents should be REVIEWED and give the required "commercial facelift".</p>
+<h4 id="88050-tkit-training-kits-programmes-update-of-13005-optional">880.50 TKIT Training Kits &amp; Programmes - update of <em>130.05</em> (OPTIONAL)</h4>
+<p>Ref "Training Programmes" some basic things are required:</p>
+<ul>
+<li>a list of courses</li>
+<li>a schedule for these courses</li>
+<li>a curriculum for each course</li>
+</ul>
+<p>In next sections, some recommendations and guidelines can be found.</p>
+<h5 id="list-of-courses">List of courses</h5>
+<p>This is "just a table" with all courses relevant for the system. It will be helpful, often required to specify some taxonomies for courses, so:</p>
+<ul>
+<li>a course <strong><em>code</em></strong> to allow latter references</li>
+<li><strong><em>category of auditorium</em></strong> as: beginners, advanced, etc</li>
+<li>type of available <strong><em>materials</em></strong> as: video, powerpoint, pdf, none, etc</li>
+<li><strong><em>average duration</em></strong> as: under 1h, 1 - 3h, over 3h, etc</li>
+<li>some prerequisites: course A, knowledge of, etc</li>
+<li><strong><em>target auditorium</em></strong> as: administrators, end users, etc</li>
+<li>what will be the benefit after this course, ie "<strong><em>what you'll learn</em></strong>"</li>
+</ul>
+<h5 id="schedule">Schedule</h5>
+<ul>
+<li>Schedule should be a relative on, so no exact calendar dates here, but <em>periods</em>, <em>duration</em>, a <em>min</em>, <em>max</em>, <em>recommended</em> number of participants.</li>
+<li>at least an indication of <em>lectors</em> or quality of project persons intended to keep that course (ie, analyst, sw engineer, etc)</li>
+</ul>
+<h5 id="courses-curriculum">Courses curriculum</h5>
+<p>This should follow a "standard" but simple curse curricula. In its simplest (but very relevant) is a "<strong>COURSE OBJECTIVES</strong>" type of document.</p>
+<p>These items will be put in a commercial form (update <em><code>130.05 Service &amp; Training Programs</code></em>).</p>
+<h4 id="88060-srvc-service-update-of-13005-optional">880.60 SRVC Service - update of <em>130.05</em> (OPTIONAL)</h4>
+<p>This section refer to services that can be done for that system in production. This is just a list and <strong>not</strong> HOW WILL BE DONE but <strong>WHAT CAN BE DONE</strong> and is intended to update <em><code>130.05 Service and Training Programmes</code></em>.</p>
+<p>Guidelines of list can contain:</p>
+<ul>
+<li>a customer specific maintenance plan, based on its infrastructure</li>
+<li>a med / long term update and support plan</li>
+<li>assurance of extended warranty</li>
+</ul>
+<h4 id="88090-sca-source-code-archives">880.90 SCA Source Code Archives</h4>
+<p>Here are just (normally as archives) the tags saved from git repository with aim of "backup copies". No other processing is required if they are saved AS EXPORTED from git in a standard archives format from: <em>zip</em>, <em>tar.gz</em>, <em>tar.bz2.</em></p>
+<h3 id="890-mnt-system-maintenance">890-MNT System Maintenance</h3>
+<p>This section address those things related to system maintenance as it would be in PRODUCTION, ie "<em>what should be done to keep system alive after migrate</em>" it in production environment. It is important to say that, here, things are from software development perspective more exactly, here are those things that results as concrete facts in / after development, what exactly should be done and when to have a "clean - always ready to run &amp; usable" system.</p>
+<p>These are some guidelines with what this section should contain:</p>
+<ul>
+<li>ref <strong>Maintenance Plan</strong> - a frequency of operations should be specified or if exists a proposed one, to be revised and reviewed</li>
+<li><strong>type of incident</strong>s that could appear and their <strong>severity</strong> levels - normally type of incidents are almost known but their <em>impact</em> should be described very concrete with potential consequences (ref data loss, data damage, unrecoverable facts, etc)</li>
+<li>the <strong>response</strong> &amp; <strong>resolve</strong> times - these should be revisited and reviewed</li>
+<li>few words about <strong>Hot Fixes</strong>, <strong>Security Updates</strong> &amp; <strong>Critical Patches</strong> - what exactly they means for this system, if and how are applicable, etc </li>
+</ul>
+<!-- -#NOTE start of BIG section -->
+<h2 id="900-ops-operations">900-OPS Operations</h2>
+<p>This section outlines activities and deliverables that are not necessarily / totally related to engineering of software development, but <strong>directly related</strong> and at its boundary with other company operations (mainly with <em>Project Management</em>). They are designed as helpers in software development with more content specific to software "manipulation".</p>
+<h3 id="920-tle-prepare-temporary-live-environments-required">920-TLE Prepare temporary live environments (REQUIRED)</h3>
+<p><em>ATTN: new in SDEVEN methodology</em></p>
+<p>This activity is intended to support the software development process and activity. It is described (as informational content) in <em>90 RENBLU</em> document and in other methodology places as targeted systems (ie what need to be prepared).</p>
+<p>Here it is expected to find a list with all these systems and, if needed, some more specific and detailed information, for example ref operating system, external environment where from system need to be accessed, users, etc.</p>
+<h3 id="990-pmsp-project-management-support-required">990-PMSP Project Management Support (REQUIRED)</h3>
+<p><em>ATTN: new in SDEVEN methodology</em></p>
+<p>Here, the software engineer should depict some elements useful in this project management operations:</p>
+<ul>
+<li>a list of deliverables that is expected to be issued in 800 Software Development phase. This list should be <strong>concrete</strong> and <strong>clear</strong> as being addressed to a non-software-practicing person as its normal job.</li>
+<li>some useful quality factors which will support for deliverables measuring and <strong><em>PoC</em></strong> calculation</li>
+<li>a list with quantify the resources need for each deliverable</li>
+<li>a duration for each deliverable</li>
+<li>any other relevant things resulted from a discussion with the project manager or technical project manager, such as: discussion minutes, various action plans, resource contacts, etc</li>
+</ul>
+<hr/>
+<div class="md-source-file">
+<small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 13, 2023</span>
+</small>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright (c) RENware Software Systems
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.tabs.sticky", "navigation.path"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="assets/javascripts/bundle.b4d07000.min.js"></script>
+<script src="js/print-site.js"></script>
+<script src="optionalConfig.js"></script>
+<script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
+<script src="extra-loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,884 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Petre Iordanescu, RENware Software Systems, petre.iordanescu@gmail.com" name="author"/>
+<link href="SDEVEN.20_RENPRA.html" rel="prev"/>
+<link href="SDEVEN.30_RENVER.html" rel="next"/>
+<link href="assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.3, mkdocs-material-9.1.13" name="generator"/>
+<title>System Software Testing (25-SYTEST) - SDEVEN Software Development &amp; Engineering Methodology</title>
+<link href="assets/stylesheets/main.85bb2934.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.a6bdf11c.min.css" rel="stylesheet"/>
+<style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h224V368c0-26.5 21.5-48 48-48h112V96c0-35.3-28.7-64-64-64H64zm384 320H336c-8.8 0-16 7.2-16 16v112l32-32 64-64 32-32z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-40-176h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.4c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4V32zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-86.2-346.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.1 52.4 442.6 6.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5 2.6-10.4 6.5l-16.5 45.9-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4 0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2 0-4.6-3-8.9-7.2-10.4l-45.6-16.8zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9c-22-8-45.8-12.3-70.5-12.3C93.1 96 0 189.1 0 304s93.1 208 208 208 208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-75.1 60.9-136 136-136h8c8.8 0 16 7.2 16 16s-7.2 16-16 16h-8z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9V464c0 26.5 21.5 48 48 48h48v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48v-65.1zM96 256a64 64 0 1 1 128 0 64 64 0 1 1-128 0zm256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M320 0c17.7 0 32 14.3 32 32v64h120c39.8 0 72 32.2 72 72v272c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72h120V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zM264 256a40 40 0 1 0-80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224h16v192H48c-26.5 0-48-21.5-48-48v-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48h-16V224h16z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 0H128c-17.7 0-32 14.3-32 32s14.3 32 32 32v132.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6 0 480.9 31.1 512 69.4 512h309.2c38.3 0 69.4-31.1 69.4-69.4 0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32S337.7 0 320 0h-32zm-96 196.8V64h64v132.8c0 23.7 6.6 46.9 19 67.1l34.5 56.1h-171l34.5-56.1c12.4-20.2 19-43.4 19-67.1z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></svg>');}
+div.download-btn {
+    text-align: right;
+}
+
+@page {
+    size: a4 portrait;
+    margin: 25mm 10mm 25mm 10mm;
+    counter-increment: page;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    white-space: pre;
+    color: grey;
+    @top-left {
+        font-size: x-small;
+        content: 'smaXtec';
+    }
+    @top-center {
+        font-size: x-small;
+        content: string(chapter);
+    }
+    @top-right {
+        font-size: x-small;
+        content: 'Page ' counter(page);
+    }
+}
+
+@media print {
+
+    div.download-btn {
+        display: none;
+    }
+
+    .md-typeset table:not([class]) {
+        display: block;
+        border: none;
+    }
+
+    img {
+        width: 100%;
+        page-break-inside:avoid;
+        page-break-after:avoid;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after:avoid;
+        page-break-inside:avoid;
+    }
+
+    table, pre {
+        page-break-inside:avoid
+    }
+
+    ul, ol, dl {
+        page-break-before:avoid
+    }
+
+}</style>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="assets/_markdown_exec_ansi.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings1.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings2.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings3.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings4.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings5.css" rel="stylesheet"/>
+<link href="css/print-site-enum-headings6.css" rel="stylesheet"/>
+<link href="css/print-site.css" rel="stylesheet"/>
+<link href="css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#system-software-testing-sdeven25-sytest">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDEVEN Software Development &amp; Engineering Methodology" class="md-header__button md-logo" data-md-component="logo" href="index.html" title="SDEVEN Software Development &amp; Engineering Methodology">
+<img alt="logo" src="pictures/SDEVEN_logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDEVEN Software Development &amp; Engineering Methodology
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              System Software Testing (25-SYTEST)
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDEVEN Software Development &amp; Engineering Methodology" class="md-nav__button md-logo" data-md-component="logo" href="index.html" title="SDEVEN Software Development &amp; Engineering Methodology">
+<img alt="logo" src="pictures/SDEVEN_logo.png"/>
+</a>
+    SDEVEN Software Development &amp; Engineering Methodology
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="index.html">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.00_INDEX.html">
+        SDEVEN index
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          SDEVEN procedures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          SDEVEN procedures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.10_ADM.html">
+        Administrative (10-ADM)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.20_RENPRA.html">
+        Practices (20-RENPRA)
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          System Software Testing (25-SYTEST)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="SDEVEN.25_SYTEST.html">
+        System Software Testing (25-SYTEST)
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preliminaries">
+    Preliminaries
+  </a>
+<nav aria-label="Preliminaries" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why">
+    Why
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#when">
+    When
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vocabulary">
+    Vocabulary
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-types">
+    Test types
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-and-working-environments">
+    Testing and working environments
+  </a>
+<nav aria-label="Testing and working environments" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#environments-and-information-flow">
+    Environments and  Information flow
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#development-environment">
+    Development environment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-environment">
+    Test environment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#qa-environment">
+    QA environment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#production-environment">
+    Production environment
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-deliverables">
+    Test deliverables
+  </a>
+<nav aria-label="Test deliverables" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-plan">
+    Test Plan
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-scenarios">
+    Test Scenarios
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system-hardware-requirements">
+    System hardware requirements
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#proof-of-concept">
+    Proof of Concept
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.30_RENVER.html">
+        Versioning (30-RENVER)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.40_BRAN.html">
+        Branches (40-BRAN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.45_OPME.html">
+        Operational Meetings (45-OPME)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.50_CHGMNG.html">
+        Change Management (50-CHGMNG)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.55_TRACE.html">
+        Logging development changes (55-TRACE)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.60_RELM.html">
+        Release management (60-RELM)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.62_PSTR.html">
+        Project structure (62-PSTR)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.65_DEREV.html">
+        Design approaches, review and changes (65-DEREV)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.68_COREV.html">
+        Code review (68-COREV)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.70_LIP.html">
+        Licenses &amp; products / models (70-LIP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.75_CCEP.html">
+        Code of Conduct. Ethics, Professional and Legal Issues (75-CCEP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.80_COPRI.html">
+        Conventions &amp; principles (80-COPRI)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.90_RENBLU.html">
+        Phases, Processes and Deliverables (90-RENBLU)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SDEVEN.95_COCL.html">
+        Confidentiality &amp; Classification (95-COCL)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          SDEVEN appendices
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          SDEVEN appendices
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_A_Semantic_versioning.html">
+        Appendix (A) Sematic Versioning (SEMVER)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_B_DSGN_Content_Index.html">
+        Appendix (B) System Design Document Template (810 DSGN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_C_Status_Report.html">
+        Appendix (C) Status Report Template (STATUSR)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_D_ROADMAP_template.html">
+        Appendix (D) ROADMAP Template (RMAP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_E_RELNOTE_template.html">
+        Appendix (E) Release note template (RELNOTE)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_F1_TestPlan_template.html">
+        Appendix (F1) Test Plan template (TESTPLAN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_F2_TestScen_template.html">
+        Appendix (F2) Test Scenario template (TESTSCEN)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Appendix_Q_faq.html">
+        Appendix (Q) FAQ. Frequently Asked Questions (FAQ)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="About_SDEVEN.html">
+        About SDEVEN
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="LICENSE.html">
+        License
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="http://www.renware.eu">
+        RENware Software Systems company
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="pdfs/print_page.html/print_page.pdf">
+        Complete SDEVEN Manual (PDF)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="print_page.html">
+        Complete SDEVEN Manual
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preliminaries">
+    Preliminaries
+  </a>
+<nav aria-label="Preliminaries" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why">
+    Why
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#when">
+    When
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vocabulary">
+    Vocabulary
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-types">
+    Test types
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-and-working-environments">
+    Testing and working environments
+  </a>
+<nav aria-label="Testing and working environments" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#environments-and-information-flow">
+    Environments and  Information flow
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#development-environment">
+    Development environment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-environment">
+    Test environment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#qa-environment">
+    QA environment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#production-environment">
+    Production environment
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-deliverables">
+    Test deliverables
+  </a>
+<nav aria-label="Test deliverables" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-plan">
+    Test Plan
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#test-scenarios">
+    Test Scenarios
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system-hardware-requirements">
+    System hardware requirements
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#proof-of-concept">
+    Proof of Concept
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset"><div class="download-btn"><a href="pdfs\SDEVEN.25_SYTEST.html\SDEVEN.25_SYTEST.pdf">Download PDF</a></div>
+<p><small><strong>SDEVEN Software Development &amp; Engineering Methodology</strong></small></p>
+<p>Version: 7.0.13<br/>
+Release date: 230810</p>
+<hr/>
+<h1 id="system-software-testing-sdeven25-sytest">System Software Testing (SDEVEN.25-SYTEST)</h1>
+<p><strong>Table of Content</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#system-software-testing-sdeven25-sytest">System Software Testing (SDEVEN.25-SYTEST)</a><ul>
+<li><a href="#preliminaries">Preliminaries</a><ul>
+<li><a href="#why">Why</a></li>
+<li><a href="#when">When</a></li>
+<li><a href="#vocabulary">Vocabulary</a></li>
+<li><a href="#test-types">Test types</a></li>
+</ul>
+</li>
+<li><a href="#testing-and-working-environments">Testing and working environments</a><ul>
+<li><a href="#environments-and-information-flow">Environments and  Information flow</a></li>
+<li><a href="#development-environment">Development environment</a></li>
+<li><a href="#test-environment">Test environment</a></li>
+<li><a href="#qa-environment">QA environment</a></li>
+<li><a href="#production-environment">Production environment</a></li>
+</ul>
+</li>
+<li><a href="#test-deliverables">Test deliverables</a><ul>
+<li><a href="#test-plan">Test Plan</a></li>
+<li><a href="#test-scenarios">Test Scenarios</a></li>
+<li><a href="#system-hardware-requirements">System hardware requirements</a></li>
+<li><a href="#proof-of-concept">Proof of Concept</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="preliminaries">Preliminaries</h2>
+<p>The testing is one of the most important activity in software development as long as a piece of software is NOT written for own purposes.</p>
+<h3 id="why">Why</h3>
+<p>The testing may <em>assure</em> you that a piece of software <em>do what was intended to do</em>. This is "one face" but testing must also assure the <em>owner</em> of the software for the same things. And finally must assure the <em>end users</em> (generally the customer) for same things, sometimes more things.</p>
+<h3 id="when">When</h3>
+<p>The testing should be done (conducted) first "internally" (ie, not in the presence of customer's people). Then some more complex, elaborated tests should be done in the customer presence (for customer confidence).</p>
+<h3 id="vocabulary">Vocabulary</h3>
+<p>The testing process will involve some specific  terms and concepts like: <em>compliance</em>, <em>bug</em>, <em>acceptable</em>, <em>workaround solution</em>, ... These terms are not necessarily new terms but they will make more sense, will get a more clear meaning  "if are seen" from testing perspective.</p>
+<h3 id="test-types">Test types</h3>
+<p>In testing process more test types will be conducted. The <em>type of tests</em> can be seen from more perspectives, but those that relevant in this context are:</p>
+<ul>
+<li>
+<p>access to code perspective:</p>
+<ul>
+<li><em>white box tests</em> - apply when code is known and can be accessed and test that code by expecting some behavior in known conditions</li>
+<li><em>black box tests</em> - apply without knowing the code but expecting some results for some given input - because they address functionalities these are called  <strong>functional tests</strong></li>
+</ul>
+</li>
+<li>
+<p>scope / range of code impact perspective:</p>
+<ul>
+<li><em>unit, unitary</em> tests - these tests apply on small code blocks (for example a function or a procedure)</li>
+<li><em>integration</em> tests - these test address more complex portions of code and are mainly "looking for" their good working when interact one with others - in most cases these test are simply known as <strong>acceptance tests</strong></li>
+</ul>
+</li>
+<li>
+<p>performance and compliance perspective:</p>
+<ul>
+<li><em>standards conformity</em> - these ones seek to demonstrate the system conformity to some standards or practices</li>
+<li><em>performance</em> - these ones seek to demonstrate the system performance in some given "stress" conditions, also from these tests results what is known as <strong>System hardware requirements</strong></li>
+</ul>
+</li>
+</ul>
+<p>More details regarding test types is out this document scope. They are fundamental learning units in software engineering theory. The reason why some of them were listed here is to be aware that:</p>
+<ul>
+<li>they are used and applied in current job operations</li>
+<li>the other members of the team expect you to know what are them about</li>
+</ul>
+<h2 id="testing-and-working-environments">Testing and working environments</h2>
+<p>The basic assumption of testing theory is: <strong>the final produced system must be able run on different machines</strong> than those where it was produced.</p>
+<p>Using more than one environment is a <em>must</em> because:</p>
+<ul>
+<li>
+<p>anyway you use at least two environments, the one <strong>where you develop the software</strong> and another one <strong>where the system application will be installed</strong> to be used</p>
+</li>
+<li>
+<p>these two environments are <em>not guaranteed to be identical</em> and the one where the system application will be installed you even do <em>not know "how it looks like"</em> - the only thing you can do is to make some recommendations but that's all</p>
+</li>
+<li>
+<p>so, at least an environment where you'll test the system is absolutely necessary and this should be different that the one where you developed (or still developing) the system</p>
+</li>
+</ul>
+<h3 id="environments-and-information-flow">Environments and  Information flow</h3>
+<div class="admonition danger">
+<p class="admonition-title">Production environment</p>
+<p>Production environment is a <strong>real &amp; live</strong> environment, where our customers work and operate their current business. IT IS COMPLETELY <strong>FORBIDDEN TO ACCESS</strong> THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL.</p>
+</div>
+<p>The next diagram shows the most basic flow of testing without extending it after delivery of product.</p>
+<pre class="mermaid"><code>---
+title: Testing flow
+---
+flowchart TD
+    dev[Development]
+    test[Test]
+    qa[QA]
+    prod[Production]
+
+    dev --&gt;|local tests \n alpha states| dev
+    dev --&gt;|test work to \n for beta states| test
+    test --&gt;|fix bugs \n continue \n work| dev
+
+    test --&gt;|test work to \n for release states| qa
+    qa --&gt;|fix bugs \n continue \n work| dev
+
+    qa --&gt;|final delivery| prod</code></pre>
+<p>Diagram reveal the following environments:</p>
+<ul>
+<li><strong>development</strong> aka <strong>dev</strong></li>
+<li><strong>test</strong></li>
+<li><strong>qa</strong></li>
+<li><strong>production</strong> aka <strong>prod</strong></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">test &amp; qa combined</p>
+<p>In some projects <code>test</code> and <code>qa</code> environments are combined in a single one usually called <code>qa-test</code> or simply <code>test</code>, environment who takes on the role of both.</p>
+</div>
+<p>Each environment will be treated in details in next sections.</p>
+<h3 id="development-environment"><strong>Development</strong> environment</h3>
+<p>The <em>development environment</em> means <em>all systems and tools you use to develop the software system</em> (application, product, etc). These could be on more than one device (for example use a phone or tablet to edit some files, a git repository to store them and a laptop to make some compilation, a git client to manipulate its data, a IDE tool to edit code, a compiler to compile code, etc) the idea being that development environment does not means necessarily one device.</p>
+<p>Could be situation when some simple devices are not enough to finalize a development step and a  more powerful machine, a server is needed in that process. In this situations, dedicated servers are used for development and they are called <em>development servers</em>.</p>
+<p>The development environment is very <em>tight and dedicated</em> to a project and is not recommend to be reused from one project to another. Development environment is also very specific to a person, each developer having his affinity, preferences and productivity by using different tools, and <em>AS LONG AS THIS DOES NOT CREATE INTERFACE PROBLEMS</em> with the other team members or <em>LICENSING ISSUES</em>, its perfectly to use them (this is frequently happen for code IDEs and editors).</p>
+<blockquote>
+<p>So the development environment life is limited to one project or even only to  a phase of a project. Development environment can contain all things that developer (or the team if use a development server) consider necessary to use. Especially when using development servers <em>it is very useful if the development language / framework allow for some instruments to isolate environments</em> and clearly the should be used (examples are: <code>Poetry</code> or <code>venv</code> for Pyrhon, <code>composer</code> for PHP and Laravel, <code>cargo</code> for Rust, etc).</p>
+</blockquote>
+<div class="admonition info">
+<p class="admonition-title">Resulted version quality</p>
+<p>Software versions resulted from development environment <strong><em>cannot be "graded" more than <code>alpha</code></em></strong>.</p>
+</div>
+<h3 id="test-environment"><strong>Test</strong> environment</h3>
+<p>The <em>test environment</em> has the role to test the system on other completely different environment than the one in which development was made.</p>
+<p>Doing so, any software components, libraries, code parts, text files characteristics, date or time stamps, user environment data, operating system configuration, or <em>other kind of system particular configuration</em> <strong>WILL BE DETECTED</strong> by making this kind of testing. Remember the basic objective of testing process: "<em>the final produced system must be able run on different machines</em>".</p>
+<p>The ideal <code>test</code> environment is obtained by cloning an existing <code>production</code> environment and if necessary (in case the production machine is a "huge resources" one) make <strong>only "quantitative"</strong> adjustments, not qualitative ones (ie, downsize not downgrade).</p>
+<blockquote>
+<p>The test environment is MANDATORY to be limited to one project and one test phase. Other test phases will need another test environment. (The test process can alter enough the environment so other tests to be irrelevant).</p>
+</blockquote>
+<div class="admonition info">
+<p class="admonition-title">Resulted version quality</p>
+<p>Software versions resulted from test environment are <strong><em>usually "graded" as <code>beta</code></em></strong>. But this depends more on type of tests conducted, ie, integration, functional, acceptance, etc.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Testing team</p>
+<p>Testing conducted in <code>test</code> are executed by and in <strong>presence of producer team</strong>. This is done exclusively in all cases is possible this not being a matter of confidence but a matter of fucus on "doing what you have to do and only this and now !" - see also the section ref <code>qa</code> environment.</p>
+</div>
+<h3 id="qa-environment"><strong>QA</strong> environment</h3>
+<p>The <em>qa environment</em> is absolutely identical with <code>test</code> environment and all things from <code>test</code> must be applied for <code>qa</code>. The only difference is regarding the presence of customer team.</p>
+<div class="admonition note">
+<p class="admonition-title">Testing team</p>
+<p>Testing conducted in <code>qa</code> are executed in <strong>presence of customer team</strong> and this is mandatory. For particular / producer only tests, see the section ref <code>test</code> environment.</p>
+</div>
+<h3 id="production-environment"><strong>Production</strong> environment</h3>
+<p>The <em>production environment</em> is the place where the customer business reflected by the (through) system is happening. Live, real, with real data and critical as functioning (at least from the provider perspective).</p>
+<div class="admonition danger">
+<p class="admonition-title">Production environment</p>
+<p>Production environment is a <strong>real &amp; live</strong> environment, where our customers work and operate their current business. IT IS COMPLETELY <strong>FORBIDDEN TO</strong> ACCESS THAT ENVIRONMENT FOR NOT AUTHORIZED PERSONNEL.</p>
+</div>
+<p>There are no more things to say about production environment except the warning, production environment should not be <strong>accessed, modified, queried, etc, generally no operation</strong>.</p>
+<p>Any intervention required in production environment must be done <strong>ONLY BY AUTHORIZED PERSONNEL AND ONLY WITH CUSTOMER WRITTEN PERMISSION.</strong> Credentials for any component from production environment are subject of <strong>customer strict confidential data and "secrets"</strong>. The customer must be instructed <strong>to change all credentials</strong> used in environment setup phase.</p>
+<p>All other operations regarding production environment (for example backup or update) are ONLY <em>customer responsibility</em>.</p>
+<p>Any <strong>copies of production environment</strong> can be made ONLY by customer authorized personnel and obtained ONLY with customer representative consent.</p>
+<div class="admonition warning">
+<p class="admonition-title">Accepted version grades</p>
+<p>In <code>production</code> environment only <strong><code>release</code></strong> graded versions are allowed to be installed. Only as exceptions and:</p>
+<ul>
+<li>for <strong><em>critical business</em></strong> reasons</li>
+<li>from trusted sources
+versions <code>beta</code> graded will be allowed</li>
+</ul>
+</div>
+<h2 id="test-deliverables">Test deliverables</h2>
+<p>In order to be consistently applied and to be a proof of functioning, the testing process includes a series of <em>activities</em> and a set of <em>deliverables</em> that will be explained in next sections.</p>
+<p>Deliverables that must be created are:</p>
+<ul>
+<li><strong>Test Plan</strong></li>
+<li><strong>Test Scenarios</strong></li>
+<li><strong>System hardware requirements</strong></li>
+<li><strong>Proof of Concept</strong> document (aka <strong>PoC</strong> or <strong>Acceptance</strong> document)</li>
+</ul>
+<p>All these deliverables must be formally agreed by customer.</p>
+<p>The following diagram summarizes the testing process.</p>
+<pre class="mermaid"><code>---
+title: Testing process and Deliverables
+---
+flowchart LR
+    pln[["Test Process \n Planning"]]
+    exec[["Test Running"]]
+    poc[["Proof of \n concept"]]
+    concl[["Concluding"]]
+
+    tpln[\"Test Plan"/]
+    tsce[\"Test Scenario x"/]
+    pocdoc[\"Acceptance \n document"/]
+    sysrq[\"System hardware \n Requirements"/]
+
+
+    pln ==&gt; tpln
+    pln ==&gt; tsce
+
+    tsce --&gt; exec
+    exec --&gt; exec
+    exec --&gt; poc
+
+    poc --&gt; concl
+
+    poc ==&gt; pocdoc
+    concl ==&gt; sysrq</code></pre>
+<p>The following sections will discuss each deliverable focusing on its content and purpose. Those aspects that are not always in the sphere of <em>perfect (with zero deviation)</em> but have a level of approximation and tolerance that <em>must be kept in a zone of comfort, trust and functional acceptability to not alter business operations</em>.</p>
+<h3 id="test-plan">Test Plan</h3>
+<p>The test plan is mainly a planning of <a href="#test-scenarios">test scenarios</a>:</p>
+<ul>
+<li>a summary list with all scenarios expected to be executed</li>
+<li>a time frame in which each scenario execution will take place</li>
+<li>a general objective (<em>plan objective</em>) that establish the <em>goal</em> of test plan execution, more exactly what <strong>acceptance</strong> type is targeted</li>
+<li>for each scenario which functionality(ies) will be demonstrated (not detailed because these are written in scenario test)</li>
+<li>required team for each scenario (at "mandatory / optional" level)</li>
+<li>who approve the scenario resolution (pass or fail)</li>
+<li>a pre-requisites list and different other requirements, IT, logistics, rooms, etc</li>
+<li>who will execute each test scenario</li>
+</ul>
+<p>The test plan should be considered a contractual and an official document, so its change is subject of <em>change control procedure</em>.</p>
+<p>An electronic <a href="Appendix_F1_TestPlan_template.html">test plan template can be found here</a> or use document <code>Appendix_F1_TestPlan_template</code>.</p>
+<h3 id="test-scenarios">Test Scenarios</h3>
+<p>The test scenario is a <em>form of verification</em> of a punctual, concrete functionality, which is <em>completely defined</em>, by this understanding that its finality is known exactly.</p>
+<p>Through the <strong>test scenario, we aim to achieve a desired result for a series of known conditions</strong>. In other words, for a known set of input data, it is verified if the results are the expected ones. Thus, for each aspect that needs to be checked, a test scenario will have to be created.</p>
+<p>A test scenario must have (and guarantee) some <em>qualities</em> (properties, characteristics) which gives confidence to the person who decides whether the test result is <em>CONFORM (PASS)</em> or <em>NON-CONFORM (FAIL)</em>. This can be done by:</p>
+<ul>
+<li>
+<p>establishing what means <em>acceptable tolerance</em> when comparing obtained result with the expected one - this tolerance should be quantified in any rational-measurable way</p>
+</li>
+<li>
+<p>if test scenario has <em>more than two or three particular cases</em> (ie, if-cases), cases leading to results of different natures, then the test scenario must be divided, separated in more test scenario one for each expected result nature</p>
+</li>
+<li>
+<p>tested case should be as <em>smaller as possible but enough relevant</em> for customer, more precisely, to avoid falling into the trivial, irrelevant, useless</p>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Well defined test scenario</p>
+<p>The scenario must have a series of small steps each one being clear ref:</p>
+<ul>
+<li>what and how should be operated in system</li>
+<li>what is the expected system behavior</li>
+<li>what are the expected results</li>
+</ul>
+</div>
+<p>Each test scenario must be closed with a clear resolution <strong>PASS</strong> or <strong>FAIL</strong>. In case of fail  some short recommendations or explanation ref what should be done (these are subject to future <strong><em>bug fix issues</em></strong>).</p>
+<p>An electronic <a href="Appendix_F2_TestScen_template.html">test scenario template can be found here</a> or use document <code>Appendix_F2_TestScen_template</code>.</p>
+<h3 id="system-hardware-requirements">System hardware requirements</h3>
+<p>This deliverable must show the necessary hardware requirements for the system (product, application) to run in <em>normal operating conditions</em> and this is tight correlated with concept of <strong><em>system load</em></strong>.</p>
+<p>To be able to estimate and to acceptable fulfill this requirement, some <em>volume metrics</em> should be identified, but these ones <strong>must be relevant for system</strong> regarding <em>loading situations</em>. <em>Loading</em> is clearly a pure technical aspect and should be FIRST established and defined (as system / application relevant metrics and units of measures) by system architects and designers.</p>
+<p>"Conversion" to hardware resources required to allow execution under those loading conditions is another pure technical thing that should be defined (in terms of equivalence) by infrastructure specialized people.</p>
+<p>Normally <em>System hardware requirements</em> deliverable should present the <strong>minimum</strong> requirements the system to run. Is optional (but recommended) to present also the requirements for an <strong>optimal</strong> system run, or to offer a "way" to determine how to calculate them when loading conditions are changing.</p>
+<p>Level of details in <em>System hardware requirements</em> deliverable should be minimal regarding resource types (as these change very rapidly in time...) but enough for a customer to be able to determine what to buy (or to make available) in a reasonable way (for example regarding storage do not idicate the type of disks but only required capacity as operating system can directly  access, or for processing capacity do not indicate the CPU type but indicate the number of unit of processing units, some necessary features like hardware virtualization, and so on).</p>
+<h3 id="proof-of-concept">Proof of Concept</h3>
+<p>This deliverable is the <strong>acceptance agreement</strong> <em>as a formal confirmation of test objectives</em> (ie, from <a href="#test-plan"><em>Test plan</em> document</a>).</p>
+<div class="admonition warning">
+<p class="admonition-title">Referred documents</p>
+<ul>
+<li>If the <em>test plan</em> was "well done" and formally agreed the it just will be referred in this document.</li>
+<li>Also, is recommended that <em>test scenarios</em> (resulted after their execution) to be referred</li>
+</ul>
+</div>
+<p>Finally must remember that this document will become <strong>part of contract</strong> and will be the <em>fundament of future financial</em> documents (for example <em>invoice</em>) and operations, so it must <strong>respect all legal requirements</strong> stated contractual agreement between parts (customer and supplier). At least a brief review from legal perspective of this document is strongly recommended.</p>
+<p>The concrete form of this document is subject of contractual terms and cannot be generalized here.</p>
+<hr/>
+<div class="md-source-file">
+<small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 13, 2023</span>
+</small>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright (c) RENware Software Systems
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.tabs.sticky", "navigation.path"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="assets/javascripts/bundle.b4d07000.min.js"></script>
+<script src="js/print-site.js"></script>
+<script src="optionalConfig.js"></script>
+<script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
+<script src="extra-loader.js"></script>
+</body>
+</html>
